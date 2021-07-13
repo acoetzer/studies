@@ -1,5 +1,5 @@
-###### ____.myBrain
-# Welcome to my brain!
+###### ____.studies
+# Welcome to my virtual study room.
 ## These are the courses I am currently working though and or finished.
 
 |Course|Certificate|
