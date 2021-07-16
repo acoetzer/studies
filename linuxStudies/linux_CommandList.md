@@ -831,6 +831,20 @@
 <br>
 <br>
 
+## ifconfig
+
+### Description
+* 
+
+### Useful Options
+* 
+
+#### Example
+![ifconfigCommand](./src/ifconfigCommand.gif "The ifconfig Command")
+
+<br>
+<br>
+
 ## command
 
 ### Description
