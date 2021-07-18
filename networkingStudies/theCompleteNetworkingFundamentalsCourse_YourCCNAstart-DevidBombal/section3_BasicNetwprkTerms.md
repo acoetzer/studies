@@ -99,4 +99,18 @@
 
 <br>
 
-## Practical Demonstration using Packet Tracer
+## Practical Demonstration Of A Network using Packet Tracer
+
+![practicalExampleusingPacketTracer.gif](./src/practicalExampleusingPacketTracer.gif "Packet Tracer Example Of Network")
+
+<br>
+
+* In the gif above you see 2 end points being place on your dipology, one being a pc and another being a server.
+    * These 2 devices cannot communicate with one another. We need to use either a physical cable or air.
+* We then connect the 2 systems with a straight ethernet cable however we we notice that the 2 end points are red, indicating that there is no signal between the 2 devices. 
+    * Therefor we need to use what is known as a crossover cable which allows to devices to speak to one another. In todays world we use what is know as MDI-X which will be discussed at a later time.
+    * Here is a example of a straight ethernet cable and a crossover cable.
+
+<br>
+
+![ethernatCableStraightvsCrossover](./src/ethernatCableStraightvsCrossover.png "Diagram depicting how a crossopver cable works")
