@@ -17,13 +17,18 @@
     - [Network Automation & Network Programmability](#network-automation-and-network-programmability)
     - [What are Protocal & Ports?](#what-are-protocals-and-ports)
     - [Summary of Servers, Clients, Ports and Protocals](#summary-of-servers-clients-ports-and-protocals)
-- [](#)
-- [](#)
-- [](#)
-- [](#)
-- [](#)
-- [](#)
-- [](#)
+- [Practical Demonstration Of A Network using Packet Tracer](#practical-demonstration-of-a-network-using-packet-tracer)
+- [Networking Devices Part 1](#networking-devices-part-1)
+    - [Repeaters](#repeaters)
+    - [Hubs](#hubs)
+    - [Switches](#switches)
+    - [Routers](#routers)
+    - [Bridges](#bridges)
+- [Networking Devices Part 2](#networking-devices-part-2)
+    - [Firewalls](#firewalls)
+    - [IDS](#ids)
+    - [IPS](#ips)
+    - [WLC](#wlc)
 
 <br>
 <br>
@@ -37,7 +42,9 @@
 
 ### Summary of What is a network?
 
-    The idea of a network is rather than having to physically transport a file via a usb drive, floppy or whatever other physical medium via sneakernet, we use a cable or some type of mechanism to transmit data from one device to another or from one device to many devices.
+```
+The idea of a network is rather than having to physically transport a file via a usb drive, floppy or whatever other physical medium via sneakernet, we use a cable or some type of mechanism to transmit data from one device to another or from one device to many devices.
+```
 
 <br>
 
@@ -64,8 +71,10 @@
 * On ethernet, which is the technology we generally use or wireless, devices are known by their MAC address and that is how ethernet can identify devices on a network.
 
 ### Summary of basic type of network
-    
-    The most basic of network can consist of only 2 devices. It can range from physical to wireless.
+
+```    
+The most basic of network can consist of only 2 devices. It can range from physical to wireless.
+```
 
 <br>
 
@@ -90,12 +99,13 @@
 * Overall a single server can run multiple services and provide multiple services to clients based on the protocal.
 
 ### Summary of Servers, Clients, Ports and Protocals
-    
-    Lets begin with the server-client model, A server provides a service to a client. 
-    A single server can hold many different services or protocals for a array of clients, as an example a website hosted on a single server can be accessed by 100+ clients at the same time. 
-    The server can also have a file transfering protocal or ftp server as well as other services and this is where protcals and ports come into play. 
-    Protocals are just how devices communicate to each other based on what the packet being sent is from the client and on what port its being sent to as each port is a different language and unlike humans a computer cannot distinguish between language and therefor is told what to listen for on what ports. 
 
+```    
+Lets begin with the server-client model, A server provides a service to a client. 
+A single server can hold many different services or protocals for a array of clients, as an example a website hosted on a single server can be accessed by 100+ clients at the same time. 
+The server can also have a file transfering protocal or ftp server as well as other services and this is where protcals and ports come into play. 
+Protocals are just how devices communicate to each other based on what the packet being sent is from the client and on what port its being sent to as each port is a different language and unlike humans a computer cannot distinguish between language and therefor is told what to listen for on what ports. 
+```
 
 <br>
 
@@ -106,11 +116,59 @@
 <br>
 
 * In the gif above you see 2 end points being place on your dipology, one being a pc and another being a server.
-    * These 2 devices cannot communicate with one another. We need to use either a physical cable or air.
+    * These 2 devices cannot communicate with one another. We need to use either a physical cable or air to connect the 2 devices.
 * We then connect the 2 systems with a straight ethernet cable however we we notice that the 2 end points are red, indicating that there is no signal between the 2 devices. 
-    * Therefor we need to use what is known as a crossover cable which allows to devices to speak to one another. In todays world we use what is know as MDI-X which will be discussed at a later time.
+    * Therefor we need to use what is known as a crossover cable which allows to devices to speak to one another directly. In todays world we use what is know as MDI-X which will be discussed at a later time.
     * Here is a example of a straight ethernet cable and a crossover cable.
 
 <br>
 
 ![ethernatCableStraightvsCrossover](./src/ethernatCableStraightvsCrossover.png "Diagram depicting how a crossopver cable works")
+
+<br>
+
+* Once that has been done we go into the pc device on the dipology and run a command within cmd or command prompt **_ipconfig /all_**to see the current ip, we notice there is no ip setup and therefor create one. 
+* We also went ahead and changed the MAC address for this example to later show how the packets sent go from one device to another on the said layer.
+* We then run the command again and see that the ip, subnet mask and mac were changed and proceed to do the same for the server.
+* We change the mode to simulation, and proceed to ping the server.
+* This is where we see the packet being sent via an envelope symbol.
+* We then check the server to see the services running and proceed to test that on the pc.
+
+<br>
+
+## Networking Devices Part 1
+### Repeaters
+* Repeaters only amplify a signal, it doesnt know what is going on, unlike a switch. In the past 10base5 or 10base2 cables signal used to attenuate the longer it became, and therefor you needed a repeater to amplify or boost the signal.
+
+### Hubs
+* Hubs or Multiport repeaters on the other hand were the same as repeaters though they incorporated RJ45 connectors, they did the same thing except had a lot more ports but still were dumb. 
+    * Unlike switches they did not have intelligence such as mac address tables. So if one port received specific frames or data, it would flood it through all the available ports on a hub.
+* Issues were that the more devices connected on a hub, depending on how many people connected, would cause collisions. 
+* Although hubs are no longer needed, you do still get hubs in the form of wireless access points.
+
+### Switches
+* Although the devices look the same as a hub, the big difference between them is that a switch has intelligence.
+* A switch essentially reads what are known as frames when you send data over the ethernet, that is read as frames by the switch.
+    * So a switch uses what is known as a mac address table, this allows the switch to receive frames and they have the intelligence to only forward them out of the correct port. It learns where a specific mac address is on the ports and only sends the relavent frames to that specific mac address and it works on layer 2.
+
+### Bridges
+* What about bridges?
+    * First you had Repeaters, then hubs, then bridges and bridges were essentially switches though it did things through software. then you got Switches which were rebranded from bridges.
+
+### Routers
+
+
+<br>
+
+## Networking Devices Part 2
+### Firewalls
+
+
+### IDS
+
+
+### IPS
+
+
+### WLC
+
