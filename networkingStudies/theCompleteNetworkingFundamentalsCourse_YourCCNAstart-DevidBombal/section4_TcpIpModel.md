@@ -13,7 +13,7 @@
     - [Bits](#bits)
 - [Practical TCPIP Model Part 2](#practical-tcpip-model-part-2)
     - [The ARP Packet](#the-arp-packet)
-    - [TCP Packet or 3 way hand shake](#tcp-packet-or-3-way-hand-shake)
+    - [TCP Protocol or 3 way hand shake](#tcp-protocol-or-3-way-hand-shake)
     - [HTTP Packet](#http-packet)
 - [](#)
 
@@ -68,11 +68,11 @@
 
 ## Bits
 * When sending data on the physical layer, we sending 0s and 1s known as **_Bits_**. 
-        * So the bits of data on a fiber cable is represented as light. 
-            * --> If there is light its a 1 if there is no light its a 0, 
-        * Whereas the bits of data on a copper cable is represented as electricity.
-            * --> If there is electricity then its a 1, If there is no electricity then its a 0
-        * so 0s and 1s would represent our bits, or binary values.
+    * So the bits of data on a fiber cable is represented as light. 
+        * --> If there is light its a 1 if there is no light its a 0, 
+    * Whereas the bits of data on a copper cable is represented as electricity.
+        * --> If there is electricity then its a 1, If there is no electricity then its a 0
+    * so 0s and 1s would represent our bits, or binary values.
 
 <br>
 
@@ -80,8 +80,8 @@
 ## HTTP captures
 
 ## The ARP Packet
-* In our dipology we trying to connect to a server with an ip address of 10.1.1.100, before we can establish a connection with the specified ip address in our local network, we need do what is known as an Address Resolution Protocol or ARP. 
-    * In the gif below we see that we entered th ip address in our client browser and the ARP frame was created.
+* In our dipology we trying to connect to a server with an ip address of 10.1.1.100, before we can establish a connection with the specified ip address in our local network, we need do what is known as an Address Resolution Protocol or ARP Request. 
+    * In the gif below we see that we entered th ip address in our client browser and the ARP packet was created.
 
 <br>
 
@@ -91,7 +91,7 @@
 
 * The purpose of ARP is to understand to which device the client pc need to connects to.
     * Its basically requesting the MAC Address of the server we trying to connect to, So in other words its asking which MAC Address has this ip?
-* That frame gets sent to the switch as seen below
+* That frame gets sent to the switch as seen below as a broadcast on layer 2
 
 <br>
 
@@ -100,15 +100,15 @@
 <br>
 
 * So that request gets sent to the switch which is a layer 2 device, 
-    * Notice the destination is FFFF.FFFF.FFFF which is known as a broadcast and is a layer 2 frame, that gets sent to the switch which is again a layer 2 device and that requests then basically floods the device or ports requesting that ip address.
+    * Notice the destination is FFFF.FFFF.FFFF which is known as a broadcast and is a layer 2 frame, so broadcast frame, that gets sent to the switch which is again a layer 2 device and that requests then basically floods the device or ports requesting that ip address.
 * When looking at the PDU or Protocol Data Unit, we see that Target MAC Address is 0000.0000.0000 and the Target IP Address is 10.1.1.100.
-* The broadcast floods the layer 2 device in other words the switch and when looking at the Router which has an IP of (10.1.2.254/24) and Server 2 (10.1.1.101) both drop the packet.
+* The broadcast frame floods the layer 2 device in other words the switch and when looking at the Router which has an IP of (10.1.2.254/24) and Server 2 (10.1.1.101) both drop the packet.
     * Whereas Server 1 will reply back.
-* When looking at Server 1 The inbound PDU shows the broadcast packet FFFF.FFFF.FFFF from the client pc, though the outbound PDU now shows the is from the server with said MAC address replying to the client PC.
+* When looking at Server 1 The inbound PDU shows the broadcast packet FFFF.FFFF.FFFF from the client pc, though the outbound PDU now shows the reply from the server with said MAC address replying to the client PC.
     * That then gets sent back to the switch and from the switch back to the client pc. The client pc now knows the mac address of the server.
 
-## TCP Packet or 3 way hand shake
-* After the ARP Request has been made, it then sends out a TCP packet.
+## TCP Protocol or 3 way hand shake
+* After the ARP Request has been made, it then sends out a TCP protocol.
 * In TCP before any communication takes place, they do what is called a 3 way handshake as seen below
 
 <br>
@@ -120,7 +120,7 @@
 * Basically they are agreeing on certain parameters such as sequence numbers or how much data they can send and then a HTTP Packet is sent into the network.
 
 ## HTTP Packet
-* When looking at the HTTP packet, we see a specific interface recieves that frame gig1/0/4 and the is then forwarded out gig1/0/2.
+* When looking at the HTTP packet, we see a specific interface recieves that frame gig1/0/4 which is a physical port and the is then forwarded out the port gig1/0/2.
 
 <br>
 
@@ -140,7 +140,7 @@
     * ethernet was the layer 2 encapsulation.
     * IPv4 Was the layer 3 Protocol.
     * TCP is the layer 4 Protocol.
-        * An we know this because we see the PRO:0x06 hexadecimal number
+        * And we know this because we see the PRO:0x06 hexadecimal number which relates to TCP whereas 0x017 relates to UDP
             * You can see more IPv4 Protocols [Here](https://www.iana.org/assignments/protocol-numbers/protocol-numbers.xhtml "IPv4 Protocol List")
 
 <br>
