@@ -50,8 +50,10 @@
 # Practical TCP/IP Model Part 1
 ## Bits, Frames, Packets, Segments and More
 
-* There is some terms when it comes to talking about "stuff" on specific layers in the TCP/IP Model shown in the image below.
+## IP
+* An ip address is a number you give a device to allow it to communicate through a protocol such IP or Internet Protocol, as an example connecting to you home router with an ip address, essentially a device.
 
+* There is some terms when it comes to talking about "stuff" on specific layers in the TCP/IP Model shown in the image below.
         
 <br>
 
@@ -67,10 +69,19 @@
             * --> If there is electricity then its a 1, If there is no electricity then its a 0
         * so 0s and 1s would represent our bits, or binary values.
 
-
 <br>
 
 # Practical TCP/IP Model Part 2
+* ARP --> Address Resolution Protocol
+* FFFF.FFFF.FFFF is a broadcast Frame
+* In TCP before communication takes place they do what is know as a 3 way handshake
+* Inbound/Outbound PDU Protocol Data Unit
+* How does one layer refer to the layer above it? at layer 2 on ethernet it uses a type field. TYPE 0x0800 which translates to ipv4 and 0x0806 refers to ipv6.
+* When a device at layer 2 receives a frame, it needs to know which protocol to use or which protocol stack to use
+* so when the server receives the http packet, it will know that it needs to use the ipv4 protocol stack, if you send ipv4 protocol to ipv6 its not going to undertand it, in the same way that i have a english protocol stack, afrikaans protocol stack and a bulgarian protocol stack.
+    * For human switching between languages your brain knows which protocol to use, but for computers you need to specify the protocol stack to use. 
+Going on we ask, how does it know what protocol to use at layer 4, and you can see something like PRO:0x06 for TCP, a way to see all ipv4 protocol numbers is [Protocol Numbers](https://www.iana.org/assignments/protocol-numbers/protocol-numbers.xhtml)
+
 
 
 <br>
