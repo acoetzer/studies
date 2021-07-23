@@ -79,6 +79,9 @@
 # Practical TCPIP Model Part 2
 ## HTTP captures
 
+* On ethernet devices communicate using whats called a MAC address or Media Access Control Address.
+    * A MAC Address is a burnt in address on a NIC or Network Interface Card.
+
 ## The ARP Packet
 * In our dipology we trying to connect to a server with an ip address of 10.1.1.100, before we can establish a connection with the specified ip address in our local network, we need do what is known as an Address Resolution Protocol or ARP Request. 
     * In the gif below we see that we entered th ip address in our client browser and the ARP packet was created.
@@ -143,10 +146,59 @@
         * And we know this because we see the PRO:0x06 hexadecimal number which relates to TCP whereas 0x017 relates to UDP
             * You can see more IPv4 Protocols [Here](https://www.iana.org/assignments/protocol-numbers/protocol-numbers.xhtml "IPv4 Protocol List")
 
+## TCP and UDP
+* TCP --> Transmission Control Protocol --> Reliable
+* UDP --> User Datagram Protocol --> Unreliable 
+
 <br>
 
 # Practical TCPIP Model Part 3
+## Port Numbers
 
+* So we know that networkers work with the first 4 layers Physical, Data Links, Network and Transport, However we also know that the TCP/IP model includes a 5th layer known as layer 7 Applications layers. We although originally dealt with 4 layers, we do talk about the 5 layer or 7th layer for convention of the OSI Model. 
+    * How do we take a look at the layer 7 Protocol?
+
+<br>
+
+![httpPacketPart2](./src/httpPacketPart2.gif "A more indepth look at the PDU")
+
+<br>
+
+* The layer 7 Protocol can be seen in the Transport layer or layer 4 or TCP layer under DESTINATION(Dst) PORT:80 
+    * Port 80 is known as HTTP and we are indicating the application we want to send via the port number.
+        * This is also known as a well known port.
+    * Servers with the service of HTTP will be listening on port 80 for incoming requests, So when sending an HTTP Packet, The DESTINATION(Dst) PORT will be 80, indcating to the server which application to send that request to.
+* As the Packet reaches the server we see another port listed as 1025
+    * There are different ports assigned for different things, as an example well known ports, ephemeral/random ports and so ..
+        * A server is always listening on well known ports, however if you are creating a session to that server you are using what is known as a ephemeral or random port number.
+* On the IANA [Site](https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml?&page=1) You see that there are 3 categories, System Ports, User Ports and Dynamic/ Private or Ephemeral Ports, However over time things change, these categories range from OS to OS. You can see more about ephemeral Port numbers [here](https://en.wikipedia.org/wiki/Ephemeral_port)
+* So when looking at the PDU you see the SOURCE(Src) Port:1025, This indicating that HTTP Packet was sent from that ephemeral port of the client machine to the DESTINATION(Dst) PORT:80 on the Server machine which is providing the HTTP service and which is also listening on a  well known port such as port 80.
+    * What you will also notice is that the Port numbers will swap around on the reply, or Outbound PDU, essentially going from Port 80 as the SOURCE(Src) PORT the client machine has chosen.
+        * It is worth noting why a PC would choose a dynamic port number, or ephemeral port number is for the simple fact that if you open 2  sessions, the first session could be using the port number 1025 and the second 1026.
+            * Now these ports numbers are suppose to be random however they not, and that is how hackers can guess what port will be used next for the applciation.
+
+
+## Well Known Ports
+
+<br>
+
+|Port <br>Number|Usage|
+|:--|:--|
+|20|<ul><li>FTP</li><li>File Transmission Protocol</li><li>Data Transfer</li></ul>|
+|21|<ul><li>FTP</li><li>File Transmission Protocol</li><li>Command Control</li></ul>|
+|22|<ul><li>SSH</li><li>Secure Shell</li><li></li></ul>|
+|23|<ul><li>Telnet</li><li>Remote Login service</li><li>Unencrypted Text Messages</li></ul>|
+|25|<ul><li>SMTP</li><li>Simple Mail Transfer Protocol</li><li>E-mail Routing</li></ul>|
+|53|<ul><li>DNS</li><li>Domain Name System/Server</li><li>Service</li></ul>|
+|69|<ul><li>TFTP</li><li>Trivial File Transfer Protocol</li><li></li></ul>|
+|80|<ul><li>HTTP</li><li>Hypertext Transfer Protocol</li><li>Used in World Wide Web Service</li></ul>|
+|110|<ul><li>POP3</li><li>Post Office Protocol</li><li>Used by e-mail clients to retrieve e-mail from a server</li></ul>|
+|119|<ul><li>NNTP</li><li>Network News Transfer Protocol</li><li></li></ul>|
+|123|<ul><li>NTP</li><li></li><li>Network Time Protocol</li></ul>|
+|143|<ul><li>IMAP</li><li>Internet Message Access Protocol</li><li>Management of Digital Mail</li></ul>|
+|161|<ul><li>SNMP</li><li>Simple Network Management Protocol</li><li></li></ul>|
+|194|<ul><li>IRC</li><li>Internet Relay Chat</li><li></li></ul>|
+|443|<ul><li>HTTPS</li><li>Hyptertext Transfer Secure or HTTP Secure</li><li>HTTP over TLS/SSL</li></ul>|
 
 <br>
 
