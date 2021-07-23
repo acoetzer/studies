@@ -203,3 +203,6 @@
 <br>
 
 # Practical TCPIP Model Part 4
+## E-mail and FTP Captures
+
+* Just some practise  with looking at various protocols in simulations mode.
