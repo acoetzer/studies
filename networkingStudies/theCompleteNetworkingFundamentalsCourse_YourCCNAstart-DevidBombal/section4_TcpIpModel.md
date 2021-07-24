@@ -15,7 +15,10 @@
     - [The ARP Packet](#the-arp-packet)
     - [TCP Protocol or 3 way hand shake](#tcp-protocol-or-3-way-hand-shake)
     - [HTTP Packet](#http-packet)
-- [](#)
+- [Practical TCPIP Model Part 3](#practical-tcpip-model-part-3)
+    - [Port Numbers](#port-numbers)
+    - [Well Known Ports](#well-known-ports)
+- [Practical TCPIP Model Part 4](#practical-tcpip-model-part-4)
 
 <br>
 <br>
@@ -205,4 +208,4 @@
 # Practical TCPIP Model Part 4
 ## E-mail and FTP Captures
 
-* Just some practise  with looking at various protocols in simulations mode.
+* Just some practise  with looking at various protocols in simulation mode within packet tracer.
