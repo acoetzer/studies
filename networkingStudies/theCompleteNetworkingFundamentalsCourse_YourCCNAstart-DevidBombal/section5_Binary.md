@@ -9,7 +9,14 @@
 - [Binary Introduction](#binary-introduction)
     - [What Is A Binary Number](#what-is-a-binary-number)
 - [Binary Math](#binary-math)
-- [](#)
+- [Binary Conversion Example](#binary-conversion-example)
+    - [What is the Binary eqivalent to 192](#what-is-the-binary-eqivalent-to-192)
+    - [What is the Binary eqivalent to 253](#what-is-the-binary-eqivalent-to-253)
+    - [What is the Deciaml eqivalent to 1 1 0 0   0 0 0 0](#what-is-the-deciaml-eqivalent-to-1-1-0-0-0-0-0-0)
+    - [What is the Deciaml eqivalent to 1 1 1 1 1 1 0 1](#what-is-the-deciaml-eqivalent-to-1-1-1-1-1-1-0-1)
+- [Converting IP Addresses to Binary](#converting-ip-addresses-to-binary)
+    - [IPv4 Octet Table](#ipv4-octet-table)
+    - [](#)
 - [](#)
 - [](#)
 
@@ -74,8 +81,29 @@
 * 2 to the power of 8 <sup>2<sup>8</sup></sup>
     * which is 2 multiplied together 8 time <sup>2x2x2x2x2x2x2x2</sup> = 256 Bits
 
+# Binary Conversion Example
+
+## What is the Binary eqivalent to 192
+![binaryEqivalentOfDecimalPart1](./src/binaryEqivalentOfDecimalPart1.png)
+
 <br>
 
+## What is the Binary eqivalent to 253
+![binaryEqivalentOfDecimalPart2](./src/binaryEqivalentOfDecimalPart2.png)
+
+<br>
+
+## What is the Deciaml eqivalent to 1 1 0 0   0 0 0 0
+![decimalEqivalentOfBinaryPart1](./src/decimalEqivalentOfBinaryPart1.png)
+
+<br>
+
+## What is the Deciaml eqivalent to 1 1 1 1 1 1 0 1
+![decimalEqivalentOfBinaryPart2](./src/decimalEqivalentOfBinaryPart2.png)
+
+<br>
+
+# Converting IP Addresses to Binary
 ## IPv4 Octet Table
 
 <br>
