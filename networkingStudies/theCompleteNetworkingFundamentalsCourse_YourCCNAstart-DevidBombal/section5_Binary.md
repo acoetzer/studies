@@ -10,15 +10,14 @@
     - [What Is A Binary Number](#what-is-a-binary-number)
 - [Binary Math](#binary-math)
 - [Binary Conversion Example](#binary-conversion-example)
-    - [What is the Binary eqivalent to 192](#what-is-the-binary-eqivalent-to-192)
-    - [What is the Binary eqivalent to 253](#what-is-the-binary-eqivalent-to-253)
-    - [What is the Deciaml eqivalent to 1 1 0 0   0 0 0 0](#what-is-the-deciaml-eqivalent-to-1-1-0-0-0-0-0-0)
-    - [What is the Deciaml eqivalent to 1 1 1 1 1 1 0 1](#what-is-the-deciaml-eqivalent-to-1-1-1-1-1-1-0-1)
-- [Converting IP Addresses to Binary](#converting-ip-addresses-to-binary)
     - [IPv4 Octet Table](#ipv4-octet-table)
-    - [](#)
-- [](#)
-- [](#)
+    - [What Is The Binary Eqivalent To 192](#what-is-the-binary-eqivalent-to-192)
+    - [What Is The Binary Eqivalent To 253](#what-is-the-binary-eqivalent-to-253)
+    - [What Is The Deciaml Eqivalent To 1100 0000](#what-is-the-deciaml-eqivalent-to-1-1-0-0-0-0-0-0)
+    - [What Is The Deciaml Eqivalent To 1111 1101](#what-is-the-deciaml-eqivalent-to-1-1-1-1-1-1-0-1)
+- [Converting IP Addresses To Binary](#converting-ip-addresses-to-binary)
+    - [Why Should We Know Binary](#why-should-we-know-binary)
+    - [Lets Workout Our IPv4 Address In Binary](#lets-workout-our-ipv4-address-in-binary)
 
 <br>
 <br>
@@ -39,25 +38,25 @@
 
 <br>
 
-![binaryMath1Bit](./src/binaryMath1Bit.png)
+![binaryMath1Bit](./src/binaryMath1Bit.png "2 States and 1 Bit")
 
 * 2 x 1 <sup>2<sup>1</sup></sup> = Decimal Number 2 and amount of Combinations which is either 1 or 0
 
 <br>
 
-![binaryMath2Bits](./src/binaryMath2Bits.png)
+![binaryMath2Bits](./src/binaryMath2Bits.png "2 State and 2 Bits")
 
 * 2 x 2 <sup>2<sup>2</sup></sup> = Decimal Number 4 and amount of Combinations
 
 <br>
 
-![binaryMath3Bits](./src/binaryMath3Bits.png)
+![binaryMath3Bits](./src/binaryMath3Bits.png "2 States and 3 Bits")
 
 * 2 x 3 <sup>2<sup>3</sup></sup> = Decimal Number 8 and amount of Combinations
 
 <br>
 
-![binaryMath4Bits](./src/binaryMath4Bits.png)
+![binaryMath4Bits](./src/binaryMath4Bits.png "2 States and 4 Bits")
 
 * 2 x 4 <sup>2<sup>4</sup></sup> = Decimal Number 16 and amount of Combinations
 
@@ -82,32 +81,50 @@
     * which is 2 multiplied together 8 time <sup>2x2x2x2x2x2x2x2</sup> = 256 Bits
 
 # Binary Conversion Example
-
-## What is the Binary eqivalent to 192
-![binaryEqivalentOfDecimalPart1](./src/binaryEqivalentOfDecimalPart1.png)
-
-<br>
-
-## What is the Binary eqivalent to 253
-![binaryEqivalentOfDecimalPart2](./src/binaryEqivalentOfDecimalPart2.png)
-
-<br>
-
-## What is the Deciaml eqivalent to 1 1 0 0   0 0 0 0
-![decimalEqivalentOfBinaryPart1](./src/decimalEqivalentOfBinaryPart1.png)
-
-<br>
-
-## What is the Deciaml eqivalent to 1 1 1 1 1 1 0 1
-![decimalEqivalentOfBinaryPart2](./src/decimalEqivalentOfBinaryPart2.png)
-
-<br>
-
-# Converting IP Addresses to Binary
 ## IPv4 Octet Table
 
 <br>
 
-![ipv4BinaryOctetTable](./src/ipv4BinaryOctetTable.png)
+![ipv4BinaryOctetTable](./src/ipv4BinaryOctetTable.png "Showcasing the Octet Table")
 
 <br>
+
+## What Is The Binary Eqivalent To 192
+![binaryEqivalentOfDecimalPart1](./src/binaryEqivalentOfDecimalPart1.png "The Binary Eqivalent Of The Decimal 192")
+
+<br>
+
+## What Is The Binary Eqivalent To 253
+![binaryEqivalentOfDecimalPart2](./src/binaryEqivalentOfDecimalPart2.png "The Binary Eqivalent Of The Decimal 253 and Showing How To Work Backwards")
+
+<br>
+
+## What Is The Deciaml Eqivalent To 1100 0000
+![decimalEqivalentOfBinaryPart1](./src/decimalEqivalentOfBinaryPart1.png "The Decimal Eqivalent Of The Binary 1100 0000")
+
+<br>
+
+## What Is The Deciaml Eqivalent To 1111 1101
+![decimalEqivalentOfBinaryPart2](./src/decimalEqivalentOfBinaryPart2.png "The Decimal Eqivalent Of The Binary 1111 1101 and Shwoing How to Work backwards")
+
+<br>
+
+# Converting IP Addresses To Binary
+* When looking at your phone as an example you will see the the configure IP was done automatically, this is typically with networks and is known as DHCP or Dynamic Host Configuration Protocol.
+    * In other words a server allocates a IP to your device.
+* With IPv4 It uses what is known as a dotted decimal address.
+    * as an example our IP address is 192.168.100.8
+    * This is considered 4 Octets, meaning 192 is 1 Binary Octet and we know that 192 is 1100 0000 which is an octet.
+* So an IPv4 Address has 4 Octets therefor making it 32 Bits long. 
+    * 8 Bits + 8 Bits + 8 Bits + 8 Bits = 32 Bits
+
+## Why Should We Know Binary
+* Why Should we know Binary when it comes to IP Addresses and that is becuase when working with Access Lists or cases where you need to permit or deny traffic you going to need to think in Binary.
+    * Devices such as routers or firewalls use binary to determine what is allowed or denied.
+
+## Lets Workout Our IPv4 Address In Binary
+## 192.168.100.8 or 11000000 10101000 01100100 00001000 
+
+<br>
+
+![ourIPInBinary](./src/ourIPInBinary.png "Our IP worked Out In Binary")
