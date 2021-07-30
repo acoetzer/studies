@@ -77,3 +77,64 @@
 * In the gif above, my IPv4 address is 10.0.2.15
     * We also have what is known as IPv6 addresses as that is becoming more and more popular due to IPv4 Exhaustion.
         * The is represented as inet6...
+
+## IP Characteristics
+## IPv4 
+* Is at layer 3 or the network layer protocol
+* IPv4 is a connectionless protocol, in other words, there are no sessions formed when using IP, The transmitter simply sends data without notification to the receiver. No Status information is sent back either from the receiver. Its totally connectionless.
+    * TCP on the other hand is connection oriented, TCP will setup a session so that before transmission takes place, In TCP the Transmitter will send to the receiver what is known as a SYN or (Synchronization Message), the receiver then sends back a SYN Ack or (Synchronization Acknowledgement Message), and then the transmitter returns a Ack or (Acknowledgement Message) to the receiver.
+        * This is known as the 3 Way Handshake
+* Diagram of a 3 way handshake
+
+
+<br>
+
+![ipAddresses3WayHandshake](./src/ipAddresses3WayHandshake.png)
+
+<br>
+
+* IP doesn't do any of that!
+    * Each packet in IP is treated independently of other packets.
+    * That is way traffic can take different paths to get to a destination.
+* Routers will route traffic via different paths based on options such as 
+    * Load Balancing (because each packet is independent and IP is a connectionless protocol)
+* Router can also base routing decisions on different values such as 
+    * (OSPF) Bandwidth
+    * (RIP) Hopcount
+    * However it is possible that packets from one session take different paths or divergent paths to get to a destination. For example
+        * RIP will base its routing decision on Hopcount (Which is not good and hence RIP is not used that often)
+        * OSPF Will base its routing decision on Bandwidth
+            * Other routing protocols will use its own metrics to determine the best path.
+    * A Routing Protocol determines the best path or best route from A to B
+        * This is based on the hierarchical addressing structure in IPv4 and IPv6 Where we have both a Network and Host Portion as part of the address.
+    * Routers base their routing decision on the Network Portion of the address rather than the Host Portion.
+* IP also only gives best effort delivery of packets
+    * There is no guarantee of packet delivery, any packet could misdirected, it could be duplicated or it could be lost in transmission when sent to a destination. That should be expected in IP transmission.
+        * Once again TCP which is a connection orientated protocol has the ability to retransmit packets that go missing, where as UDP another layer 4 protocol doesn't retransmit missing packets, if they get dropped they are simple lost and then the applications need to take care of that.
+* IP also has no data recovery features. If the packet gets corrupted the end devices need to handle that and not the routers in between.
+
+## Summary
+* IP has no Built in sessions
+    * Has no retransmissions
+    * No Data Recovery
+* Higher layers such as TCP handle dropped, corrupted or misdirected packets. IP does not provide those feature and relies on Higher lyaer protocol to provide those features.
+
+## Format Overview
+## IPv4 Address
+* An IPv4 address is 32 Bits in size and normally written in what is known as dotted decimal format
+    * x.x.x.x or 10.1.1.1
+        * Each decimal is 8 bits long. This is also known as an octet.
+
+<br>
+
+![ipAddressesIPv432Bits](./src/ipAddressesIPv432Bits.png)
+
+<br>
+
+* IP address once again have an hierarchical structure to enable routing. Which consist of 2 main parts
+    * Network Portion of the IP address
+    * Host Portion of the IP address
+* IP addresses are used for routing in a very similar way as DHL or Fedex route parcels based on a destination address
+    * Routers will route traffic to a destination address when unicast packets are transmitted.
+        * multicast packets use a different mechanism and do their routing based on source address.
+
