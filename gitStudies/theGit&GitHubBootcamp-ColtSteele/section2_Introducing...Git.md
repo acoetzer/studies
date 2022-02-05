@@ -8,8 +8,7 @@
 - [What is Git](#what_is_git)
     - [Small description](#small_discription)
     - [What is a VCS or a Version Control System](#what_is_a_vcs_or_a_version_control_system)
-- [](#)
-- [](#)
+- [Visualizing Git](#visualizing_git)
 
 <br>
 <br>
@@ -44,4 +43,3 @@
     * As you play through your game you make saves along the way, especially before a big event, such as a boss fight. Git works in the same way.
 *  Looking at the diagram above, you can see an illustration of how a user could move through developement, backtrack as well as branch off in a different direction.
     * They can also at a later merge some of the older backtracked ideas into the final version.
-
