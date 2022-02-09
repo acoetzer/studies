@@ -1,4 +1,4 @@
-###### ____section4_TheVeryBasicsOfGit:Adding&Commiting
+###### ____section4_TheVeryBasicsOfGit:Adding&Committing
 
 <br>
 
