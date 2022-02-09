@@ -5,10 +5,10 @@
 <!-- Table Of Contents  -->
 
 ### Table of Contents
-- [What is Git](#what_is_git)
-    - [Small description](#small_discription)
-    - [What is a VCS or a Version Control System](#what_is_a_vcs_or_a_version_control_system)
-- [Visualizing Git](#visualizing_git)
+- [What is Git](#what-is-git)
+    - [Small description](#small-description)
+    - [What is a VCS or a Version Control System](#what-is-a-vcs-or-a-version-control-system)
+- [Visualizing Git](#visualizing-git)
 
 <br>
 <br>
@@ -21,7 +21,7 @@
 ### What is a VCS or a Version Control System
 * A Version Control System is software that tracks and manages changes to files a overtime.
 * in short, a VCS allows users to edit, use, remove and or undo changes made by means of keeping a timeline of events. 
-* That being said, it also allows for said users to work together on a single or multiple different segmants of a project.
+* That being said, it also allows for said users to work together on a single or multiple different segments of a project.
 
 <br>
 
@@ -41,5 +41,5 @@
 
 * A way to visualize git, is like when you play a game.
     * As you play through your game you make saves along the way, especially before a big event, such as a boss fight. Git works in the same way.
-*  Looking at the diagram above, you can see an illustration of how a user could move through developement, backtrack as well as branch off in a different direction.
+*  Looking at the diagram above, you can see an illustration of how a user could move through development, backtrack as well as branch off in a different direction.
     * They can also at a later merge some of the older backtracked ideas into the final version.

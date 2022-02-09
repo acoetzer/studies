@@ -5,8 +5,9 @@
 <!-- Table of Contents -->
 
 ### Table of Contents
-- [Configuring your Git name and email](#configuring_your_git_name_and_email)
-    - [git config --global user.name](#git_config_--global_user.name)
+- [Configuring your Git name and email](#configuring-your-git-name-and-email)
+    - [Git Name Configure](#git-name-configure)
+    - [git Email Configure](#git-email-configure)
 
 <br>
 <br>
