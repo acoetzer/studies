@@ -103,5 +103,3 @@
 
 * The above example shows the command **git log --oneline**
     * which displays each log entry on a single line.
-
-    
