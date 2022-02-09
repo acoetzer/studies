@@ -6,9 +6,14 @@
 
 ### Table of Contents
 - [What is a Git repo](#what-is-a-git-repo)
-- [](#)
-- [](#)
-- [](#)
+- [Our first commands](#our-first-commands)
+    - [Git init & Git status](#git-init--git-status)
+- [The mysterious .git folder](#the-mysterious-git-folder)
+- [A common mistake](#a-common-mistake)
+- [The committing workflow overview](#the-committing-workflow-overview)
+- [Staging changes with the git add command](#staging-changes-with-the-git-add-command)
+- [Finally, the git commit command](#finally-the-git-commit-command)
+- [The git log command](#the-git-log-command)
 
 <br>
 <br>
