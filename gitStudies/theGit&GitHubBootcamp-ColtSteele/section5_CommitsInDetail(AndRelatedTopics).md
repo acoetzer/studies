@@ -81,6 +81,4 @@
         * folderName/ (Will ignore entire folder or directory)
         * *.log (You can also use wildcard, so will ignore every file that ends in .log no matter whats written before that)
 * The next time you run git, it will ask if your want to add and commit the .gitignore and yes you do want to do that.
-    * You will also notice that the said ignore files will no longer appear when checking your repo, even when making changes to said files. 
-
-
+    * You will also notice that the said ignore files will no longer appear when checking your repo, even when making changes to said files.
