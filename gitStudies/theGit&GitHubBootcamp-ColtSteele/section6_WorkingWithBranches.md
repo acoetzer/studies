@@ -130,3 +130,16 @@
 ![gitbranch-DCommand](./src/gitbranch-DCommand.png 'An example of deleting a git branch with the flag -D')
 
 <br>
+
+## Renaming a branch
+* You can rename a branch almsot the same way you rename a file in linux, using the move flag -m.
+    * **git branch -m < new-branch-name >**
+        * Take note that unlike deleting a branch you need to be on that specific branch before you can rename it.
+
+<br>
+
+![gitbranch-mCommand](./src/gitbranch-mCommand.png 'An example of renaming a git branch')
+
+<br>
+
+* In the image above you can see how the branch name was changed.
