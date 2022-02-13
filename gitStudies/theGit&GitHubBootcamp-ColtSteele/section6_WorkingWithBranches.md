@@ -5,14 +5,25 @@
 <!-- Table of Contents -->
 
 ### Table of Contents
-- [](#)
-- [](#)
-- [](#)
-- [](#)
-- [](#)
-- [](#)
-- [](#)
-- [](#)
+- [Introducing Branches](#introducing-branches)
+    - [What is a branch?](#what-is-a-branch)
+- [The Master Branch (Or Is It Main?)](#the-master-branch-or-is-it-main)
+- [What On Earth Is HEAD?](#what-on-earth-is-head)
+- [Viewing All Branches With Git Branch](#viewing-all-branches-with-git-branch)
+- [Creating & Switching Branches](#creating--switching-branches)
+    - [Creating a branch + various methods](#creating-a-branch--various-methods)
+    - [Switching branches](#switching-branches)
+- [Another Option: Git Checkout Vs. Git Switch](#another-option-git-checkout-vs-git-switch)
+- [Switching Branches With Unstaged Changes?](#switching-branches-with-unstaged-changes)
+    - [Switching branches while having unstaged modified files.](#switching-branches-while-having-unstaged-modified-files)
+    - [Switching branches while having untracked files.](#switching-branches-while-having-untracked-files)
+- [Deleting & Renaming Branches](#deleting--renaming-branches)
+    - [Deleting a branch](#deleting-a-branch)
+    - [git branch -d < branch-name >](#git-branch--d--branch-name)
+    - [git branch -D < branch-name >](#git-branch--d--branch-name-1)
+    - [Renaming a branch](#renaming-a-branch)
+
+
 
 <br>
 <br>
@@ -115,7 +126,7 @@
 
 <br>
 
-**git branch -d < branch-name >**
+## **git branch -d < branch-name >**
 
 ![gitbranch-dCommand](./src/gitbranch-dCommand.png 'An example of deleting a git branch with the flag -d')
 
@@ -125,7 +136,7 @@
 
 <br>
 
-**git branch -D < branch-name >**
+## **git branch -D < branch-name >**
 
 ![gitbranch-DCommand](./src/gitbranch-DCommand.png 'An example of deleting a git branch with the flag -D')
 
