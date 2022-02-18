@@ -31,4 +31,5 @@
 |git switch < branch-name > <br> git switch -c < new-branch > |git switch is used to switch between branches on a git repository, however it can also create a branch with the correct flag.|
 |git checkout <br> git checkout -b < new-branch >|git checkout is an older command than git switch, however it do many things. The 2 higlighted here are examples of switching branches and creating a branch.
 |git merge < branch-name  >|This command merges branches together|
-|git diff <br> git diff HEAD | git diff HEAD < filename  > <br> git diff --staged | git diff --staged < filename  > <br> git diff --cached <br> git diff branch1..branch2 <br> git diff commit1..commit2|The git diff command shows comparisons between files|
+|git diff <br> git diff HEAD or git diff HEAD < filename  > <br> git diff --staged or git diff --staged < filename  > <br> git diff --cached <br> git diff branch1..branch2 <br> git diff commit1..commit2|The git diff command shows comparisons between files|
+|git stash or git stash save <br> git stash pop <br> git stash apply <br> git stash list <br> git stash drop <br> git stash clear |git stash, allows you to stash files without having to commit, allowing you to move freely among branches|
