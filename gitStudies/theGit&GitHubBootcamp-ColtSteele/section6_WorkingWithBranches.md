@@ -53,6 +53,9 @@
 # What On Earth Is HEAD?
 * A HEAD is a term within git, which put simply is a pointer that references your current location within a git repository.
     * So as you move from branch to branch, the HEAD will reference the current location.
+        * To add some clarification, as coming back to this section later on.
+        * HEAD points the current branch and the branch references the latest commit on that branch.
+            * Later in the course, we get into the idea of being able to 'time travel', this introducing the the idea of de-taching HEAD, where HEAD nolonger points to the branch, but a specific commit.
 
 <br>
 
