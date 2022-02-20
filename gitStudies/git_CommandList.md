@@ -5,6 +5,7 @@
 
 ### Table of Contents
 - [Git Configuration Command Table](#git-configuration-command-table)
+- [Setting up ssh keys for git](#setting-up-ssh-keys-for-git)
 - [Git basic Command Table](#git-basic-command-table)
 
 <br>
@@ -17,6 +18,11 @@
 |git config --global user.email 'Email Address' <br> git config user.email|This sets the global email for git <br> This calls upon the config file, to view the current user email.|
 |git config --global core.editor 'User preferred Editor' <br> git config core.editor|This sets the default editor for the use with git <br> This calls upon the config file, to view the current default editor.|
 |git config --list <br> cat ~/.gitconfig|To list all values in the config file|
+
+### **Setting up ssh keys for git**
+|ssh steps|Description|
+|:---|:---|
+| ssh-keygen -t ed25519 -C 'your@email.here' <br> exec ssh-agent <br> ssh-add < private key/ ~/.ssh/id_ed25519 > <br> cat ~/.ssh/id_ed25519 & copy this to github | ez|
 
 <br>
 
