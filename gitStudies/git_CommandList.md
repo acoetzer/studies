@@ -33,6 +33,6 @@
 |git merge < branch-name  >|This command merges branches together|
 |git diff <br> git diff HEAD or git diff HEAD < filename  > <br> git diff --staged or git diff --staged < filename  > <br> git diff --cached <br> git diff branch1..branch2 <br> git diff commit1..commit2|The git diff command shows comparisons between files|
 |git stash or git stash save <br> git stash pop <br> git stash apply <br> git stash list <br> git stash drop <br> git stash clear |git stash, allows you to stash files without having to commit, allowing you to move freely among branches|
-|git restore < filename >|git restore, the same as git checkout HEAD < filename >, it basically restores a file to the latest commit|
+|git restore < filename > <br> git restore --staged < filename >|git restore, the same as git checkout HEAD < filename >, it basically restores a file to the latest commit|
 |git reset < commit-hash ><br> git reset --hard < commit-hash>|git reset, resets you to a previous commit, however deletes said commits from your history|
 |git revert < Commit-hash >|git revert is the same as git reset, however it doesn't remove your commits, it goes forward by creating what is know as a revert commit|
