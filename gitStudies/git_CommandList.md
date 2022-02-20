@@ -16,6 +16,7 @@
 |a) git config --global user.name 'Username' <br> b) git config user.name|This sets the global username for git <br> This calls upon the config file, to view the current username.|
 |git config --global user.email 'Email Address' <br> git config user.email|This sets the global email for git <br> This calls upon the config file, to view the current user email.|
 |git config --global core.editor 'User preferred Editor' <br> git config core.editor|This sets the default editor for the use with git <br> This calls upon the config file, to view the current default editor.|
+|git config --list <br> cat ~/.gitconfig|To list all values in the config file|
 
 <br>
 
