@@ -1,4 +1,4 @@
-###### ____.section2_Introducing...Git
+###### - section2_Introducing...Git
 
 <br>
 

@@ -1,4 +1,4 @@
-###### ____.studies
+###### - studies
 # Welcome to my virtual study room.
 ## These are the courses I am currently working though and or finished.
 

@@ -1,4 +1,4 @@
-###### ____.section4_GettingHelpExercise
+###### - section4_GettingHelpExercise
 
 ## Question 1.
 

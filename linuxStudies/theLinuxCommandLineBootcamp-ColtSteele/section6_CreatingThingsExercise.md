@@ -1,4 +1,4 @@
-###### ____.section6_CreatingThingsExercise
+###### - section6_CreatingThingsExercise
 
 ## Question 1, 2
 

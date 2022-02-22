@@ -1,4 +1,4 @@
-###### ____section6_WorkingWithBranches
+###### - section6_WorkingWithBranches
 
 <br>
 

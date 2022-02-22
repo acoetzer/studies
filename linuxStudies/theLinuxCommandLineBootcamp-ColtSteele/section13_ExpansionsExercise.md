@@ -1,4 +1,4 @@
-###### ____.section13_ExpansionsExercise
+###### - section13_ExpansionsExercise
 
 ## Part 1
 ## Question 1

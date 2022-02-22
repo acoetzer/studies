@@ -1,4 +1,4 @@
-###### ____section8_ComparingChangesWithGitDiff
+###### - section8_ComparingChangesWithGitDiff
 
 <br>
 

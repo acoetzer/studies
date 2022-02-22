@@ -1,4 +1,4 @@
-###### ___.linux_ScriptingExample
+###### - linux_ScriptingExample
 
 ## Simple Backup Program
 

@@ -1,4 +1,4 @@
-###### ____section5_CommitsInDetail(AndRelatedTopics)
+###### - section5_CommitsInDetail(AndRelatedTopics)
 
 <br>
 
