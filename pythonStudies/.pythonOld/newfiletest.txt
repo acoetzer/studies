@@ -1,3 +1,0 @@
-I create this file within python
-This should be the second line in this file
-this should add a thrid line to the text file, while using the .append method
