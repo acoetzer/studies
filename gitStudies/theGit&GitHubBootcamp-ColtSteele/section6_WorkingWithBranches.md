@@ -184,7 +184,7 @@ You can Delete a branch using the **git branch -d < branch-name >** command. Tho
 <br>
 <br>
 
-![gitbranch-dCommand](./src/gitbranch-dCommand.png 'An example of deleting a git branch with the flag -d')
+![gitbranchlowerdCommand](./src/gitbranchlowerdCommand.png 'An example of deleting a git branch with the flag -d')
 
 <br>
 <br>
@@ -194,7 +194,7 @@ You can Delete a branch using the **git branch -d < branch-name >** command. Tho
 <br>
 <br>
 
-![gitbranch-DCommand](./src/gitbranch-DCommand.png 'An example of deleting a git branch with the flag -D')
+![gitbranchupperDCommand](./src/gitbranchupperDCommand.png 'An example of deleting a git branch with the flag -D')
 
 <br>
 <br>
