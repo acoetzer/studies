@@ -9,8 +9,8 @@
 
 ### Table of Contents
 + [Welcome to my virtual study room](#welcome-to-my-virtual-study-room)
-+ [The Linux Command Line Bootcamp: Beginner To Power User](#the-linux-command-line-bootcamp-beginner-to-power-userhttpswwwudemycomcoursethe-linux-command-line-bootcamp-the-linux-command-line-bootcamp-beginner-to-power-user-by-colt-steele)
-+ [The Git & Github Bootcamp](#the-git--github-bootcamphttpswwwudemycomcoursegit-and-github-bootcamp-the-git--github-bootcamp)
++ [The Linux Command Line Bootcamp: Beginner To Power User](#the-linux-command-line-bootcamp-beginner-to-power-user)
++ [The Git & Github Bootcamp](#the-git--github-bootcamp)
 
 ![divider](./src/divider.png 'Divider')
 
@@ -22,8 +22,8 @@ These are the courses I currently finished. Each course is linked to the Udemy p
 <br>
 <br>
 
-#### Course
-## [The Linux Command Line Bootcamp: Beginner To Power User](https://www.udemy.com/course/the-linux-command-line-bootcamp/ 'The Linux Command Line Bootcamp: Beginner To Power User by Colt Steele')
+## The Linux Command Line Bootcamp: Beginner To Power User
+[The Linux Command Line Bootcamp: Beginner To Power User](https://www.udemy.com/course/the-linux-command-line-bootcamp/ 'The Linux Command Line Bootcamp: Beginner To Power User by Colt Steele')
 ### by Colt Steele
 
 <br>
@@ -35,8 +35,8 @@ These are the courses I currently finished. Each course is linked to the Udemy p
 <br>
 <br>
 
-#### Course
-## [The Git & Github Bootcamp](https://www.udemy.com/course/git-and-github-bootcamp/ 'The Git & Github Bootcamp')
+## The Git & Github Bootcamp
+[The Git & Github Bootcamp](https://www.udemy.com/course/git-and-github-bootcamp/ 'The Git & Github Bootcamp')
 ###  by Colt Steele
 
 <br>
