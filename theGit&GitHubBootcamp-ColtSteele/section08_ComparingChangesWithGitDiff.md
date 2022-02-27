@@ -4,7 +4,7 @@
 
 <!-- Section Header -->
 
-![section8Header](../src/doc/section8Header.png 'Section 8 Header')
+![section8Header](../src/doc/section08Header.png 'Section 8 Header')
 
 <!-- Table of Contents  -->
 
