@@ -4,7 +4,7 @@
 
 <!-- Section Header -->
 
-![seciotn14Header](./src/doc/section14Header.png 'Section 14 Header')
+![seciotn14Header](../src/doc/section14Header.png 'Section 14 Header')
 
 <!-- Table of Contents -->
 
@@ -18,7 +18,7 @@
 + [Branch protection rules](#branch-protection-rules)
 + [The fork & clone workflow](#the-fork--clone-workflow)
 
-![divider](./src/doc/divider.png 'Divider')
+![divider](../src/doc/divider.png 'Divider')
 
 <!-- Start of Document -->
 
@@ -27,7 +27,7 @@
 <br>
 <br>
 
-* ![centralizedWorkflow](./src/centralizedWorkflow.png 'Illustation showcasing a centralized workflow')
+* ![centralizedWorkflow](../src/centralizedWorkflow.png 'Illustation showcasing a centralized workflow')
 
 <br>
 <br>
@@ -48,7 +48,7 @@ This is not a desired workflow.
 <br>
 <br>
 
-* ![featureBranchWorkflow](./src/featureBranchWorkflow.png 'Illustration showcasing a feature branch workflow')
+* ![featureBranchWorkflow](../src/featureBranchWorkflow.png 'Illustration showcasing a feature branch workflow')
 
 <br>
 <br>
@@ -111,7 +111,7 @@ On github, in settings you can setup branch protection rules, so as an exmaple, 
 <br>
 <br>
 
-* ![fork&CloneWorkflow](./src/fork&CloneWorkflow.png 'Illustration of a fork and clone workflow')
+* ![fork&CloneWorkflow](../src/fork&CloneWorkflow.png 'Illustration of a fork and clone workflow')
 
 <br>
 <br>
@@ -129,4 +129,4 @@ Once you wish to contribute to to the original repo, you simply submit a PR on g
 
 <!-- End of Document -->
 
-![endDivider](./src/doc/endDivider.png 'End of section 14')
+![endDivider](../src/doc/endDivider.png 'End of section 14')

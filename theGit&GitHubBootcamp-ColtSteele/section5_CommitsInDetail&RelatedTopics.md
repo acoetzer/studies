@@ -4,7 +4,7 @@
 
 <!-- Section Header -->
 
-![section5Header](./src/doc/section5Header.png 'Section 5 Header')
+![section5Header](../src/doc/section5Header.png 'Section 5 Header')
 
 <!-- Table of Contents -->
 
@@ -22,7 +22,7 @@
     - [git commit --amend](#git-commit---amend)
 + [Ignoring Files w/ .gitignore](#ignoring-files-w-gitignore)
 
-![divider](./src/doc/divider.png 'Divider')
+![divider](../src/doc/divider.png 'Divider')
 
 <!-- Start of Document -->
 
@@ -82,7 +82,7 @@ When using the **git log** command you are give a log that takes up a lot of spa
 <br>
 <br>
 
-![gitlogCommanda](./src/gitlogCommanda.png 'Example of git log without a compact output')
+![gitlogCommanda](../src/gitlogCommanda.png 'Example of git log without a compact output')
 
 <br>
 <br>
@@ -92,7 +92,7 @@ When using the **git log** command you are give a log that takes up a lot of spa
 <br>
 <br>
 
-![gitlogCommandb](./src/gitlogCommandb.png 'Example of compact git log output')
+![gitlogCommandb](../src/gitlogCommandb.png 'Example of compact git log output')
 
 <br>
 <br>
@@ -139,4 +139,4 @@ The next time you run git, it will ask if your want to add and commit the .gitig
 
 <!-- End of Document -->
 
-![endDivider](./src/doc/endDivider.png 'End of Document')
+![endDivider](../src/doc/endDivider.png 'End of Document')

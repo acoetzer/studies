@@ -4,7 +4,7 @@
 
 <!-- Section Header -->
 
-![section6Header](./src/doc/section6Header.png 'Section 6 Header')
+![section6Header](../src/doc/section6Header.png 'Section 6 Header')
 
 <!-- Table of Contents -->
 
@@ -28,7 +28,7 @@
     - [git branch -D < branch-name >](#git-branch--d--branch-name-1)
     - [Renaming a branch](#renaming-a-branch)
 
-![divider](./src/doc/divider.png 'Divider')
+![divider](../src/doc/divider.png 'Divider')
 
 <!-- Start of Document -->
 
@@ -42,7 +42,7 @@
 <br>
 <br>
 
-![gitBranchOverview](./src/gitBranchOverview.png 'An visual example of what git branching would look like')
+![gitBranchOverview](../src/gitBranchOverview.png 'An visual example of what git branching would look like')
 
 <br>
 <br>
@@ -68,7 +68,7 @@ The master branch is the initial branch made when initializing a git repository.
 <br>
 <br>
 
-![gitHEAD](./src/gitHEAD.png 'An example of git HEAD pointer')
+![gitHEAD](../src/gitHEAD.png 'An example of git HEAD pointer')
 
 <br>
 <br>
@@ -87,7 +87,7 @@ Later in the course, we get into the idea of being able to 'time travel', this i
 <br>
 <br>
 
-![gitbranchCommand](./src/gitbranchCommand.png 'An example of the git branch command')
+![gitbranchCommand](../src/gitbranchCommand.png 'An example of the git branch command')
 
 <br>
 <br>
@@ -136,7 +136,7 @@ There some things to look out for when switch branches
 <br>
 <br>
 
-![gitUnstagedModifiedBranchSwitch](./src/gitUnstagedModifiedBranchSwitchErr.png 'An example of when trying to branch switch with an unstaged modified version of a file')
+![gitUnstagedModifiedBranchSwitch](../src/gitUnstagedModifiedBranchSwitchErr.png 'An example of when trying to branch switch with an unstaged modified version of a file')
 
 <br>
 <br>
@@ -153,7 +153,7 @@ In the image above, you can see the user gets a warning when trying to switch br
 <br>
 <br>
 
-![gitUntrackedBranchSwitch](./src/gitUntrackedBranchSwitch.png 'An example of when switching a branch while have an untracked file within the git repo')
+![gitUntrackedBranchSwitch](../src/gitUntrackedBranchSwitch.png 'An example of when switching a branch while have an untracked file within the git repo')
 
 <br>
 <br>
@@ -184,7 +184,7 @@ You can Delete a branch using the **git branch -d < branch-name >** command. Tho
 <br>
 <br>
 
-![gitbranchlowerdCommand](./src/gitbranchlowerdCommand.png 'An example of deleting a git branch with the flag -d')
+![gitbranchlowerdCommand](../src/gitbranchlowerdCommand.png 'An example of deleting a git branch with the flag -d')
 
 <br>
 <br>
@@ -194,7 +194,7 @@ You can Delete a branch using the **git branch -d < branch-name >** command. Tho
 <br>
 <br>
 
-![gitbranchupperDCommand](./src/gitbranchupperDCommand.png 'An example of deleting a git branch with the flag -D')
+![gitbranchupperDCommand](../src/gitbranchupperDCommand.png 'An example of deleting a git branch with the flag -D')
 
 <br>
 <br>
@@ -204,7 +204,7 @@ You can Delete a branch using the **git branch -d < branch-name >** command. Tho
 <br>
 <br>
 
-![gitbranch-mCommand](./src/gitbranch-mCommand.png 'An example of renaming a git branch')
+![gitbranch-mCommand](../src/gitbranch-mCommand.png 'An example of renaming a git branch')
 
 <br>
 <br>
@@ -219,4 +219,4 @@ In the image above you can see how the branch name was changed.
 
 <!-- End of Document -->
 
-![endDivider](./src/doc/endDivider.png 'End of Document')
+![endDivider](../src/doc/endDivider.png 'End of Document')

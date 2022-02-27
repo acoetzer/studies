@@ -4,7 +4,7 @@
 
 <!-- Section Header -->
 
-![section17Header](./src/doc/section17Header.png 'Section 17 Header')
+![section17Header](../src/doc/section17Header.png 'Section 17 Header')
 
 <!-- Table of Contents -->
 
@@ -21,7 +21,7 @@
 + [Deleting tags](#deleting-tags)
 + [IMPORTANT: Pushing tags](#important-pushing-tags)
 
-![divider](./src/doc/divider.png 'Divider')
+![divider](../src/doc/divider.png 'Divider')
 
 <!-- Start of Document -->
 
@@ -129,4 +129,4 @@ The most important thing to remember is to push your tags, when pushing your com
 
 <!-- End of Document -->
 
-![endDivider](./src/doc/endDivider.png 'End of Document')
+![endDivider](../src/doc/endDivider.png 'End of Document')

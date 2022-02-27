@@ -4,7 +4,7 @@
 
 <!-- Section Header -->
 
-![section13Header](./src/doc/section13Header.png 'Section 13 Header')
+![section13Header](../src/doc/section13Header.png 'Section 13 Header')
 
 <!-- Table of Contents -->
 
@@ -12,7 +12,7 @@
 
 + [Empty Document](#empty-document)
 
-![divider](./src/doc/divider.png 'Divider')
+![divider](../src/doc/divider.png 'Divider')
 
 <!-- Start of Document -->
 
@@ -25,4 +25,4 @@ There was nothing for taking notes, merely a discuss on various topics
 
 <!-- End of Document -->
 
-![endDivider](./src/doc/endDivider.png 'End of Document')
+![endDivider](../src/doc/endDivider.png 'End of Document')

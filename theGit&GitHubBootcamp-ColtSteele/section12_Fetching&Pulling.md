@@ -4,7 +4,7 @@
 
 <!-- Section Header-->
 
-![section12Header](./src/doc/section12Header.png 'Section 12 Header')
+![section12Header](../src/doc/section12Header.png 'Section 12 Header')
 
 <!-- Table of Contents -->
 
@@ -19,7 +19,7 @@
     - [A shorter syntax for Git Pull](#a-shorter-syntax-for-git-pull)
 + [git fetch vs git pull](#git-fetch-vs-git-pull)
 
-![divider](./src/doc/divider.png 'Divider')
+![divider](../src/doc/divider.png 'Divider')
 
 <!-- Start of Document -->
 
@@ -28,7 +28,7 @@
 <br>
 <br>
 
-![remoteTrackingBrancha](./src/remoteTrackingBrancha.png 'illustration of a remote tracking branch')
+![remoteTrackingBrancha](../src/remoteTrackingBrancha.png 'illustration of a remote tracking branch')
 
 <br>
 <br>
@@ -40,7 +40,7 @@ This is referred to as a _remote tracking branch_, it is essentially referencing
 <br>
 <br>
 
-![remoteTrackingBranchb](./src/remoteTrackingBranchb.png 'Illustration demonstrating the local does not affect the remote branch unless pushed')
+![remoteTrackingBranchb](../src/remoteTrackingBranchb.png 'Illustration demonstrating the local does not affect the remote branch unless pushed')
 
 <br>
 <br>
@@ -66,7 +66,7 @@ The way you do is this with **git checkout origin/main**, this ofcourse will pla
 <br>
 <br>
 
-![remoteTrackingBranchConnection](./src/remoteTrackingBranchConnection.png 'Illustration showing remote tracking branch connection after cloning')
+![remoteTrackingBranchConnection](../src/remoteTrackingBranchConnection.png 'Illustration showing remote tracking branch connection after cloning')
 
 <br>
 <br>
@@ -87,7 +87,7 @@ Thankfully **git switch < remote-branch-name >** will automatically create that 
 <br>
 <br>
 
-![gitFetch&PullDiagram](./src/gitFetch&PullDiagram.png 'Diagram showing the difference between Fetch and Pull')
+![gitFetch&PullDiagram](../src/gitFetch&PullDiagram.png 'Diagram showing the difference between Fetch and Pull')
 
 <br>
 <br>
@@ -138,4 +138,4 @@ A shorter syntax is **git pull**, git pull will default to the default origin, a
 
 <!-- End of Document -->
 
-![endDivider](./src/doc/endDivider.png 'End of Document')
+![endDivider](../src/doc/endDivider.png 'End of Document')

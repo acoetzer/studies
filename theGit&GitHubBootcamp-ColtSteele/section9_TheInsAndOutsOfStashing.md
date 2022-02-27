@@ -4,7 +4,7 @@
 
 <!-- Section Header -->
 
-![section9Header](./src/doc/section9Header.png 'Section 9 Header')
+![section9Header](../src/doc/section9Header.png 'Section 9 Header')
 
 <!-- Table of Contents -->
 
@@ -18,7 +18,7 @@
 + [Working with multiple stashes](#working-with-multiple-stashes)
 + [Dropping & Clearing the stash](#dropping--clearing-the-stash)
 
-![divider](./src/doc/divider.png 'Divider')
+![divider](../src/doc/divider.png 'Divider')
 
 <!-- Start of Document -->
 
@@ -78,4 +78,4 @@ You can also completely remove all stash or just one in particular by using
 
 <!-- End of Document -->
 
-![endDivider](./src/doc/endDivider.png 'End of Document')
+![endDivider](../src/doc/endDivider.png 'End of Document')

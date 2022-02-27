@@ -4,7 +4,7 @@
 
 <!-- Section Header -->
 
-![section16Header](./src/doc/section16Header.png 'Section 16 Header')
+![section16Header](../src/doc/section16Header.png 'Section 16 Header')
 
 <!-- Table of Contents -->
 
@@ -12,7 +12,7 @@
 
 + [Introducing Interactive Rebase](#introducing-interactive-rebase)
 
-![divider](./src/doc/divider.png 'Divider')
+![divider](../src/doc/divider.png 'Divider')
 
 <!-- Start of Document -->
 
@@ -39,4 +39,4 @@ Its important to note that it will subsequently redo history as well.
 
 <!-- End of Document -->
 
-![endDivider](./src/doc/endDivider.png 'End of Document')
+![endDivider](../src/doc/endDivider.png 'End of Document')

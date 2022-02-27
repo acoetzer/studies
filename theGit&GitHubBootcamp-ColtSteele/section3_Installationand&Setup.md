@@ -4,7 +4,7 @@
 
 <!-- Section Header -->
 
-![section3Header](./src/doc/section3Header.png 'Section 3 Header')
+![section3Header](../src/doc/section3Header.png 'Section 3 Header')
 
 <!-- Table of Contents -->
 
@@ -14,7 +14,7 @@
     - [Git Name Configure](#git-name-configure)
     - [git Email Configure](#git-email-configure)
 
-![divider](./src/doc/divider.png 'Divider')
+![divider](../src/doc/divider.png 'Divider')
 
 ## **Configuring your Git name and email**
 
@@ -37,7 +37,7 @@ Prints current configured username credential.
 <br>
 <br>
 
-![gitconfigusernameCommand](./src/gitconfigusernameCommand.png "The git user.name config command")
+![gitconfigusernameCommand](../src/gitconfigusernameCommand.png "The git user.name config command")
 
 <br>
 <br>
@@ -61,11 +61,11 @@ Prints current configured username credential.
 <br>
 <br>
 
-![gitconfiguseremailCommand](./src/gitconfiguseremailCommand.png "The git user.email config command")
+![gitconfiguseremailCommand](../src/gitconfiguseremailCommand.png "The git user.email config command")
 
 <br>
 <br>
 
 <!-- End of Document -->
 
-![endDivider](./src/doc/endDivider.png 'End of Document')
+![endDivider](../src/doc/endDivider.png 'End of Document')

@@ -4,7 +4,7 @@
 
 <!-- Section Header -->
 
-![section15Header](./src/doc/section15Header.png 'Section 15 Header')
+![section15Header](../src/doc/section15Header.png 'Section 15 Header')
 
 <!-- Table of Contents -->
 
@@ -14,7 +14,7 @@
     - [Comparing merging and rebasing](#comparing-merging-and-rebasing)
 + [The Golden Rule: When NOT torebase](#the-golden-rule-when-not-to-rebase)
 
-![divider](./src/doc/divider.png 'Divider')
+![divider](../src/doc/divider.png 'Divider')
 
 <!-- Start of Document -->
 
@@ -23,7 +23,7 @@
 <br>
 <br>
 
-![](./src/gitRebasingOverview.png 'An illustration showing the ')
+![](../src/gitRebasingOverview.png 'An illustration showing the ')
 
 <br>
 <br>
@@ -68,4 +68,4 @@ Though self explanatory, this is the step that needs to be followed.
 
 <!-- End of Document -->
 
-![endDivider](./src/doc/endDivider.png 'End of Document')
+![endDivider](../src/doc/endDivider.png 'End of Document')

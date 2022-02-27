@@ -4,7 +4,7 @@
 
 <!-- Section Header -->
 
-![section2Header](./src/doc/section2Header.png 'Section 2 Header')
+![section2Header](.../src/doc/section2Header.png 'Section 2 Header')
 
 <!-- Table Of Contents  -->
 
@@ -15,7 +15,7 @@
     - [What is a VCS or a Version Control System](#what-is-a-vcs-or-a-version-control-system)
 + [Visualizing Git](#visualizing-git)
 
-![divider](./src/doc/divider.png 'Divider')
+![divider](../src/doc/divider.png 'Divider')
 
 <!-- Start of Document -->
 
@@ -49,7 +49,7 @@ When visualizing Git you you first have to look at what Git can do. Git can be u
 <br>
 <br>
 
-![visualizingGit](./src/visualizingGit.png 'A diagram showing a visualization of how git can be used')
+![visualizingGit](../src/visualizingGit.png 'A diagram showing a visualization of how git can be used')
 
 <br>
 <br>
@@ -63,4 +63,4 @@ They can also at a later merge some of the older backtracked ideas into the fina
 
 <!-- End of Document -->
 
-![endDivider](./src/doc/endDivider.png 'End of Document')
+![endDivider](../src/doc/endDivider.png 'End of Document')

@@ -4,7 +4,7 @@
 
 <!-- Section Header -->
 
-![section4Header](./src/doc/section4Header.png 'Section4 Header')
+![section4Header](../src/doc/section4Header.png 'Section4 Header')
 
 <!-- Table of Contents -->
 
@@ -20,7 +20,7 @@
 + [Finally, the git commit command](#finally-the-git-commit-command)
 + [The git log command](#the-git-log-command)
 
-![divider](./src/doc/divider.png 'Divider')
+![divider](../src/doc/divider.png 'Divider')
 
 <!-- Start of Document -->
 
@@ -38,7 +38,7 @@ A git repo is a workspace which tracks and manages files within a folder. _Repo 
 <br>
 <br>
 
-![repoJarDiagram](./src/repoJarDiagram.png 'Diagram illustrating a git repository')
+![repoJarDiagram](../src/repoJarDiagram.png 'Diagram illustrating a git repository')
 
 <br>
 <br>
@@ -55,7 +55,7 @@ A git repo is a workspace which tracks and manages files within a folder. _Repo 
 <br>
 <br>
 
-![hiddenGitFolder](./src/hiddenGitFolder.png 'Illustrating the .git folder within a git repo')
+![hiddenGitFolder](../src/hiddenGitFolder.png 'Illustrating the .git folder within a git repo')
 
 <br>
 <br>
@@ -81,7 +81,7 @@ Anything inside the initial repository, will be added to the git repo this inclu
 <br>
 <br>
 
-![gitWorkflowOverview](./src/gitWorkflowOverview.png 'Illustration showing the git workflow of committing a file')
+![gitWorkflowOverview](../src/gitWorkflowOverview.png 'Illustration showing the git workflow of committing a file')
 
 <br>
 <br>
@@ -99,7 +99,7 @@ The comment is a summarized description of what is being committed, However, bef
 <br>
 <br>
 
-![gitaddCommand](./src/gitaddCommand.png 'Example of a git add command')
+![gitaddCommand](../src/gitaddCommand.png 'Example of a git add command')
 
 <br>
 <br>
@@ -116,7 +116,7 @@ Seeing the image above you can see how **git add** allows you to add specific fi
 <br>
 <br>
 
-![gitcommitCommand](./src/gitcommitCommand.png 'Example of a git commit command')
+![gitcommitCommand](../src/gitcommitCommand.png 'Example of a git commit command')
 
 <br>
 <br>
@@ -131,7 +131,7 @@ We then use the **git commit -m 'comment'** command to commit changes that are i
 <br>
 <br>
 
-![gitlogCommand](./src/gitlogCommand.png 'Example of the git log command')
+![gitlogCommand](../src/gitlogCommand.png 'Example of the git log command')
 
 <br>
 <br>
@@ -143,4 +143,4 @@ The **git log** command shows the history of previous commits made in that repos
 
 <!-- End of Document -->
 
-![endDivider](./src/doc/endDivider.png 'End of Document')
+![endDivider](../src/doc/endDivider.png 'End of Document')

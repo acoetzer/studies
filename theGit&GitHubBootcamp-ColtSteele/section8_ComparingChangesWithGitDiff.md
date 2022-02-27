@@ -4,7 +4,7 @@
 
 <!-- Section Header -->
 
-![section8Header](./src/doc/section8Header.png 'Section 8 Header')
+![section8Header](../src/doc/section8Header.png 'Section 8 Header')
 
 <!-- Table of Contents  -->
 
@@ -22,7 +22,7 @@
 + [Comparing changes across branches](#comparing-changes-across-branches)
 + [Comparing changes across commits](#comparing-changes-across-commits)
 
-![divider](./src/doc/divider.png 'Divider')
+![divider](../src/doc/divider.png 'Divider')
 
 <!-- Start od Document -->
 
@@ -57,7 +57,7 @@ The same for 2 different commit (hash values)
 <br>
 <br>
 
-![gitDiffChunkBreakdown](./src/gitDiffChunkBreakdown.png 'An illustration of how to read a giff chunk')
+![gitDiffChunkBreakdown](../src/gitDiffChunkBreakdown.png 'An illustration of how to read a giff chunk')
 
 <br>
 <br>
@@ -83,7 +83,7 @@ Taking a look at the above illustration, this is what one could see when looking
 <br>
 <br>
 
-![gitDiffChunkHeaderBreakdown](./src/gitDiffChunkHeaderBreakdown.png 'A breakdown of the chunk header')
+![gitDiffChunkHeaderBreakdown](../src/gitDiffChunkHeaderBreakdown.png 'A breakdown of the chunk header')
 
 <br>
 <br>
@@ -93,7 +93,7 @@ Taking a look at the above illustration, this is what one could see when looking
 <br>
 <br>
 
-![gitDiffOverall](./src/gitDiffOverall.png 'An overall illustration of how git diff works')
+![gitDiffOverall](../src/gitDiffOverall.png 'An overall illustration of how git diff works')
 
 <br>
 <br>
@@ -153,4 +153,4 @@ Note, once again you can separate the commits by 2 .. or a space
 
 <!-- End of Document -->
 
-![endDivider](./src/doc/endDivider.png 'End of Document')
+![endDivider](../src/doc/endDivider.png 'End of Document')

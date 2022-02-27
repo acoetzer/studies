@@ -4,7 +4,7 @@
 
 <!-- Section Header -->
 
-![section11Header](./src/doc/section11Header.png 'Section 11 Header')
+![section11Header](../src/doc/section11Header.png 'Section 11 Header')
 
 <!-- Table of Contents -->
 
@@ -27,7 +27,7 @@
 + [Another github Workflow: Cloning First](#another-github-workflow-cloning-first)
 + [Main & Master: Github Default Branches](#main--master-github-default-branches)    
 
-![divider](./src/doc/divider.png 'Divider')
+![divider](../src/doc/divider.png 'Divider')
 
 <!-- Start of Document -->
 
@@ -182,4 +182,4 @@ I would recommend this, as deleting from github before local, can result in **gi
 
 <!-- End of Document -->
 
-![endDivider](./src/doc/endDivider.png 'End of Document')
+![endDivider](../src/doc/endDivider.png 'End of Document')
