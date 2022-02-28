@@ -1,53 +1,62 @@
 ###### - README
-<br>
-
-<!-- Section Header -->
-
-![readmeHeader](./src/readmeHeader.png 'README Header')
-
-<!-- Table of contents-->
-
-### Table of Contents
-+ [Welcome to my virtual study room](#welcome-to-my-virtual-study-room)
-+ [The Linux Command Line Bootcamp: Beginner To Power User](#the-linux-command-line-bootcamp-beginner-to-power-user)
-+ [The Git & Github Bootcamp](#the-git--github-bootcamp)
-
-![divider](./src/divider.png 'Divider')
-
-<!-- Start of Document -->
-
-## Welcome to my virtual study room.
-These are the courses I currently finished. Each course is linked to the Udemy page associated with the course. As I complete a course this README will be updated.
-
-<br>
-<br>
-
-## The Linux Command Line Bootcamp: Beginner To Power User
-[The Linux Command Line Bootcamp: Beginner To Power User](https://www.udemy.com/course/the-linux-command-line-bootcamp/ 'The Linux Command Line Bootcamp: Beginner To Power User by Colt Steele')
-### by Colt Steele
 
 <br>
 
-|Certificate|
-|:---|
-|![Course Certification of Completion](.//src/certs/theLinuxCommandLineBootcampBeginnerToPowerUserCertification.jpg 'The Linux Command Line Bootcamp Beginner To Power User Certification')|
+<!-- Section Header-->
+
+![readmeHeader](./src/doc/readmeHeader.png 'README Header')
+
+<!-- 
+Table of Contents 
+No table of contents added here
+Maybe in future will provide a ToC list. 
+-->
+
+![divider](./src/doc/divider.png 'Divider')
+
+<!--
+Start of Document
+-->
+
+##### Working Tree
+
+List of current branch working tree. Keep updated with general idea of contents and not numerous blobs.
 
 <br>
 <br>
 
-## The Git & Github Bootcamp
-[The Git & Github Bootcamp](https://www.udemy.com/course/git-and-github-bootcamp/ 'The Git & Github Bootcamp')
-###  by Colt Steele
+    src <- 'general images files for course.'
+        doc <- 'document specific images, such as dividers, headers etc..'
 
-<br>
-
-|Certification|
-|:---|
-|![The Git & Github Bootcamp](./src/certs/theGit&GithubBootcampCertification.jpg 'The Git & Github Bootcamp Certification')|
+**_tree_** : All document images will be kept here for this branch.
 
 <br>
 <br>
 
-<!-- End of Document -->
+     theGit&GithubBootcamp-ColtSteele <- 'course notes here'
+        resources <- 'course resources & slides here'
 
-![endDivider](./src/endDivider.png 'End of Document')
+**_tree_** : Course Notes and Course Resources.
+
+<br>
+<br>
+
+    git_ComandList.md <- 'command list table'
+
+**_blob_** : Command list for git for future references.
+
+<br>
+<br>
+
+    README.md <- 'readme for github'
+
+**_blob_** : README Documentation for current branch.
+
+<br>
+<br>
+
+<!--
+End of Document
+-->
+
+![endDivider](./src/doc/endDivider.png 'End of Document')
