@@ -6,7 +6,7 @@
 Section Header
 -->
 
-![readmeHeader](./src/linuxCommands/doc/readmeHeader.png 'README Header')
+![readmeHeader](./src/doc/readmeHeader.png 'README Header')
 
 <!-- 
 Table of Contents 
@@ -58,7 +58,12 @@ List of current branch working tree with additional notes at the bottom. <br>
 
 ## **Notes**
 
-    + No notes atm
+    + theLinuxCommandLineBootcamp-ColtSteele
+        - make images headers for each section
+    
+    + linux_CommandList.md
+        - make image header
+        - re-organise command list the same way as the gitsStudies branch
 
 <!--
 End of Document
