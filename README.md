@@ -12,7 +12,8 @@ No table of contents added here
 Maybe in future will provide a ToC list. 
 -->
 
-![divider](./src/doc/divider.png 'Divider')
+<br>
+<br>
 
 <!--
 Start of Document
@@ -49,5 +50,3 @@ List of current branch working tree. <br>
 <!--
 End of Document
 -->
-
-![endDivider](./src/doc/endDivider.png 'End of Document')
