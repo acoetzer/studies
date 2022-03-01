@@ -2,11 +2,15 @@
 
 <br>
 
-<!-- Section Header -->
+<!--
+Section Header
+-->
 
 ![section17Header](../src/doc/section17Header.png 'Section 17 Header')
 
-<!-- Table of Contents -->
+<!--
+Table of Contents 
+-->
 
 ### Table of Contents
 
@@ -21,9 +25,12 @@
 + [Deleting tags](#deleting-tags)
 + [IMPORTANT: Pushing tags](#important-pushing-tags)
 
-![divider](../src/doc/divider.png 'Divider')
+<br>
+<br>
 
-<!-- Start of Document -->
+<!--
+Start of Document
+-->
 
 ## The idea behind git tags
 
@@ -127,6 +134,6 @@ The most important thing to remember is to push your tags, when pushing your com
 <br>
 <br>
 
-<!-- End of Document -->
-
-![endDivider](../src/doc/endDivider.png 'End of Document')
+<!--
+End of Document
+-->

@@ -6,7 +6,9 @@
 
 ![section12Header](../src/doc/section12Header.png 'Section 12 Header')
 
-<!-- Table of Contents -->
+<!--
+Table of Contents 
+-->
 
 ### **Table of Contents**
 
@@ -19,9 +21,12 @@
     - [A shorter syntax for Git Pull](#a-shorter-syntax-for-git-pull)
 + [git fetch vs git pull](#git-fetch-vs-git-pull)
 
-![divider](../src/doc/divider.png 'Divider')
+<br>
+<br>
 
-<!-- Start of Document -->
+<!--
+Start of Document
+-->
 
 ## **Remote Tracking Branches: WTF are they?**
 
@@ -136,6 +141,6 @@ A shorter syntax is **git pull**, git pull will default to the default origin, a
 <br>
 <br>
 
-<!-- End of Document -->
-
-![endDivider](../src/doc/endDivider.png 'End of Document')
+<!--
+End of Document
+-->

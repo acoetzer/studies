@@ -2,11 +2,15 @@
 
 <br>
 
-<!-- Section Header -->
+<!--
+Section Header
+-->
 
 ![section10Header](../src/doc/section10Header.png 'Section 10 Header')
 
-<!-- Table of Contents -->
+<!--
+Table of Contents 
+-->
 
 ### Table of Contents
 
@@ -21,9 +25,12 @@
     - [git reset --hard < commit/HEAD~1 >](#git-reset---hard--commithead1)
 + [Reverting commits with ... git revert](#reverting-commits-with--git-revert)
 
-![divider](../src/doc/divider.png 'Divider')
+<br>
+<br>
 
-<!-- Start of Document -->
+<!--
+Start of Document
+-->
 
 ## **Checking out old commits**
 
@@ -112,6 +119,6 @@ Where git reset goes backwards, git revert goes forward with a new commit, keeps
 <br>
 <br>
 
-<!-- End of Document -->
-
-![endDivider](../src/doc/endDivider.png 'End of Document')
+<!--
+End of Document
+-->

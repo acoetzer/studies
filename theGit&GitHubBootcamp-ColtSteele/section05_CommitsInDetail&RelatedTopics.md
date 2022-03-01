@@ -2,11 +2,15 @@
 
 <br>
 
-<!-- Section Header -->
+<!--
+Section Header
+-->
 
 ![section5Header](../src/doc/section05Header.png 'Section 5 Header')
 
-<!-- Table of Contents -->
+<!--
+Table of Contents 
+-->
 
 ### **Table of Contents**
 
@@ -22,9 +26,12 @@
     - [git commit --amend](#git-commit---amend)
 + [Ignoring Files w/ .gitignore](#ignoring-files-w-gitignore)
 
-![divider](../src/doc/divider.png 'Divider')
+<br>
+<br>
 
-<!-- Start of Document -->
+<!--
+Start of Document
+-->
 
 ## **Keeping your git commits atomic**
 
@@ -137,6 +144,6 @@ The next time you run git, it will ask if your want to add and commit the .gitig
 <br>
 <br>
 
-<!-- End of Document -->
-
-![endDivider](../src/doc/endDivider.png 'End of Document')
+<!--
+End of Document
+-->

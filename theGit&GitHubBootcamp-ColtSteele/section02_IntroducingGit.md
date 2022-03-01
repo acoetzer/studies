@@ -2,11 +2,15 @@
 
 <br>
 
-<!-- Section Header -->
+<!--
+Section Header
+-->
 
 ![section2Header](../src/doc/section02Header.png 'Section 2 Header')
 
-<!-- Table Of Contents  -->
+<!--
+Table of Contents 
+-->
 
 ### **Table of Contents**
 
@@ -15,9 +19,12 @@
     - [What is a VCS or a Version Control System](#what-is-a-vcs-or-a-version-control-system)
 + [Visualizing Git](#visualizing-git)
 
-![divider](../src/doc/divider.png 'Divider')
+<br>
+<br>
 
-<!-- Start of Document -->
+<!--
+Start of Document
+-->
 
 ## **What is Git**
 
@@ -61,6 +68,6 @@ They can also at a later merge some of the older backtracked ideas into the fina
 <br>
 <br>
 
-<!-- End of Document -->
-
-![endDivider](../src/doc/endDivider.png 'End of Document')
+<!--
+End of Document
+-->

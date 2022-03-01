@@ -2,11 +2,15 @@
 
 <br>
 
-<!-- Section Header -->
+<!--
+Section Header
+-->
 
 ![section9Header](../src/doc/section09Header.png 'Section 9 Header')
 
-<!-- Table of Contents -->
+<!--
+Table of Contents 
+-->
 
 ### **Table of Contents**
 
@@ -18,9 +22,12 @@
 + [Working with multiple stashes](#working-with-multiple-stashes)
 + [Dropping & Clearing the stash](#dropping--clearing-the-stash)
 
-![divider](../src/doc/divider.png 'Divider')
+<br>
+<br>
 
-<!-- Start of Document -->
+<!--
+Start of Document
+-->
 
 ## **Why we need git stash**
 
@@ -76,6 +83,6 @@ You can also completely remove all stash or just one in particular by using
 <br>
 <br>
 
-<!-- End of Document -->
-
-![endDivider](../src/doc/endDivider.png 'End of Document')
+<!--
+End of Document
+-->

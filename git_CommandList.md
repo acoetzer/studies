@@ -2,11 +2,15 @@
 
 <br>
 
-<!-- Section Header -->
+<!--
+Section Header
+-->
 
 ![gitCommandList](./src/doc/gitCommandList.png 'Git Command List')
 
-<!-- Table of Contents -->
+<!-- 
+Table of Contents
+-->
 
 ### Table of Contents 
 
@@ -29,9 +33,12 @@
 |[git merge](#git-merge)|[git rebase](#git-rebase)||
 |[git diff](#git-diff)|[git tag](#git-tag)||
 
-![divider](./src/doc/divider.png 'Divider')
+<br>
+<br>
 
-<!-- Start of Document -->
+<!-- 
+Start of Document
+-->
 
 ## **Git Command List**
 
@@ -281,6 +288,6 @@
 <br>
 <br>
 
-<!-- End of Document -->
-
-![endDivider](./src/doc/endDivider.png 'End of Document')
+<!--
+End of Document
+-->

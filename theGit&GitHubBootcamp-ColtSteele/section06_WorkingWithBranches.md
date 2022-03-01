@@ -2,11 +2,15 @@
 
 <br>
 
-<!-- Section Header -->
+<!--
+Section Header
+-->
 
 ![section6Header](../src/doc/section06Header.png 'Section 6 Header')
 
-<!-- Table of Contents -->
+<!--
+Table of Contents 
+-->
 
 ### **Table of Contents**
 
@@ -28,9 +32,12 @@
     - [git branch -D < branch-name >](#git-branch--d--branch-name-1)
     - [Renaming a branch](#renaming-a-branch)
 
-![divider](../src/doc/divider.png 'Divider')
+<br>
+<br>
 
-<!-- Start of Document -->
+<!--
+Start of Document
+-->
 
 ## **Introducing Branches**
 
@@ -217,6 +224,6 @@ In the image above you can see how the branch name was changed.
 <br>
 <br>
 
-<!-- End of Document -->
-
-![endDivider](../src/doc/endDivider.png 'End of Document')
+<!--
+End of Document
+-->

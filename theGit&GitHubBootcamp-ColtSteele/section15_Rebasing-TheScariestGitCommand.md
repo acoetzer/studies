@@ -2,11 +2,15 @@
 
 <br>
 
-<!-- Section Header -->
+<!--
+Section Header
+-->
 
 ![section15Header](../src/doc/section15Header.png 'Section 15 Header')
 
-<!-- Table of Contents -->
+<!--
+Table of Contents 
+-->
 
 ### Table of Contents
 
@@ -14,9 +18,12 @@
     - [Comparing merging and rebasing](#comparing-merging-and-rebasing)
 + [The Golden Rule: When NOT torebase](#the-golden-rule-when-not-to-rebase)
 
-![divider](../src/doc/divider.png 'Divider')
+<br>
+<br>
 
-<!-- Start of Document -->
+<!--
+Start of Document
+-->
 
 ## Why is Rebasing Scary? is it?
 
@@ -66,6 +73,6 @@ Though self explanatory, this is the step that needs to be followed.
 <br>
 <br>
 
-<!-- End of Document -->
-
-![endDivider](../src/doc/endDivider.png 'End of Document')
+<!--
+End of Document
+-->

@@ -2,11 +2,15 @@
 
 <br>
 
-<!-- Section Header -->
+<!--
+Section Header
+-->
 
 ![section7Header](../src/doc/section07Header.png 'Section 7 Header')
 
-<!-- Table of Contents -->
+<!--
+Table of Contents 
+-->
 
 ### Table of Contents
 
@@ -23,9 +27,12 @@
 + [Resolving Merge Conflicts](#resolving-merge-conflicts)
     - [The multi step process to resolving merge conflicts](#the-multi-step-process-to-resolving-merge-conflicts)
 
-![divider](../src/doc/divider.png 'Divider')
+<br>
+<br>
 
-<!-- Start of Document -->
+<!--
+Start of Document
+-->
 
 ## **Introduction to Merging**
 
@@ -176,6 +183,6 @@ When it comes to resolving merge conflicts there is a multi step process to foll
 <br>
 <br>
 
-<!-- End of Document -->
-
-![endDivider](../src/doc/endDivider.png 'End of Document')
+<!--
+End of Document
+-->

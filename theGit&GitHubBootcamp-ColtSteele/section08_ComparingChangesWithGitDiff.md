@@ -2,11 +2,15 @@
 
 <br>
 
-<!-- Section Header -->
+<!--
+Section Header
+-->
 
 ![section8Header](../src/doc/section08Header.png 'Section 8 Header')
 
-<!-- Table of Contents  -->
+<!--
+Table of Contents 
+-->
 
 ### **Table of Contents**
 
@@ -22,7 +26,8 @@
 + [Comparing changes across branches](#comparing-changes-across-branches)
 + [Comparing changes across commits](#comparing-changes-across-commits)
 
-![divider](../src/doc/divider.png 'Divider')
+<br>
+<br>
 
 <!-- Start od Document -->
 
@@ -151,6 +156,6 @@ Note, once again you can separate the commits by 2 .. or a space
 <br>
 <br>
 
-<!-- End of Document -->
-
-![endDivider](../src/doc/endDivider.png 'End of Document')
+<!--
+End of Document
+-->

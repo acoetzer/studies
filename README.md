@@ -2,7 +2,9 @@
 
 <br>
 
-<!-- Section Header-->
+<!--
+Section Header
+-->
 
 ![readmeHeader](./src/doc/readmeHeader.png 'README Header')
 

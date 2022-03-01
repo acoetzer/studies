@@ -2,11 +2,15 @@
 
 <br>
 
-<!-- Section Header -->
+<!--
+Section Header
+-->
 
 ![seciotn14Header](../src/doc/section14Header.png 'Section 14 Header')
 
-<!-- Table of Contents -->
+<!--
+Table of Contents 
+-->
 
 ###  **Table of Contents**
 
@@ -18,9 +22,12 @@
 + [Branch protection rules](#branch-protection-rules)
 + [The fork & clone workflow](#the-fork--clone-workflow)
 
-![divider](../src/doc/divider.png 'Divider')
+<br>
+<br>
 
-<!-- Start of Document -->
+<!--
+Start of Document
+-->
 
 ## **The pitfalls of a centralized workflow**
 
@@ -127,6 +134,8 @@ Once you wish to contribute to to the original repo, you simply submit a PR on g
 <br>
 <br>
 
-<!-- End of Document -->
+<!--
+End of Document
+-->
 
 ![endDivider](../src/doc/endDivider.png 'End of section 14')

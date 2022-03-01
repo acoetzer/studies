@@ -2,11 +2,15 @@
 
 <br>
 
-<!-- Section Header -->
+<!--
+Section Header
+-->
 
 ![section4Header](../src/doc/section04Header.png 'Section4 Header')
 
-<!-- Table of Contents -->
+<!--
+Table of Contents 
+-->
 
 ### **Table of Contents**
 
@@ -20,9 +24,12 @@
 + [Finally, the git commit command](#finally-the-git-commit-command)
 + [The git log command](#the-git-log-command)
 
-![divider](../src/doc/divider.png 'Divider')
+<br>
+<br>
 
-<!-- Start of Document -->
+<!--
+Start of Document
+-->
 
 ## **What is a Git repo**
 
@@ -141,6 +148,6 @@ The **git log** command shows the history of previous commits made in that repos
 <br>
 <br>
 
-<!-- End of Document -->
-
-![endDivider](../src/doc/endDivider.png 'End of Document')
+<!--
+End of Document
+-->

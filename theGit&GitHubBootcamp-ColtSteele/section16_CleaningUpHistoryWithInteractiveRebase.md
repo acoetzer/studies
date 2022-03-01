@@ -2,19 +2,26 @@
 
 <br>
 
-<!-- Section Header -->
+<!--
+Section Header
+-->
 
 ![section16Header](../src/doc/section16Header.png 'Section 16 Header')
 
-<!-- Table of Contents -->
+<!--
+Table of Contents 
+-->
 
 ### Table of Contents
 
 + [Introducing Interactive Rebase](#introducing-interactive-rebase)
 
-![divider](../src/doc/divider.png 'Divider')
+<br>
+<br>
 
-<!-- Start of Document -->
+<!--
+Start of Document
+-->
 
 ## Introducing Interactive Rebase
 
@@ -37,6 +44,6 @@ Its important to note that it will subsequently redo history as well.
 <br>
 <br>
 
-<!-- End of Document -->
-
-![endDivider](../src/doc/endDivider.png 'End of Document')
+<!--
+End of Document
+-->
