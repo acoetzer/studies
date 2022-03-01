@@ -18,39 +18,30 @@ Maybe in future will provide a ToC list.
 Start of Document
 -->
 
-##### Working Tree
+## **Branch Working Tree**
 
-List of current branch working tree. Keep updated with general idea of contents and not numerous blobs.
-
-<br>
-<br>
-
-    src <- 'general images files for course.'
-        doc <- 'document specific images, such as dividers, headers etc..'
-
-**_tree_** : All document images will be kept here for this branch.
+List of current branch working tree. <br>
+**Note**: Keep updated with general idea of contents and not numerous blobs.
 
 <br>
 <br>
 
-     theGit&GithubBootcamp-ColtSteele <- 'course notes here'
-        resources <- 'course resources & slides here'
+## **Tree's**
 
-**_tree_** : Course Notes and Course Resources.
+    + src <- 'general images files for course.'
+        - doc <- 'document specific images, such as dividers, headers etc..'
 
-<br>
-<br>
-
-    git_ComandList.md <- 'command list table'
-
-**_blob_** : Command list for git for future references.
+    + theGit&GithubBootcamp-ColtSteele <- 'course notes here'
+        - resources <- 'course resources & slides here'
 
 <br>
 <br>
 
-    README.md <- 'readme for github'
+## **Blob's**
 
-**_blob_** : README Documentation for current branch.
+    - git_ComandList.md <- 'command list table'
+
+    - README.md <- 'readme for github'
 
 <br>
 <br>
