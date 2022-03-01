@@ -2,7 +2,9 @@
 
 <br>
 
-<!-- Section Header-->
+<!--
+Section Header
+-->
 
 ![readmeHeader](./src/doc/readmeHeader.png 'README Header')
 
@@ -12,51 +14,49 @@ No table of contents added here
 Maybe in future will provide a ToC list. 
 -->
 
-![divider](./src/doc/divider.png 'Divider')
+<br>
+<br>
 
 <!--
 Start of Document
 -->
 
-##### Working Tree
+## **Branch Working Tree**
 
-List of current branch working tree. Keep updated with general idea of contents and not numerous blobs.
-
-<br>
-<br>
-
-    src <- 'general images files for course.'
-        doc <- 'document specific images, such as dividers, headers etc..'
-
-**_tree_** : All document images will be kept here for this branch.
+List of current branch working tree with additional notes at the bottom. <br>
+**Side Note**: Keep updated with general idea of contents and not numerous blobs. 
 
 <br>
 <br>
 
-     theGit&GithubBootcamp-ColtSteele <- 'course notes here'
-        resources <- 'course resources & slides here'
+## **Tree's**
 
-**_tree_** : Course Notes and Course Resources.
+    + ciscoCCNA200-301_TheCompleteGuideToGettingCertified_NeilAnderson <- 'course notes here'
+
+    + practicalEthicalHackingForBeginners-DavidBombal-KevinWallace-CharlesJudd
+    
+    + src <- 'general images files for course.'
+        - doc <- 'document specific images, such as dividers, headers etc..'
+        - theCompleteNetworkingFundamentalsCourse <- 'corresponding course images here'
+
+    + theCompleteNetworkingFundamentalsCourse_YourCCNAstart-DavidBombal <- 'course notes here'
+        - resources <- 'course resources & slides here'
+
+<br>
+<br>
+
+## **Blob's**
+
+    - README.md
 
 <br>
 <br>
 
-    git_ComandList.md <- 'command list table'
+## **Notes**
 
-**_blob_** : Command list for git for future references.
-
-<br>
-<br>
-
-    README.md <- 'readme for github'
-
-**_blob_** : README Documentation for current branch.
-
-<br>
-<br>
+    + theCompleteNetworkingFundamentalsCourse_YourCCNAstart-DavidBombal
+        - Changed location of src images and haven't updated section .md files to new represent location.
 
 <!--
 End of Document
 -->
-
-![endDivider](./src/doc/endDivider.png 'End of Document')
