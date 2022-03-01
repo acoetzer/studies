@@ -23,7 +23,7 @@ Start of Document
 
 ## **Branch Working Tree**
 
-List of current branch working tree. <br>
+List of current branch working tree with additional notes at the bottom. <br>
 **Note**: Keep updated with general idea of contents and not numerous blobs.
 
 <br>
@@ -48,6 +48,10 @@ List of current branch working tree. <br>
 
 <br>
 <br>
+
+## **Notes**
+
+    + Complete section 19
 
 <!--
 End of Document
