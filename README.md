@@ -34,7 +34,7 @@ These are the courses I currently finished. Each course is linked to the Udemy p
 
 ## The Linux Command Line Bootcamp: Beginner To Power User
 
-[The Linux Command Line Bootcamp: Beginner To Power User](https://www.udemy.com/course/the-linux-command-line-bootcamp/ 'The Linux Command Line Bootcamp: Beginner To Power User by Colt Steele')
+[The Linux Command Line Bootcamp: Beginner To Power User](https:/www.udemy.com/course/the-linux-command-line-bootcamp/ 'The Linux Command Line Bootcamp: Beginner To Power User by Colt Steele')
 
 ### by Colt Steele
 
@@ -43,13 +43,13 @@ These are the courses I currently finished. Each course is linked to the Udemy p
 
 |Certificate|
 |:---|
-|![Course Certification of Completion](.//src/certs/theLinuxCommandLineBootcampBeginnerToPowerUserCertification.jpg 'The Linux Command Line Bootcamp Beginner To Power User Certification')|
+|![Course Certification of Completion](./src/certs/theLinuxCommandLineBootcampBeginnerToPowerUserCertification.jpg 'The Linux Command Line Bootcamp Beginner To Power User Certification')|
 
 <br>
 <br>
 
 ## The Git & Github Bootcamp
-[The Git & Github Bootcamp](https://www.udemy.com/course/git-and-github-bootcamp/ 'The Git & Github Bootcamp')
+[The Git & Github Bootcamp](https:/www.udemy.com/course/git-and-github-bootcamp/ 'The Git & Github Bootcamp')
 ###  by Colt Steele
 
 <br>
