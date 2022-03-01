@@ -2,9 +2,11 @@
 
 <br>
 
-<!-- Section Header-->
+<!--
+Section Header
+-->
 
-![readmeHeader](./src/doc/readmeHeader.png 'README Header')
+![readmeHeader](./src/linuxCommands/doc/readmeHeader.png 'README Header')
 
 <!-- 
 Table of Contents 
@@ -12,51 +14,52 @@ No table of contents added here
 Maybe in future will provide a ToC list. 
 -->
 
-![divider](./src/doc/divider.png 'Divider')
+<br>
+<br>
 
 <!--
 Start of Document
 -->
 
-##### Working Tree
+## **Branch Working Tree**
 
-List of current branch working tree. Keep updated with general idea of contents and not numerous blobs.
-
-<br>
-<br>
-
-    src <- 'general images files for course.'
-        doc <- 'document specific images, such as dividers, headers etc..'
-
-**_tree_** : All document images will be kept here for this branch.
+List of current branch working tree with additional notes at the bottom. <br>
+**Side Note**: Keep updated with general idea of contents and not numerous blobs. 
 
 <br>
 <br>
 
-     theGit&GithubBootcamp-ColtSteele <- 'course notes here'
-        resources <- 'course resources & slides here'
+## **Tree's**
 
-**_tree_** : Course Notes and Course Resources.
+    + overTheWire <- 'site notes here'
+        - bandit <- 'site notes here'
+
+    + src <- 'general images files for course.'
+        - doc <- 'document specific images, such as dividers, headers etc..'
+        - linuxCommands <- 'corresponding document images here'
+
+    + theLinuxCommandLineBootcamp-ColtSteele <- 'course notes here'
+        - resources <- 'course resources & slides here'
+        - section5_.. -> section15.. <- 'section exercises here'
+
+<br>
+<br>
+
+## **Blob's**
+
+    - linux_commandList.md <- 'list of commands for linux'
+
+    - linux_ScriptingExamples.md <- 'linux scripting example'
+
+    - README.md <- 'readme for github'
 
 <br>
 <br>
 
-    git_ComandList.md <- 'command list table'
+## **Notes**
 
-**_blob_** : Command list for git for future references.
-
-<br>
-<br>
-
-    README.md <- 'readme for github'
-
-**_blob_** : README Documentation for current branch.
-
-<br>
-<br>
+    + No notes atm
 
 <!--
 End of Document
 -->
-
-![endDivider](./src/doc/endDivider.png 'End of Document')
