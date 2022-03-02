@@ -6,7 +6,7 @@
 Section Header
 -->
 
-![readmeHeader](./src/readmeHeader.png 'README Header')
+![readmeHeader](./src/doc/readmeHeader.png 'README Header')
 
 <!--
 Table of contents
@@ -55,9 +55,8 @@ These are the courses I currently finished. Each course is linked to the Udemy p
 <br>
 <br>
 
-|Certification|
-|:---|
-|![The Git & Github Bootcamp](./src/certs/theGit&GithubBootcampCertification.jpg 'The Git & Github Bootcamp Certification')|
+    + src <- 'general images files for course.'
+        - doc <- 'document specific images, such as dividers, headers etc..'
 
 <!--
 End of Document
