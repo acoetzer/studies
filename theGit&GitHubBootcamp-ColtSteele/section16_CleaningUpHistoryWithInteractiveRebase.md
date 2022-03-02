@@ -1,4 +1,4 @@
-###### -section16_CleaningUpHistoryWithInteractiveRebase
+###### - section16_CleaningUpHistoryWithInteractiveRebase
 
 <br>
 

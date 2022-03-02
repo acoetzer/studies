@@ -1,4 +1,4 @@
-###### -section17_GitTags:MarkingImportantMomentsInHistory
+###### - section17_GitTags:MarkingImportantMomentsInHistory
 
 <br>
 

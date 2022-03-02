@@ -1,4 +1,4 @@
-###### -section15_Rebasing:TheScariestGitCommand
+###### - section15_Rebasing:TheScariestGitCommand
 
 <br>
 

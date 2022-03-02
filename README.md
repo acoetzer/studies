@@ -51,8 +51,6 @@ List of current branch working tree with additional notes at the bottom. <br>
 
 ## **Notes**
 
-    + Complete section 19
-
 <!--
 End of Document
 -->
