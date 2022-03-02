@@ -6,7 +6,7 @@
 Section Header
 -->
 
-![section8Header](../src/doc/section08Header.png 'Section 8 Header')
+![section8Header](../../src/git/doc/section08Header.png 'Section 8 Header')
 
 <!--
 Table of Contents 
@@ -62,7 +62,7 @@ The same for 2 different commit (hash values)
 <br>
 <br>
 
-![gitDiffChunkBreakdown](../src/gitDiffChunkBreakdown.png 'An illustration of how to read a giff chunk')
+![gitDiffChunkBreakdown](../../src/git/gitDiffChunkBreakdown.png 'An illustration of how to read a giff chunk')
 
 <br>
 <br>
@@ -88,7 +88,7 @@ Taking a look at the above illustration, this is what one could see when looking
 <br>
 <br>
 
-![gitDiffChunkHeaderBreakdown](../src/gitDiffChunkHeaderBreakdown.png 'A breakdown of the chunk header')
+![gitDiffChunkHeaderBreakdown](../../src/git/gitDiffChunkHeaderBreakdown.png 'A breakdown of the chunk header')
 
 <br>
 <br>
@@ -98,7 +98,7 @@ Taking a look at the above illustration, this is what one could see when looking
 <br>
 <br>
 
-![gitDiffOverall](../src/gitDiffOverall.png 'An overall illustration of how git diff works')
+![gitDiffOverall](../../src/git/gitDiffOverall.png 'An overall illustration of how git diff works')
 
 <br>
 <br>

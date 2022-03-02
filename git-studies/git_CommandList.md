@@ -6,7 +6,7 @@
 Section Header
 -->
 
-![gitCommandList](./src/doc/gitCommandList.png 'Git Command List')
+![gitCommandList](../src/git/doc/gitCommandListHeader.png 'Git Command List')
 
 <!-- 
 Table of Contents

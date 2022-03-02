@@ -6,7 +6,7 @@
 Section Header
 -->
 
-![section7Header](../src/doc/section07Header.png 'Section 7 Header')
+![section7Header](../../src/git/doc/section07Header.png 'Section 7 Header')
 
 <!--
 Table of Contents 
@@ -58,7 +58,7 @@ To understand why we merge branches together, you need to understand the workflo
 <br>
 <br>
 
-![featureBranch](../src/featureBranch.png 'An illustration of what a feature branch is & why we merge branches')
+![featureBranch](../../src/git/featureBranch.png 'An illustration of what a feature branch is & why we merge branches')
 
 <br>
 <br>
@@ -78,7 +78,7 @@ Above is known as a feature branch, this ties in with branches in section6. Howe
 <br>
 <br>
 
-![fastForwardMerge1](../src/fastForwardMerge1.png 'An illustration of a fast forward merge')
+![fastForwardMerge1](../../src/git/fastForwardMerge1.png 'An illustration of a fast forward merge')
 
 <br>
 <br>
@@ -88,7 +88,7 @@ Above is known as a feature branch, this ties in with branches in section6. Howe
 <br>
 <br>
 
-![fastForwardMerge2](../src/fastForwardMerge2.png 'A simplified illustration of a fast forward merge')
+![fastForwardMerge2](../../src/git/fastForwardMerge2.png 'A simplified illustration of a fast forward merge')
 
 <br>
 <br>
@@ -105,7 +105,7 @@ However the bugfix branch continues further and later when using **git merge** y
 <br>
 <br>
 
-![mergeCommit](../src/mergeCommit.png 'An example of merge commit')
+![mergeCommit](../../src/git/mergeCommit.png 'An example of merge commit')
 
 <br>
 <br>
@@ -124,7 +124,7 @@ When merging, you will generate what is known as a merge commit, this explaining
 <br>
 <br>
 
-![mergeCommitWithoutConflict](../src/mergeCommitWithoutConflict.png 'Illustrating a merge commit without a conflict')
+![mergeCommitWithoutConflict](../../src/git/mergeCommitWithoutConflict.png 'Illustrating a merge commit without a conflict')
 
 <br>
 <br>
@@ -141,7 +141,7 @@ In general thats a very straight forward approach to avoid conflict. However in 
 <br>
 <br>
 
-![mergeCommitWithConflict](../src/mergeCommitWithConflict.png 'Illustrating a merge commit that results in a conflict')
+![mergeCommitWithConflict](../../src/git/mergeCommitWithConflict.png 'Illustrating a merge commit that results in a conflict')
 
 <br>
 <br>
@@ -158,7 +158,7 @@ Again a rough example of this, when there is overlap with 2 different sets of in
 <br>
 <br>
 
-![mergeCommitConflictMarkers](../src/mergeCommitConflictMarkers.png 'An example ofmerge conflict markers')
+![mergeCommitConflictMarkers](../../src/git/mergeCommitConflictMarkers.png 'An example ofmerge conflict markers')
 
 <br>
 <br>

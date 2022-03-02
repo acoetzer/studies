@@ -6,7 +6,7 @@
 Section Header
 -->
 
-![section15Header](../src/doc/section15Header.png 'Section 15 Header')
+![section15Header](../../src/git/doc/section15Header.png 'Section 15 Header')
 
 <!--
 Table of Contents 
@@ -30,7 +30,7 @@ Start of Document
 <br>
 <br>
 
-![](../src/gitRebasingOverview.png 'An illustration showing the ')
+![](../../src/git/gitRebasingOverview.png 'An illustration showing the ')
 
 <br>
 <br>

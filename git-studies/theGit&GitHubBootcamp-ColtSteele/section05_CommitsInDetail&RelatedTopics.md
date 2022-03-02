@@ -6,7 +6,7 @@
 Section Header
 -->
 
-![section5Header](../src/doc/section05Header.png 'Section 5 Header')
+![section5Header](../../src/git/doc/section05Header.png 'Section 5 Header')
 
 <!--
 Table of Contents 
@@ -89,7 +89,7 @@ When using the **git log** command you are give a log that takes up a lot of spa
 <br>
 <br>
 
-![gitlogCommanda](../src/gitlogCommanda.png 'Example of git log without a compact output')
+![gitlogCommanda](../../src/git/gitlogCommanda.png 'Example of git log without a compact output')
 
 <br>
 <br>
@@ -99,7 +99,7 @@ When using the **git log** command you are give a log that takes up a lot of spa
 <br>
 <br>
 
-![gitlogCommandb](../src/gitlogCommandb.png 'Example of compact git log output')
+![gitlogCommandb](../../src/git/gitlogCommandb.png 'Example of compact git log output')
 
 <br>
 <br>

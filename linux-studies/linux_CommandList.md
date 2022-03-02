@@ -27,7 +27,7 @@
 * 
 
 #### Example
-![manCommand](./src/linuxCommands/manCommand.gif "The man Command")
+![manCommand](../src/linux/manCommand.gif "The man Command")
 
 <br>
 <br>
@@ -46,7 +46,7 @@
 * date +%a-%b-%Y
 
 #### Example
-![dateCommand](./src/linuxCommands/dateCommand.gif "The date Command")
+![dateCommand](../src/linux/dateCommand.gif "The date Command")
 
 <br>
 <br>
@@ -62,7 +62,7 @@
 * **_-M_** prints the calendar starting monday
 
 #### Example
-![calCommand](./src/linuxCommands/calCommand.gif "The cal and ncal Command")
+![calCommand](../src/linux/calCommand.gif "The cal and ncal Command")
 
 <br>
 <br>
@@ -77,7 +77,7 @@
 * $(command) used for command substitution.
 
 #### Example
-![echoCommand](./src/linuxCommands/echoCommand.gif "The echo Command")
+![echoCommand](../src/linux/echoCommand.gif "The echo Command")
 
 <br>
 <br>
@@ -94,7 +94,7 @@
 * 
 
 #### Example
-![typeCommand](./src/linuxCommands/typeCommand.gif "The type Command")
+![typeCommand](../src/linux/typeCommand.gif "The type Command")
 
 <br>
 <br>
@@ -108,7 +108,7 @@
 * 
 
 #### Example
-![whichCommmand](./src/linuxCommands/whichCommand.gif "The which Command")
+![whichCommmand](../src/linux/whichCommand.gif "The which Command")
 
 <br>
 <br>
@@ -122,7 +122,7 @@
 * 
 
 #### Example
-![helpCommand](./src/linuxCommands/helpCommand.gif "The help Command")
+![helpCommand](../src/linux/helpCommand.gif "The help Command")
 
 <br>
 <br>
@@ -136,7 +136,7 @@
 * 
 
 #### Example
-![pwdCommand](./src/linuxCommands/pwdCommand.gif "The pwd Command")
+![pwdCommand](../src/linux/pwdCommand.gif "The pwd Command")
 
 <br>
 <br>
@@ -156,7 +156,7 @@
 * -u shows and sorts bby last access time.
 
 #### Example
-![lsCommand](./src/linuxCommands/lsCommand.gif "The ls Command")
+![lsCommand](../src/linux/lsCommand.gif "The ls Command")
 
 <br>
 <br>
@@ -171,7 +171,7 @@
 * 
 
 #### Example
-![cdCommand](./src/linuxCommands/cdCommand.gif "The cd Command")
+![cdCommand](../src/linux/cdCommand.gif "The cd Command")
 
 <br>
 <br>
@@ -186,7 +186,7 @@
 * 
 
 #### Example
-![touchCommand](./src/linuxCommands/touchCommand.gif "The touch Command")
+![touchCommand](../src/linux/touchCommand.gif "The touch Command")
 
 <br>
 <br>
@@ -200,7 +200,7 @@
 * 
 
 #### Example
-![fileCommand](./src/linuxCommands/fileCommand.gif "The file Command")
+![fileCommand](../src/linux/fileCommand.gif "The file Command")
 
 <br>
 <br>
@@ -216,7 +216,7 @@
 * **_-v | --verbose_** prints out what it has done.
 
 #### Example
-![mkdirCommand](./src/linuxCommands/mkdirCommand.gif "The mkdir Command")
+![mkdirCommand](../src/linux/mkdirCommand.gif "The mkdir Command")
 
 <br>
 <br>
@@ -230,7 +230,7 @@
 * 
 
 #### Example
-![nanoCommand](./src/linuxCommands/nanoCommand.gif "The nano Command")
+![nanoCommand](../src/linux/nanoCommand.gif "The nano Command")
 
 <br>
 <br>
@@ -248,7 +248,7 @@
 * -v 
 
 #### Example
-![rmCommand](./src/linuxCommands/rmCommand.gif "The rm Command")
+![rmCommand](../src/linux/rmCommand.gif "The rm Command")
 
 <br>
 <br>
@@ -263,7 +263,7 @@
 * 
 
 #### Example
-![mvCommand](./src/linuxCommands/mvCommand.gif "The mc Command")
+![mvCommand](../src/linux/mvCommand.gif "The mc Command")
 
 <br>
 <br>
@@ -277,7 +277,7 @@
 * 
 
 #### Example
-![cpCommand](./src/linuxCommands/cpCommand.gif "The cp Command")
+![cpCommand](../src/linux/cpCommand.gif "The cp Command")
 
 <br>
 <br>
@@ -293,7 +293,7 @@
 * 
 
 #### Example
-![lessCommand](./src/linuxCommands/lessCommand.gif "The less Command")
+![lessCommand](../src/linux/lessCommand.gif "The less Command")
 
 <br>
 <br>
@@ -307,7 +307,7 @@
 * 
 
 #### Example
-![catCommand](./src/linuxCommands/catCommand.gif "The cat Command")
+![catCommand](../src/linux/catCommand.gif "The cat Command")
 
 <br>
 <br>
@@ -321,7 +321,7 @@
 * 
 
 #### Example
-![tacCommand](./src/linuxCommands/tacCommand.gif "The tac Command")
+![tacCommand](../src/linux/tacCommand.gif "The tac Command")
 
 <br>
 <br>
@@ -335,7 +335,7 @@
 * 
 
 #### Example
-![revCommand](./src/linuxCommands/revCommand.gif "The rev Command")
+![revCommand](../src/linux/revCommand.gif "The rev Command")
 
 <br>
 <br>
@@ -350,7 +350,7 @@
 * **_-c_** print the number of bytes rather than lines.
 
 #### Example
-![headCommand](./src/linuxCommands/headCommand.gif "The head Command")
+![headCommand](../src/linux/headCommand.gif "The head Command")
 
 <br>
 <br>
@@ -366,7 +366,7 @@
 * **_-f_** output appended data as the file grows.
 
 #### Example
-![tailCommand](./src/linuxCommands/tailCommand.gif "The tail Command")
+![tailCommand](../src/linux/tailCommand.gif "The tail Command")
 
 <br>
 <br>
@@ -381,7 +381,7 @@
 * -w prints the amount of words only
 
 #### Example
-![wcCommand](./src/linuxCommands/wcCommand.gif "The wc Command")
+![wcCommand](../src/linux/wcCommand.gif "The wc Command")
 
 <br>
 <br>
@@ -398,7 +398,7 @@
 * **_-k_** sort file specified columb
 
 #### Example
-![sortCommand](./src/linuxCommands/sortCommand.gif "The sort Command")
+![sortCommand](../src/linux/sortCommand.gif "The sort Command")
 
 <br>
 <br>
@@ -418,7 +418,7 @@
 * [:upper:] all upper case letters
 
 #### Example
-![trCommand](./src/linuxCommands/trCommand.gif "The tr Command")
+![trCommand](../src/linux/trCommand.gif "The tr Command")
 
 <br>
 <br>
@@ -435,7 +435,7 @@
 * -l or --limit option will limit the number of entries that locate retrieves.
 
 #### Example
-![locateCommand](./src/linuxCommands/locateCommand.gif "The locate Command")
+![locateCommand](../src/linux/locateCommand.gif "The locate Command")
 
 <br>
 <br>
@@ -450,7 +450,7 @@
 * -v | --verbose Output path names of files to standard output, as soon as they are found.
 
 #### Example
-![updatedbCommand](./src/linuxCommands/updatedbCommand.gif "The updatedbb Command")
+![updatedbCommand](../src/linux/updatedbCommand.gif "The updatedbb Command")
 
 <br>
 <br>
@@ -498,7 +498,7 @@
 * -not find whatever specified but not or excluding specified as an example find -name "Harry.txt" -not -name "Harry.html"
 
 #### Example
-![findCommand](./src/linuxCommands/findCommand.gif "The find Command")
+![findCommand](../src/linux/findCommand.gif "The find Command")
 
 <br>
 <br>
@@ -512,7 +512,7 @@
 * -c --count prefix lines by the number of occurrences
 
 #### Example
-![uniqCommand](./src/linuxCommands/uniqCommand.gif "The uniq Command")
+![uniqCommand](../src/linux/uniqCommand.gif "The uniq Command")
 
 <br>
 <br>
@@ -551,7 +551,7 @@
 ### Extended Regex /_Extended Regular Expressions_
 
 #### Example
-![grepCommand](./src/linuxCommands/grepCommand.gif "The grep Command")
+![grepCommand](../src/linux/grepCommand.gif "The grep Command")
 
 <br>
 <br>
@@ -610,7 +610,7 @@
         * File Mode rwx
 
 #### Example
-![chmodCommand](./src/linuxCommands/chmodCommand.gif "The chmod Command")
+![chmodCommand](../src/linux/chmodCommand.gif "The chmod Command")
 
 <br>
 <br>
@@ -630,7 +630,7 @@
 * 
 
 #### Example
-![chownCommand](./src/linuxCommands/chownCommand.gif "The chown Command")
+![chownCommand](../src/linux/chownCommand.gif "The chown Command")
 
 <br>
 <br>
@@ -648,7 +648,7 @@
 * 
 
 #### Example
-![groupsCommand](./src/linuxCommands/groupsCommand.gif "The groups Command")
+![groupsCommand](../src/linux/groupsCommand.gif "The groups Command")
 
 <br>
 <br>
@@ -675,8 +675,8 @@
 * 
 
 #### Example
-![addgroupCommand](./src/linuxCommands/addgroupCommand.gif "The addgroup Command")
-![adduserCommand](./src/linuxCommands/adduserCommand.gif "The adduser Command")
+![addgroupCommand](../src/linux/addgroupCommand.gif "The addgroup Command")
+![adduserCommand](../src/linux/adduserCommand.gif "The adduser Command")
 
 <br>
 <br>
@@ -699,8 +699,8 @@
 * 
 
 #### Example
-![delgroupCommand](./src/linuxCommands/delgroupCommand.gif "The delgroup Command")
-![deluserCommand](./src/linuxCommands/deluserCommand.gif "The deluser Command")
+![delgroupCommand](../src/linux/delgroupCommand.gif "The delgroup Command")
+![deluserCommand](../src/linux/deluserCommand.gif "The deluser Command")
 
 <br>
 <br>
@@ -718,7 +718,7 @@
 * 
 
 #### Example
-![suCommand](./src/linuxCommands/suCommand.gif "The su Command")
+![suCommand](../src/linux/suCommand.gif "The su Command")
 
 <br>
 <br>
@@ -737,7 +737,7 @@
 * 
 
 #### Example
-![sudoCommand](./src/linuxCommands/sudoCommand.gif "The sudo Command")
+![sudoCommand](../src/linux/sudoCommand.gif "The sudo Command")
 
 <br>
 <br>
@@ -751,7 +751,7 @@
 * 
 
 #### Example
-![printenvCommand](./src/linuxCommands/printenvCommand.gif "The printenv Command")
+![printenvCommand](../src/linux/printenvCommand.gif "The printenv Command")
 
 <br>
 <br>
@@ -770,7 +770,7 @@
 * 
 
 #### Example
-![sourceCommand](./src/linuxCommands/sourceCommand.gif "The source Command")
+![sourceCommand](../src/linux/sourceCommand.gif "The source Command")
 
 <br>
 <br>
@@ -800,7 +800,7 @@
 * -e used to open and edit the crontab file, also the recommended way.
 
 #### Example
-![crontabCommand](./src/linuxCommands/crontabCommand.gif "The crontab Command")
+![crontabCommand](../src/linux/crontabCommand.gif "The crontab Command")
 
 <br>
 <br>
@@ -826,7 +826,7 @@
     * very important to had the **-z** option even when extracting to tell tar which file compression it was.
 
 #### Example
-![tarCommand](./src/linuxCommands/tarCommand.gif "The tar Command")
+![tarCommand](../src/linux/tarCommand.gif "The tar Command")
 
 <br>
 <br>
@@ -840,7 +840,7 @@
 * 
 
 #### Example
-![ifconfigCommand](./src/linuxCommands/ifconfigCommand.gif "The ifconfig Command")
+![ifconfigCommand](../src/linux/ifconfigCommand.gif "The ifconfig Command")
 
 <br>
 <br>
@@ -854,5 +854,5 @@
 * 
 
 #### Example
-![](./src/linuxCommands/ "Hover Text")
+![](../src/linux/ "Hover Text")
 

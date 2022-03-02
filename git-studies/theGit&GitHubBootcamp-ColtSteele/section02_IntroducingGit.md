@@ -6,7 +6,7 @@
 Section Header
 -->
 
-![section2Header](../src/doc/section02Header.png 'Section 2 Header')
+![section2Header](../../src/git/doc/section02Header.png 'Section 2 Header')
 
 <!--
 Table of Contents 
@@ -56,7 +56,7 @@ When visualizing Git you you first have to look at what Git can do. Git can be u
 <br>
 <br>
 
-![visualizingGit](../src/visualizingGit.png 'A diagram showing a visualization of how git can be used')
+![visualizingGit](../../src/git/visualizingGit.png 'A diagram showing a visualization of how git can be used')
 
 <br>
 <br>

@@ -31,7 +31,7 @@
 
 <br>
 
-![OSITcpIpModel](./src/OSITcpIpModel.png "Table showing both the OSI and TCP/IP Models")
+![OSITcpIpModel](../../src/networking/OSITcpIpModel.png "Table showing both the OSI and TCP/IP Models")
 
 <br>
 
@@ -51,7 +51,7 @@
 
 <br>
 
-![whatAreTheLayers](./src/whatAreTheLayers.png "TCP/IP Model Breakdown Of Each Layer")
+![whatAreTheLayers](../../src/networking/whatAreTheLayers.png "TCP/IP Model Breakdown Of Each Layer")
 
 <br>
 
@@ -65,7 +65,7 @@
         
 <br>
 
-![OSITcpIpModelTerms](./src/OSITcpIpModelTerms.png "Some Terms Used When Discussing Data Sent Over The Layers")
+![OSITcpIpModelTerms](../../src/networking/OSITcpIpModelTerms.png "Some Terms Used When Discussing Data Sent Over The Layers")
 
 <br>
 
@@ -91,7 +91,7 @@
 
 <br>
 
-![arpRequestPart1](./src/arpRequestPart1.gif "The ARP request Part 1") 
+![arpRequestPart1](../../src/networking/arpRequestPart1.gif "The ARP request Part 1") 
 
 <br>
 
@@ -101,7 +101,7 @@
 
 <br>
 
-![arpRequestPart2](./src/arpRequestPart2.gif "The ARP Request Part 2")
+![arpRequestPart2](../../src/networking/arpRequestPart2.gif "The ARP Request Part 2")
 
 <br>
 
@@ -119,7 +119,7 @@
 
 <br>
 
-![3WayHandshake](./src/3WayHandshake.gif "TCP 3 Way Handshake")
+![3WayHandshake](../../src/networking/3WayHandshake.gif "TCP 3 Way Handshake")
 
 <br>
 
@@ -130,7 +130,7 @@
 
 <br>
 
-![httpPacketPart1](./src/httpPacketPart1.gif "The http Packet and indepth look at the PDU and OSI or TCP Layers")
+![httpPacketPart1](../../src/networking/httpPacketPart1.gif "The http Packet and indepth look at the PDU and OSI or TCP Layers")
 
 <br>
 
@@ -163,7 +163,7 @@
 
 <br>
 
-![httpPacketPart2](./src/httpPacketPart2.gif "A more indepth look at the PDU")
+![httpPacketPart2](../../src/networking/httpPacketPart2.gif "A more indepth look at the PDU")
 
 <br>
 

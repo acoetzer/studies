@@ -24,7 +24,7 @@
 
 <br>
 
-![ipAddressesSameIP](./src/ipAddressesSameIP.png)
+![ipAddressesSameIP](../../src/networking/ipAddressesSameIP.png)
 
 <br>
 
@@ -36,7 +36,7 @@
 
 <br>
 
-![ipAddressNAT](./src/ipAddressesNAT.png)
+![ipAddressNAT](../../src/networking/ipAddressesNAT.png)
 
 <br>
 
@@ -48,7 +48,7 @@
 
 <br>
 
-![pingNATDNS](./src/pingNATDNS.gif)
+![pingNATDNS](../../src/networking/pingNATDNS.gif)
 
 <br>
 
@@ -63,14 +63,14 @@
 
 <br>
 
-![nslookupCommand](./src/nslookupCommand.gif)
+![nslookupCommand](../../src/networking/nslookupCommand.gif)
 
 * In summary take note that every device has an IP address, including our own machine
     * We can see this by typing the command ipconfig on Windows or ifconfig on Linux
 
 <br>
 
-![ifconfigCommand](./src/ifconfigCommand.gif)
+![ifconfigCommand](../../src/networking/ifconfigCommand.gif)
 
 <br>
 
@@ -89,7 +89,7 @@
 
 <br>
 
-![ipAddresses3WayHandshake](./src/ipAddresses3WayHandshake.png)
+![ipAddresses3WayHandshake](../../src/networking/ipAddresses3WayHandshake.png)
 
 <br>
 
@@ -127,7 +127,7 @@
 
 <br>
 
-![ipAddressesIPv432Bits](./src/ipAddressesIPv432Bits.png)
+![ipAddressesIPv432Bits](../../src/networking/ipAddressesIPv432Bits.png)
 
 <br>
 

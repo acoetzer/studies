@@ -6,7 +6,7 @@
 Section Header
 -->
 
-![section01Header](../src/doc/section01Header.png 'Section 01 Header')
+![section01Header](../../src/git/doc/section01Header.png 'Section 01 Header')
 
 <!--
 Table of Contents 

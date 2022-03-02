@@ -38,25 +38,25 @@
 
 <br>
 
-![binaryMath1Bit](./src/binaryMath1Bit.png "2 States and 1 Bit")
+![binaryMath1Bit](../../src/networking/binaryMath1Bit.png "2 States and 1 Bit")
 
 * 2 x 1 <sup>2<sup>1</sup></sup> = Decimal Number 2 and amount of Combinations which is either 1 or 0
 
 <br>
 
-![binaryMath2Bits](./src/binaryMath2Bits.png "2 State and 2 Bits")
+![binaryMath2Bits](../../src/networking/binaryMath2Bits.png "2 State and 2 Bits")
 
 * 2 x 2 <sup>2<sup>2</sup></sup> = Decimal Number 4 and amount of Combinations
 
 <br>
 
-![binaryMath3Bits](./src/binaryMath3Bits.png "2 States and 3 Bits")
+![binaryMath3Bits](../../src/networking/binaryMath3Bits.png "2 States and 3 Bits")
 
 * 2 x 3 <sup>2<sup>3</sup></sup> = Decimal Number 8 and amount of Combinations
 
 <br>
 
-![binaryMath4Bits](./src/binaryMath4Bits.png "2 States and 4 Bits")
+![binaryMath4Bits](../../src/networking/binaryMath4Bits.png "2 States and 4 Bits")
 
 * 2 x 4 <sup>2<sup>4</sup></sup> = Decimal Number 16 and amount of Combinations
 
@@ -85,27 +85,27 @@
 
 <br>
 
-![ipv4BinaryOctetTable](./src/ipv4BinaryOctetTable.png "Showcasing the Octet Table")
+![ipv4BinaryOctetTable](../../src/networking/ipv4BinaryOctetTable.png "Showcasing the Octet Table")
 
 <br>
 
 ## What Is The Binary Eqivalent To 192
-![binaryEqivalentOfDecimalPart1](./src/binaryEqivalentOfDecimalPart1.png "The Binary Eqivalent Of The Decimal 192")
+![binaryEqivalentOfDecimalPart1](../../src/networking/binaryEqivalentOfDecimalPart1.png "The Binary Eqivalent Of The Decimal 192")
 
 <br>
 
 ## What Is The Binary Eqivalent To 253
-![binaryEqivalentOfDecimalPart2](./src/binaryEqivalentOfDecimalPart2.png "The Binary Eqivalent Of The Decimal 253 and Showing How To Work Backwards")
+![binaryEqivalentOfDecimalPart2](../../src/networking/binaryEqivalentOfDecimalPart2.png "The Binary Eqivalent Of The Decimal 253 and Showing How To Work Backwards")
 
 <br>
 
 ## What Is The Deciaml Eqivalent To 1100 0000
-![decimalEqivalentOfBinaryPart1](./src/decimalEqivalentOfBinaryPart1.png "The Decimal Eqivalent Of The Binary 1100 0000")
+![decimalEqivalentOfBinaryPart1](../../src/networking/decimalEqivalentOfBinaryPart1.png "The Decimal Eqivalent Of The Binary 1100 0000")
 
 <br>
 
 ## What Is The Deciaml Eqivalent To 1111 1101
-![decimalEqivalentOfBinaryPart2](./src/decimalEqivalentOfBinaryPart2.png "The Decimal Eqivalent Of The Binary 1111 1101 and Shwoing How to Work backwards")
+![decimalEqivalentOfBinaryPart2](../../src/networking/decimalEqivalentOfBinaryPart2.png "The Decimal Eqivalent Of The Binary 1111 1101 and Shwoing How to Work backwards")
 
 <br>
 
@@ -127,4 +127,4 @@
 
 <br>
 
-![ourIPInBinary](./src/ourIPInBinary.png "Our IP worked Out In Binary")
+![ourIPInBinary](../../src/networking/ourIPInBinary.png "Our IP worked Out In Binary")

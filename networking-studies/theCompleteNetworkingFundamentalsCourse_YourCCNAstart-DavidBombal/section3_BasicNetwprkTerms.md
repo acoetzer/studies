@@ -50,7 +50,7 @@
 * The biggest network we know of today is the internet. 
 * Now a network doesnt have to be very big to be considered a network, it can be as simple as consisting of only 2 computers or devices as an example.
 
-![basicNetwork](./src/basicNetwork.gif "A network between 2 computers")
+![basicNetwork](../../src/networking/basicNetwork.gif "A network between 2 computers")
 
 * The image above displays the most basic of networks whereby it uses an unshielded twisted pair copper (UTP) cable with a RJ45 connector that connects directly into the network interface card or NIC for short. 
 * You can achieve the same output with a wireless device such as wifi or bluetooth, It doesnt have to be a physical cable such as UTP or Fiber for instance.
@@ -105,7 +105,7 @@
 
 # Practical Demonstration Of A Network using Packet Tracer
 
-![practicalExampleusingPacketTracer.gif](./src/practicalExampleusingPacketTracer.gif "Packet Tracer Example Of Network")
+![practicalExampleusingPacketTracer.gif](../../src/networking/practicalExampleusingPacketTracer.gif "Packet Tracer Example Of Network")
 
 <br>
 
@@ -117,7 +117,7 @@
 
 <br>
 
-![ethernatCableStraightvsCrossover](./src/ethernatCableStraightvsCrossover.png "Diagram depicting how a crossopver cable works")
+![ethernatCableStraightvsCrossover](../../src/networking/ethernatCableStraightvsCrossover.png "Diagram depicting how a crossopver cable works")
 
 <br>
 
@@ -171,7 +171,7 @@
 
 <br>
 
-![firewallDipology](./src/firewallDipology.png "Basic Dipology Showing How A Physical Firewall Device Would Be Set Up On A Network")
+![firewallDipology](../../src/networking/firewallDipology.png "Basic Dipology Showing How A Physical Firewall Device Would Be Set Up On A Network")
 
 <br>
 

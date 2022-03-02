@@ -4,7 +4,7 @@
 
 <!-- Section Header-->
 
-![section12Header](../src/doc/section12Header.png 'Section 12 Header')
+![section12Header](../../src/git/doc/section12Header.png 'Section 12 Header')
 
 <!--
 Table of Contents 
@@ -33,7 +33,7 @@ Start of Document
 <br>
 <br>
 
-![remoteTrackingBrancha](../src/remoteTrackingBrancha.png 'illustration of a remote tracking branch')
+![remoteTrackingBrancha](../../src/git/remoteTrackingBrancha.png 'illustration of a remote tracking branch')
 
 <br>
 <br>
@@ -45,7 +45,7 @@ This is referred to as a _remote tracking branch_, it is essentially referencing
 <br>
 <br>
 
-![remoteTrackingBranchb](../src/remoteTrackingBranchb.png 'Illustration demonstrating the local does not affect the remote branch unless pushed')
+![remoteTrackingBranchb](../../src/git/remoteTrackingBranchb.png 'Illustration demonstrating the local does not affect the remote branch unless pushed')
 
 <br>
 <br>
@@ -71,7 +71,7 @@ The way you do is this with **git checkout origin/main**, this ofcourse will pla
 <br>
 <br>
 
-![remoteTrackingBranchConnection](../src/remoteTrackingBranchConnection.png 'Illustration showing remote tracking branch connection after cloning')
+![remoteTrackingBranchConnection](../../src/git/remoteTrackingBranchConnection.png 'Illustration showing remote tracking branch connection after cloning')
 
 <br>
 <br>
@@ -92,7 +92,7 @@ Thankfully **git switch < remote-branch-name >** will automatically create that 
 <br>
 <br>
 
-![gitFetch&PullDiagram](../src/gitFetch&PullDiagram.png 'Diagram showing the difference between Fetch and Pull')
+![gitFetch&PullDiagram](../../src/git/gitFetch&PullDiagram.png 'Diagram showing the difference between Fetch and Pull')
 
 <br>
 <br>

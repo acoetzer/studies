@@ -6,7 +6,7 @@
 Section Header
 -->
 
-![section3Header](../src/doc/section03Header.png 'Section 3 Header')
+![section3Header](../../src/git/doc/section03Header.png 'Section 3 Header')
 
 <!--
 Table of Contents 
@@ -42,7 +42,7 @@ Prints current configured username credential.
 <br>
 <br>
 
-![gitconfigusernameCommand](../src/gitconfigusernameCommand.png "The git user.name config command")
+![gitconfigusernameCommand](../../src/git/gitconfigusernameCommand.png "The git user.name config command")
 
 <br>
 <br>
@@ -66,7 +66,7 @@ Prints current configured username credential.
 <br>
 <br>
 
-![gitconfiguseremailCommand](../src/gitconfiguseremailCommand.png "The git user.email config command")
+![gitconfiguseremailCommand](../../src/git/gitconfiguseremailCommand.png "The git user.email config command")
 
 <br>
 <br>

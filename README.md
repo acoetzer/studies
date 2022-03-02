@@ -6,7 +6,7 @@
 Section Header
 -->
 
-![readmeHeader](./src/doc/readmeHeader.png 'README Header')
+![mainReadMeHeader](./src/main/doc/mainReadMeHeader.png 'Main Readme Header')
 
 <!--
 Table of contents
@@ -43,7 +43,7 @@ These are the courses I currently finished. Each course is linked to the Udemy p
 
 |Certificate|
 |:---|
-|![Course Certification of Completion](./src/certs/theLinuxCommandLineBootcampBeginnerToPowerUserCertification.jpg 'The Linux Command Line Bootcamp Beginner To Power User Certification')|
+|![Course Certification of Completion](./src/main/certificates/theLinuxCommandLineBootcampBeginnerToPowerUserCertification.jpg 'The Linux Command Line Bootcamp Beginner To Power User Certification')|
 
 <br>
 <br>
@@ -52,11 +52,9 @@ These are the courses I currently finished. Each course is linked to the Udemy p
 [The Git & Github Bootcamp](https:/www.udemy.com/course/git-and-github-bootcamp/ 'The Git & Github Bootcamp')
 ###  by Colt Steele
 
-<br>
-<br>
-
-    + src <- 'general images files for course.'
-        - doc <- 'document specific images, such as dividers, headers etc..'
+|Certificate|
+|:---|
+|![Course Certification of Completion](./src/main/certificates/theGit&GithubBootcampCertification.jpg 'The Git & Github Bootcamp Certification')|
 
 <!--
 End of Document

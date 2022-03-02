@@ -23,7 +23,7 @@
 * Below showcases why learning how to work with hexadecimal is important.
 <br>
 
-![ipConfig](./src/ipConfigHexadecimal.png)
+![ipConfig](../../src/networking/ipConfigHexadecimal.png)
 
 <br>
 
@@ -31,7 +31,7 @@
 
 <br>
 
-![ifConfig](./src/ifConfigHexadecimal.png)
+![ifConfig](../../src/networking/ifConfigHexadecimal.png)
 
 <br>
 
@@ -57,7 +57,7 @@
 
 <br>
 
-![hexadecimalLabDemo](./src/hexadecimalLabDemo.gif "This showcasing hexadecimal and how it is incorporated in networking")
+![hexadecimalLabDemo](../../src/networking/hexadecimalLabDemo.gif "This showcasing hexadecimal and how it is incorporated in networking")
 
 <br>
 
@@ -75,7 +75,7 @@
 
 <br>
 
-![hexadecimalTablePart1](./src/hexadecimalTablePart1.png)
+![hexadecimalTablePart1](../../src/networking/hexadecimalTablePart1.png)
 
 <br>
 
@@ -85,7 +85,7 @@
 
 <br>
 
-![hexadecimalTablePart2](./src/hexadecimalTablePart2.png)
+![hexadecimalTablePart2](../../src/networking/hexadecimalTablePart2.png)
 
 <br>
 
@@ -93,7 +93,7 @@
 
 <br>
 
-![hexadecimalTableConversion](./src/hexadecimalTableConversion.png)
+![hexadecimalTableConversion](../../src/networking/hexadecimalTableConversion.png)
 
 <br>
 
