@@ -223,7 +223,7 @@ Start of Document
 
 |Command|Description|
 |:---|:---|
-|git push <br> git push < remote-name > < branch-name > <br> git push -u < remote-name > < branch-name > or git push --set-upstream < remote-name > < branch-name > <br> git push --delete < remote-name > < branch-name > <br> git push < tag-name> or git push --tags|You can use this command to push files to a git repo in the cloud, as well as deleting remote repo's and managing repo's in general and pushing tags|
+|git push <br> git push < remote-name > < branch-name > <br> git push -u < remote-name > < branch-name > or git push --set-upstream < remote-name > < branch-name > <br> git push --delete < remote-name > < branch-name > <br> git push < tag-name> or git push --tags <br> git push --all|You can use this command to push files to a git repo whether it be github or whatever other platform you using, as well as deleting remote repo's and managing repo's in general and pushing tags. You can all push all branch's with the --all flag|
 
 <br>
 <br>
