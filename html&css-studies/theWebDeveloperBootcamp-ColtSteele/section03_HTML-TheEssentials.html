@@ -2,17 +2,18 @@
 <html>
 
     <head>
+        <!-- title -->
         <title>HTML - The Essentials</title>
     </head>
 
     <body>
         <header>
             <!-- header -->
-            <h1><b>HTML: The Essentials</b></h1>
+            <h1>HTML: The Essentials</h1>
         </header>
         <article>
             <!-- table of contents -->
-            <h2><b>Table of Contents</b></h2>
+            <h2>Table of Contents</h2>
             <ul>
                 <li>Introduction to HTML
                     <ul>
@@ -29,8 +30,7 @@
         </article>
         <main>
             <!-- main -->
-            <!-- heading - introduction to html -->
-            <h2><b>Introduction to HTML</b></h2>
+            <h2>Introduction to HTML</h2>
             <p>
                 Taking a look at this saying, the <b>Purple Dino Danced</b>. We can break down what HTML is compared to
                 and
@@ -83,41 +83,101 @@
                 make
                 the header bold, like so &lt;h1&gt;&lt;b&gt;This is a header in bold&lt;/b&gt;&lt;/h1&gt;.
             </p>
-            <!-- sub-heading - paragraph elements -->
-            <h3><b>Paragraph Elements</b></h3>
+            <h3>Paragraph Elements</h3>
             <p>
-                The first element we look at is the &lt;p&gt; for paragraph, and this doesn't mean its only for text
-                purposes, you can have a paragraph for things you wish to group together. That could be a paragraph of
-                images or different pieces of a form. However for now we are only focused on textual paragraphs.
+                The first element we look at is the &lt;p&gt; for paragraph element, and this doesn't mean its only for text purposes, you can have a paragraph for things you wish to group together. That could be a paragraph of images or different pieces of a form. However for now we are only focused on textual paragraphs.
             </p>
-            <!-- sub-heading - heading elements -->
-            <h3><b>Heading Elements</b></h3>
+            <P>
+                The paragraph element has a opening and closing tag to indicate the start and end of said paragraph or group. A paragraph can also contain nested elements such as <b>bold</b>, <i>italics</i> and various other elements in HTML. The paragraph element is a block level element, that take take up there on block.
+            </P>
+            <h3>Heading Elements</h3>
             <p>
-                Write something here
+                A heading element is a way to provide headings on documents. There are some rules however, each document can only contain 1 &lt;h1&gt; heading, as well as a specific structure to follow. 
             </p>
-            <h3><b>HTML Boilerplate or otherwise known as the HTML Skeleton</b></h3>
             <p>
-                Write Something here
+                The structure is as follows:
+                <ul>
+                    <li>&lt;h1&gt;H1 Heading&lt;/h1&gt;
+                        <ul>
+                            <li>&lt;h2&gt;H2 Heading&lt;/h2&gt;
+                                <ul>
+                                    <li>&lt;h3&gt;H3 Heading&lt;/h3&gt;
+                                        <ul>
+                                            <li>
+                                                &lt;h4&gt;H4 Heading&lt;/h4&gt;
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>&lt;h3&gt;H3 Heading&lt;/h3&gt;
+                                        <ul>
+                                            <li>&lt;h4&gt;H4 Heading&lt;/h4&gt;</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                The structure above follows a form of hierarchy. 
             </p>
-            <!-- sub-heading - list elements -->
-            <h3><b>List Elements</b></h3>
             <p>
-                Write Something Here
+                You can have multiple h2-h6 headings as illustrated above, though the nested headings should follow the heirarchy form. So never use a &lt;h1&gt;-&lt;h6&gt; for only the size, as these headings have a default size and can be changed using css.
             </p>
-            <!-- sub-heading - anchor tags -->
-            <h3><b>Anchor Tags</b></h3>
+            <P>
+                Just like the paragraph takes up its own space due to it being a block level element, so is the headings element. Anything that comes after the closing tag will be pushed to its own line.
+            </P>
+            <h3>HTML Boilerplate</h3>
             <p>
-                Write Something Here
+                HTML Boilerplate or otherwise known as the HTML Skeleton, is essential to every .html document. The boilerplate follows a structure of a Doctype, html element as well as a head and a body. Hre is an example of the essential skeleton needed.
             </p>
-            <!-- sub-heading - images -->
-            <h3><b>Images</b></h3>
             <p>
-                Write Something Here
+                <ul>
+                    <li>&lt;!DOCTYPE html&gt;</li>
+                    <li>&lt;html&gt;
+                        <ul>
+                            <li>&lt;head&gt;
+                                <ul>
+                                    <li>&lt;title&gt;&lt;/title&gt;</li>
+                                </ul>
+                            </li>
+                            <li>&lt;/head&gt;</li>
+                            <li>&lt;body&gt;</li>
+                            <li>&lt;/body&gt;</li>
+                        </ul>
+                    </li>
+                    <li>&lt;/html&gt;</li>
+                </ul>
             </p>
-            <!-- sub-heading - comments -->
-            <h3><b>Comments</b></h3>
             <p>
-                Write something Here
+                Starting from the top down,the &lt;!DOCTYPE&gt; is something of a flag to your browser indicating that this page is using HTML5. This does not need a opening and closing tag. The &lt;html&gt; element or otherwise known as the root element, is the top level element on the document and every other element is a decendant of this element. However there is a rule, you are only allowed 1 head element and one body element.
+            </p>
+            <p>
+                That brings us to the &lt;head&gt; element. The head element contains things that wont show up on the page, such meta data, information about the web page like &lt;title&gt; and various other things like loading in css or scripts. Just below the head we have the &lt;body&gt; which represents all of the content in out document and it can include any of the elements we have learn't so far.
+            </p>
+            <h3>List Elements</h3>
+            <p>
+                There are 2 kinds of list elements, a &lt;ul&gt;&lt;/ul&gt; un-ordered list or bulleted list and a &lt;ol&gt;&lt;/ol&gt; ordered list or numbered list. These list elements contain a child element &lt;li&gt;&lt;/li&gt;. You can also nested &lt;script&gt; or &lt;template&gt;.
+            </p>
+            <p>
+                You can also nest another list within a list. You can also mix up a ordered list with a un-oreder list.
+            </p>
+            <h3>Anchor Tags</h3>
+            <p>
+                The anchor tag is by far the most crucial element in HTML, as it is used to provide links to other pages, or to jump to a specific heading on a page. The &lt;a&gt;&lt;/a&gt; tage is opening and closing but also contains something known as a attribute. An attribute as seen here &lt;a href="www.google.com"&gt;google&lt;/a&gt; tells the anchor where to go.
+            </p>
+            <p>
+                You will notice the attribute sits inside the tag, while the text being displayed is inbetween the tag. This particular attribute named href, which stands for hypertext reference, will be on every single anchor you make. With anchor tags, you can link to local documents, or a web page.
+            </p>
+            <h3>Images</h3>
+            <p>
+                The &lt;img&gt; element is the first element that does not have an opening or closing tag, however does have attributes to indicatate the source for where to fetch the image being embedded. An example of this would be &lt;img src="/some/location"&gt; or &lt;img src="https://some.co/location"&gt;
+            </p>
+            <p>
+                The img element can hold further attributes to size the image or alt text as so &lt;img src="/some/location" width="200px"&gt; and &lt;img src="/some/location" alt="Alt text for screen readers"&gt;.
+            </p>
+            <h3>Comments</h3>
+            <p>
+                Comment in html, is a way to add notes to your html that wont be rendered by the web browser. The commit element looks like so &lt;!-- comment here--&gt;
             </p>
         </main>
         <footer>
