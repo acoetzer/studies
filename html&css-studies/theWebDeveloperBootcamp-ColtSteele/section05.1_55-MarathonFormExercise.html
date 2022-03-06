@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <!-- title -->
+        <title>55 - Marathon Form Exercise</title>
+    </head>
+
+    <body>
+        <header>
+            <!-- header -->
+            <h1>55: Marathon Form Exercise</h1>
+            <h2>Building an html form</h2>
+        </header>
+        <article>
+            <!-- table of contents -->
+            <h2>Table of Contents</h2>
+            <ul>
+                <li>The Form</li>
+            </ul>
+        </article>
+        <main>
+            <!-- main -->
+            <h2>The Form</h2>
+            <h2>Race Registration!</h2>
+            <form action="/tacos">
+                <div>
+                    <label for="first">First Name</label>
+                    <input type="text" placeholder="first name" name="first_name" id="first" required>
+                    <label for="last">Last Name</label>
+                    <input type="text" placeholder="last name" name="last_name" id="last" required>
+                </div>
+                <p>
+                    Select a Race:
+                </p>
+                <div>
+                    <input type="radio" name="race" id="fun" value="fun" required>
+                    <label for="fun">Fun Run 5k</label>
+                </div>
+                <div>
+                    <input type="radio" name="race" id="half" value="half" required>
+                    <label for="half">Half Marathon</label>
+                </div>
+                <div>
+                    <input type="radio" name="race" id="full" value="full" required>
+                    <label for="full">Full Marathon</label>
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" placeholder="email" name="email" id="email" required>
+                    <label for="password">Password</label>
+                    <input type="password" placeholder="password" name="password" id="password" minlength="6"
+                        maxlength="16" required>
+                </div>
+                <div>
+                    <label for="age">Select Age Group</label>
+                    <select name="age_group" id="age" required>
+                        <option value="kids">Under 18</option>
+                        <option value="young_adults">Age 18 to 30</option>
+                        <option value="adults">Age 31 to 49</option>
+                        <option value="seniors">Age 50+</option>
+                    </select>
+                </div>
+                <button>Register!</button>
+            </form>
+        </main>
+        <footer>
+            <p>
+                document set to change.
+            </p>
+        </footer>
+    </body>
+
+</html>
