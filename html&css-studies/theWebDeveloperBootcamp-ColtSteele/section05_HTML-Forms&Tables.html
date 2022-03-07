@@ -20,17 +20,43 @@
                         <li><a href="#tab_tr">Tables: TR, TD, and TH element</a></li>
                         <li><a href="#tab_the">Tables: Thead, Tbody and Tfoot Elements</a></li>
                         <li><a href="#tab_col">Tables: Colspan & Rowspan</a></li>
+                        <li><a href="#an_exa_table">An example of a html table</a></li>
                     </ul>
                 </li>
                 <li><a href="#the_for">The Form Element</a>
                     <ul>
                         <li><a href="#com_inp">Common input types</a></li>
+                        <li><a href="#exp_att">Explaining attributes</a>
+                            <ul>
+                                <li><a href="#typ">type="?"</a></li>
+                                <li><a href="#pla">placeholder="?"</a></li>
+                                <li><a href="#nam">name="?"</a></li>
+                                <li><a href="#id">id="?"</a></li>
+                                <li><a href="#min_max">min="?" minlength="?" or max="?" maxlength="?"</a></li>
+                                <li><a href="#val">value="?"</a></li>
+                                <li><a href="#che">checked</a></li>
+                                <li><a href="#for">for="?"</a></li>
+                            </ul>
+                        </li>
                         <li><a href="#the_all">The all important label element</a></li>
                         <li><a href="#htm_but">HTML Buttons</a></li>
                         <li><a href="#the_nam">The name attriubute</a></li>
-                        <li><a href="#rad_but">Radio buttons, Checkboxes & Selects</a></li>
-                        <li><a href="#ran_tex">Range & Text area</a></li>
+                        <li><a href="#rad_but">Radio buttons, Checkboxes & Selects</a>
+                            <ul>
+                                <li><a href="rad_but_2">Radio Buttons</a></li>
+                                <li><a href="#che_box">Checkboxes</a></li>
+                                <li><a href="#sel_opt">Select & Option</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#ran_tex">Range & Text area</a>
+                            <ul>
+                                <li><a href="#ran">Range</a></li>
+                                <li><a href="#tex_are">text area<< /a>
+                                </li>
+                            </ul>
+                        </li>
                         <li><a href="#htm_val">HTML Validations</a></li>
+                        <li><a href="#an_exa_form">An example of a form and various elements</a></li>
                     </ul>
                 </li>
             </ul>
@@ -41,65 +67,419 @@
                 <!-- introducing html tables -->
                 <h2 id="int_htm">Introducing HTML tables</h2>
                 <p>
-                    <ul>
-                        <li>&lt;table&gt;&lt;/table&gt;</li>
-                    </ul>
-                    In short, tables are a why to show tabular data such as rows and columns, as you would expect to see in a table. In the past tables were not just used for tabular data but used to layout a website as well, whereas today you don't really need to do that.
+                <ul>
+                    <li>&lt;table&gt;&lt;/table&gt;</li>
+                </ul>
+                In short, tables are a why to show tabular data such as rows and columns, as you would expect to see in
+                a table. In the past tables were not just used for tabular data but used to layout a website as well,
+                whereas today you don't really need to do that.
                 </p>
                 <p>
-                    The way you begin a table is with the table element shown above, there are various child elements that go within a table element.
+                    The way you begin a table is with the table element shown above, there are various child elements
+                    that go within a table element.
                 </p>
                 <h3 id="tab_tr">Tables: TR, TD, and TH element</h3>
-                <p>
+                <div>
                     <ul>
-                        <li>&lt;tr&gt;&lt;/tr&gt;</li>
-                        <li>&lt;td&gt;&lt;/td&gt;</li>
-                        <li>&lt;th&gt;&lt;/th&gt;</li>
+                        <li>&lt;tr&gt;&lt;/tr&gt;
+                            <ul>
+                                <li>&lt;td&gt;&lt;/td&gt;</li>
+                                <li>&lt;th&gt;&lt;/th&gt;</li>
+                            </ul>
+                        </li>
                     </ul>
+                </div>
+                <p>
+                    The first set of child elements related to the table element is tr, td, th. tr stands for table row,
+                    this adding a row to the data table and the child elements which follows fit into the tr element.
+                    The first would be the th element, which represents the table heading cells or header cells.
+                </p>
+                <p>
+                    The second nested element for tr would be the td element. The td element stands for table data cell
+                    and these are the cells that would be placed on the table row.
                 </p>
                 <h3 id="tab_the">Tables: Thead, Tbody and Tfoot Elements</h3>
+                <div>
+                    <ul>
+                        <li>&lt;thead&gt;&lt;/thead&gt;</li>
+                        <li>&lt;tbody&gt;&lt;/tbody&gt;</li>
+                        <li>&lt;tfoot&gt;&lt;/tfoot&gt;</li>
+                    </ul>
+                </div>
                 <p>
-                    write here
+                    So like semantic elements, tables have there own set of semantic "divs" in a way. It's pretty self
+                    explanatory. thead grouping heading elements, tbody grouping the body of the table, essentially
+                    everything else and tfoot grouping footer element or what would considered footer elements.
                 </p>
                 <h3 id="tab_col">Tables: Colspan & Rowspan</h3>
+                <div>
+                    <ul>
+                        <li>&lt;th colspan="2"&gt;&lt;/th&gt;</li>
+                        <li>&lt;td rowspan="2"&gt;&lt;/td&gt;</li>
+                    </ul>
+                </div>
                 <p>
-                    write here
+                    colspan & rowspan are attributes placed within the table element tags, as demonstrated above. The
+                    basic idea is that you can make one heading or cell span across multiple rows or coloumns.
                 </p>
+                <h3 id="an_exa_table">An example of a html table</h3>
+                <div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="5">The World of Peppers</th>
+                            </tr>
+                            <tr>
+                                <th rowspan="2">Pepper Name</th>
+                                <th colspan="3">Pepper Color</th>
+                                <th rowspan="2">Hot or Not</th>
+                            </tr>
+                            <tr>
+                                <th>Red</th>
+                                <th>Green</th>
+                                <th>Yellow</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Bell</td>
+                                <td>Yes</td>
+                                <td>Yes</td>
+                                <td>Yes</td>
+                                <td>Not</td>
+                            </tr>
+                            <tr>
+                                <td>Banana</td>
+                                <td>No</td>
+                                <td>No</td>
+                                <td>Yes</td>
+                                <td>Hot</td>
+                            </tr>
+                            <tr>
+                                <td>Cherry</td>
+                                <td>Yes</td>
+                                <td>No</td>
+                                <td>No</td>
+                                <td>Hot</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td>small example of a table</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
             </section>
             <section>
                 <!-- The form element -->
                 <h2 id="the_for">The Form Element</h2>
+                <div>
+                    <ul>
+                        <li>&lt;form action="/tacos"&gt;&lt;/form&gt;</li>
+                    </ul>
+                </div>
                 <p>
-                    write here
+                    The form element in itself is just a container holding various input elements or individual form
+                    controls such as text inputs, checkboxes and buttons. Though we group these together in order to
+                    create a form. There are various different types of forms ranging from search bars, to login forms.
+                    The parent form element &lt;form&gt; which is used to contain input or form controls, is what
+                    specifies where and how the data is sent or used, by the use of the attribute known as action.
                 </p>
                 <h3 id="com_inp">Common input types</h3>
+                <div>
+                    <ul>
+                        <li>&lt;input type="text" placeholder="username" name="username" id="username" minlength="3"
+                            maxlength="20" required&gt;</li>
+                        <li>&lt;input type="password" placeholder="password" name="password" id="password" minlength="8"
+                            maxlength="16" required&gt;</li>
+                        <li>&lt;input type="email" placeholder="enter email" name="email" id="email" required&gt;</li>
+                        <li>&lt;input type="color"&gt;</li>
+                        <li>&lt;input type="number" name="username" id="username" min="3" max="10" required&gt;</li>
+                    </ul>
+                </div>
                 <p>
-                    write here
+                    The most common form control is the &lt;input&gt; element, which is extremely versatile. It can
+                    range from checkboxes, color pickers all the way to password and plain text inputs. The way that
+                    this works, even though it is one element (input), you change one attribute within the element, and
+                    that is the type attribute &lt;input type="text, password, email ..."&gt;.
+                </p>
+                <p>
+                    As we see above in the list, we can see various attributes but what do they mean?
+                </p>
+                <h3 id="exp_att">Explaining attributes</h3>
+                <h4 id="typ">type="?"</h4>
+                <p>
+                    The type attribute controls the type or "what" is being used in this input element. It can range
+                    from text, password, color, number, email, and many more depending on what is needed.
+                </p>
+                <h4 id="pla">placeholder="?"</h4>
+                <p>
+                    The placeholder attribute is used to display an example of sort or instruction of what a particular
+                    form control is looking for. As an example: <input type="text" placeholder="Type Username Here"
+                        maxlength="7">
+                </p>
+                <h4 id="nam">name="?"</h4>
+                <p>
+                    Check <a href="#the_nam">here</a> for explaining on the name attribute. Essentially the name
+                    attribute is a sory of like a key pair value system.
+                </p>
+                <h4 id="id">id="?"</h4>
+                <p>
+                    The id attribute specifies a unique id for an html element. In short, the id helps connect other
+                    elements together, or style sheets to a specific header as an example, or even to javascript,
+                    allowing it to manipulate certain elements.
+                </p>
+                <p>
+                    As an example, If you click this <a href="#id_example">word</a> it will place you cursor inside this
+                    text elemeent here <input type="text" id="id_example" maxlength="7">. This is achieved by using the
+                    id attribute and linking one thing to another through the use of unique identitfiers.
+                </p>
+                <p>
+                    This should go without saying, but id's should be unique on any given page or document, you cannot
+                    have multiple of the id, nor should you start an id with a number.
+                </p>
+                <h4 id="min_max">min="?" minlength="?" or max="?" maxlength="?"</h4>
+                <p>
+                    The min and max attribute control the maximum number in a number controller, whereas the minlength
+                    and maxlength attributes control the minimum or maximum number of characters in a text controller.
+                </p>
+                <h4 id="val">value="?"</h4>
+                <P>
+                    There are various ways value affects different elements within html, however in general a value sets
+                    the value of an item. A good example would be a range controller, you can set the value to be 75 and
+                    everytime that range appears, it will default to 75.
+                </P>
+                <p>
+                    Another example of the value attribute is that you can give value to somehting that has no form of
+                    user input. Something like radio buttons, if submitted, you would see name=on. Even though it has a
+                    label connected to it, it just doesnt have a value, so therefor you can provide a value to something
+                    without user input.
+                </p>
+                <h4 id="che">checked</h4>
+                <p>
+                    Short explanation, this is an attribute that gives a checkbox controller or radio controller a a
+                    default checked box or option. An example would be this radio button already having one option
+                    marked: <input type="radio" name="race" id="1" checked> <input type="radio" name="race" id="2">
+                    <input type="radio" name="race" id="3">
+                </p>
+                <h4 id="req">required</h4>
+                <p>
+                    Check <a href="#htm_val">here</a> for explaining on the html form validations attribute. However in
+                    short the required attribute, forces certain controllers to be filled before excuting any action,
+                    such as submitting.
+                </p>
+                <h4 id="for">for=""</h4>
+                <p>
+                    Although we havent seen this yet, and can be seen <a href="#the_all">here</a>, the for attribute
+                    specifies to which element a label element belongs to.
                 </p>
                 <h3 id="the_all">The all important label element</h3>
+                <div>
+                    <ul>
+                        <li>&lt;label for=""&gt;&lt;label&gt;</li>
+                    </ul>
+                </div>
                 <p>
-                    write here
+                    Labels are an essential element to forms, even though some devs dont use them as they should. They
+                    use the placeholder attribute instead of a label, the placeholder however is not accessable for
+                    screen-readers, while labels are. This could also potentially affect SEO with google search engines.
                 </p>
                 <h3 id="htm_but">HTML Buttons</h3>
+                <div>
+                    <ul>
+                        <li>&lt;button&gt;&lt;/button&gt;</li>
+                        <li>&lt;button type="button"&gt;&lt;/button&gt;</li>
+                        <li>&lt;button type="submit"&gt;&lt;/button&gt;</li>
+                        <li>&lt;input type="button"&gt;</li>
+                        <li>&lt;input type="submit"&gt;</li>
+                    </ul>
+                </div>
                 <p>
-                    write here
+                    A button is pretty important to your typical web page, whether they in a form or not. Whatever you
+                    put inside the opening and closing tags of a button element, will be used to label the button.Button
+                    elements can be placed inside forms however their behavior is somewhat different to when outside a
+                    form. That is, that they will automatically submit, whereas outside a form it will not.
+                </p>
+                <p>
+                    You can add a type attribute to the button, as the example above &lt;button
+                    type="button"&gt;&lt;/button&gt; to stop it from submitting and just be a button, whereas the
+                    default for a button inside a form looks like this &lt;button type="submit"&gt;&lt;/button&gt;, even
+                    though we dont see those attributes.
+                </p>
+                <p>
+                    There is another form of button that can be used inside a form though less common, is bying using
+                    the input element with the type set to either button or submit as demonstrated above.
                 </p>
                 <h3 id="the_nam">The name attriubute</h3>
                 <p>
-                    write here
+                    The name attribute is very important to a input element, as it sends an http request to the form
+                    element action attribute. You can think of name being a name for the input value. Something like a
+                    key:value pair. An example can be name="username" and the request will be username=whatever input
+                    was given from user.
                 </p>
                 <h3 id="rad_but">Radio buttons, Checkboxes & Selects</h3>
+                <div>
+                    <ul>
+                        <li>&lt;input type="radio"&gt;</li>
+                        <li>&lt;input type="checkboxes"&gt;</li>
+                        <li>&lt;select name="" id=""&gt;
+                            <ul>
+                                <li>&lt;option value=""&gt;&lt;option&gt;</li>
+                            </ul>
+                            &lt;/select&gt;
+                        </li>
+                    </ul>
+                </div>
+                <h4 id="rad_but_2">Radio Buttons</h4>
+                <div>
+                    <ul>
+                        <li>&lt;label for="fun"&gt;Fun Run Race&lt;/label&gt;</li>
+                        <li>&lt;input type="radio" name="race" id="fun" value="fun" checked&gt;</li>
+                        <li>&lt;label for="half"&gt;Half Race&lt;/label&gt;</li>
+                        <li>&lt;input type="radio" name="race" id="fun" value="half"&gt;</li>
+                        <li>&lt;label for="full"&gt;Full Race&lt;/label&gt;</li>
+                        <li>&lt;input type="radio" name="race" id="full" value="full"&gt;</li>
+                    </ul>
+                </div>
                 <p>
-                    write here
+                    Radio button are like checkboxes except its either one or the other when it comes to selecting an
+                    option. The above illustration shows how this is done. You will notice the name attribute being the
+                    same, while the id's and values are different, this placing them under the same group.
+                </p>
+                <p>
+                    The above illustration also takes the chance to demonstrate how the value attribute is being used.
+                    We see that although the name is the same, the values indicate the difference between each option.
+                    This because there is no user input other than clicking or selecting the option, thefore how do we
+                    differentiate between all options, hence adding a value attribute.
+                </p>
+                <h4 id="che_box">Checkboxes</h4>
+                <ul>
+                    <li>&lt;input type="checkbox"&gt;</li>
+                </ul>
+                <p>
+                    Checkbox, like radios are similair except in a group of radio buttons only 1 option is available,
+                    whereas checkbox can have multiple selected.
+                </p>
+                <h4 id="sel_opt">select & option</h4>
+                <ul>
+                    <li>&lt;select name="" id=""&gt;
+                        <ul>
+                            <li>&lt;option value=""&gt;&lt;/option&gt;</li>
+                        </ul>
+                        &lt;/select&gt;
+                    </li>
+                </ul>
+                <p>
+                    The select option is a way for you to make a drop down menu, while option is the child element for
+                    various options within the select element.
                 </p>
                 <h3 id="ran_tex">Range & Text area</h3>
+                <div>
+                    <ul>
+                        <li>&lt;input type="range" placeholder="" name="" id="" min="" max="" step="" value=""&gt;</li>
+                        <li>&lt;textarea name="" id="" cols="" rows=""&gt;&lt;/textarea&gt;</li>
+                    </ul>
+                </div>
+                <h4 id="ran">Range</h4>
                 <p>
-                    write here
+                    Range input, as seen above, creates a slider for users to select from. In the above example we can
+                    see that you can also have range attributes, where you provide a min or max for whatever controller
+                    or element.
+                </p>
+                <h4 id="tex_are">text area</h4>
+                <p>
+                    A text area is another form of text input, and is just a way to provide the user a way to type
+                    larger amounts of content.
                 </p>
                 <h3 id="htm_val">HTML Validations</h3>
+                <div>
+                    <ul>
+                        <li>&lt;input type="text" name="username" id="username" required&gt;</li>
+                    </ul>
+                </div>
                 <p>
-                    write here
+                    The subject on form validation ranges from the ability to add a required attibute to the simple
+                    validation given through some form controllers. This they are not the most sophisticated but they
+                    better than nothing. An example would the email input, although it will require a @ symbol, it
+                    doesn't actually varify if said email actually exists.
                 </p>
+                <h3 id="an_exa_form">An example of a form and various elements</h3>
+                <section>
+                    <form action="/tacos">
+                        <div>
+                            <label for="username">Username</label>
+                            <input type="text" placeholder="Enter Username" name="user" id="username">
+                        </div>
+                        <div>
+                            <label for="email">Email</label>
+                            <input type="email" placeholder="Enter Email" name="mail" id="email">
+                        </div>
+                        <div>
+                            <label for="password">Password</label>
+                            <input type="password" placeholder="Enter Password" name="pass" id="password">
+                        </div>
+                        <div>
+                            <label for="color">Whats your favourite color?</label>
+                            <input type="color" name="color" id="color" value="#00FFFB">
+                        </div>
+                        <div>
+                            <label for="number">Your favourite number?</label>
+                            <input type="number" placeholder="1 to 10" name="num" id="number" min="1" max="10">
+                        </div>
+                        <section>
+                            <p>
+                                Whats your favourite activities?
+                            </p>
+                            <div>
+                                <input type="checkbox" name="activity" id="code" value="coding">
+                                <label for="code">coding</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="activity" id="box" value="boxing">
+                                <label for="box">boxing</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="activity" id="swim" value="swimming">
+                                <label for="swim">swimming</label>
+                            </div>
+                        </section>
+                        <p>
+                            Which fast food do you like?
+                        </p>
+                        <section>
+                            <div>
+                                <input type="radio" name="food" id="mc" value="McDonalds"> 
+                                <label for="mc">Mc Donalds</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="food" id="king" value="Burger King"> 
+                                <label for="king">Burger King</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="food" id="kfc" value="KFC"> 
+                                <label for="kfc">KFC</label>
+                            </div>
+                        </section>
+                        <div>
+                            <label for="drinks">What drink you want with that?</label>
+                            <select name="drink" id="drinks">
+                                <option value="">-- Select an option --</option>
+                                <option value="coco_cola">Coco Cola</option>
+                                <option value="fanta">Fanta</option>
+                                <option value="sprite">Sprite</option>
+                            </select>
+                        </div>
+                        <div>
+                            <button type="button">This is a button with the button element</button>
+                            <input type="button" value="This is button with the input element">
+                        </div>
+                    </form>
+                </section>
             </section>
         </main>
         <footer>
