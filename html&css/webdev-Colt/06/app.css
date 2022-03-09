@@ -1,5 +1,4 @@
 body {
-    background-color: ;
     margin: auto;
     max-width: 1024px;
 }
@@ -73,5 +72,4 @@ table,thead,tbody {
 }
 th {
     border-bottom: 0.5px solid;
-    border-collapse: ;
 }
