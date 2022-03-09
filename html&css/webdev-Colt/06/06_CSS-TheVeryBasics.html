@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>CSS - The Very Basics</title>
+        <link rel="stylesheet" href="app.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>CSS: The Very Basics</h1>
+        </header>
+        <article>
+            <h2>Table of Contents</h2>
+            <ul>
+                <li><a href="#wic">What is CSS</a></li>
+                <li><a href="#isc">Including styles correctly</a></li>
+                <li><a href="#cbcp">Color & Background: Color Properties</a>
+                    <ul>
+                        <li><a href="#csrnhc">Color systems: RGB, Named & Hexadecimal colors</a></li>
+                    </ul>
+                </li>
+                <li><a href="#rosc">Reminder on Semicolons & CSS</a></li>
+                <li><a href="#ctp">Common text properties</a>
+                    <ul>
+                        <li><a href="#fsbwp">Font size basics with pixels</a></li>
+                        <li><a href="#tffp">The font family property</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </article>
+        <main>
+            <h2 id="wic">What is CSS</h2>
+            <p>
+                CCS allows us to control the style of an HTML page, but first we need the HTML page. CSS stands for
+                cascading style sheets and is not a full on programming language, it is a language though to describe
+                the visual aspects of our HTML document. Whenever we write CSS, we writing what is known as CSS rules.
+                Almost everything you do in CSS follows this basic pattern.
+            </p>
+            <h3>Generic example</h3>
+            <div class="code_examples">
+                <ul>
+                    <li>selector { <br>
+                        property: value; <br>
+                        }
+                    </li>
+                </ul>
+            </div>
+            <h3>More real example</h3>
+            <div class="code_examples">
+                <ul>
+                    <li>h1 { <br>
+                        color: purple; <br>
+                        }
+                    </li>
+                </ul>
+            </div>
+            <p>
+                Looking at the examples you see that you have something known as selector, for example h1, a property
+                being color and a value for the said property. So in the more real example you see all h1 headings,
+                which can only be 1, has the text color of purple. However it can become more complicated, you can add
+                more properties or a element selector with a attribute selector as well furthuring that.
+            </p>
+            <h2 id="isc">Including styles correctly</h2>
+            <p>
+                There are a couple ways to include css styles. You can write styles directly inline with an element,
+                however this is never a good idea. An example of that would be <span class="code_examples">&lt;h1
+                    style="color:purple"&gt;</span>. Another way is to use the style element which can be placed in the
+                head of the HTML document. The last way and highly recommended, is creating a .css file and then link it
+                in the HTML document using the link element. An example of a link element would look like this <span
+                    class="code_examples">&lt;link rel="stylesheet" href="app.css"&gt;</span>, where app.css would be
+                the app.css file you use for styling your
+                document.
+            </p>
+            <h2 id="cbcp">Color & Background: Color Properties</h2>
+            <p>
+                The Color property changes the color of the text while background-color property, which as it says will
+                change the background color of any given selector, note you also get a property background which can
+                change the background color but can do many other things as well.
+            </p>
+            <h3 id="csrnhc">Color systems: RGB, Named & Hexadecimal colors</h3>
+            <p>
+                The color property in css has a range of different color units it accepts, such as a name like pink or
+                orange, it can also take in hexadecimal values as so #ffffff, note that with hexadecimal if the 3 pairs
+                are the same value, you can write it in a shorter manner like this #fff or for example #cc55ee can be
+                written like #c5e. CSS also accepts rgb input like so rgb(214,122,127) note values need to be in
+                parenthesis as well as hsl colors hsl(30, 100%, 50% , .3). The color property will change the text color
+                and not the backgroung.
+            </p>
+            <h2 id="rosc">Reminder on Semicolons & CSS</h2>
+            <p>
+                A small reminder that to remember to place your <span class="code_examples"> semicolon ;</span> at the
+                end of the <span class="code_examples">property: value;</span> pair like so
+            </p>
+            <h2 id="ctp">Common text properties</h2>
+            <p>
+                There are various ways you can style text in CSS, this can range from aligning text to the center of the
+                page as so, <span class="code_examples">text-align: center</span>.Earlier when discussing HTML we noted
+                that its bad practice to use elements like <span class="code_examples">&lt;b&gt;</span> and to rather
+                use CSS, and here is an example of bolding with the font weight porperty <span
+                    class="code_examples">font-weight: 100 - 900 </span> or another example is to use words for the font
+                weight like so <span class="code_examples">font-weight: thin, normal,bold or bolder</span>. You can go
+                as far as placing an underline under the text using the text decoration property <span
+                    class="code_examples">text-decoration: plum wavy underline</span> or even just adjust the line
+                height or letter spacing like so <span class="code_examples">line-height: 1.2em</span>, <span
+                    class="code_examples">letter-spacing: 5px</span>.
+            </p>
+            <h3 id="fsbwp">Font size basics with pixels</h3>
+            <p>
+                The font size property has many different scalign or sizing units, however for now this is how you scale
+                font size with CSS and the pixel unit <span class="code_examples">font-size: 14px</span>. Most
+                developers use another unit which will be discussed later, rather than pixels as pixels have what is
+                known as a absolute size while the more preferred unit is relative. An example table below:
+            </p>
+            <div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Relative</th>
+                            <th>Absolute</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>EM</td>
+                            <td>PX</td>
+                        </tr>
+                        <tr>
+                            <td>REM</td>
+                            <td>PT</td>
+                        </tr>
+                        <tr>
+                            <td>VH</td>
+                            <td>CM</td>
+                        </tr>
+                        <tr>
+                            <td>VW</td>
+                            <td>IN</td>
+                        </tr>
+                        <tr>
+                            <td>%</td>
+                            <td>MM</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="2">and More!</td>
+                            <td></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+            <h3 id="tffp">The font family property</h3>
+            <p>
+                This is an example of the font family property <span class="code_examples">font-family: Ariel,
+                    Helvetica, Sans-serif</span> it is important to note the not all browsers share the same fonts, this
+                is also true across operating systems like Windows, Mac and linux. This is why we would set a font
+                family, so in case they dont have one specific font, it will fallback to the next available font or font
+                family. Later in the course we will learn how to add our own fonts.
+            </p>
+        </main>
+        <footer>
+            <p>
+                Document set to change.
+            </p>
+        </footer>
+    </body>
+
+</html>

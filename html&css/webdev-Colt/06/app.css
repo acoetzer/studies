@@ -1,0 +1,77 @@
+body {
+    background-color: ;
+    margin: auto;
+    max-width: 1024px;
+}
+
+header {    
+    padding-top: 2em;
+    padding-bottom: 1em;
+}
+article {
+    padding-bottom: 4em;
+}
+
+h2,h3,h4,h5,h6 {
+    color: black;
+    text-decoration: 0.1em underline;
+}
+
+h1 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    font-weight: normal;
+    letter-spacing: 10px;
+    line-height: 60px;
+    color: white;
+    background-color: cornflowerblue;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+}
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+p {
+    padding-bottom: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    line-height: 25px;
+    text-align: justify;
+}
+
+a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+    text-decoration: none;
+    font-weight: bold;
+    color: coral;
+}
+
+.code_examples {
+    font-weight: bold;
+    color: coral;
+}
+
+table,thead,tbody {
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    text-align: center;
+    border-collapse: separate;
+    border: 0.5px solid;
+    border-radius: 10px;
+    table-layout: fixed;
+    background-color: cornflowerblue;
+    color: white;
+}
+th {
+    border-bottom: 0.5px solid;
+    border-collapse: ;
+}
