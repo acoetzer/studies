@@ -1,9 +1,15 @@
+body {
+    width: 1024px;
+    margin: auto;
+}
+
 article a {
-    color: lightgrey;
+    color: grey;
     text-decoration: none;
 }
 
 article a:hover {
-    color: darkgrey;
+    font-size: 102%;
+    color: lightcoral;
     text-decoration: underline;
 }

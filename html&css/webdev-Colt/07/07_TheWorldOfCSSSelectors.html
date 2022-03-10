@@ -208,7 +208,7 @@
                         <li>:checked
                             <ul>
                                 <li>input[type="checkbox"]:checked { <br>
-                                        box-shadow: 0 0 0 3px red; <br>
+                                    box-shadow: 0 0 0 3px red; <br>
                                     }
                                 </li>
                             </ul>
@@ -228,7 +228,7 @@
                         <li>:nth-of-type()
                             <ul>
                                 <li>nav a:nth-of-type(2n) { <br>
-                                        color: blue; <br>
+                                    color: blue; <br>
                                     }
                                 </li>
                             </ul>
@@ -236,33 +236,122 @@
                     </ul>
                 </div>
                 <p>
-                    Pseudo Classes are like modifiers, they keywords we add on to the end of a selector that specify a particular state of that element. This how we can target checkbox's that have been checked 
+                    Pseudo Classes are like modifiers, they are keywords we add on to the end of a selector that specify
+                    a particular state of that element. This is how we can target checkbox's that have been checked,
+                    hover animations for buttons and other various actions.
                 </p>
                 <h3 id="pe">Pseudo Elements</h3>
+                <div>
+                    <h4>Pseudo Elements Example</h4>
+                    <ul>
+                        <li>::after</li>
+                        <li>::before</li>
+                        <li>::first-letter</li>
+                        <li>::first-line</li>
+                        <li>::selection</li>
+                    </ul>
+                </div>
                 <p>
-                    write here
+                    Pseudo elements are also like modifiers to selectors, however they modify or select a
+                    particular part of an element. Something like the first letter or the first line, or perhaps change
+                    the background color of a selection.
                 </p>
             </section>
             <section>
                 <h2 id="tcc">The CSS Cascade</h2>
+                <div>
+                    <ul>
+                        <li>.button { <br>
+                            color: cornflowerblue; <br>
+                            }
+                        </li>
+                        <li>.button { <br>
+                            color: red; <br>
+                            }
+                        </li>
+                    </ul>
+                </div>
                 <p>
-                    write here
+                    There will come times where you will run into some conflict, you will write a css rule and its not
+                    applying. Understand a few topics will help debug your issue and the first one will be in the name
+                    of CSS. Cascading, in CSS order matters. Looking at the example above red will be the winner as its
+                    the last input. There times when the last entry will win, but this is due to specificity.
                 </p>
             </section>
             <section>
                 <h2 id="wis">WTF is Specificity</h2>
+                <div>
+                    <ul>
+                        <li>#button { <br>
+                            color:green; <br>
+                            }
+                        </li>
+                        <li>button { <br>
+                            color: red; <br>
+                            }
+                        </li>
+                        <li>.button { <br>
+                            color: blue; <br>
+                            }
+                        </li>
+                    </ul>
+                </div>
                 <p>
-                    write here
+                    Specificity is the way your browser calculates which CSS rule is more important. In the above
+                    example the id will win the battle even though it is not the last entry in the list. This is because
+                    there is a order that needs to be remembered.
+                </p>
+                <div>
+                    <ul>
+                        <li>ID > <br>
+                            Class > <br>
+                            Element >
+                        </li>
+                    </ul>
+                </div>
+                <p>
+                    id's beat class and class beats element. Another way to look at this at the button example above. id
+                    is [1 0 0] in a scale from left to right. So id equals to 100, whereas class is [0 1 0], so class
+                    equals 10. Element [0 0 1] which equals to 1. Now its important to note that have 20 elements wont
+                    beat a class. Its just a way to calculate which is more important.
                 </p>
                 <h3 id="isi">Inline Styles & Important</h3>
                 <p>
-                    write here
+                    Although we just mentioned what are the most important there are 2 other factors that are even more
+                    important than an id. These methods are not advised to be used. However the first to beat id is the
+                    inline element. This is where you write directly on the html document inline with your element you
+                    trying to style.
+                </p>
+                <div>
+                    <ul>
+                        <li>.button:hover { <br>
+                            background-color: red !important; <br>
+                            }
+                        </li>
+                    </ul>
+                </div>
+                <p>
+                    The important "flag" of sorts will beat everything. This will completely override any other CSS
+                    rule. Never use this.
                 </p>
             </section>
             <section>
                 <h2 id="ci">CSS Inheritance</h2>
+                <div>
+                    <ul>
+                        <li>button {
+                            color: inherit;
+                            }
+                        </li>
+                    </ul>
+                </div>
                 <p>
-                    write here
+                    There is a such a thing as CSS inheritance, When a specific element hasn't been set or style it will
+                    just inherit the style from a parent element. An example of this would be setting a color property
+                    for a body element selector and all text on your page will inherit the same color as well.
+                </p>
+                <p>
+                    You can also set the value of a property to inherit to inherit the parent style I guess.
                 </p>
             </section>
         </main>
