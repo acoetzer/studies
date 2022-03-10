@@ -1,0 +1,9 @@
+article a {
+    color: lightgrey;
+    text-decoration: none;
+}
+
+article a:hover {
+    color: darkgrey;
+    text-decoration: underline;
+}

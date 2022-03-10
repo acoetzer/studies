@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
+
     <head>
         <title>The World Of CSS Selectors</title>
-        <link rel="stylesheet" href="app.css">
+        <link rel="stylesheet" href="styles.css">
     </head>
+
     <body>
         <header>
             <h1>The world of CSS selectors</h1>
@@ -12,89 +14,253 @@
             <h2>Table of Contents</h2>
             <nav>
                 <ul>
-                    <li><a href="">Universal & Element Selectors</a></li>
-                    <li><a href="">The ID Selector</a></li>
-                    <li><a href="">The Class Selector</a></li>
-                    <li><a href="">The Decendant Selector</a>
+                    <li><a href="#ues">Universal & Element Selectors</a>
                         <ul>
-                            <li><a href="">The Adjacent & Direct Child Selector</a></li>
+                            <li><a href="gcr">Generic CCS Rule</a></li>
+                            <li><a href="us">Universal Selector</a></li>
                         </ul>
                     </li>
-                    <li><a href="">Pseudo Classes</a></li>
-                    <li><a href="">Pseudo Elements</a></li>
-                    <li><a href="">The CSS Cascade</a></li>
-                    <li><a href="">WTF is Specificity</a>
+                    <li><a href="#tis">The ID Selector</a></li>
+                    <li><a href="#tcs">The Class Selector</a></li>
+                    <li><a href="#tds">The Decendant Selector</a>
                         <ul>
-                            <li><a href="">Inline Styles & Important</a></li>
+                            <li><a href="#tadcs">The Adjacent & Direct Child Selector</a></li>
                         </ul>
                     </li>
-                    <li><a href="">CSS Inheritance</a></li>
+                    <li><a href="#tas">The Attribute Selector</a></li>
+                    <li><a href="#pc">Pseudo Classes</a></li>
+                    <li><a href="#pe">Pseudo Elements</a></li>
+                    <li><a href="#tcc">The CSS Cascade</a></li>
+                    <li><a href="#wis">WTF is Specificity</a>
+                        <ul>
+                            <li><a href="#isi">Inline Styles & Important</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#ci">CSS Inheritance</a></li>
                 </ul>
             </nav>
         </article>
         <main>
             <section>
-                <h2>Universal & Element Selectors</h2>
+                <h2 id="ues">Universal & Element Selectors</h2>
+                <div>
+                    <h3 id="gcr">Generic CCS Rule</h3>
+                    <ul>
+                        <li>selector { <br>
+                            property: value; <br>
+                            }
+                        </li>
+                    </ul>
+                </div>
+                <p>
+                    There are various ways you can write CSS rules, and remembering the generic CSS rule above, there
+                    are various ways to select different elements or the selector, even more
+                </p>
+                <h3 id="us">Universal Selector</h3>
+                <div>
+                    <h4>Universal Selector Example</h4>
+                    <ul>
+                        <li>* { <br>
+                            property: value; <br>
+                            }
+                        </li>
+                    </ul>
+                </div>
+                <p>
+                    The universal selector is represented with a * (asterix) symbol and this selects everything in your
+                    HTML document for styling. Side note, It will try and style images as well and if you add the color
+                    property to it as an example, it will try to style it as well even though it can't.
+                </p>
+                <h3 id="us">Element Selector</h3>
+                <div>
+                    <h4>Element Selector Examples</h4>
+                    <ul>
+                        <li>button { <br>
+                            property: value; <br>
+                            }
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>h1,h2 { <br>
+                            property: value <br>
+                            }
+                        </li>
+                    </ul>
+                </div>
+                <p>
+                    Above we have 2 examples of element selectors. The first example with the button element,
+                    illustrates that all buttons on the HTML page will follow that css rule. While the second example
+                    indicates that you can style more than one element selector by separating selectors with a comma.
+                    The second example means, all h1 elements and all h2 elements to follow said css rule.
+                </p>
+                <h3 id="tis">The ID Selector</h3>
+                <div>
+                    <h4>ID Selector Example</h4>
+                    <ul>
+                        <li>#search { <br>
+                            property: value; <br>
+                            }
+                        </li>
+                    </ul>
+                </div>
+                <p>
+                    We know that in HTML we can give certain elements an ID attribute to link things like headings to an
+                    input as an example. Though ids' can also be used by elements as a form of a hook to style elements.
+                    We can then make a css rule using a # (hash) symbol for the ID hook followed by the id name, as the
+                    example above to style a particular element. This is not to say that you should use a bunch of id's
+                    to style your HTML document. In fact this is not good practice and should be avoided, try to keep
+                    the amount of id's on a page to a minimum.
+                </p>
+                <p>
+                    There are other selectors which are more suitable, like the class attribute/selector below.
+                </p>
+                <h3 id="tcs">The Class Selector</h3>
+                <div>
+                    <h4>Class Selector Example</h4>
+                    <ul>
+                        <li>.tags { <br>
+                            property: value; <br>
+                            }
+                        </li>
+                    </ul>
+                </div>
+                <p>
+                    Here you can already see the difference between the id selector and class. We use the . (period)
+                    symbol followed by the class name to indicate we selecting a class attribrute in CSS. As mentioned
+                    above its not best practice to use a bunch of id attributes to style your page as id's are meant to
+                    be unique. So you cannot give multiple element the same id to multiple elements and hope to style 10
+                    things at once. However you can do so with the class attribute. An ample of this is if you have
+                    multiple tags on your page and they should all have the same style, you can give them the same
+                    class="tags" and then make a rule as shown above.
+                </p>
+                <p>
+                    This is why using classes is the more preferred method and most commonly used among developers.
+                </p>
+                <h3 id="tds">The Decendant Selector</h3>
+                <div>
+                    <h4>Decendant Selector Example</h4>
+                    <ul>
+                        <li>li a { <br>
+                            property: value; <br>
+                            }
+                        </li>
+                    </ul>
+                </div>
+                <p>
+                    The decendant selector is written with a space, so in the example above we have li (space) a. This
+                    is saying that we want to style all anchor tags that are nested within a list element. The anchor
+                    tag just has to be somewhere inside the list, doesnt have to be directly after a list element, it
+                    just needs to be nested somewhere within the list element.
+                </p>
+                <p>
+                    Side note, the list will not be affect or anything else inside the list will not be affect, as an
+                    example, if you had a list then header and then anchor tag, it will not affect the list or header.
+                </p>
+                <h3 id="tadcs">The Adjacent & Direct Child Selector</h3>
+                <h4>These are not very common to use!</h4>
+                <div>
+                    <h4>Adjacent Selector Example</h4>
+                    <ul>
+                        <li>h1 + p { <br>
+                            property: value; <br>
+                            }
+                        </li>
+                    </ul>
+                </div>
+                <p>
+                    The adjacent selector or combinator is written with a + (plus) symbol. This means that it will
+                    affect only the elements proceeding the first selector. So in the example above, only paragraphs
+                    that proceed after a h1 heading. Not the headings themselves.
+                </p>
+                <div>
+                    <h4>Direct Child/Decendant Selector Example</h4>
+                    <ul>
+                        <li>div > li { <br>
+                            property: value; <br>
+                            }
+                        </li>
+                    </ul>
+                </div>
+                <p>
+                    The direct child or decendant is written with a > (greater than) symbol. Looking at the example
+                    above, this means that any list element that is nested directly after a div element will be styled.
+                </p>
+                <h3 id="tas">The Attribute Selector</h3>
+                <div>
+                    <ul>
+                        <li>input[type="password"] { <br>
+                            property: value; <br>
+                            }
+                        </li>
+                    </ul>
+                </div>
+                <p>
+                    The attribute selector is written with [] (square brackets). You can select based off of attributes,
+                    as the example above, you can select an input with a type set to password. You can also go as far as
+                    typing [class="post"]. Imagine you had multiple classes with post but you only want to style
+                    sections with the class post and not anything else.
+                </p>
+                <h3 id="pc">Pseudo Classes</h3>
+                <div>
+                    <h4>Pseudo Classes Example</h4>
+                    <ul>
+                        <li>:active</li>
+                        <li>:checked
+                            <ul>
+                                <li>input[type="checkbox"]:checked { <br>
+                                        box-shadow: 0 0 0 3px red; <br>
+                                    }
+                                </li>
+                            </ul>
+                        </li>
+                        <li>:first</li>
+                        <li>:first-child</li>
+                        <li>:hover
+                            <ul>
+                                <li>a:hover { <br>
+                                    text-decoration: underline; <br>
+                                    }
+                                </li>
+                            </ul>
+                        </li>
+                        <li>:not()</li>
+                        <li>:nth-child()</li>
+                        <li>:nth-of-type()
+                            <ul>
+                                <li>nav a:nth-of-type(2n) { <br>
+                                        color: blue; <br>
+                                    }
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <p>
+                    Pseudo Classes are like modifiers, they keywords we add on to the end of a selector that specify a particular state of that element. This how we can target checkbox's that have been checked 
+                </p>
+                <h3 id="pe">Pseudo Elements</h3>
                 <p>
                     write here
                 </p>
             </section>
             <section>
-                <h2>The ID Selector</h2>
+                <h2 id="tcc">The CSS Cascade</h2>
                 <p>
                     write here
                 </p>
             </section>
             <section>
-                <h2>The Class Selector</h2>
+                <h2 id="wis">WTF is Specificity</h2>
+                <p>
+                    write here
+                </p>
+                <h3 id="isi">Inline Styles & Important</h3>
                 <p>
                     write here
                 </p>
             </section>
             <section>
-                <h2>The Decendant Selector</h2>
-                <p>
-                    write here
-                </p>
-            </section>
-            <section>
-                <h3>The Adjacent & Direct Child Selector</h3>
-                <p>
-                    write here
-                </p>
-            </section>
-            <section>
-                <h2>Pseudo Classes</h2>
-                <p>
-                    write here
-                </p>
-            </section>
-            <section>
-                <h2>Pseudo Elements</h2>
-                <p>
-                    write here
-                </p>
-            </section>
-            <section>
-                <h2>The CSS Cascade</h2>
-                <p>
-                    write here
-                </p>
-            </section>
-            <section>
-                <h2>WTF is Specificity</h2>
-                <p>
-                    write here
-                </p>
-            </section>
-            <section>
-                <h3>Inline Styles & Important</h3>
-                <p>
-                    write here
-                </p>
-            </section>
-            <section>
-                <h2>CSS Inheritance</h2>
+                <h2 id="ci">CSS Inheritance</h2>
                 <p>
                     write here
                 </p>
@@ -104,4 +270,5 @@
             Document set to change.
         </footer>
     </body>
+
 </html>
