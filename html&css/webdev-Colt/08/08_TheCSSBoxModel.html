@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The CSS Box Model</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>The CSS Box Model</h1>
+        </header>
+        <article id="toc">
+            <h2>Table of Contents</h2>
+            <nav>
+                <ul>
+                    <li><a href="#tbmd">The Box Model Diagram</a></li>
+                    <li><a href="#bmwh">Box Model: Width & Height</a></li>
+                    <li><a href="#bmbbr">Box Model: Border & Border-Radius</a></li>
+                    <li><a href="#bmp">Box Model: Padding</a></li>
+                    <li><a href="#bmm">Box Model: Margin</a></li>
+                    <li><a href="#tdp">The Display Property</a></li>
+                    <li>
+                        <a href="#cur">CSS Units Revisited</a>
+                        <ul>
+                            <li><a href="#per">% Percentages</a></li>
+                            <li><a href="#em">em's</a></li>
+                            <li><a href="#rem">rem's</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </article>
+        <main>
+            <article>
+                <h2 id="tbmd">The Box Model Diagram</h2>
+                <img src="../../../src/html&css/theBoxModel.png" alt="The Box Model Illustration for CSS">
+            </article>
+            <section>
+                <h2 id="bmwh">Box Model: Width & Height</h2>
+                <p>
+                    The box model is the idea that everything in css is a box and those box's have a couple of different
+                    properties. When looking at the diagram above we can see the core pieces of what makes up the box's.
+                    The inner content box, is where the actual content will be,next to that is padding, then a border
+                    and then margin which is completely outside the box. The two properties that control the inner
+                    content box is width & height.
+                </p>
+                <p>
+                    Looking at the diagram above you see the area width and height controls.
+                </p>
+            </section>
+            <section>
+                <h2 id="bmbbr">Box Model: Border & Border-Radius</h2>
+                <div>
+                    <ul>
+                        <li>border: width / style / color</li>
+                        <li>
+                            border-width:
+                            <ul>
+                                <li>border-top-width</li>
+                                <li>border-right-width</li>
+                                <li>border-bottom-width</li>
+                                <li>border-left-width</li>
+                            </ul>
+                        </li>
+                        <li>
+                            border-style:
+                            <ul>
+                                <li>border-top-style</li>
+                                <li>border-right-style</li>
+                                <li>border-bottom-style</li>
+                                <li>border-left-style</li>
+                                <li>and more!</li>
+                            </ul>
+                        </li>
+                        <li>
+                            border-color:
+                            <ul>
+                                <li>border-top-color</li>
+                                <li>border-right-color</li>
+                                <li>border-bottom-color</li>
+                                <li>border-left-color</li>
+                                <li>and more!</li>
+                            </ul>
+                        </li>
+                        <li>
+                            border-radius:
+                            <ul>
+                                <li>border-top-left-radius</li>
+                                <li>border-top-right-radius</li>
+                                <li>border-bottom-left-radius</li>
+                                <li>border-bottom-right-radius</li>
+                            </ul>
+                        </li>
+                        <li>
+                            box-sizing:
+                            <ul>
+                                <li>box-sizing: border-box</li>
+                                <li>box-sizing: content-box</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <p>
+                    Border has a shorthand property called border:, however it does have dozens of other border related
+                    properties that we can control, as illustrated above in the list. Properties such as change
+                    the left, top, right or bottom border independantly. We can also set the border radius to have
+                    rounded corners. Looking once again at the above diagram, we see the border is on the edge of the
+                    box model, basically a border is around the element.
+                </p>
+                <p>
+                    Take note of the property box-sizing. When you set a box to be 200px wide, and you place a border of
+                    5px around it, your width just became 210px wide. With the box-sizing property, you can change that
+                    to a value of border-box, which will keep the orginal width set, but however subtract.
+                </p>
+                <p>
+                    You can use different size units such as px, em, rem, % .. one common one is to set a square
+                    box at 50% border radius to make a circle. An exmaple of this would be like so:
+                </p>
+                <div>
+                    <ul>
+                        <li>div { <br>
+                            width: 200px; <br>
+                            height: 200px; <br>
+                            border-radius: 50%; <br>
+                            }
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section>
+                <h2 id="bmp">Box Model: Padding</h2>
+                <div>
+                    <ul>
+                        <li>
+                            padding:
+                            <ul>
+                                <li>padding-top</li>
+                                <li>padding-right</li>
+                                <li>padding-bottom</li>
+                                <li>padding-left</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <p>
+                    The next piece we need to cover is padding, padding is the space between the content box and the
+                    border. Basically if you want to make some content breath a little you can use padding to solve
+                    that.
+                    An example can be a button needing a little bit of space between the border and text.
+                </p>
+                <p>
+                    There is a padding shothand property called padding: that unlike the border, has a few different
+                    patterns depending
+                    on the amount of input. As an example:
+                </p>
+                <div>
+                    <ul>
+                        <li>
+                            padding: 5%;
+                            <ul>
+                                <li>5% padding for all sides</li>
+                            </ul>
+                        </li>
+                        <li>
+                            padding: 10px;
+                            <ul>
+                                <li>10px padding for all sides</li>
+                            </ul>
+                        </li>
+                        <li>
+                            pading: 10px 20px;
+                            <ul>
+                                <li>10px padding for Top & Bottom</li>
+                                <li>20px padding for Left & Right</li>
+                            </ul>
+                        </li>
+                        <li>
+                            padding: 10px 3% 20px;
+                            <ul>
+                                <li>10px padding for top</li>
+                                <li>3% padding for left & right</li>
+                                <li>20px padding for bottom</li>
+                            </ul>
+                        </li>
+                        <li>
+                            padding: 1em 3px 30px 5px;
+                            <ul>
+                                <li>1em padding for top</li>
+                                <li>3px padding for right</li>
+                                <li>30 padding for bottom</li>
+                                <li>5px padding for left</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <p>
+                    Looking at the patterns above, the more common one will be the last and remember that from top it
+                    moves clock-wise all the way to left.
+                </p>
+            </section>
+            <section>
+                <h2 id="bmm">Box Model: Margin</h2>
+                <div>
+                    <ul>
+                        <li>
+                            margin:
+                            <ul>
+                                <li>margin-top</li>
+                                <li>margin-right</li>
+                                <li>margin-bottom</li>
+                                <li>margin-left</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <p>
+                    The remaining piece of the box model is margin. Looking at the diagram above margin is the space
+                    between two elements. In a new HTML document you can see a small margin around the page, a lot of
+                    devs remove this so that they get the full width there is to offer. Margin also has a shorthand
+                    property that works similar to padding. As an example:
+                </p>
+                <div>
+                    <ul>
+                        <li>
+                            margin: 1em;
+                            margin: -3px;
+                            <ul>
+                                <li>Apply margin for all sides</li>
+                            </ul>
+                        </li>
+                        <li>
+                            margin: 5% auto;
+                            <ul>
+                                <li>5% vertical</li>
+                                <li>auto horizontal</li>
+                            </ul>
+                        </li>
+                        <li>
+                            margin: 1em auto 2em;
+                            <ul>
+                                <li>1em top</li>
+                                <li>auto horizontal</li>
+                                <li>2em bottom</li>
+                            </ul>
+                        </li>
+                        <li>
+                            margin: 2px 1em 0 auto;
+                            <ul>
+                                <li>2px margin for top</li>
+                                <li>1em margin for right</li>
+                                <li>0 margin for bottom</li>
+                                <li>auto margin for left</li>
+                            </ul>
+                        </li>
+                        <ul>
+                            <li>
+                                -- Global Value --
+                                <ul>
+                                    <li>margin: inherit;</li>
+                                    <li>margin: initial;</li>
+                                    <li>margin: revert;</li>
+                                    <li>margin: unset;</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </ul>
+                </div>
+            </section>
+            <section>
+                <h2 id="tdp">The Display Property</h2>
+                <dir>
+                    <ul>
+                        <li>
+                            display:
+                            <ul>
+                                <li>display: inline;</li>
+                                <li>display: block;</li>
+                                <li>display: inline-block;</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </dir>
+                <p>
+                    The display property allows us to change the behavior of how certain elements behave in the sense of
+                    changing their default inline or block property. So we know that inline elements can co-exist with
+                    other inline elements on one line, whereas block elements take up the whole row. When it comes to
+                    the recent properties we just learn't, it's important to know inline and block act differently.
+                </p>
+                <p>
+                    Width and Height are not respected properties when it comes to inline element, however padding and
+                    margin are respected horizontally though not vertically. Whereas block elements do respect the above
+                    properties.
+                </p>
+                <p>
+                    This brings us to the display property of inline-block, this allows us to make element behave like
+                    inline as well as blocks. Therefor width & height are respected while elements behave like both
+                    inline and block.
+                </p>
+            </section>
+            <section>
+                <article>
+                    <h2 id="cur">CSS Units Revisited</h2>
+                    <img src="../../../src/html&css/cssUnitsRevisited.png"
+                        alt="CSS Units diagram of possible units used">
+                </article>
+                <p>
+                    Looking at the above diagram pixels or px is the most used absolute unit. Though on the relative
+                    side its important to understand percentages, em's and rem's.
+                </p>
+                <h3 id="per">% Percentages</h3>
+                <p>
+                    Percentages are relative to either its parent element or font-size. An example of this can as so:
+                </p>
+                <div>
+                    <ul>
+                        <li>
+                            width: 50%;
+                            <ul>
+                                <li>Half the width of the parent</li>
+                            </ul>
+                        </li>
+                        <li>
+                            line-height: 50%;
+                            <ul>
+                                <li>Half the font-size of the element itself</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <h3 id="em">em's</h3>
+                <p>
+                    When it comes to em units, different properties will be relative to different aspects. For example
+                    when dealing with font-size, its relative will be the parent default or parent value of font-size.
+                    Therefor 1em will be equal to the same amount, while 2em will be double the amount.
+                    em units on properties other than font-size will be relative to the font-size of the current
+                    element.
+                </p>
+                <h3 id="rem">rem's</h3>
+                <p>
+                    rem units sizes will always be relative to the font-size of the root html element. Working in a
+                    similair manner, 1rem will remain equal to while 2rem will be double.
+                </p>
+            </section>
+        </main>
+        <footer>
+            <p>
+                Document set to change.
+            </p>
+        </footer>
+    </body>
+
+</html>
