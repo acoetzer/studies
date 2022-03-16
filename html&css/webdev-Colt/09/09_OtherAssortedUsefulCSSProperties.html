@@ -145,69 +145,105 @@
                 </div>
                 <p>
                     Transitions allow us to transition one property value to another property value. The transition
-                    property is a shorthand just like the border shorthand property.
-                </p>
-            </section>
-            <section>
-                <h2 id="ttab"> The truth about background</h2>
-                <div>
-                    <ul>
-                        <li></li>
-                    </ul>
-                </div>
-                <p>
-                    Write here
+                    property is a shorthand just like the border shorthand property. Above we can see the other
+                    properties associated with transition, you can single them out as well or use the shorthand. Good
+                    practise is to layout each property independantly as shown above with color and border-color, so
+                    that in the future if you change something it wont get in the way. You can always use the all value
+                    to apply the change to all property values.
                 </p>
             </section>
             <section>
                 <h2 id="tpoct">The Power of CSS Transforms</h2>
                 <div>
                     <ul>
-                        <li>transform: perspective</li>
                         <li>
-                            transform: rotate;
+                            transform: perspective(15px); <br>
+                            transform: rotate(180deg), translate(1em); <br>
+                            transform-origin: top left/50px 50px/bottom right 60px;
+                        </li>
+                        <li>
+                            transform: rotate(0.5turn);
                             <ul>
-                                <li>transform: rotateX()</li>
-                                <li>transform: rotateY()</li>
-                                <li>transform: rotateZ()</li>
+                                <li>transform: rotateX(45deg)</li>
+                                <li>transform: rotateY(180deg)</li>
+                                <li>transform: rotateZ(360deg)</li>
                             </ul>
                         </li>
                         <li>
-                            transform: scale;
+                            transform: scale(2, 0.5);
                             <ul>
-                                <li>transform: scaleX()</li>
-                                <li>transform: scaleY()</li>
-                                <li>transform: scaleZ()</li>
+                                <li>transform: scaleX(0.5)</li>
+                                <li>transform: scaleY(1)</li>
+                                <li>transform: scaleZ(2)</li>
                             </ul>
                         </li>
                         <li>
-                            transform: skew;
+                            transform: skew(30deg, 25deg);
                             <ul>
-                                <li>transform: skewX()</li>
-                                <li>transform: skewY()</li>
+                                <li>transform: skewX(5deg)</li>
+                                <li>transform: skewY(50deg)</li>
                             </ul>
                         </li>
                         <li>
-                            transform: translate;
+                            transform: translate(12px, 50%);
                             <ul>
-                                <li>transform: translateX()</li>
-                                <li>transform: translateY()</li>
-                                <li>transform: translateZ()</li>
+                                <li>transform: translateX(12px)</li>
+                                <li>transform: translateY(50%)</li>
+                                <li>transform: translateZ(3em)</li>
                             </ul>
                         </li>
                     </ul>
                 </div>
                 <p>
-                    write here
+                    The transform property allows you to translate, rotate and scale elements in css. There is a
+                    transform shorthand along with multiple other associates that full under the shorthand. One being
+                    the tranform-origin property that allows you to set from an element should be scaled. As seen above.
+                    Transform also has multiple properties such as perspective, rotate, scale, translate and skew.
+                </p>
+                <p>
+                    In short perspective, changes the perspective of the element. Rotate can rotate an element in 3d, or
+                    the x,y,z axis. Scale changes the size of an element. Translate moves the positioning of the element
+                    and skew skews the element.
+                </p>
+            </section>
+            <section>
+                <h2 id="ttab"> The truth about background</h2>
+                <div>
+                    <ul>
+                        <li>background: no-repeat center/40% url(url to image or "../folder/image.png"), rose color
+                            background;
+                            <ul>
+                                <li>background-image: url(url to image)/linear-gradient(rgba(0, 0, 255, 0.5), rgba(255,
+                                    0, 175)), url(image);</li>
+                                <li>background-size: auto/contain/scale/cover/30%/200px 100px;</li>
+                                <li>background-repeat: no-repeat/repeat/repeat-x/space/round...;</li>
+                                <li>background-position: bottom/top/left/right;</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <p>
+                    background is a shorthand for many other associated properties listed above. One thing to remember
+                    is that one of the properties (background-image) can set a gradients as well. That being said
+                    background can offer many various things, and one that we will look at is placing a background
+                    image. You place an image with using a value of url(url to image) or url("../local/file.png"). The
+                    shorthand accepts multiple properties like positioning and size, you can even add a
+                    background-color. Within the shorthand, order arrangement doesn't matter but it is important to
+                    remember when using background-size in the shorthand, it must be included after a potion separated
+                    with a forward slash / so an example would be center/cover orcenter/80%.
                 </p>
             </section>
             <section>
                 <h2 id="gfia">Google Fonts is Amazing</h2>
                 <div>
-
+                    <ul>
+                        <li><a href="https://fonts.google.com">fonts.google.com</a></li>
+                    </ul>
                 </div>
                 <p>
-                    write here
+                    When it comes to designing your web pages, there is a limited set of fonts to use. However instead
+                    of buying expensive fonts, you can use google fonts. You embed the link provided by google as well
+                    as set the font-family property as google recommends it.
                 </p>
             </section>
         </main>

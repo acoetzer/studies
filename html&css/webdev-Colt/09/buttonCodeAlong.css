@@ -1,5 +1,5 @@
 body { 
-    margin: 20px auto;
+    margin: 0px auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -14,7 +14,7 @@ body {
     color: coral;
     padding: 1em 2em;
     font-size: 1em;
-    transition: color 0.3s, border-color 0.3s, box-shadow 0.3s, transform 0.3s;
+    transition:  color 0.3s, border-color 0.3s, box-shadow 0.3s, transform 0.3s;
 }
 #button1:hover {
     border-color: #E4CC37;
