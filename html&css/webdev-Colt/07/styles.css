@@ -1,21 +1,5 @@
 body {
-    width: 1024px;
-    margin: auto;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-h1 {
-    text-align: center;
-    font-weight: 400;
-}
-
-article a {
-    color: grey;
-    text-decoration: none;
-}
-
-article a:hover {
-    font-size: 102%;
-    color: lightcoral;
-    text-decoration: underline;
+    margin: 0 auto;
+    width: 80%;
+    font-family: 'Roboto', sans-serif;
 }
