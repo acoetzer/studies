@@ -46,31 +46,156 @@
                     </ul>
                 </div>
                 <p>
-                    When dealing with opacity in css there are 2 options one can use. The first option is opacity, which range from 0 to 1, however the opacity property affects the entire element. Whereas the aplha 
+                    When dealing with opacity in css there are 2 options one can use. The first option is a property
+                    known as opacity, which ranges from 0 to 1, however the opacity property affects the entire element.
+                    Whereas the aplha is a channel within different color value units, as demonstrated above.
                 </p>
             </section>
             <section>
                 <h2 id="tpp">The Position Property</h2>
                 <div>
-
+                    <ul>
+                        <li>
+                            position: static/relative/absolute/fixed/sticky; <br>
+                            top: 50px; <br>
+                            right: 10%; <br>
+                            bottom: 4em; <br>
+                            left: 0; <br>
+                        </li>
+                    </ul>
                 </div>
                 <p>
-                    write here
+                    Above shows the property position and other properties that control the possitioning once a element
+                    has a position value set.
+                </p>
+                <h3>Static</h3>
+                <div>
+                    <ul>
+                        <li>position: Static;</li>
+                    </ul>
+                </div>
+                <p>
+                    An element with a value of static, will remain positioned to the normal flow of the document. The
+                    top, right, bottom and left properties will have no affect on this value, as this is the default
+                    value.
+                </p>
+                <h3>Relative</h3>
+                <div>
+                    <ul>
+                        <li>position: relative;</li>
+                    </ul>
+                </div>
+                <p>
+                    An element set with a relative position value, is positioned according to the normal flow of the
+                    document, however offset by the top, right, bottom and left properties relative to itself.
+                </p>
+                <h3>Absolute</h3>
+                <div>
+                    <ul>
+                        <li>position: absolute;</li>
+                    </ul>
+                </div>
+                <p>
+                    The element with the value of absolute is removed from the normal document flow, and no space is
+                    created for the element in the page layout. It is positioned to its closest already positioned
+                    relative. Otherwise it is relative to it's containing block, in other words the &lt;body&gt; element
+                    of the page. The final outcome or position is determined by the top, right, bottom and left
+                    properties.
+                </p>
+                <h3>Fixed</h3>
+                <div>
+                    <ul>
+                        <li>position: fixed;</li>
+                    </ul>
+                </div>
+                <p>
+                    An element with the position fixed, works similair to that of absolute. It is removed from the
+                    normal flow of the document, however is only relative to the containing block or &lt;body&gt;
+                    element. The one difference is the that it will remain in said position given by the top, right,
+                    bottom and left properties even when scrolling down and it will remain fixed to an element that also
+                    has a scrolling mechanism.
+                </p>
+                <h3>Sticky</h3>
+                <div>
+                    <ul>
+                        <li>position: sticky</li>
+                    </ul>
+                </div>
+                <p>
+                    A sticky element unlike fixed remains in the flow of the document and is offset in whatever postion
+                    it was given by the top, right, bottom and left properties. However sticky will stick to its nearest
+                    ancestor that has a scrolling mechanism.
                 </p>
             </section>
             <section>
                 <h2 id="ct">CSS Transitions</h2>
                 <div>
-
+                    <ul>
+                        <li>
+                            transition: property/duration/transition-timing-function/delay; <br>
+                            transition: color 0.25s ease-in 0.5s, border-color 0.25s ease-in 0.5s;
+                            <ul>
+                                <li>transition-property: color;</li>
+                                <li>transition-timing-function: ease-in;</li>
+                                <li>transition-delay: 0.5s;</li>
+                                <li>transition-duration: 0.25s;</li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
                 <p>
-                    write here
+                    Transitions allow us to transition one property value to another property value. The transition
+                    property is a shorthand just like the border shorthand property.
+                </p>
+            </section>
+            <section>
+                <h2 id="ttab"> The truth about background</h2>
+                <div>
+                    <ul>
+                        <li></li>
+                    </ul>
+                </div>
+                <p>
+                    Write here
                 </p>
             </section>
             <section>
                 <h2 id="tpoct">The Power of CSS Transforms</h2>
                 <div>
-
+                    <ul>
+                        <li>transform: perspective</li>
+                        <li>
+                            transform: rotate;
+                            <ul>
+                                <li>transform: rotateX()</li>
+                                <li>transform: rotateY()</li>
+                                <li>transform: rotateZ()</li>
+                            </ul>
+                        </li>
+                        <li>
+                            transform: scale;
+                            <ul>
+                                <li>transform: scaleX()</li>
+                                <li>transform: scaleY()</li>
+                                <li>transform: scaleZ()</li>
+                            </ul>
+                        </li>
+                        <li>
+                            transform: skew;
+                            <ul>
+                                <li>transform: skewX()</li>
+                                <li>transform: skewY()</li>
+                            </ul>
+                        </li>
+                        <li>
+                            transform: translate;
+                            <ul>
+                                <li>transform: translateX()</li>
+                                <li>transform: translateY()</li>
+                                <li>transform: translateZ()</li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
                 <p>
                     write here
