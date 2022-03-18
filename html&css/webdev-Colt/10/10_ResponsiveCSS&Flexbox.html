@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Responsive CSS & Flexbox</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
@@ -13,73 +13,301 @@
     </head>
 
     <body>
-        <section id="headerbg">
-            <section id="sectionNav">
-                <nav>
-                    <a href="#home">Home</a>
-                    <a href="#home">About</a>
-                    <a href="#home">Portfolio</a>
-                    <a href="#home">Contact</a>
-                    <form action="/taco">
-                        <label for="username">Username</label>
-                        <input type="text" placeholder="Username" name="user" id="username">
-                        <label for="password">Password</label>
-                        <input type="password" placeholder="Password" name="pass" id="password">
-                    </form>
-                </nav>
-            </section>
-        </section>
+
         <header>
-            <h1>This is a responsive site</h1>
+            <h1>Responsive CSS & Flexbox</h1>
         </header>
+
         <main>
-            <section>
-                <h2>Second Heading</h2>
-                <div id="paragraph">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ullam labore distinctio.
-                        Blanditiis officiis sit, amet quae ipsa pariatur deleniti voluptates vero quia, quasi odit
-                        reprehenderit adipisci nulla dignissimos cum! Lorem ipsum dolor sit amet consectetur adipisicing
-                        elit. Nulla, dicta adipisci ullam vero eum debitis praesentium? A vero inventore voluptate at
-                        voluptatum doloremque magni, neque ipsum quidem incidunt mollitia quo.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ullam labore distinctio.
-                        Blanditiis officiis sit, amet quae ipsa pariatur deleniti voluptates vero quia, quasi odit
-                        reprehenderit adipisci nulla dignissimos cum! Lorem ipsum dolor sit amet consectetur adipisicing
-                        elit. Nulla, dicta adipisci ullam vero eum debitis praesentium? A vero inventore voluptate at
-                        voluptatum doloremque magni, neque ipsum quidem incidunt mollitia quo.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ullam labore distinctio.
-                        Blanditiis officiis sit, amet quae ipsa pariatur deleniti voluptates vero quia, quasi odit
-                        reprehenderit adipisci nulla dignissimos cum! Lorem ipsum dolor sit amet consectetur adipisicing
-                        elit. Nulla, dicta adipisci ullam vero eum debitis praesentium? A vero inventore voluptate at
-                        voluptatum doloremque magni, neque ipsum quidem incidunt mollitia quo.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ullam labore distinctio.
-                        Blanditiis officiis sit, amet quae ipsa pariatur deleniti voluptates vero quia, quasi odit
-                        reprehenderit adipisci nulla dignissimos cum! Lorem ipsum dolor sit amet consectetur adipisicing
-                        elit. Nulla, dicta adipisci ullam vero eum debitis praesentium? A vero inventore voluptate at
-                        voluptatum doloremque magni, neque ipsum quidem incidunt mollitia quo.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ullam labore distinctio.
-                        Blanditiis officiis sit, amet quae ipsa pariatur deleniti voluptates vero quia, quasi odit
-                        reprehenderit adipisci nulla dignissimos cum! Lorem ipsum dolor sit amet consectetur adipisicing
-                        elit. Nulla, dicta adipisci ullam vero eum debitis praesentium? A vero inventore voluptate at
-                        voluptatum doloremque magni, neque ipsum quidem incidunt mollitia quo.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ullam labore distinctio.
-                        Blanditiis officiis sit, amet quae ipsa pariatur deleniti voluptates vero quia, quasi odit
-                        reprehenderit adipisci nulla dignissimos cum! Lorem ipsum dolor sit amet consectetur adipisicing
-                        elit. Nulla, dicta adipisci ullam vero eum debitis praesentium? A vero inventore voluptate at
-                        voluptatum doloremque magni, neque ipsum quidem incidunt mollitia quo.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ullam labore distinctio.
-                        Blanditiis officiis sit, amet quae ipsa pariatur deleniti voluptates vero quia, quasi odit
-                        reprehenderit adipisci nulla dignissimos cum! Lorem ipsum dolor sit amet consectetur adipisicing
-                        elit. Nulla, dicta adipisci ullam vero eum debitis praesentium? A vero inventore voluptate at
-                        voluptatum doloremque magni, neque ipsum quidem incidunt mollitia quo.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ullam labore distinctio.
-                        Blanditiis officiis sit, amet quae ipsa pariatur deleniti voluptates vero quia, quasi odit
-                        reprehenderit adipisci nulla dignissimos cum! Lorem ipsum dolor sit amet consectetur adipisicing
-                        elit. Nulla, dicta adipisci ullam vero eum debitis praesentium? A vero inventore voluptate at
-                        voluptatum doloremque magni, neque ipsum quidem incidunt mollitia quo.
-                    </p>
-                </div>
+            <section id="toc">
+                <h2>Table of Contents</h2>
+                <ul>
+                    <li><a href="#woeif">What on earth is flexbox?</a></li>
+                    <li><a href="#fd">Flex Direction</a></li>
+                    <li><a href="#jc">Justify-Content</a></li>
+                    <li><a href="#fw">Flex-Wrap</a></li>
+                    <li><a href="#ai">Align-items</a>
+                        <ul>
+                            <li><a href="#acas">Align-Content & Align-Self</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#fbgs">Flex-Basis, Grow & Shrink</a>
+                        <ul>
+                            <li><a href="#fs">Flex Shorthand</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#rdmqi">Responsive design & media queries intro</a>
+                        <ul>
+                            <li><a href="#tpomq">The power of media queries</a></li>
+                        </ul>
+                    </li>
+                </ul>
             </section>
+
+            <section id="notes">
+
+                <article>
+                    <h2 id="woeif">What on earth is flexbox?</h2>
+                    <div class="example">
+                        <ul>
+                            <li>display: flex;</li>
+                        </ul>
+                    </div>
+                    <p>
+                        Flexbox is a one dimensional layout property unlike grid for laying out items in rows or
+                        columns. It helps layout and distribute space between elements dynamically for unknown sizes,
+                        gence the term flex. In order to set a container or section as flexbox, you will need to change
+                        the display property value to flex as shown above.
+                    </p>
+                </article>
+
+                <article>
+                    <h2 id="fd">Flex Direction</h2>
+                    <div class="example">
+                        <ul>
+                            <li>
+                                flex-direction: ;
+                                <ul>
+                                    <li>row</li>
+                                    <li>row-reverse</li>
+                                </ul>
+                            </li>
+                            <li>
+                                flex-direction: ;
+                                <ul>
+                                    <li>column</li>
+                                    <li>column-reverse</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <p>
+                        When it comes to flexbox its important to understand the terminology <span
+                            class="highlight">Main Axis</span> & <span class="highlight">Cross Axis</span>. The main
+                        axis can be either a <span class="highlight">row</span> or a <span
+                            class="highlight">column</span>. The main axis can go from <span
+                            class="highlight">left</span> to <span class="highlight">right</span> or <span
+                            class="highlight">right</span> to <span class="highlight">left</span> as well as from <span
+                            class="highlight">up</span> to <span class="highlight">down</span> or <span
+                            class="highlight">down</span> to <span class="highlligh">up</span>. All of this is
+                        controlled with with the property <span class="highlight">flex-direction</span> and the value
+                        being either <span class="highlight">row, row-reverse</span> or <span class="highlight">column,
+                            column-reverse</span>.
+                    </p>
+                    <p>
+                        Now we head over to the cross axis which is <span class="highlight">opposite</span> of whatever
+                        the main axis is. To elaborate on this, if you main axis is set to row your cross axis will be
+                        column. In simpler terms if your main axis goes from left to right or right to left then your
+                        cross axis will be up to down or down to up.
+                    </p>
+                    <p>
+                        However the <span class="highlight">flex-direction</span> property above has 4 values, <span
+                            class="highlight">row</span> & <span class="highlight">row-reverse</span> or <span
+                            class="highlight">column</span> & <span class="highlight">column-reverse</span>, that
+                        control the direction of the main axis. So row would go from left to right and row-reverse will
+                        go from right to left, while column will go from top to bottom and column reverse will go from
+                        bottom to top.
+                    </p>
+                </article>
+
+                <article>
+                    <h2 id="jc">Justify-Content</h2>
+                    <div class="example">
+                        <ul>
+                            <li>
+                                justify-content: ;
+                                <ul>
+                                    <li>flex-start</li>
+                                    <li>flex-end</li>
+                                    <li>center</li>
+                                    <li>space-between</li>
+                                    <li>space-around</li>
+                                    <li>space-evenly</li>
+                                    <li>baseline</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <p>
+                        Justify-content is what controls the <span class="highlight">positioning</span> of content on
+                        the main axis. If the main axis is a row, it will control the positioning of content from left
+                        to right or vice versa. Whereas if the main axis is a column it will control the positioning of
+                        content from top to bottom or vice versa.
+                    </p>
+                    <p>
+                        There are a few values that that can be used with the justify-content property such as,
+                        flex-start which position the content at the <span class="highlight">beginning of the main
+                            axis</span>. Though depending on your flex-direction, this can be either left to right or
+                        right to left and same goes for top to bottom or bottom to top. The most important is to know
+                        that flex-start will position content at the beginnig or start of the main axis.
+                    </p>
+                    <p>
+                        Flex-end like flex-start, just positions the content at the <span class="highlight">end of the
+                            main axis</span>.
+                    </p>
+                    <p>
+                        Center positions the content on the main axis <span class="highlight">on its center</span>.
+                    </p>
+                    <p>
+                        Space-between separates content to <span class="highlight">either maximum end</span> therefor
+                        creating a space in-between them.
+                    </p>
+                    <p>
+                        Space-around provides a space <span class="highlight">on either side of the element</span>,
+                        meaning left and right. <span class="important">This can lead to certain elements looking
+                            uneven</span>.
+                    </p>
+
+                    <p>
+                        Space-evenly like space-around provides space on either side of the element, however it keeps a
+                        consistant even spacing. This resulting in a even look and feel.
+                    </p>
+                    <p>
+                        Baseline positions multiple elements according <span class="highlighting">to the baseline of
+                            text or paragragh elements</span>.
+                    </p>
+                </article>
+
+                <article>
+                    <h2 id="fw">Flex-Wrap</h2>
+                    <div class="example">
+                        <ul>
+                            <li>
+                                flex-wrap: ;
+                                <ul>
+                                    <li>wrap</li>
+                                    <li>wrap-reverse</li>
+                                    <li>nowrap</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <p>
+                        Flex-wrap like flex-direction which we know controls the direction of the main axis, this
+                        however <span class="highlight">controls the cross axis direction</span>. It also <span
+                            class="important">controls whether or not elements should wrap</span>. When elements wrap on
+                        multiple rows or columns, you can change the direction with either <span
+                            class="highlight">wrap</span>, which depending on the initial main axis direction will be
+                        either top to bottom, or left to right. Utimately <span class="highlight">wrap-reverse</span>
+                        will reverse the result of the wrap. You can also set a flexbox or element specifically to <span
+                            class="highlight">nowrap</span> to stop any wrapping from occuring.
+                    </p>
+                </article>
+
+                <article>
+                    <h2 id="ai">Align-items</h2>
+                    <div class="example">
+                        <ul>
+                            <li>
+                                align-items: ;
+                                <ul>
+                                    <li>flex-start</li>
+                                    <li>flex-end</li>
+                                    <li>center</li>
+                                    <li>baseline</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <p>
+                        Align-items does the same thing as justify-content however is positions content <span
+                            class="highlight">on the cross axis</span>. It also doesn't have as many values as
+                        justify-content as seen above.
+                    </p>
+
+                    <h3 id="acas">Align-Content & Align-Self</h3>
+                    <p>
+                        This brings us to align-content & align-self. Both these properties still work on the cross axis
+                        and <span class="highlight">manages the space inbetween rows and columns</span>. While
+                        align-self is a property <span class="highlight">given to individual or independantly to
+                            elements</span> allowing them <span class="important">to position themself separate from the
+                            flexbox or container</span>.
+                    </p>
+                </article>
+
+                <article>
+                    <h2 id="fbgs">Flex-Basis, Grow & Shrink</h2>
+                    <div class="example">
+                        <ul>
+                            <li>
+                                flex: grow / shrink / basis;
+                                <ul>
+                                    <li>flex-grow: ;</li>
+                                    <li>flex-shrink: ;</li>
+                                    <li>flex-basis: ;</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <p>
+                        Flex-basis, grow or shrink are all properties that are applied <span class="highlight">to
+                            individual or independant elements</span>.Flex-basis defines the <span>initial size of an
+                            element</span>, much like width or height, flex-basis controls both of these depending on
+                        the flex-direction. If your main axis is a row, then flex-basis controls the width of the
+                        element and so for column it controls the height.
+                    </p>
+                    <p>
+                        Though why not use width or height instead of flex basis? Well, the answer lies in when you
+                        scale you browser down past the initial size. With flex-basis it will continue to shrink, while
+                        having a width or minimum width or height will force your browser to scroll left & right or up &
+                        downto before the content.
+                    </p>
+                    <p>
+                        Flex-grow allows elements <span class="highlight">to eat up any remaining space</span>.
+                        Flex-grow accepts a <span class="highlight">unit-less</span> value.
+                    </p>
+                    <p>
+                        Flex-shrink shrinks specified elements faster than others. Like flex-grow it accepts a <span
+                            class="highlight">unit-less</span> value.
+                    </p>
+                    <h3 id="fs">Flex Shorthand</h3>
+                    <p>
+                        This brings us to the <span class="highlight">flex shorthand</span>, because these properties
+                        are commonly written together, there is a shorthand named flex which accepts 3 inputs, <span
+                            class="highlight">starting from grow, shrink and basis</span>.
+                    </p>
+                </article>
+
+                <article>
+                    <h2 id="rdmqi">Responsive design & media queries intro</h2>
+                    <div class="example">
+                        <ul>
+                            <li>
+                                @media (min-width: #px) { ... }
+                                <ul>
+                                    <li>@media (min-width: 576px) { ... }</li>
+                                    <li>@media (min-width: 768px) { ... }</li>
+                                    <li>@media (min-width: 992px) { ... }</li>
+                                    <li>@media (min-width: 1200px) { ... }</li>
+                                </ul>
+                            </li>
+                            <li>
+                                @media (max-width: #px) { ... }
+                                <ul>
+                                    <li>@media (max-width: 1199.98px) { ... }</li>
+                                    <li>@media (max-width: 991.98px) { ... }</li>
+                                    <li>@media (max-width: 767.98px) { ... }</li>
+                                    <li>@media (max-width: 575.98px) { ... }</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <p>
+                        Responsive design refers to being able to create one website with one style sheet for all screen
+                        sizes. It should be responsive towards different viewing platforms without needing to make a
+                        completely separate website.
+                    </p>
+
+                    <h3 id="tpomq">The power of media queries</h3>
+                    <p>
+                        This brings us to media queries. This is how we control the breakpoints for where we want the
+                        website to change depending on screen size or device type. Most commonly screen width, device
+                        type or device orientation. The query syntax starts with <span class="highlight">@media</span> as seen above. 
+                    </p>
+                </article>
+
+            </section>
+
         </main>
     </body>
 
