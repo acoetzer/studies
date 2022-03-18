@@ -44,14 +44,12 @@ header nav {
 	width: 100px;
 	border: 2px solid black;
 	border-radius: 50%;
-	transition: box-shadow 0.3s, border-top-right-radius 0.3s, border-bottom 0.3s, border-left 0.3s, transform 0.3s;
+	transition: box-shadow 0.3s, border-top-right-radius 0.3s, transform 0.3s;
 }
 #developer img:hover
 {
 	box-shadow: -0.5em 0.5em 0.9em -0.6em;
 	border-top-right-radius: 10%;
-	border-bottom: 4px solid;
-	border-left: 4px solid;
 	transform: rotate(-45deg) translateY(-0.5em);
 }
 #developer h2:first-of-type
