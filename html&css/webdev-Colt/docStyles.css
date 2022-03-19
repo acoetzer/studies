@@ -1,73 +1,31 @@
 body
 {
 	margin: 0 auto;
-	padding-bottom: 10em;
 	font-family: 'Open Sans', sans-serif;
-	background-color: #ffc43d;
-	color: black;
+	background-color: rgb(240, 240, 240);
 }
+
 header
 {
-	margin: 0 auto 5em;
+	margin: 2em auto 5em;
+	width: 80%;
+	border: 1px solid rgb(2, 62, 140);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	flex-wrap: wrap;
 	align-items: center;
 	align-content: center;
+	box-shadow: 0 0.5em 0.5em -0.4em rgb(2, 62, 140);
 }
 header h1
 {
 	text-align: center;
 	font-size: 3em;
 	font-weight: 100;
-	color: black;
+	color: rgb(2, 62, 140) ;
 	text-transform: uppercase;
-	text-decoration: 2px underline;
 	letter-spacing: 0.4em;
-}
-header nav {
-	width: 60%;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-}
-#developer
-{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-#developer img
-{
-	width: 100px;
-	border: 2px solid black;
-	border-radius: 50%;
-	transition: box-shadow 0.3s, border-top-right-radius 0.3s, transform 0.3s;
-}
-#developer img:hover
-{
-	box-shadow: -0.5em 0.5em 0.9em -0.6em;
-	border-top-right-radius: 10%;
-	transform: rotate(-45deg) translateY(-0.5em);
-}
-#developer h2:first-of-type
-{
-	margin-top: 0.5em;
-}
-#developer h2
-{
-	margin: 0;
-	font-size: 1em;
-	font-weight: 400;
-	letter-spacing: 0.4em;
-}
-.previous_next
-{
-	font-size: 1em;
-	color: black;
-	text-decoration: none;
 }
 
 main
@@ -93,20 +51,68 @@ main
 	margin: 0;
 	padding: 1em 2em;
 	font-size: 1em;
-	color: #023e8a;
-	border: 1px solid #023e8a;
-	box-shadow: 0 0.5em 0.5em -0.4em #023e8a;
+	color: rgb(2, 62, 140);
+	border: 1px solid rgb(2, 62, 140);
+	box-shadow: 0 0.5em 0.5em -0.4em rgb(2, 62, 140);
 }
 #toc ul
 {
-	color: #023e8a;
+	color: rgb(2, 62, 140);
 	list-style-type: square;
 }
 #toc a
 {
+	font-size: 1rem;
+	color: rgb(2, 62, 140);
 	text-decoration: none;
-	color: #023e8a;
-	font-size: 0.9rem;
+}
+#toc a:hover
+{
+	text-decoration: underline;
+}
+#devInfo
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	align-items: center;
+}
+#developer img
+{
+	width: 100px;
+	margin: 1em 0 1em 1em;
+	border: 2px solid rgb(2, 62, 140);
+	border-radius: 50%;
+	transition: border-left 0.1s, border-top-right-radius 0.25s, border-bottom-right-radius 0.25s;
+}
+#developer img:hover
+{
+	border-left: 0.5em solid rgb(2, 62, 140);
+	border-top-right-radius: 100%;
+	border-bottom-right-radius: 100%;
+}
+#devInfo ul
+{
+	margin: 0;
+	padding-left: 1em;
+	align-self: center;
+	list-style-type: none;
+}
+#devName
+{
+	font-size: 1.2em;
+	font-weight: 700;
+}
+#devTitle
+{
+	font-size: 1em;
+	letter-spacing: 0.4em;
+}
+#devKnowledge
+{
+	padding-top: 1em;
+	text-transform: uppercase;
 }
 
 #notes
@@ -122,22 +128,15 @@ main
 #notes article
 {
 	margin-bottom: 2em;
-	border: 1px solid #e6ac25;
+	border: 1px solid rgb(2, 62, 140);
 	padding: 1em 2em;
-	color: #e6ac25;
+	color: rgb(2, 62, 140);
+	box-shadow: 0 0.5em 0.5em -0.4em #023e8a;
 	transition: color 0.25s, boxshadow 0.25s, transform 0.25s;
-}
-.example
-{
-	list-style-type: square;
 }
 #notes article:hover
 {
-	margin-bottom: 2em;
-	border: 1px solid #023e8a;
-	padding: 1em 2em;
-	color: #023e8a;
-	box-shadow: 0 0.5em 0.5em -0.4em #023e8a;
+	background-color: rgb(245, 245, 245);
 	transform: translateY(-0.5em);
 }
 #notes p
@@ -146,6 +145,39 @@ main
 	text-align: justify;
 	font-size: 1em;
 	line-height: 1.5em;
+}
+
+.highlight
+{
+	background-color: rgb(2, 62, 140, .2);
+	border-radius: 0.2em;
+	padding: 0.1em 0.1em;
+	transition: color 0.25s, background-color 0.25s, padding 0.25s;
+}
+.highlight:hover
+{
+	color: rgb(255, 255, 255);
+	background-color: rgb(2, 62, 140, 1);
+	padding: 0.3em 0.1em;
+}
+
+.important
+{
+	background-color: rgba(140, 2, 2, .2);
+	border-radius: 0.2em;
+	padding: 0.1em 0.1em;
+	transition: color 0.25s, background-color 0.25s, padding 0.25s;
+}
+.important:hover
+{
+	color: rgb(255, 255, 255);
+	background-color: rgba(140, 2, 2, 1);
+	padding: 0.3em 0.1em;
+}
+
+footer
+{
+
 }
 
 @media (max-width: 1199.98px)
