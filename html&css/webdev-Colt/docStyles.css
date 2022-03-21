@@ -8,10 +8,10 @@ body
 header
 {
 	margin: 2em auto 5em;
-	width: 80%;
+	width:80%;
 	border: 1px solid rgb(2, 62, 140);
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	justify-content: center;
 	flex-wrap: wrap;
 	align-items: center;
@@ -34,7 +34,7 @@ main
 	margin: 0 auto;
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
+	justify-content: space-evenly;
 	flex-wrap: wrap;
 	align-items: flex-start;
 	align-content: center;
@@ -42,8 +42,7 @@ main
 
 #toc
 {
-	margin-right: 25px;
-	padding-right: 25px;
+	flex-basis: 30%;
 }
 #toc h2
 {
@@ -117,19 +116,21 @@ main
 .devKnowledge
 {
 	padding: 0.1em 0.3em;
+	border: 1px solid rgb(2, 62, 140);
 	border-radius: 0.2em;
 	background-color: rgb(2, 62, 140, .2);
+	transition: box-shadow 0.25s, transform 0.25s;
 }
 .devKnowledge:hover
 {
 	display: inline-block;
 	box-shadow: 0 0.5em 0.5em -0.4em rgb(2, 62, 140);
-	transform: translateY(-0.3em);
+	transform: translateY(-0.2em);
 }
 
 #notes
 {
-	flex: 1;
+	flex-basis: 70%;
 }
 #notes h2
 {
