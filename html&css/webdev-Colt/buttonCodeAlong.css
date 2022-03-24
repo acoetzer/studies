@@ -1,11 +1,18 @@
 body {
 	margin: 0 auto;
+	background-color: #363537;
+	font-family: 'Open Sans', sans-serif;
+}
+
+#container
+{
+	height: calc(100vh - 1px);
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+	flex-wrap: wrap;
 	align-items: center;
-	height: 100vh;
-	background-color: #363537;
+	align-content: center;
 }
 
 #button {
@@ -14,12 +21,13 @@ body {
 	border-color: #666468;
 	color: #666468;
 	padding: 1em 2em;
-	font-size: 1em;
+	font-family: inherit;
+	font-size: 2em;
 	transition: color 0.3s , border-color 0.3s, box-shadow 0.3s, transform 0.3s;
 }
 #button:hover{
 	border-color: #77dd77;
 	color: #77dd77;
-	box-shadow: 0 0.5em 0.8em -0.3em;
+	box-shadow: 0 0.5em 0.5em -0.4em #77dd77;
 	transform: translateY(-0.5em);
 }

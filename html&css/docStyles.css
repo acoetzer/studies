@@ -113,15 +113,15 @@ main
 	padding-top: 1em;
 	text-transform: uppercase;
 }
-.devKnowledge
+.lang
 {
 	padding: 0.1em 0.3em;
 	border: 1px solid rgb(2, 62, 140);
 	border-radius: 0.2em;
-	background-color: rgb(2, 62, 140, .2);
+	background-color: rgba(2, 62, 140, .2);
 	transition: box-shadow 0.25s, transform 0.25s;
 }
-.devKnowledge:hover
+.lang:hover
 {
 	display: inline-block;
 	box-shadow: 0 0.5em 0.5em -0.4em rgb(2, 62, 140);

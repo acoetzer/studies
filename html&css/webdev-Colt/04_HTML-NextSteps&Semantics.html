@@ -1,104 +1,172 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
     <head>
-        <!-- title -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../docStyles.css">
         <title>HTML - Next Steps & Semantics</title>
     </head>
 
     <body>
         <header>
-            <!-- header -->
             <h1>HTML: Next Steps & Semantics</h1>
         </header>
-        <article>
-            <!-- table of contents -->
-            <h2>Table of Contents</h2>
-            <ul>
-                <li>What exactly is html5?</li>
-                <li>Block vs Inline elements - Div & Spans<</li>
-                <li>Odd assortment of elements - hr, br, sup & sub
-                    <ul>
-                        <li>hr element</li>
-                        <li>br element</li>
-                        <li>sup element</li>
-                        <li>sub element</li>
-                    </ul>
-                </li>
-                <li>Entity codes</li>
-                <li>Intro into semantic markup</li>
-            </ul>
-        </article>
+
         <main>
-            <!-- main -->
-            <h2>What exactly is html5?</h2>
-            <p>
-                With HTML5 one would think that it is a different, standalone version of HTML, however it is not, it is however a form or evolution of HTML. The term represents two different concepts, the fact that its a new version of the HTML language. New elements, attributes and behavious but it also introduces new technologies that allow for building better and larger web sites and applications.
-            </p>
-            <p>
-                The wider and new technologies would include things like new stuff for css, or 3d graphics, upgrades for performance and enhancements. 
-            </p>
-            <h2>Block vs Inline elements - Div & Spans</h2>
-            <p>
-                Before discussing &lt;div&gt; and &lt;span&gt; elements, we need to look at 2 keywords, inline & and block elements. These keywords determine how a given element fits into the flow of the document. An inline element are elements that can co-exist on the same line, something like in the example of 2 anchor tags. Whereas the block element will want its on space, something like a paragraph or heading.
-            </p>
-            <p>
-                This brings us to the 2 elements &lt;div&gt; and &lt;span&gt;. Both elements have a opening and closing tag. The &lt;div&gt; element acts like a generic container, I say generic as we will see a little later that there are other containers known as semantic elements. So the &lt;div&gt; element acts like a block level element, much like the paragraph element, to whatever content is inside its tags. &lt;div&gt; stands for the content division element.
-            </p>
-            <p>
-                This brings us to the &lt;span&gt; element. The &lt;span&gt; is another generic container but it is what is known as an inline level element. You would wrap this around any sort of text or content that we want to single out later on to style with css.
-            </p>
-            <h2>Odd assortment of elements - hr, br, sup & sub</h2>
-            <p>
-                Just some assortment of elements that you would not really use regularly.
-            </p>
-            <h3>hr element</h3>
-            <p>
-                The &lt;hr&gt; or horizontal rule or thematic break, places a horizontal line across the document to indicate separation between 2 sections, usually you would style this with css by adding a border at the bottom instead of using this element.
-            </p>
-            <h3>br element</h3>
-            <p>
-                The &lt;br&gt; or line break element is use to break lines of text, again not something you should be using as paragraphs already act this way because its a block level element.
-            </p>
-            <h3>sup element</h3>
-            <p>
-                The &lt;sup&gt; or <sup>Superscript</sup> element acts like the exponent operator or behaviour. it allows for trademark symbols<sup>&reg;</sup> to be entered in correctly.
-            </p>
-            <h3>sub element</h3>
-            <p>
-                The &lt;sub&gt; or <sub>Subscript</sub> pushes its content down.
-            </p>
-            <h2>Entity codes</h2>
-            <p>
-                Entity codes or HTML Entities are ways for us to display certain characters that are already reserved for html. So for me to write a greater than or less than sign without HTML thinking I want to add an element, I would need to use the ampersand symbol followed by whatever code and a semi-colon. For example & lt ; (just remove the spaces).
-            </p>
-            <h2>Intro into semantic markup</h2>
-            <p>
-                The word Semantic means "relating to meaning", so semantic markup is meaningful markup or markup that relates to the meaning of the content. When we look at &lt;div&gt;, this has no meaning, hence why we called it generic, whereas something like &lt;section&gt; or &lt;article&gt; has meaning for whatever content is around it.
-            </p>
-            <p>
-                The reason why it's better to do it this way, rather than just a bunch of divs, is that it helps not only for screen readers or finding blocks of code, but seo as well, helping search results.
-            </p>
-            <p>
-                A few basic semantic markups to take note of is:
+            <section id="toc">
+                <h2>Table of Contents</h2>
                 <ul>
-                    <li>&lt;header&gt;</li>
-                    <li>&lt;nav&gt;</li>
-                    <li>&lt;footer&gt;</li>
-                    <li>&lt;main&gt;</li>
-                    <li>&lt;section&gt;</li>
-                    <li>&lt;article&gt;</li>
-                    <li>&lt;aside&gt;</li>
-                    <li>&lt;details&gt;</li>
+                    <li><a href="#weih">What exactly is html5?</a></li>
+                    <li><a href="#bvieds">Block vs Inline elements - Div & Spans</a></li>
+                    <li><a href="#oaoehbss">Odd assortment of elements - hr, br, sup & sub</a>
+                        <ul>
+                            <li><a href="#he">hr element</a></li>
+                            <li><a href="#be">br element</a></li>
+                            <li><a href="#spe">sup element</a></li>
+                            <li><a href="#sbe">sub element</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#ec">Entity codes</a></li>
+                    <li><a href="#iism">Intro into semantic markup</a></li>
                 </ul>
-                Although they have different names, they don't really do anything different from a div or span apart from just being semantic to its contents. Some semantic elements have some rules attached to them, for example article needs a nested header.
-            </p>
+
+                <section id="developer">
+                    <h2>Developer</h2>
+                    <div id="devInfo">
+                        <img src="../../src/html&css/me.jpg" alt="Developer Am I">
+                        <ul>
+                            <li id="devName">Andre Coetzer</li>
+                            <li id="devTitle">Developer</li>
+                            <li id="devKnowledge">
+                                <span class="lang">html</span>
+                                <span class="lang">css</span>
+                                <span class="lang">js</span>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </section>
+
+            <section id="notes">
+                <article>
+                    <h2 id="weih">What exactly is html5?</h2>
+                    <p>
+                        With HTML5 one would think that it is a different, standalone version of HTML, however it is
+                        not, it is however a form or evolution of HTML. The term represents two different concepts, the
+                        fact that its a new version of the HTML language. New elements, attributes and behavious but it
+                        also introduces new technologies that allow for building better and larger web sites and
+                        applications.
+                    </p>
+                    <p>
+                        The wider and new technologies would include things like new stuff for css, or 3d graphics,
+                        upgrades for performance and enhancements.
+                    </p>
+                </article>
+
+                <article>
+                    <h2 id="bvieds">Block vs Inline elements - Div & Spans</h2>
+                    <p>
+                        Before discussing &lt;div&gt; and &lt;span&gt; elements, we need to look at 2 keywords, inline &
+                        and block elements. These keywords determine how a given element fits into the flow of the
+                        document. An inline element are elements that can co-exist on the same line, something like in
+                        the example of 2 anchor tags. Whereas the block element will want its on space, something like a
+                        paragraph or heading.
+                    </p>
+                    <p>
+                        This brings us to the 2 elements &lt;div&gt; and &lt;span&gt;. Both elements have a opening and
+                        closing tag. The &lt;div&gt; element acts like a generic container, I say generic as we will see
+                        a little later hat there are other containers known as semantic elements. So the &lt;div&gt;
+                        element acts like a block level element, much like the paragraph element, to whatever content is
+                        inside its tags. &lt;div&gt; stands for the content division element.
+                    </p>
+                    <p>
+                        This brings us to the &lt;span&gt; element. The &lt;span&gt; is another generic container but it
+                        is what is known as an inline level element. You would wrap this around any sort of text or
+                        content that we want to single out later on to style with css.
+                    </p>
+                </article>
+
+                <article>
+                    <h2 id="oaoehbss">Odd assortment of elements - hr, br, sup & sub</h2>
+                    <p>
+                        Just some assortment of elements that you would not really use regularly.
+                    </p>
+
+                    <h3 id="he">hr element</h3>
+                    <p>
+                        The &lt;hr&gt; or horizontal rule or thematic break, places a horizontal line across the
+                        document to indicate separation between 2 sections, usually you would style this with css by
+                        adding a border at the bottom instead of using this element.
+                    </p>
+
+                    <h3 id="be">br element</h3>
+                    <p>
+                        The &lt;br&gt; or line break element is use to break lines of text, again not something you
+                        should be using as paragraphs already act this way because its a block level element.
+                    </p>
+
+                    <h3 id="spe">sup element</h3>
+                    <p>
+                        The &lt;sup&gt; or <sup>Superscript</sup> element acts like the exponent operator or behaviour.
+                        It allows for trademark symbols<sup>&reg;</sup> to be entered in correctly.
+                    </p>
+
+                    <h3 id="sbe">sub element</h3>
+                    <p>
+                        The &lt;sub&gt; or <sub>Subscript</sub> pushes its content down.
+                    </p>
+                </article>
+
+                <article>
+                    <h2 id="ec">Entity codes</h2>
+                    <p>
+                        Entity codes or HTML Entities are ways for us to display certain characters that are already
+                        reserved for html. So for me to write a greater than or less than sign without HTML thinking I
+                        want to add an element, I would need to use the ampersand symbol followed by whatever code and a
+                        semi-colon. For example & lt ; (just remove the spaces).
+                    </p>
+                </article>
+
+                <article>
+                    <h2 id="iism">Intro into semantic markup</h2>
+                    <p>
+                        The word Semantic means "relating to meaning", so semantic markup is meaningful markup or markup
+                        that relates to the meaning of the content. When we look at &lt;div&gt;, this has no meaning,
+                        hence why we called it generic, whereas something like &lt;section&gt; or &lt;article&gt; has
+                        meaning for whatever content is around it.
+                    </p>
+                    <p>
+                        The reason why it's better to do it this way, rather than just a bunch of divs, is that it helps
+                        not only for screen readers or finding blocks of code, but seo as well, helping search results.
+                    </p>
+                    <p>
+                        A few basic semantic markups to take note of is:
+                    <div class="example">
+                        <ul>
+                            <li>&lt;header&gt;</li>
+                            <li>&lt;nav&gt;</li>
+                            <li>&lt;footer&gt;</li>
+                            <li>&lt;main&gt;</li>
+                            <li>&lt;section&gt;</li>
+                            <li>&lt;article&gt;</li>
+                            <li>&lt;aside&gt;</li>
+                            <li>&lt;details&gt;</li>
+                        </ul>
+                    </div>
+                    Although they have different names, they don't really do anything different from a div or span apart
+                    from just being semantic to its contents. Some semantic elements have some rules attached to them,
+                    for example article needs a nested header.
+                    </p>
+                </article>
+            </section>
         </main>
         <footer>
-            <!-- footer -->
-            <p>
-                document set to change.
-            </p>
+            
         </footer>
     </body>
 

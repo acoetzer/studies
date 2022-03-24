@@ -5,257 +5,295 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Other Assorted Useful CSS Properties</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../docStyles.css">
+        <title>Other Assorted Useful CSS Properties</title>
     </head>
 
     <body>
         <header>
             <h1>Other Assorted Useful CSS Properties</h1>
         </header>
-        <article>
-            <h2>Table of Contents</h2>
-            <nav>
+
+        <main>
+            <section id="toc">
+                <h2>Table of Contents</h2>
                 <ul>
                     <li><a href="#otac">Opacity & The Alpha Channel</a></li>
                     <li><a href="#tpp">The Position Property</a></li>
                     <li><a href="#ct">CSS Transitions</a></li>
                     <li><a href="#tpoct">The Power of CSS Transforms</a></li>
+                    <li><a href="#"></a></li>
                     <li><a href="#gfia">Google Fonts is Amazing</a></li>
                 </ul>
-            </nav>
-        </article>
-        <main>
-            <section>
-                <h2 id="otac">Opacity & The Alpha Channel</h2>
-                <div>
-                    <ul>
-                        <li>
-                            opacity: 0 to 1;
-                            <ul>
-                                <li>Opacity has a ranges from 0 to 1</li>
-                            </ul>
-                        </li>
-                        <li>
-                            Alpha Channel
-                            <ul>
-                                <li>rgba(255, 255, 255, 0 to 1)</li>
-                                <li>#ffffff75</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <p>
-                    When dealing with opacity in css there are 2 options one can use. The first option is a property
-                    known as opacity, which ranges from 0 to 1, however the opacity property affects the entire element.
-                    Whereas the aplha is a channel within different color value units, as demonstrated above.
-                </p>
+                <section id="developer">
+                    <h2>Developer</h2>
+                    <div id="devInfo">
+                        <img src="../../src/html&css/me.jpg" alt="Developer Am I">
+                        <ul>
+                            <li id="devName">Andre Coetzer</li>
+                            <li id="devTitle">Developer</li>
+                            <li id="devKnowledge">
+                                <span class="lang">html</span>
+                                <span class="lang">css</span>
+                                <span class="lang">js</span>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
             </section>
-            <section>
-                <h2 id="tpp">The Position Property</h2>
-                <div>
-                    <ul>
-                        <li>
-                            position: static/relative/absolute/fixed/sticky; <br>
-                            top: 50px; <br>
-                            right: 10%; <br>
-                            bottom: 4em; <br>
-                            left: 0; <br>
-                        </li>
-                    </ul>
-                </div>
-                <p>
-                    Above shows the property position and other properties that control the possitioning once a element
-                    has a position value set.
-                </p>
-                <h3>Static</h3>
-                <div>
-                    <ul>
-                        <li>position: Static;</li>
-                    </ul>
-                </div>
-                <p>
-                    An element with a value of static, will remain positioned to the normal flow of the document. The
-                    top, right, bottom and left properties will have no affect on this value, as this is the default
-                    value.
-                </p>
-                <h3>Relative</h3>
-                <div>
-                    <ul>
-                        <li>position: relative;</li>
-                    </ul>
-                </div>
-                <p>
-                    An element set with a relative position value, is positioned according to the normal flow of the
-                    document, however offset by the top, right, bottom and left properties relative to itself.
-                </p>
-                <h3>Absolute</h3>
-                <div>
-                    <ul>
-                        <li>position: absolute;</li>
-                    </ul>
-                </div>
-                <p>
-                    The element with the value of absolute is removed from the normal document flow, and no space is
-                    created for the element in the page layout. It is positioned to its closest already positioned
-                    relative. Otherwise it is relative to it's containing block, in other words the &lt;body&gt; element
-                    of the page. The final outcome or position is determined by the top, right, bottom and left
-                    properties.
-                </p>
-                <h3>Fixed</h3>
-                <div>
-                    <ul>
-                        <li>position: fixed;</li>
-                    </ul>
-                </div>
-                <p>
-                    An element with the position fixed, works similair to that of absolute. It is removed from the
-                    normal flow of the document, however is only relative to the containing block or &lt;body&gt;
-                    element. The one difference is the that it will remain in said position given by the top, right,
-                    bottom and left properties even when scrolling down and it will remain fixed to an element that also
-                    has a scrolling mechanism.
-                </p>
-                <h3>Sticky</h3>
-                <div>
-                    <ul>
-                        <li>position: sticky</li>
-                    </ul>
-                </div>
-                <p>
-                    A sticky element unlike fixed remains in the flow of the document and is offset in whatever postion
-                    it was given by the top, right, bottom and left properties. However sticky will stick to its nearest
-                    ancestor that has a scrolling mechanism.
-                </p>
-            </section>
-            <section>
-                <h2 id="ct">CSS Transitions</h2>
-                <div>
-                    <ul>
-                        <li>
-                            transition: property/duration/transition-timing-function/delay; <br>
-                            transition: color 0.25s ease-in 0.5s, border-color 0.25s ease-in 0.5s;
-                            <ul>
-                                <li>transition-property: color;</li>
-                                <li>transition-timing-function: ease-in;</li>
-                                <li>transition-delay: 0.5s;</li>
-                                <li>transition-duration: 0.25s;</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <p>
-                    Transitions allow us to transition one property value to another property value. The transition
-                    property is a shorthand just like the border shorthand property. Above we can see the other
-                    properties associated with transition, you can single them out as well or use the shorthand. Good
-                    practise is to layout each property independantly as shown above with color and border-color, so
-                    that in the future if you change something it wont get in the way. You can always use the all value
-                    to apply the change to all property values.
-                </p>
-            </section>
-            <section>
-                <h2 id="tpoct">The Power of CSS Transforms</h2>
-                <div>
-                    <ul>
-                        <li>
-                            transform: perspective(15px); <br>
-                            transform: rotate(180deg), translate(1em); <br>
-                            transform-origin: top left/50px 50px/bottom right 60px;
-                        </li>
-                        <li>
-                            transform: rotate(0.5turn);
-                            <ul>
-                                <li>transform: rotateX(45deg)</li>
-                                <li>transform: rotateY(180deg)</li>
-                                <li>transform: rotateZ(360deg)</li>
-                            </ul>
-                        </li>
-                        <li>
-                            transform: scale(2, 0.5);
-                            <ul>
-                                <li>transform: scaleX(0.5)</li>
-                                <li>transform: scaleY(1)</li>
-                                <li>transform: scaleZ(2)</li>
-                            </ul>
-                        </li>
-                        <li>
-                            transform: skew(30deg, 25deg);
-                            <ul>
-                                <li>transform: skewX(5deg)</li>
-                                <li>transform: skewY(50deg)</li>
-                            </ul>
-                        </li>
-                        <li>
-                            transform: translate(12px, 50%);
-                            <ul>
-                                <li>transform: translateX(12px)</li>
-                                <li>transform: translateY(50%)</li>
-                                <li>transform: translateZ(3em)</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <p>
-                    The transform property allows you to translate, rotate and scale elements in css. There is a
-                    transform shorthand along with multiple other associates that full under the shorthand. One being
-                    the tranform-origin property that allows you to set from an element should be scaled. As seen above.
-                    Transform also has multiple properties such as perspective, rotate, scale, translate and skew.
-                </p>
-                <p>
-                    In short perspective, changes the perspective of the element. Rotate can rotate an element in 3d, or
-                    the x,y,z axis. Scale changes the size of an element. Translate moves the positioning of the element
-                    and skew skews the element.
-                </p>
-            </section>
-            <section>
-                <h2 id="ttab"> The truth about background</h2>
-                <div>
-                    <ul>
-                        <li>background: no-repeat center/40% url(url to image or "../folder/image.png"), rose color
-                            background;
-                            <ul>
-                                <li>background-image: url(url to image)/linear-gradient(rgba(0, 0, 255, 0.5), rgba(255,
-                                    0, 175)), url(image);</li>
-                                <li>background-size: auto/contain/scale/cover/30%/200px 100px;</li>
-                                <li>background-repeat: no-repeat/repeat/repeat-x/space/round...;</li>
-                                <li>background-position: bottom/top/left/right;</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <p>
-                    background is a shorthand for many other associated properties listed above. One thing to remember
-                    is that one of the properties (background-image) can set a gradients as well. That being said
-                    background can offer many various things, and one that we will look at is placing a background
-                    image. You place an image with using a value of url(url to image) or url("../local/file.png"). The
-                    shorthand accepts multiple properties like positioning and size, you can even add a
-                    background-color. Within the shorthand, order arrangement doesn't matter but it is important to
-                    remember when using background-size in the shorthand, it must be included after a potion separated
-                    with a forward slash / so an example would be center/cover orcenter/80%.
-                </p>
-            </section>
-            <section>
-                <h2 id="gfia">Google Fonts is Amazing</h2>
-                <div>
-                    <ul>
-                        <li><a href="https://fonts.google.com">fonts.google.com</a></li>
-                    </ul>
-                </div>
-                <p>
-                    When it comes to designing your web pages, there is a limited set of fonts to use. However instead
-                    of buying expensive fonts, you can use google fonts. You embed the link provided by google as well
-                    as set the font-family property as google recommends it.
-                </p>
+
+            <section id="notes">
+                <article>
+                    <h2 id="otac">Opacity & The Alpha Channel</h2>
+                    <div class="example">
+                        <ul>
+                            <li>
+                                opacity: 0 to 1;
+                                <ul>
+                                    <li>Opacity has a ranges from 0 to 1</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Alpha Channel
+                                <ul>
+                                    <li>rgba(255, 255, 255, 0 to 1)</li>
+                                    <li>#ffffff75</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <p>
+                        When dealing with opacity in css there are 2 options one can use. The first option is a property
+                        known as opacity, which ranges from 0 to 1, however the opacity property affects the entire
+                        element.
+                        Whereas the aplha is a channel within different color value units, as demonstrated above.
+                    </p>
+                </article>
+
+                <article>
+                    <h2 id="tpp">The Position Property</h2>
+                    <div>
+                        <ul>
+                            <li>
+                                position: static/relative/absolute/fixed/sticky; <br>
+                                top: 50px; <br>
+                                right: 10%; <br>
+                                bottom: 4em; <br>
+                                left: 0; <br>
+                            </li>
+                        </ul>
+                    </div>
+                    <p>
+                        Above shows the property position and other properties that control the possitioning once a
+                        element
+                        has a position value set.
+                    </p>
+                    <h3>Static</h3>
+                    <div>
+                        <ul>
+                            <li>position: Static;</li>
+                        </ul>
+                    </div>
+                    <p>
+                        An element with a value of static, will remain positioned to the normal flow of the document.
+                        The
+                        top, right, bottom and left properties will have no affect on this value, as this is the default
+                        value.
+                    </p>
+                    <h3>Relative</h3>
+                    <div>
+                        <ul>
+                            <li>position: relative;</li>
+                        </ul>
+                    </div>
+                    <p>
+                        An element set with a relative position value, is positioned according to the normal flow of the
+                        document, however offset by the top, right, bottom and left properties relative to itself.
+                    </p>
+                    <h3>Absolute</h3>
+                    <div>
+                        <ul>
+                            <li>position: absolute;</li>
+                        </ul>
+                    </div>
+                    <p>
+                        The element with the value of absolute is removed from the normal document flow, and no space is
+                        created for the element in the page layout. It is positioned to its closest already positioned
+                        relative. Otherwise it is relative to it's containing block, in other words the &lt;body&gt;
+                        element
+                        of the page. The final outcome or position is determined by the top, right, bottom and left
+                        properties.
+                    </p>
+                    <h3>Fixed</h3>
+                    <div>
+                        <ul>
+                            <li>position: fixed;</li>
+                        </ul>
+                    </div>
+                    <p>
+                        An element with the position fixed, works similair to that of absolute. It is removed from the
+                        normal flow of the document, however is only relative to the containing block or &lt;body&gt;
+                        element. The one difference is the that it will remain in said position given by the top, right,
+                        bottom and left properties even when scrolling down and it will remain fixed to an element that
+                        also
+                        has a scrolling mechanism.
+                    </p>
+                    <h3>Sticky</h3>
+                    <div>
+                        <ul>
+                            <li>position: sticky</li>
+                        </ul>
+                    </div>
+                    <p>
+                        A sticky element unlike fixed remains in the flow of the document and is offset in whatever
+                        postion
+                        it was given by the top, right, bottom and left properties. However sticky will stick to its
+                        nearest
+                        ancestor that has a scrolling mechanism.
+                    </p>
+                </article>
+
+                <article>
+                    <h2 id="ct">CSS Transitions</h2>
+                    <div>
+                        <ul>
+                            <li>
+                                transition: property/duration/transition-timing-function/delay; <br>
+                                transition: color 0.25s ease-in 0.5s, border-color 0.25s ease-in 0.5s;
+                                <ul>
+                                    <li>transition-property: color;</li>
+                                    <li>transition-timing-function: ease-in;</li>
+                                    <li>transition-delay: 0.5s;</li>
+                                    <li>transition-duration: 0.25s;</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <p>
+                        Transitions allow us to transition one property value to another property value. The transition
+                        property is a shorthand just like the border shorthand property. Above we can see the other
+                        properties associated with transition, you can single them out as well or use the shorthand.
+                        Good
+                        practise is to layout each property independantly as shown above with color and border-color, so
+                        that in the future if you change something it wont get in the way. You can always use the all
+                        value
+                        to apply the change to all property values.
+                    </p>
+                </article>
+
+                <article>
+                    <h2 id="tpoct">The Power of CSS Transforms</h2>
+                    <div>
+                        <ul>
+                            <li>
+                                transform: perspective(15px); <br>
+                                transform: rotate(180deg), translate(1em); <br>
+                                transform-origin: top left/50px 50px/bottom right 60px;
+                            </li>
+                            <li>
+                                transform: rotate(0.5turn);
+                                <ul>
+                                    <li>transform: rotateX(45deg)</li>
+                                    <li>transform: rotateY(180deg)</li>
+                                    <li>transform: rotateZ(360deg)</li>
+                                </ul>
+                            </li>
+                            <li>
+                                transform: scale(2, 0.5);
+                                <ul>
+                                    <li>transform: scaleX(0.5)</li>
+                                    <li>transform: scaleY(1)</li>
+                                    <li>transform: scaleZ(2)</li>
+                                </ul>
+                            </li>
+                            <li>
+                                transform: skew(30deg, 25deg);
+                                <ul>
+                                    <li>transform: skewX(5deg)</li>
+                                    <li>transform: skewY(50deg)</li>
+                                </ul>
+                            </li>
+                            <li>
+                                transform: translate(12px, 50%);
+                                <ul>
+                                    <li>transform: translateX(12px)</li>
+                                    <li>transform: translateY(50%)</li>
+                                    <li>transform: translateZ(3em)</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <p>
+                        The transform property allows you to translate, rotate and scale elements in css. There is a
+                        transform shorthand along with multiple other associates that full under the shorthand. One
+                        being
+                        the tranform-origin property that allows you to set from an element should be scaled. As seen
+                        above.
+                        Transform also has multiple properties such as perspective, rotate, scale, translate and skew.
+                    </p>
+                    <p>
+                        In short perspective, changes the perspective of the element. Rotate can rotate an element in
+                        3d, or
+                        the x,y,z axis. Scale changes the size of an element. Translate moves the positioning of the
+                        element
+                        and skew skews the element.
+                    </p>
+                </article>
+
+                <article>
+                    <h2 id="ttab"> The truth about background</h2>
+                    <div>
+                        <ul>
+                            <li>background: no-repeat center/40% url(url to image or "../folder/image.png"), rose color
+                                background;
+                                <ul>
+                                    <li>background-image: url(url to image)/linear-gradient(rgba(0, 0, 255, 0.5),
+                                        rgba(255,
+                                        0, 175)), url(image);</li>
+                                    <li>background-size: auto/contain/scale/cover/30%/200px 100px;</li>
+                                    <li>background-repeat: no-repeat/repeat/repeat-x/space/round...;</li>
+                                    <li>background-position: bottom/top/left/right;</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <p>
+                        background is a shorthand for many other associated properties listed above. One thing to
+                        remember
+                        is that one of the properties (background-image) can set a gradients as well. That being said
+                        background can offer many various things, and one that we will look at is placing a background
+                        image. You place an image with using a value of url(url to image) or url("../local/file.png").
+                        The
+                        shorthand accepts multiple properties like positioning and size, you can even add a
+                        background-color. Within the shorthand, order arrangement doesn't matter but it is important to
+                        remember when using background-size in the shorthand, it must be included after a potion
+                        separated
+                        with a forward slash / so an example would be center/cover orcenter/80%.
+                    </p>
+                </article>
+
+                <article>
+                    <h2 id="gfia">Google Fonts is Amazing</h2>
+                    <div>
+                        <ul>
+                            <li><a href="https://fonts.google.com">fonts.google.com</a></li>
+                        </ul>
+                    </div>
+                    <p>
+                        When it comes to designing your web pages, there is a limited set of fonts to use. However
+                        instead
+                        of buying expensive fonts, you can use google fonts. You embed the link provided by google as
+                        well
+                        as set the font-family property as google recommends it.
+                    </p>
+                </article>
             </section>
         </main>
         <footer>
-            <section>
-                <p>
-                    Document set to change.
-                </p>
-            </section>
+
         </footer>
     </body>
 
