@@ -1,35 +1,64 @@
-body
-{
+body {
 	margin: 0 auto;
 	font-family: 'Open Sans', sans-serif;
-	background-color: rgb(240, 240, 240);
+	background-color: hsl(0, 0%, 95%);
 }
 
-header
-{
+header {
 	margin: 2em auto 5em;
-	width:80%;
-	border: 1px solid rgb(2, 62, 140);
+	width: 80%;
+	border-top: 1px solid hsla(0, 0%, 0%, .2);
+	border-bottom: 1px solid hsla(0, 0%, 0%, .2);
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	flex-wrap: wrap;
 	align-items: center;
 	align-content: center;
-	box-shadow: 0 0.5em 0.5em -0.4em rgb(2, 62, 140);
+	box-shadow: 0 0.5em 0.5em -0.4em hsla(0, 0%, 0%, .2);
 }
-header h1
-{
+header h1 {
+	background-size: 400%;
+	background-image: linear-gradient(
+		90deg,
+		hsl(0, 90%, 70%),
+		hsl(45, 90%, 70%),
+		hsl(90, 90%, 70%),
+		hsl(135, 90%, 70%),
+		hsl(180, 90%, 70%),
+		hsl(225, 90%, 70%),
+		hsl(270, 90%, 70%),
+		hsl(315, 90%, 70%),
+		hsl(360, 90%, 70%),
+		hsl(315, 90%, 70%),
+		hsl(270, 90%, 70%),
+		hsl(225, 90%, 70%),
+		hsl(180, 90%, 70%),
+		hsl(135, 90%, 70%),
+		hsl(90, 90%, 70%),
+		hsl(45, 90%, 70%),
+		hsl(0, 90%, 70%)
+	);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: animate 10s linear infinite;
 	text-align: center;
 	font-size: 3em;
 	font-weight: 100;
-	color: rgb(2, 62, 140) ;
+	color: hsla(0, 0%, 0%, .5);
 	text-transform: uppercase;
 	letter-spacing: 0.4em;
 }
+@keyframes animate {
+	0% {
+		background-position: 0%;
+	}
+	100% {
+		background-position: 100%;
+	}
+}
 
-main
-{
+main {
 	width: 80%;
 	margin: 0 auto;
 	display: flex;
@@ -40,199 +69,167 @@ main
 	align-content: center;
 }
 
-#toc
-{
+#toc {
 	flex-basis: 30%;
 }
-#toc h2
-{
+#toc h2 {
 	width: fit-content;
 	margin: 0;
 	padding: 1em 2em;
 	font-size: 1em;
-	color: rgb(2, 62, 140);
-	border: 1px solid rgb(2, 62, 140);
-	box-shadow: 0 0.5em 0.5em -0.4em rgb(2, 62, 140);
+	color: hsla(0, 0%, 0%, .5);
+	border-top: 1px solid hsla(0, 0%, 0%, .2);
+	border-bottom: 1px solid hsla(0, 0%, 0%, .2);
+	box-shadow: 0 0.5em 0.5em -0.4em hsla(0, 0%, 0%, .2);
 }
-#toc ul
-{
-	color: rgb(2, 62, 140);
+#toc ul {
+	color: hsla(0, 0%, 0%, .5);
 	list-style-type: square;
 }
-#toc a
-{
+
+#toc a {
 	font-size: 1rem;
-	color: rgb(2, 62, 140);
+	color: hsla(0, 0%, 0%, .5);
 	text-decoration: none;
 }
-#toc a:hover
-{
+#toc a:hover {
 	text-decoration: underline;
 }
-#devInfo
-{
+
+#devInfo {
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
 	flex-wrap: wrap;
 	align-items: center;
 }
-#developer img
-{
+#developer img {
 	width: 100px;
 	margin: 1em 0 1em 1em;
-	border: 2px solid rgb(2, 62, 140);
+	border: 3px solid hsla(0, 0%, 0%, .2);
 	border-radius: 50%;
 	transition: border-left 0.1s, border-top-right-radius 0.25s, border-bottom-right-radius 0.25s;
 }
-#developer img:hover
-{
+#developer img:hover {
 	border-top-right-radius: 100%;
 	border-bottom-right-radius: 100%;
 }
-#devInfo ul
-{
+
+#devInfo ul {
 	margin: 0;
 	padding-left: 1em;
 	align-self: center;
 	list-style-type: none;
 }
-#devName
-{
+#devName {
 	font-size: 1.2em;
 	font-weight: 700;
 }
-#devTitle
-{
+#devTitle {
 	font-size: 1em;
 	letter-spacing: 0.4em;
 }
-#devKnowledge
-{
+#devKnowledge {
 	font-size: 0.8em;
 	padding-top: 1em;
 	text-transform: uppercase;
 }
-.lang
-{
+.lang {
 	padding: 0.1em 0.3em;
-	border: 1px solid rgb(2, 62, 140);
+	border: 1px solid hsla(0, 0%, 0%, .2);
 	border-radius: 0.2em;
-	background-color: rgba(2, 62, 140, .2);
+	background-color: hsla(0, 0%, 0%, .2);
 	transition: box-shadow 0.25s, transform 0.25s;
 }
-.lang:hover
-{
+.lang:hover {
 	display: inline-block;
-	box-shadow: 0 0.5em 0.5em -0.4em rgb(2, 62, 140);
+	box-shadow: 0 0.5em 0.5em -0.4em hsla(0, 0%, 0%, .2);
 	transform: translateY(-0.2em);
 }
 
-#notes
-{
+#notes {
 	flex-basis: 70%;
 }
-#notes h2
-{
+#notes h2 {
 	font-size: 1.5em;
 	padding: 0.1em 0;
-	border-bottom: 1px solid;
+	border-bottom: 1px solid hsla(0, 0%, 0%, .1);
 }
-#notes article
-{
+#notes article {
 	margin-bottom: 2em;
-	border: 1px solid rgb(2, 62, 140);
+	border-top: 1px solid hsla(0, 0%, 0%, .2);
+	border-bottom: 1px solid hsla(0, 0%, 0%, .2);
 	padding: 1em 2em;
-	color: rgb(2, 62, 140);
-	box-shadow: 0 0.5em 0.5em -0.4em #023e8a;
-	transition: color 0.25s, boxshadow 0.25s, transform 0.25s;
+	color: hsla(0, 0%, 0%, .5);
+	box-shadow: 0 0.5em 0.5em -0.4em hsla(0, 0%, 0%, .2);
+	transition: background-color 0.25s, boxshadow 0.25s, transform 0.25s;
 }
-#notes article:hover
-{
-	background-color: rgb(245, 245, 245);
+#notes article:hover {
+	background-color: hsl(0, 0%, 98%);
 	transform: translateY(-0.5em);
 }
-#notes p
-{
+#notes p {
 	padding-left: 1em;
 	text-align: justify;
 	font-size: 1em;
 	line-height: 1.5em;
 }
 
-.highlight
-{
-	background-color: rgb(2, 62, 140, .2);
+.highlight {
+	background-color: hsla(0, 0%, 0%, .1);
 	border-radius: 0.2em;
 	padding: 0.1em 0.1em;
 	transition: font-size 0.25s, color 0.25s, background-color 0.25s, padding 0.25s;
 }
-.highlight:hover
-{
+.highlight:hover {
 	font-size: 1.1em;
 	color: rgb(255, 255, 255);
-	background-color: rgb(2, 62, 140, 1);
+	background-color: hsla(0, 0%, 0%, .5);
 	padding: 0.2em 0.2em;
 }
 
-.important
-{
+.important {
 	background-color: rgba(140, 2, 2, .2);
 	border-radius: 0.2em;
 	padding: 0.1em 0.1em;
 	transition: font-size 0.25s, color 0.25s, background-color 0.25s, padding 0.25s;
 }
-.important:hover
-{
+.important:hover {
 	font-size: 1.1em;
 	color: rgb(255, 255, 255);
 	background-color: rgba(140, 2, 2, 1);
 	padding: 0.2em 0.2em;
 }
 
-footer
-{
-
+footer {
 }
 
-@media (max-width: 1199.98px)
-{
-	header h1
-	{
+@media (max-width: 1199.98px) {
+	header h1 {
 		font-size: 2em;
 	}
-	main
-	{
+	main {
 		flex-direction: column;
 	}
-	#notes article
-	{
+	#notes article {
 		padding: 0.3em 1em;
 	}
-	#notes p
-	{
+	#notes p {
 		padding: 0;
 	}
 }
-@media (max-width: 991.98px)
-{
-
+@media (max-width: 991.98px) {
 }
-@media (max-width: 767.98px)
-{
-	main 
-	{
+@media (max-width: 767.98px) {
+	main {
 		justify-content: flex-start;
 	}
-	#developer img
-{
-	width: 60px;
+	#developer img {
+		width: 60px;
+	}
 }
-}
-@media (max-width: 575.98px)
-{
-	header h1
-	{
+@media (max-width: 575.98px) {
+	header h1 {
 		font-size: 1.5em;
 	}
 }
