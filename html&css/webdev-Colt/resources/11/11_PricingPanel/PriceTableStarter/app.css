@@ -1,0 +1,111 @@
+html {
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+
+body {
+	min-height: 100vh;
+	background-color: hsl(220, 90%, 70%);
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.panel {
+	border-radius: 0.5em;
+	width: 100%;
+	max-width: 960px;
+	padding: 1em 2em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: hsl(0, 100%, 100%);
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+}
+.panel ul {
+	padding: 0;
+	list-style-type: none;
+}
+
+.pricing-plan {
+	border-bottom: 1px solid hsla(0, 0%, 0%, .5);
+}
+.pricing-plan:last-child {
+	border-bottom: none;
+}
+.pricing-img {
+	margin-bottom: 2em;
+	max-width: 100%;
+}
+
+.pricing-header {
+	letter-spacing: 0.1em;
+	font-size: 1.3em;
+	color: hsla(0, 0%, 0%, .5);
+}
+
+.pricing-features {
+	margin: 3em 0 1.5em;
+	color: hsla(220, 90%, 70%);
+}
+
+.pricing-features-item {
+	padding: 1em 0;
+	border-top: 1px solid hsla(0, 0%, 0%, .2);
+	font-size: 1em;
+	letter-spacing: 0.1em;
+	line-height: 1.5;
+}
+.pricing-features-item:last-child {
+	border-bottom: 1px solid hsla(0, 0%, 0%, .2);
+}
+
+.pricing-price {
+	display: block;
+	color: hsl(220, 90%, 70%);
+	font-weight: 700;
+	font-size: 2em;
+}
+
+.pricing-button {
+	display: inline-block;
+	margin: 1em 0 1em;
+	border: 1px solid hsl(220, 90%, 70%);
+	border-radius: 0.5em;
+	padding: 1em 2em;
+	text-decoration: none;
+	letter-spacing: 0.1em;
+	color: hsl(220, 90%, 70%);
+	background-color: hsla(220, 90%, 70%, .2);
+	transition: background-color 0.25s ease-in-out;
+}
+.pricing-button:hover, .pricing-button:focus {
+	background-color: hsla(220, 90%, 70%, .5);
+}
+
+.is-featured {
+	color: hsl(0, 100%, 100%);
+	background-color: hsl(220, 90%, 70%);
+	transition: background-color 0.25s ease-in-out;
+}
+.is-featured:hover, .is-featured:focus {
+	background-color: hsl(220, 90%, 50%);
+}
+
+@media (min-width: 900px) {
+	.panel {
+		flex-direction: row;
+	}
+	.pricing-plan {
+		border-bottom: none;
+		border-right: 1px solid hsla(0, 0%, 0%, .2);
+		padding: 1em 2em;
+	}
+	.pricing-plan:last-child {
+		border-right: none;
+	}
+}
