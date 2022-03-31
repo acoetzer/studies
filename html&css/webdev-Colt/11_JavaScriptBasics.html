@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Responsive CSS & Flexbox</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../docStyles.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>Responsive CSS & Flexbox</h1>
+        </header>
+
+        <main>
+            <section id="toc">
+                <h2>Table of Contents</h2>
+                <ul id="tocList">
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+
+                <section id="developer">
+                    <h2>Developer</h2>
+                    <div id="devInfo">
+                        <img src="../../src/html&css/me.jpg" alt="Developer I Am" id="personalImage">
+                        <ul>
+                            <li id="devName">Andre Coetzer</li>
+                            <li id="devTitle">Developer</li>
+                            <li id="devKnowledge">
+                                <span class="lang">html</span>
+                                <span class="lang">css</span>
+                                <span class="lang">js</span>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </section>
+
+            <section id="notes">
+
+                <article>
+                    <h2 id="pt">Primitive Types</h2>
+                    <div class="example">
+                        <ul>
+                            <li>Number</li>
+                            <li>String</li>
+                            <li>Boolean</li>
+                            <li>Null</li>
+                            <li>Undefined</li>
+                            <li>
+                                Technically there are two others:
+                                <ul>
+                                    <li>Symbol</li>
+                                    <li>BigInt</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <p>
+                        The very basic building blocks of javascript is known as the primitive types, as seen above in
+                        the example list. However before we begin to type javascript in our editors, we will be using
+                        the console to quickly demonstrate some javascripts basics. span.important{clear()} is used to
+                        clear the console. When using the console in chrome, we can input some code or command and it
+                        will print out the result. This is known as <span class="highlight">REPL</span>, Which stands
+                        for, <span class="highlight">Read Evaluate Print Loop</span>.
+                    </p>
+
+                    <h3 id="jc">JavaScript Comments</h3>
+                    <div class="example">
+                        <ul>
+                            <li>&lt;!-- HTML Comment --&gt;</li>
+                            <li>/* CSS Comment */</li>
+                            <li>// JavaScript Comment</li>
+                        </ul>
+                    </div>
+                    <p>
+                        Above shows not only the JavaScript comment, but other languages we have learnt as well.
+                    </p>
+
+                    <h3 id="n">Number</h3>
+                    <div class="example">
+                        <ul>
+                            <li>
+                                Math Operators
+                                <ul>
+                                    <li>//Addition
+                                        <ul>
+                                            <li>50 + 5 //55</li>
+                                        </ul>
+                                    </li>
+                                    <li>//Subtraction
+                                        <ul>
+                                            <li>90 - 1 //89</li>
+                                        </ul>
+                                    </li>
+                                    <li>//Multiplication
+                                        <ul>
+                                            <li>11111 * 7 //77777</li>
+                                        </ul>
+                                    </li>
+                                    <li>//Division
+                                        <ul>
+                                            <li>400 / 5 //16</li>
+                                        </ul>
+                                    </li>
+                                    <li>//Modulo
+                                        <ul>
+                                            <li>27 % 2 //1</li>
+                                        </ul>
+                                    </li>
+                                    <li>//Exponents
+                                        <ul>
+                                            <li>2 ** 4 //8</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <p>
+                        Javascript only has <span class="highlight">one number data type</span>, unlike other
+                        programming languages where they have two data types such as <span
+                            class="highlight">int(integer) for whole numbers</span> and <span class="highlight">float
+                            for decimal numbers</span>. In short, javascript only has 1 type and that includes positive,
+                        negative, whole and decimal numbers.
+                    </p>
+                    <p>
+                        The reason for ints and floats is that it takes a lot more memory to store those numbers
+                        especially if its a decimal number.
+
+                        numbers do get a certain amount of space in memory in javascript, something like
+                        1.999999999999999 will eventually become 2, they are not permitted to continue or to take up an
+                        infinite amount of space.
+                        there is a hard limit in other words.
+                    </p>
+                    <p>
+                        along with the number data type, you have some common math operators that are built into
+                        javascript. Looking at the example above, you see things like Addition, subtraction, division
+                        all the way to modulos <span class="important">which is mainly used to determine if a number is
+                            odd or even, as an example 89089 % 2 //1</span> and exponents which are represented with **
+                        two astrix symbols.
+
+                        There is however order of operation, span.highlight{PEMDAS} which stands for <span
+                            class="important">Parathesis, Exponents, Multiplication, Division, Addition and
+                            Subtraction</span>. So something like 3 + 1 * 9 //12, the 1 * 9 which is the multiplication
+                        comes before addition. You can change that by placing a parenthesis as so (3 + 1) * 9 //36, so
+                        now the numbers within the parenthesis come first.
+                    </p>
+
+                </article>
+
+                <article>
+                    <h2 id=""></h2>
+                    <div class="example">
+
+                    </div>
+                    <p>
+
+                    </p>
+                </article>
+            </section>
+        </main>
+        <footer>
+
+        </footer>
+    </body>
+
+</html>
