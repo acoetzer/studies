@@ -206,43 +206,31 @@ main {
 	animation: animate 10s linear infinite;
 	font-size: 1.2em;
 }
-#notes h3::after {
-	content:"\2970";
-	padding-right: 0.2em;
-	background-size: 400%;
-	background-image: linear-gradient(
-		90deg,
-		hsl(0, 90%, 70%),
-		hsl(45, 90%, 70%),
-		hsl(90, 90%, 70%),
-		hsl(135, 90%, 70%),
-		hsl(180, 90%, 70%),
-		hsl(225, 90%, 70%),
-		hsl(270, 90%, 70%),
-		hsl(315, 90%, 70%),
-		hsl(360, 90%, 70%),
-		hsl(315, 90%, 70%),
-		hsl(270, 90%, 70%),
-		hsl(225, 90%, 70%),
-		hsl(180, 90%, 70%),
-		hsl(135, 90%, 70%),
-		hsl(90, 90%, 70%),
-		hsl(45, 90%, 70%),
-		hsl(0, 90%, 70%)
-	);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	animation: animate 10s linear infinite;
-	font-size: 1.2em;
-}
-
 #notes .example {
 	margin-top: 1em;
 	border-radius: 0.5em;
 	padding: 0.5em 0;
 	background-color: hsl(235, 90%, 70%);
 	color: hsl(0, 0%, 100%);
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	align-content: center;
+	transition: background-color 0.25s ease-in-out, transform 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
 }
+#notes .example:hover {
+	background-color: hsl(235, 90%, 71%);
+	transform: translateY(-0.5em);
+	box-shadow: 0 0.5em 0.5em -0.4em hsla(0, 0%, 0%, .5);
+}
+.example div:first-of-type {
+	padding-right: 5em;
+}
+.example div:nth-of-type(2) {
+	padding-right: 5em;
+}
+
 #notes p {
 	margin-top: 1.5em;
 	padding: 0 1em;

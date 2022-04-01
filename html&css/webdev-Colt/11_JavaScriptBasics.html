@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Responsive CSS & Flexbox</title>
+        <title>JavaScript Basics</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
@@ -14,7 +14,7 @@
 
     <body>
         <header>
-            <h1>Responsive CSS & Flexbox</h1>
+            <h1>JavaScript Basics</h1>
         </header>
 
         <main>
@@ -46,7 +46,7 @@
             <section id="notes">
 
                 <article>
-                    <h2 id="pt">Primitive Types</h2>
+                    <h2 id="pt">Primitives & The Console</h2>
                     <div class="example">
                         <ul>
                             <li>Number</li>
@@ -66,7 +66,8 @@
                     <p>
                         The very basic building blocks of javascript is known as the primitive types, as seen above in
                         the example list. However before we begin to type javascript in our editors, we will be using
-                        the console to quickly demonstrate some javascripts basics. span.important{clear()} is used to
+                        the console to quickly demonstrate some javascripts basics. <span
+                            class="important">clear()</span> is used to
                         clear the console. When using the console in chrome, we can input some code or command and it
                         will print out the result. This is known as <span class="highlight">REPL</span>, Which stands
                         for, <span class="highlight">Read Evaluate Print Loop</span>.
@@ -83,8 +84,10 @@
                     <p>
                         Above shows not only the JavaScript comment, but other languages we have learnt as well.
                     </p>
+                </article>
 
-                    <h3 id="n">Number</h3>
+                <article>
+                    <h2 id="n">Number</h2>
                     <div class="example">
                         <ul>
                             <li>
@@ -128,41 +131,189 @@
                         Javascript only has <span class="highlight">one number data type</span>, unlike other
                         programming languages where they have two data types such as <span
                             class="highlight">int(integer) for whole numbers</span> and <span class="highlight">float
-                            for decimal numbers</span>. In short, javascript only has 1 type and that includes positive,
+                            for decimal numbers</span>. In short, javascript only has 1 type and that includes
+                        positive,
                         negative, whole and decimal numbers.
                     </p>
                     <p>
                         The reason for ints and floats is that it takes a lot more memory to store those numbers
-                        especially if its a decimal number.
-
-                        numbers do get a certain amount of space in memory in javascript, something like
-                        1.999999999999999 will eventually become 2, they are not permitted to continue or to take up an
-                        infinite amount of space.
-                        there is a hard limit in other words.
+                        especially if its a decimal number as decimal numbers are considered much larger. Though, in
+                        JavaScript numbers do get a certain amount of space in memory, so something like
+                        1.999999999999999 will eventually become 2. They are not permitted to continue or to take up
+                        an infinite amount of space. there is a hard limit in other words.
                     </p>
                     <p>
-                        along with the number data type, you have some common math operators that are built into
-                        javascript. Looking at the example above, you see things like Addition, subtraction, division
-                        all the way to modulos <span class="important">which is mainly used to determine if a number is
-                            odd or even, as an example 89089 % 2 //1</span> and exponents which are represented with **
+                        With the number data type, you have some common math operators that are built into
+                        javascript. Looking at the example board above, you see things like addition, subtraction,
+                        division
+                        all the way to modulos <span class="important">which is mainly used to determine if a number
+                            is
+                            odd or even, as an example 89089 % 2 //1 (which is considered odd //0 is considered
+                            even)</span> and exponents which are represented with <span class="highlight">(**)</span>
                         two astrix symbols.
-
-                        There is however order of operation, span.highlight{PEMDAS} which stands for <span
-                            class="important">Parathesis, Exponents, Multiplication, Division, Addition and
-                            Subtraction</span>. So something like 3 + 1 * 9 //12, the 1 * 9 which is the multiplication
-                        comes before addition. You can change that by placing a parenthesis as so (3 + 1) * 9 //36, so
+                    </p>
+                    <p>
+                        There is however order of operation <span class="highlight">PEMDAS</span> which stands for
+                        <span class="important">Parathesis, Exponents, Multiplication, Division, Addition and
+                            Subtraction</span>. So something like 3 + 1 * 9 //12, the 1 * 9 which is the
+                        multiplication
+                        comes before addition. You can change that by placing a parenthesis as so (3 + 1) * 9 //36,
+                        so
                         now the numbers within the parenthesis come first.
                     </p>
-
                 </article>
 
                 <article>
-                    <h2 id=""></h2>
+                    <h2 id="win">WTF is NaN</h2>
                     <div class="example">
-
+                        <ul>
+                            <li>
+                                Not a Number
+                                <ul>
+                                    <li>0/0 = NaN</li>
+                                    <li>1 + NaN = NaN</li>
+                                    <li>NaN + NaN = NaN</li>
+                                </ul>
+                            </li>
+                            <li>typeof</li>
+                        </ul>
                     </div>
                     <p>
+                        NaN is a concept in JavaScript that represents a value that is <span class="highlight">Not a
+                            Number</span> but
+                        at the same time is considered a numeric value or in other words a number. We can check this
+                        with the use of another operator known as <span class="highlight">typeof</span> followed by a
+                        single operand.
+                    </p>
+                    <p>
+                        There will be times when you doing something and it will output NaN and this could be due to a
+                        value being 0 and you not knowing about it. There could times where user input is with
+                        characters and you trying to do math with letters and you receive the results of NaN.
+                    </p>
+                </article>
 
+                <article>
+                    <h2 id="vl">Variable & Let</h2>
+                    <div class="example">
+                        <ul>
+                            <li>To define a variable:
+                                <ul>
+                                    <li>let someName = value<span class="important">;</span></li>
+                                </ul>
+                            </li>
+                            <li>To update a variable:
+                                <ul>
+                                    <li>someName = newValue<span class="important">;</span></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <p>
+                        What is a variable? A variable is like a container that holds a value which is given to it. An
+                        example would be <span class="highlight">let numChickens = 4;</span>, this is telling JavaScript
+                        that you are, first of all, defining a variable and giving that variable a name with a value. So
+                        that, whenever you call upon the variable, it will out put whatever value was given to it.
+                    </p>
+                    <p>
+                        It is important to note the semi-colon <span class="important">;</span> at the end in
+                        JavaScript, In the terminal you don't really need to use it, but when writing a js file, its
+                        important to have.
+                    </p>
+                    <p>
+                        You can also update the variable <span class="highlight">someName = someName + newValue</span>,
+                        its important to note a distinction here, and that is defining a variable and updating a
+                        variable. You will notice when defining a variable, you use something like <span
+                            class="important">let</span>. This is telling Javascript of a new variable, hence defining.
+                        However, you do not need to define the variable again just to update it, that is because the
+                        variable is already there and you just need to refer to it.
+                    </p>
+                    <p>
+                        You can do math with variables <span class="highlight">numHens <sub>5</sub> + numRoosters
+                            <sub>1</sub></span>, refer to video if this doesn't make sense, however each variable has a
+                        number value, which would equate to 6 in this instance. You can also, as an example say, <span
+                            class="highlight">numHens + 1</span>, you can add a variable and a number together,
+                        considering that the variable is a number, otherwise you will end up with a NaN.
+                    </p>
+                </article>
+
+                <article>
+                    <h2 id="uv">Updating Variables</h2>
+                    <div class="example">
+                        <div>
+                            <ul>
+                                <li>
+                                    let score = 0;
+                                    <ul>
+                                        <li>score = 5;</li>
+                                        <li>
+                                            score = score + 5;
+                                            <ul>
+                                                <li>score += 5;</li>
+                                                <li>score -= 5;</li>
+                                                <li>score *= 5;</li>
+                                                <li>score /= 5;</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                        </div>
+                        <div>
+                            <ul>
+                                <li>
+                                    Incrementor
+                                    <ul>
+                                        <li>
+                                            Postfix Incrementor <br>
+                                            score++ <br>
+                                            Prefix Incrementor <br>
+                                            ++score
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Decrementor
+                                    <ul>
+                                        <li>
+                                            Postfix Decrementor <br>
+                                            score-- <br>
+                                            Prefix Decrementor <br>
+                                            --score
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p>
+                        When it comes to updating variables and more specifically number variables, and working from the
+                        above example board, if score was set to 0 and we wanted to add 5 to the score, we can change or
+                        update the variable as so <span class="highlight">score = 5;</span>. However you can continue to
+                        manually change it. The next possible way to update the varibale is by giving the variable an
+                        addition as so <span class="highlight">score = score +5;</span>, so now whenever something
+                        happens it will update the score by 5.
+                    </p>
+                    <p>
+                        Another way to do this is by writing a shorter syntax, <span class="highlight">score +=
+                            5;</span>, this is the same as the previous example, just much shorter. You can do this for
+                        other operators as well.
+                    </p>
+                    <p>
+                        However, there is another way, though this only increments or decrements the variable by 1
+                        <sup>which is quiet common</sup> and that is using what is known as an <span
+                            class="highlight">pre/postfix</span> incrementor or decrementor. An example of this would be
+                        <span class="highlight">score++ or ++score</span> the same as <span class="highlight">score-- or
+                            --score</span>.
+                    </p>
+                </article>
+
+                <article>
+                    <h2 id="cv">Const & Var</h2>
+                    <div class="example">
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <p>
+                        
                     </p>
                 </article>
             </section>
