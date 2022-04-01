@@ -6,11 +6,12 @@ body {
 
 header {
 	margin: 2em auto 5em;
+	padding: 0.5em;
 	width: 80%;
 	border-top: 1px solid hsla(0, 0%, 0%, .2);
 	border-bottom: 1px solid hsla(0, 0%, 0%, .2);
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	justify-content: center;
 	flex-wrap: wrap;
 	align-items: center;
@@ -18,6 +19,7 @@ header {
 	box-shadow: 0 0.5em 0.5em -0.4em hsla(0, 0%, 0%, .2);
 }
 header h1 {
+	margin: 0.2em 0;
 	background-size: 400%;
 	background-image: linear-gradient(
 		90deg,
@@ -58,6 +60,49 @@ header h1 {
 	100% {
 		background-position: 0%;
 	}
+}
+header nav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.btn {
+	position: relative;
+	border: 1px solid hsl(235, 90%, 70%);
+	border-radius: 0.5em;
+	padding: 0.5em 1.5em;
+	color: hsl(235, 90%, 70%);
+	text-decoration: none;
+	transition: color 0.25s ease-in-out, 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
+	overflow: hidden;
+}
+.btn:hover, .btn:focus {
+	color: hsl(0, 0%, 100%);
+	transform: translateY(-0.2em);
+	box-shadow: 0 0.5em 0.5em -0.4em hsla(0, 0%, 0%, .2);
+}
+.btn:active {
+	transform: translateY(-0.1em);
+	box-shadow: 0 0.3em 0.3em -0.1em hsla(0, 0%, 0%, .2);
+}
+.btn::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border-radius: 0 0 50% 50%;
+	background-color: hsl(235, 90%, 70%);
+	top: 0;
+	left: 0;
+	transform-origin: top;
+	transform: scaleY(0);
+	transition: transform 0.25s ease-in-out;
+	z-index: -1;
+}
+.btn:hover::before, .btn:focus::before {
+	transform: scaleY(200%);
+	transform-origin: bottom;
+	border-radius: 50% 50% 0 0;
 }
 
 main {
