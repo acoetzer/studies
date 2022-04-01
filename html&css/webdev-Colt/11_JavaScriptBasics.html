@@ -21,9 +21,24 @@
             <section id="toc">
                 <h2>Table of Contents</h2>
                 <ul id="tocList">
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
+                    <li>
+                        <a href="#ptc">Primitives & The Console</a>
+                        <ul>
+                            <li><a href="#jc">JavaScript Comments</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#n">Number</a></li>
+                    <li><a href="#win">WTF is NaN</a></li>
+                    <li><a href="#vl">Variable & Let</a></li>
+                    <li><a href="#uv">Updating Variables</a></li>
+                    <li><a href="#cv">Const & Var</a></li>
+                    <li>
+                        <a href="#b">Booleans</a>
+                        <ul>
+                            <li><a href="#cvt">Changing Variable Type</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#vnc">Variable Naming & Conventions</a></li>
                 </ul>
 
                 <section id="developer">
@@ -46,7 +61,7 @@
             <section id="notes">
 
                 <article>
-                    <h2 id="pt">Primitives & The Console</h2>
+                    <h2 id="ptc">Primitives & The Console</h2>
                     <div class="example">
                         <ul>
                             <li>Number</li>
@@ -309,11 +324,97 @@
                     <h2 id="cv">Const & Var</h2>
                     <div class="example">
                         <ul>
-                            <li></li>
+                            <li>const someName = value;</li>
+                            <li>var someName = value;</li>
                         </ul>
                     </div>
                     <p>
-                        
+                        So we saw that you can define a variable using <span class="highlight">let</span>, however there
+                        are two other ways you can define a variable. <span class="highligh">const</span>, which stands
+                        for <span class="important">constant</span>. Whatever value you put inside a const, cannot be
+                        changed. For now we dont have enough knowledge to explain why something like this would be
+                        useful. Though, a small example as to why could be when you know something <span
+                            class="important">will not change</span>.
+                    </p>
+                    <p>
+                        Another way is the old way, and that is using <span class="highlight">var</span>, this way still
+                        works in javaScripts however should never be used.
+                    </p>
+                </article>
+
+                <article>
+                    <h2 id="b">Booleans</h2>
+                    <div class="example">
+                        <ul>
+                            <li>let isLoggedIn = true;</li>
+                            <li>let isLoggedIn = false;</li>
+                        </ul>
+                    </div>
+                    <p>
+                        Booleans are fairly straight forward, a boolean is another primitive type, that stores a true or
+                        false value. Note that they are written with <span class="highlight">lower case letters</span>,
+                        while in other programming languages, they are written with the first letter as capitalized.
+                    </p>
+
+                    <h3 id="cvt">Changing Variable Type</h3>
+                    <div class="example">
+                        <ul>
+                            <li>let someName = true;</li>
+                            <li>let someName = 3452</li>
+                        </ul>
+                    </div>
+                    <p>
+                        In JavaScript, variables can change its type from a boolean to a string or numner, unlike other
+                        programming languages, where if a variable is set as a boolean, it must remain as a boolean.
+                        JavaScript, does have something like TypeScript that enforces these rules, but plain old
+                        JavaScript does not.
+                    </p>
+                </article>
+
+                <article>
+                    <h2 id="vnc">Variable Naming & Conventions</h2>
+                    <div class="example">
+                        <div>
+                            <ul>
+                                <li>
+                                    Hard Rules
+                                    <ul>
+                                        <li>No Spaces within an Identifier</li>
+                                        <li>Dont Start with a number with an Identifier</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul>
+                                <li>
+                                    Best Practices
+                                    <ul>
+                                        <li>User Camel or Snake Casing</li>
+                                        <li>Meaningful Identifiers</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p>
+                        When it comes to Identifiers or naming your variables, it is important to note some hard rules
+                        whereby that you cannot start an identifier with a number, nor can you have spaces within your
+                        identifier. So something like <span class="important">let some name = false;</span> is not
+                        allowed, nor is <span class="important">let 1user = true;</span> is not allowed or permitted.
+                    </p>
+                    <p>
+                        However, <span class="highlight">let user1 = value;</span> or <span class="highlight">let
+                            username = value;</span> is considered fine. Though, there are some best pratices or
+                        convention rules to use when writing identifiers, and those are things like camel or snake
+                        casing like so <span class="highlight">let userProfileStatus = value;</span> or <span
+                            class="highlight">let user_age = value;</span>. Another good practise to have some sort of
+                        meaning in your identifiers and not just 1 letter characters or something like this, <span
+                            class="highlight">let isLoggedIn = true;</span>, where you know when you use is in the
+                        identifier, it will relate to a boolean type.
+                    </p>
+                    <p>
+                        Also its best to have meaningful variable names, but also not overly long identifiers.
                     </p>
                 </article>
             </section>
