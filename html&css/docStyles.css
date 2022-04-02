@@ -251,7 +251,7 @@ main {
 	animation: animate 10s linear infinite;
 	font-size: 1.2em;
 }
-#notes .example {
+.example {
 	margin-top: 1em;
 	border-radius: 0.5em;
 	padding: 0.5em 0;
@@ -264,7 +264,7 @@ main {
 	align-content: center;
 	transition: background-color 0.25s ease-in-out, transform 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
 }
-#notes .example:hover {
+.example:hover {
 	background-color: hsl(235, 90%, 71%);
 	transform: translateY(-0.5em);
 	box-shadow: 0 0.5em 0.5em -0.4em hsla(0, 0%, 0%, .5);
@@ -274,6 +274,29 @@ main {
 }
 .example div:nth-of-type(2) {
 	padding-right: 5em;
+}
+.example table {
+	margin: 0 1em;
+	padding: 0.5em;
+	border: 1px solid;
+	border-radius: 0.5em;
+}
+.example thead, .example tbody {
+	padding: 0.5em;
+	text-align: center;
+}
+.example th {
+	padding-bottom: 0.5em;
+	font-size: 1.2em;
+	text-decoration: 1px underline;
+}
+.example tbody tr:first-of-type {
+	background-color: hsl(0, 0%, 100%);
+	color: hsl(235, 90%, 70%);
+	font-weight: 700;
+}
+.example tbody td {
+	border-radius: 0.5em;
 }
 
 #notes p {

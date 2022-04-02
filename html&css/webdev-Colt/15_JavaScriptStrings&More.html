@@ -46,23 +46,75 @@
                     <h2 id="">Introducing Strings</h2>
                     <div class="example">
                         <ul>
-                            <li></li>
+                            <li> let message = <span class="important">'</span>This is a string<span
+                                    class="important">'</span>;</li>
+                            <li> let message = <span class="important">"</span>This is a string<span
+                                    class="important">"</span>;</li>
+                            <li> let message = <span class="important">'</span>this is a "quotation" in a string<span
+                                    class="important">'</span>;</li>
+                            <li> let message = 'This is a <span class="important">SyntaxError</span>"</li>
+                            <li>let message = <span class="important">''</span>;</li>
                         </ul>
                     </div>
                     <p>
-
+                        A string is a set of textual information, they represent text and must be wrapped in quotes and
+                        they are a another primitive type. You can put whatever text, symbol or number inside a string
+                        and it will be regarded as textual information, or in other words a string.
+                    </p>
+                    <p>
+                        You can have either <span class="highlight">'single quotes'</span> or <span
+                            class="highlight">"double quotes"</span> when creating a string, however you should remain
+                        consistant to which you use throughout your entire document. You cannot have <span
+                            class="highlight">'starting and ending quotation set differently"</span>, this will result in a
+                        <span class="important">SyntaxError</span>. Though you can have the opposite quotes inside
+                        the quotation marks, as shown above.
+                    </p>
+                    <p>
+                        Another important thing to remember is that a number inside a string, is no longer a number, it
+                        is a string or considered as a string. You can also have a empty string as shown above.
                     </p>
                 </article>
 
                 <article>
                     <h2 id="">Indices & length</h2>
                     <div class="example">
-                        <ul>
-                            <li></li>
-                        </ul>
+                        <div>
+                           <table>
+                               <thead>
+                                   <tr>
+                                       <th colspan="4">Strings are indexed</th>
+                                   </tr>
+                               </thead>
+                               <tbody>
+                                   <tr>
+                                       <td>f</td>
+                                       <td>i</td>
+                                       <td>v</td>
+                                       <td>e</td>
+                                   </tr>
+                                   <tr>
+                                       <td>0</td>
+                                       <td>1</td>
+                                       <td>2</td>
+                                       <td>3</td>
+                                   </tr>
+                               </tbody>
+                           </table>
+                        </div>
+                        <div>
+                            <ul>
+                                <li>
+                                    let message = '<spand class="important">f</spand>ive';
+                                    <ul>
+                                        <li>message.length <span class="important">4</span></li>
+                                        <li>message[0] <span class="important">'f'</span></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                     <p>
-                        
+
                     </p>
                 </article>
 
@@ -74,7 +126,7 @@
                         </ul>
                     </div>
                     <p>
-                        
+
                     </p>
                 </article>
 
@@ -86,7 +138,7 @@
                         </ul>
                     </div>
                     <p>
-                        
+
                     </p>
                 </article>
 
@@ -98,7 +150,7 @@
                         </ul>
                     </div>
                     <p>
-                        
+
                     </p>
                 </article>
 
@@ -110,7 +162,7 @@
                         </ul>
                     </div>
                     <p>
-                        
+
                     </p>
                 </article>
 
@@ -122,7 +174,7 @@
                         </ul>
                     </div>
                     <p>
-                        
+
                     </p>
                 </article>
             </section>
