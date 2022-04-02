@@ -65,7 +65,8 @@
                         You can have either <span class="highlight">'single quotes'</span> or <span
                             class="highlight">"double quotes"</span> when creating a string, however you should remain
                         consistant to which you use throughout your entire document. You cannot have <span
-                            class="highlight">'starting and ending quotation set differently"</span>, this will result in a
+                            class="highlight">'starting and ending quotation set differently"</span>, this will result
+                        in a
                         <span class="important">SyntaxError</span>. Though you can have the opposite quotes inside
                         the quotation marks, as shown above.
                     </p>
@@ -78,43 +79,52 @@
                 <article>
                     <h2 id="">Indices & length</h2>
                     <div class="example">
-                        <div>
-                           <table>
-                               <thead>
-                                   <tr>
-                                       <th colspan="4">Strings are indexed</th>
-                                   </tr>
-                               </thead>
-                               <tbody>
-                                   <tr>
-                                       <td>f</td>
-                                       <td>i</td>
-                                       <td>v</td>
-                                       <td>e</td>
-                                   </tr>
-                                   <tr>
-                                       <td>0</td>
-                                       <td>1</td>
-                                       <td>2</td>
-                                       <td>3</td>
-                                   </tr>
-                               </tbody>
-                           </table>
-                        </div>
-                        <div>
+                        <ul>
+                            <li>let message = '<spand class="important">f</spand>ive';</li>
                             <ul>
+                                <li>message.length <span class="important">4</span></li>
                                 <li>
-                                    let message = '<spand class="important">f</spand>ive';
+                                    message[0]
                                     <ul>
-                                        <li>message.length <span class="important">4</span></li>
-                                        <li>message[0] <span class="important">'f'</span></li>
+                                        <li> result is <span class="important">'f'</span></li>
                                     </ul>
                                 </li>
                             </ul>
-                        </div>
+                            <li>
+                                'string1' + 'string2'
+                                <ul>
+                                    <li>'string1string2'</li>
+                                    <li>Known as concatenation</li>
+                                </ul>
+                            </li>
+                            <li>
+                                1 <sub>number type</sub> + 'hi' <sub>string type</sub>
+                                <ul>
+                                    <li>'1hi' <sub>string type?</sub></li>
+                                </ul>
+                            </li>
+                        </ul>
                     </div>
                     <p>
-
+                        Strings within JavaScript <span class="important">have indices</span> assigned to them, these
+                        indices <span class="highlight">begin from 0</span> upwards. Looking at the example board above,
+                        the string of five has 4 letter, however when indexing the text, it goes to a maximum of 3 as it
+                        starts from 0 and not 1.
+                    </p>
+                    <p>
+                        To index a string, you would assign it to a variable and use square brackets next to it as so
+                        <span class="important">message[0]</span>.
+                    </p>
+                    <p>
+                        The other thing a string has is what is known as a property, for example <span
+                            class="highlight">message.length</span> whih will output the number of characters found
+                        within a string. Though this number begins from one and not zero completely different to
+                        indices.
+                    </p>
+                    <p>
+                        Strings can also be added together by using the addition operator, this is known as <span
+                            class="important">concatenation</span>. You can also add a number type to a string type,
+                        however JavaScript will try and find a common balance and sort of turn the number into a string.
                     </p>
                 </article>
 
