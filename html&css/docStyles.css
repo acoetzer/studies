@@ -290,9 +290,6 @@ main {
 	font-weight: 700;
 }
 
-footer {
-}
-
 @media (max-width: 1199.98px) {
 	header h1 {
 		font-size: 2em;
