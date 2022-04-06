@@ -132,11 +132,27 @@
                     <h2 id="">String Methods</h2>
                     <div class="example">
                         <ul>
-                            <li></li>
+                            <li>thing.method().method2().method3();
+                                <ul>
+                                    <li>thing.toUpperCase();</li>
+                                    <li>thing.toLowerCase()';</li>
+                                    <li>thing.trim();</li>
+                                </ul>
+                            </li>
                         </ul>
                     </div>
                     <p>
-
+                        In JavaScript, Strings have <span class="highlight">actions known as methods</span>. Each string
+                        can do the exact same as any
+                        other string. These methods can perform various things, such as <span class="important">making a
+                            string capitalized, uppercased, or search for something within a string</span> . A string
+                        also has a property, now property and methods are different, one provides the property of the
+                        string while the other performs an action. The way you tell the difference between a method and
+                        property is the syntax, property does not end with parenthesis. The way you write a method is as
+                        so <span class="important">thing.method();</span>.
+                    </p>
+                    <p>
+                        You can chain methods together as seen in the above example board.
                     </p>
                 </article>
 
@@ -144,23 +160,91 @@
                     <h2 id="">String Methods with Arguments</h2>
                     <div class="example">
                         <ul>
-                            <li></li>
+                            <li>thing.indexOf();</li>
+                            <li>
+                                thing.slice(beginIndex <sub>5</sub>, <span class="important">[</span>endIndex
+                                <sub>10</sub><span class="important">]</span>);
+                                <ul>
+                                    <li>The <span class="important">[ ]</span>means optional</li>
+                                    <li>thing.slice(-6)</li>
+                                </ul>
+                            </li>
+                            <li>thing.replace('hi', 'bye')</li>
+                            <li>thing.repeat(2)</li>
                         </ul>
                     </div>
                     <p>
-
+                        When it comes to methods, there are some that take arguments(<span
+                            class="important">args</span>) and some that dont, like the previous section above. Some of
+                        the examples above, are <span class="highlight">thing.indexOf('cat')</span> which will provide
+                        the starting index of the first occurance for the pattern provided. Arguments can also provide a
+                        starting and end value, such as the <span class="highlight">thing.slice(5, 10)</span>, this
+                        stating that the slice of the string should happen the starting index of 5, and end at the
+                        ending index of 10 but <span class="important">not including</span>. Also, it is important to
+                        remember that when reading the docs, <span class="important">[square brackets]</span> mean
+                        optional.
+                    </p>
+                    <p>
+                        Other examples of what you can do with arguments is, you can provide a pattern for replacing..
+                        As an example, <span class="highlight">thing.replace('that', 'this')</span>. Here you
+                        saying that you want to replace pattern <sup><span class="important">that</span></sup> with
+                        pattern <sup><span class="important">this</span></sup>.
+                    </p>
+                    <p>
+                        The last example, is just providing a single argument and that is to repeat, <span
+                            class="highlight">thing.repeat(2)</span>. This will repeat whatever you have selected or
+                        chosen to repeat.
                     </p>
                 </article>
 
                 <article>
-                    <h2 id="">String Template Literals - SUPER USEFUL</h2>
+                    <h2 id="">String Template Literals <sup class="tag">Super Useful</sup></h2>
                     <div class="example">
-                        <ul>
-                            <li></li>
-                        </ul>
+                        <div>
+                            <ul>
+                                <li>let product = 'milk';</li>
+                                <li>let price = '$2';</li>
+                                <li>let qty = 5;</li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <ul>
+                                <li>
+                                    without string Literals:
+                                    <ul>
+                                        <li>'You bought' + ' ' + qty + 'of' + ' ' + product + ' ' + '. The total is :' +
+                                            ' $' + qty * price</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul>
+                                <li>
+                                    With String Literals:
+                                    <ul>
+                                        <li><span class="important">`</span> You bought <span
+                                                class="important">$(qty)</span> of <span
+                                                class="important">$(product)</span>. The total
+                                            is : $<span class="important">$(qty * price)</span><span
+                                                class="important">`</span></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                     <p>
-
+                        <span class="highlight">String Template Literals</span> are ways for us to <span
+                            class="important">embed variables into our string</span> without having to break the string
+                        up with concatenation. The most important to note is the use of <span class="important">` back
+                            ticks `</span>, located just above tab on the keyboard. In order to use string literals, you
+                        need to use back ticks, a normal string made with quotes <span class="important">will not
+                            work!</span>.
+                    </p>
+                    <p>
+                        Within the <span class="important">`back ticks`</span> you use this <span
+                            class="important">$(var)</span> syntax to embed a variable.
                     </p>
                 </article>
 
@@ -168,23 +252,95 @@
                     <h2 id="">Undefined & Null</h2>
                     <div class="example">
                         <ul>
-                            <li></li>
+                            <li>Null</li>
+                            <li>Undefined</li>
                         </ul>
                     </div>
                     <p>
-
+                        Null and Undefined are part of the primitive types within JavaScript. Although both have this
+                        negative meaning behind it, that are vastly different from one another. <span
+                            class="highlight">Null</span> is a <span class="important">intentional</span> value that
+                        <span class="important">has to be set</span>. Whereas <span class="highlight">Undefined</span>
+                        is JavaScript's way of telling you <span class="important"> I dont know</span>. In otherwords
+                        Undefined is like variables that do not have an assigned value.
                     </p>
                 </article>
 
                 <article>
                     <h2 id="">Random Number & The Math Object</h2>
                     <div class="example">
-                        <ul>
-                            <li></li>
-                        </ul>
+                        <div>
+                            <ul>
+                                <li>
+                                    Math.PI <span class="important">3.141592653589793</span>
+                                </li>
+                                <li>
+                                    Rounding a Number
+                                    <ul>
+                                        <li>Math.round(4.9) <span class="important">5</span></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Absolute Value
+                                    <ul>
+                                        <li>Math.abs(-456) <span class="important">456</span></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Exponents, To the power of
+                                    <ul>
+                                        <li>Math.pow(2, 5) <span class="important">32</span></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Removes decimal & rounds downwards
+                                    <ul>
+                                        <li>Math.floor(3.99999) <span class="important">3</span></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Removes decimal & rounds upwards
+                                    <ul>
+                                        <li>Math.ciel(3.99999) <span class="important">4</span></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <ul>
+                                <li>math.random() <span class="important">0.9082773839292</span></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul>
+                                <li>
+                                    Generating a whole number between a specific value:
+                                    <ul>
+                                        <li>Math.floor(Math.random() * 3) + 20</li>
+                                        <li>Math.round(Math.random() * 3) + 20 <span class="tag">Works Better</span></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                     <p>
-
+                        <span class="highlight">The Math Object</span> holds a bunch of math <span
+                            class="important">properties</span> and <span class="important">methods</span>, like the
+                        above examples. Though it also holds an interesting method in which you can generate a random
+                        number. Which is why we are learning about this Math Object Now.
+                    </p>
+                    <p>
+                        <span class="highlight">Math.random()</span> gives us a random decimal number, something like
+                        <span class="important">0.2989298289</span>. Unlike other programming languages JavaScript does
+                        not have a random int, so to genereate a random interger requires some more work.
+                    </p>
+                    <p>
+                        Looking at the example displayed above, we see that we can pass the Math object method as an
+                        argument inside a Math object method. After that we mulitply the random decimal to a whole
+                        number that we want to range between, and because the number will be floored, we add either a +
+                        1 to include the final value, or we can specificy a particular range, as in from 21 to 23 in the
+                        example.
                     </p>
                 </article>
             </section>
