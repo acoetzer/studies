@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JavaScript Decision Making</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../docStyles.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>JavaScript Decision Making</h1>
+        </header>
+
+        <main>
+            <section id="toc">
+                <h2>Table of Contents</h2>
+                <ul id="tocList">
+                    <li><a href="#"></a></li>
+                </ul>
+
+                <section id="developer">
+                    <h2>Developer</h2>
+                    <div id="devInfo">
+                        <img src="../../src/html&css/me.jpg" alt="Developer I Am" id="personalImage">
+                        <ul>
+                            <li id="devName">Andre Coetzer</li>
+                            <li id="devTitle">Developer</li>
+                            <li id="devKnowledge">
+                                <span class="lang">html</span>
+                                <span class="lang">css</span>
+                                <span class="lang">js</span>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </section>
+
+            <section id="notes">
+                <article>
+                    <h2 id="">Decision Making With Code</h2>
+                    <p>
+                        Decision making with code refers to things like, if a user is signed for example, then display
+                        this information. If one things equates to a certain value then something should happen. If
+                        there are comments, then display comments, or if there are no comments, then display something
+                        else instead.
+                    </p>
+                    <p>
+                        So when talking about decision making in code, it refers to the a logical/conditional statement.
+                    </p>
+                </article>
+
+                <article>
+                    <h2 id="">Comparison Operators</h2>
+                    <div class="example">
+                        <div>
+                            <ul>
+                                <li>&gt; <span class="important">Greater Than</span></li>
+                                <li>&lt; <span class="important">Less Than</span></li>
+                                <li>&gt;= <span class="important">Greater Than or Equal To</span></li>
+                                <li>&lt;= <span class="important">Less Than or Equal To</span></li>
+                                <li>== <span class="important">Equality</span></li>
+                                <li>!= <span class="important">Not Equal To</span></li>
+                                <li>=== <span class="important">Strictly Equal To</span></li>
+                                <li>!== <span class="important">Strictly Not Equal To</span></li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <ul>
+                                <li>5 > 3; <span class="important">true, it's greater than.</span></li>
+                                <li>5 < 3; <span class="important">false, it's not less than.</span></li>
+                                <li>5 >= 5; <span class="important">true, it's equal to.</span></li>
+                                <li>1 <= 5; <span class="important">true, it's less than.</span></li>
+                                <li>'a' < 'b' ; <span class="important">true, it's less than.</span></li>
+                                <li>'A' > 'a'; <span class="important">false, it's not greater than.</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p>
+                        Comparison operators are like the math operators, though they do not perform any mathimatical
+                        function like addition. Comparison operators do however compare values. The first 4 comparison
+                        operators are fairly self explanatory, they check whether or not a value is <span
+                            class="highlight">greater than, less than</span> or even <span class="highlight">less than
+                            or equal to</span> and <span class="important">return a boolean value</span> based on the
+                        result.
+                    </p>
+                    <p>
+                        Another thing to mention is that, you can, <span class="important">but not recommended</span>,
+                        compare 2 strings together. They will return a boolean value of true and false. This is due to
+                        <span class="important">Unicode</span>, where each character as a value.
+                    </p>
+
+                    <h3 id="">Equality: Triple Vs. Double Equals</h3>
+                    <p>
+                        The last for comparison operators have to do with quality, they check whether or not something
+                        has the same value or not. There are 2 sets, <span class="important">Doublt & Triple</span>. The
+                        double equals <span class="highligh">== !=</span> Checks for equality of the value, though not
+                        for type. An example of this can be is the <sub>numerical</sub> <span class="important">1
+                            ==</span> <sub>string</sub> <span class="important">'1';</span>, and the anwser is yes.
+                    </p>
+                    <p>
+                        This is because of something called <span class="important">equality weirdness</span>,
+                        JavaScript will coerce the values to a common type and usually it <span
+                            class="important">coerces to a string type</span>, and therefor it will compare the <span
+                            class="important">Unicode</span> values. Though, it becomes a little tricky, because if you
+                        had to say, is the <sub>numerical</sub> <span class="important">1 ==</span> <sub>string</sub>
+                        <span class="important">'2';</span>, then the answer is false and again we need to look at the
+                        Unicode value.
+                    </p>
+                    <p>
+                        However, moving to triple equals, which is the preferred method for comparing if something is
+                        equal to or not. The triple, or otherwise known as <span class="important">strict</span>
+                        equality, check for both value and type. It <span class="important">will not</span> coerce to a
+                        common type. <span class="important">always use strict or triple equals!</span>
+                    </p>
+                </article>
+
+                <article>
+                    <h2 id="">Console, Alert & Prompt</h2>
+                    <div class="example">
+                        <div>
+                            <ul>
+                                <li>console.log(1+4, 'HI', true) <span class="important">Method to print in
+                                        JavaScript</span></li>
+                                <li>console.warn("THIS IS A WARNING") <span class="important">Warning Message</span>
+                                </li>
+                                <li>console.error("Error Here") <span class="important">Error Message/span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul>
+                                <li>alert("HI THERE!") <span class="important">Will display a popup message for the
+                                        user</span></li>
+                                <li>promt('what is your fav animal?') <span class="important">Will accept an argument
+                                        from the user</span></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul>
+                                <li>parseInt(userInput) <span class="important">To turn a string into a number</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <P>
+                        So <span class="highlight">console</span>, like the Math object has a bunch of properties and
+                        methods like <span class="important">console.warn()</span> or <span
+                            class="important">console.error()</span>, and one such much method is called <span
+                            class="important">console.log()</span>, this is how we can print to the console. Up until
+                        now we have been working inside a console, therefor there was no need to use this, although it
+                        will still work. However we will see later how we will use this from within a html document
+                        using scripts.
+                    </P>
+                    <p>
+                        There is another thing we can learn and that is <span class="important">alert()</span> Which
+                        displays a popup window for the user. Another is a quick way for now to get user input and that
+                        is <span class="important">prompt()</span>, Whatever value someone puts in here will be
+                        converted to a string, even its a number. A way we can <span class="important">convert the
+                            string to a number</span> is with <span class="important">parseInt(userInput var)</span>.
+                    </p>
+                </article>
+
+                <article>
+                    <h2 id="">Running JavaScript from a script</h2>
+                    <div class="example">
+                        <ul>
+                            <li>
+                                &lt;<span class="important">body</span>&gt; <br>
+                                <br>
+                                <ul>
+                                    &lt;<span class="important">script src="/folder/of/script"</span>&gt;&lt;<span
+                                        class="important">/script</span>&gt;
+                                </ul>
+                                &lt;<span class="important">/body</span>&gt;
+                            </li>
+                        </ul>
+                    </div>
+                    <p>
+                        As mentioned before we have been working directly inside the console to run simple scripts like
+                        1 + 2, though the way we embedd JavaScript into html, is with an element known as &lt;<span
+                            class="important">script</span>&gt; so that we can save our code. Script has a opening and
+                        closing tag with an <span class="important">attribute</span> known as <span
+                            class="important">src=""</span> and inside src, is where you direct html to find the
+                        <spanimportant>.js</spanimportant> files.
+                    </p>
+                    <p>
+                        Another thing to keep in mind is although we can place this script in our head element. Its best
+                        practice to place scripts at the bottom of the body element. <span class="important">This is
+                            done so that we can allow for html elements to load in first.</span>
+                    </p>
+                </article>
+
+                <article>
+                    <h2 id="">If Statements</h2>
+                    <div class="example">
+                        <ul>
+                            <li>
+                                Conditionals
+                                <ul>
+                                    <li>
+                                        let userInput = prompt('What day is today?').toLowerCase(); <br>
+                                        if (userInput === 'monday') { <br>
+                                        console.log("Oh No!, It's Monday!!!") <br>
+                                        } else if (userInput === 'friday') { <br>
+                                        console.log("Oh boy!!!, It's Friday!")
+                                        } else { <br>
+                                        console.log(`Sorry today is ${userInput}. Still not Friday yet!!`) <br>
+                                        }
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <p>
+                        An if statement is a conditional, although here we just looking soley at the <span
+                            class="important">if</span> statement. The basic gist of the condition is that code only
+                        runs when a conditional is true. When a condition is met, whatever has been specified to happen
+                        will happen. Taking a look at the example above, and soley at the if statement, or first block
+                        for if.
+                    </p>
+                    <p>
+                        We are saying the if the variable <span class="highlight">userInput</span> is equal to the
+                        string 'monday', then print using console.log a message. If that condintional is met, then it
+                        will perform the action of assigned to it, however, if it doesn't and there wasn't anything
+                        else, nothing will occur.
+                    </p>
+
+                    <h3 id="">Else If</h3>
+                    <p>
+                        This brings us to the else if block. If we want more condintionals or outcomes for the same
+                        condition statement, then we can add an else if statement. Looking at the primitive example
+                        above, we see that if the condition for the first if statement was not met, then it can move to
+                        the next condintional an check whether or not it was met there. Thus, if met, will print and
+                        outcome, while if not met, will move over to the next conditional or else if or else.
+                    </p>
+                    <p>
+                        Its important to note that you can have as many else if if you want.
+                    </p>
+
+                    <h3 id="">Else</h3>
+                    <p>
+                        Once all else if statements has been used, and the userInput didn't match any of the desired
+                        results, you can place a else statement. An else state doesn not come with parenthesis and
+                        basically says, well fi your answer or result doesn't match anything we have above then sorry
+                        pal, move on.
+                    </p>
+                </article>
+
+                <article>
+                    <h2 id="">Nesting Conditions</h2>
+                    <div class="example">
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <p>
+
+                    </p>
+                </article>
+
+                <article>
+                    <h2 id="">Truthy & Falsey Values</h2>
+                    <div class="example">
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <p>
+
+                    </p>
+                </article>
+
+                <article>
+                    <h2 id="">Logical AND</h2>
+                    <div class="example">
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <p>
+
+                    </p>
+                </article>
+
+                <article>
+                    <h2 id="">Logical OR</h2>
+                    <div class="example">
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <p>
+
+                    </p>
+                </article>
+
+                <article>
+                    <h2 id="">Logical NOT</h2>
+                    <div class="example">
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <p>
+
+                    </p>
+                </article>
+
+                <article>
+                    <h2 id="">The Switch Statement Is ... A lot</h2>
+                    <div class="example">
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <p>
+
+                    </p>
+                </article>
+            </section>
+        </main>
+
+        <!-- <script src="script16.js"></script> -->
+    </body>
+
+</html>
