@@ -257,11 +257,41 @@
                     <h2 id="">Nesting Conditions</h2>
                     <div class="example">
                         <ul>
-                            <li></li>
+                            <li>let password = prompt('Enter a password');
+                                <ul>
+                                    <li>
+                                        // Password must contain a min of 6 characters. <br>
+                                        if (password.length >= 6) {
+                                        <ul>
+                                            <li>
+                                                // Password must contain no spaces. <br>
+                                                if (password.indexOf(' ') === -1) {
+                                                <ul>
+                                                    <li>console.log('Valid password')</li>
+                                                </ul>
+                                                } else {
+                                                <ul>
+                                                    <li>console.log('Password must not contain spaces!')</li>
+                                                </ul>
+                                                }
+                                            </li>
+                                        </ul>
+                                        } else {
+                                        <ul>
+                                            <li>console.log('Password must be 6+ characters') </li>
+                                        </ul>
+                                        }
+                                    </li>
+                                </ul>
+                            </li>
                         </ul>
                     </div>
                     <p>
-
+                        A quick example, although there are better ways to write this above, its showing how one can
+                        nest if statements inside one another to pass off as logical operators such as <span
+                            class="important">AND, OR and NOT</span>. In the example above the <span
+                            class="important">first if statement</span> needs to be true in order to go the nested if
+                        statement.
                     </p>
                 </article>
 
@@ -269,47 +299,132 @@
                     <h2 id="">Truthy & Falsey Values</h2>
                     <div class="example">
                         <ul>
-                            <li></li>
+                            <li>All JS values have an inherent truthyness or falsyness about them</li>
+                            <li>
+                                falsy Value:
+                                <ul>
+                                    <li>false</li>
+                                    <li>0</li>
+                                    <li>'' <span class="important">empty string</span></li>
+                                    <li>null</li>
+                                    <li>undefined</li>
+                                    <li>NaN</li>
+                                </ul>
+                            </li>
+                            <li>Everything else is truthy</li>
                         </ul>
                     </div>
                     <p>
-
+                        In Javascript everything has a truthyness or falsyness. There are only <span
+                            class="important">2</span> values that are only either true and false, and that is <span
+                            class="important">true & false</span>. Everything else is either truthy or falsey.
                     </p>
                 </article>
 
                 <article>
                     <h2 id="">Logical AND</h2>
                     <div class="example">
-                        <ul>
-                            <li></li>
-                        </ul>
+                        <div>
+                            <ul>
+                                <li><span class="important">&&</span></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <li>true && true <span class="important">true</span></li>
+                            <li>true && false <span class="important">false</span></li>
+                            <li>false && false <span class="important">false</span></li>
+                            <li>false && true <span class="important">false</span></li>
+                        </div>
                     </div>
                     <p>
-
+                        The first Logical operater is <span class="important">AND</span> represented with 2 ampersand
+                        <span class="important">&&</span>. <span class="important">Both conditions have to be
+                            true</span> inorder for the conditional statement to be true. JavaScript wil short circuit
+                        if the first conditional is not met. The same as when we nested the if statements.
+                    </p>
+                    <p>
+                        Going back to the password example where we nested our if statements we can use what is known as
+                        logical operators to achieve the same conditional. For example <span class="important">if
+                            (password.length >= 6 && password.indexOf(' ') === -1) {</span>, This will provide the same
+                        outcome as when nested.
                     </p>
                 </article>
 
                 <article>
                     <h2 id="">Logical OR</h2>
                     <div class="example">
-                        <ul>
-                            <li></li>
-                        </ul>
+                        <div>
+                            <ul>
+                                <li><span class="important">||</span></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <li>true || true <span class="important">true</span></li>
+                            <li>true || false <span class="important">true</span></li>
+                            <li>false || false <span class="important">false</span></li>
+                            <li>false || true <span class="important">true</span></li>
+                        </div>
                     </div>
                     <p>
-
+                        Introducing logical <span class="important">OR</span> which is respresented with <span
+                            class="important">||</span>. This is the complete opposite of <span
+                            class="important">&&</span>, whereby both values need to be false inorder to be false. The
+                        statement is basically saying that one or the other condiction needs to be met in order to be
+                        true.
+                    </p>
+                    <p>
+                        Another example we can look at is combining both <span class="important">&&</span> <span
+                            class="important">||</span>
+                    </p>
+                    <div class="example">
+                        <ul>
+                            <li>let age = prompt('What is your age?')</li>
+                            <li>
+                                if (age >= 1 && age < 5 || age>= 65) {
+                                    <ul>
+                                        <li>console.log('FREE')</li>
+                                    </ul>
+                                    } else if (age >= 5 && < 10) { <ul>
+                            <li>console.log('$10')</li>
+                        </ul>
+                        } else if (age >= 10 && < 65){ <ul>
+                            <li>console.log('$20')</li>
+                            </ul>
+                            } else {
+                            <ul>
+                                <li>console.log('Invalid Age')</li>
+                            </ul>
+                            }
+                            </li>
+                            </ul>
+                    </div>
+                    <p>
+                        In this example, we show how we use not only the OR logical operater but the AND logical
+                        operator in conjunction.
                     </p>
                 </article>
 
                 <article>
                     <h2 id="">Logical NOT</h2>
                     <div class="example">
-                        <ul>
-                            <li></li>
-                        </ul>
+                        <div>
+                            <ul>
+                                <li><span class="important">!</span></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul>
+                                <li>!true <span class="important">false</span></li>
+                                <li>!false <span class="important">true</span></li>
+                                <li>!!true <span class="important">true</span></li>
+                                <li>!1 === 1 <span class="important">false</span></li>
+                            </ul>
+                        </div>
                     </div>
                     <p>
-
+                        The <span class="important">NOT</span> logical operator is represented with a single <span
+                            class="important">!</span> exclamation mark. It basically changes the output or value to the
+                        opposite.
                     </p>
                 </article>
 
@@ -317,11 +432,66 @@
                     <h2 id="">The Switch Statement Is ... A lot</h2>
                     <div class="example">
                         <ul>
-                            <li></li>
+                            <li>let day = 1;</li>
+                            <li>switch (day) {
+                                <ul>
+                                    <li>
+                                        case 1:
+                                        <ul>
+                                            <li>console.log('MONDAY')</li>
+                                            <li>break;</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        case 2:
+                                        <ul>
+                                            <li>console.log('TUESDAY')</li>
+                                            <li>break;</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        case 3:
+                                        <ul>
+                                            <li>console.log('WEDNESDAY')</li>
+                                            <li>break;</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        case 4:
+                                        <ul>
+                                            <li>console.log('THURSDAY')</li>
+                                            <li>break;</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        case 5:
+                                        <ul>
+                                            <li>console.log('FRIDAY')</li>
+                                            <li>break;</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        case 6: <br>
+                                        case 7:
+                                        <ul>
+                                            <li>console.log('WEEKEND')</li>
+                                            <li>break;</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        default:
+                                        <ul>
+                                            <li>console.log('I dont know that!')</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                }
+                            </li>
                         </ul>
                     </div>
                     <p>
-
+                        Switch is not commonly used, though its a lot like the if statement. Its only used once within
+                        this course.
                     </p>
                 </article>
             </section>
