@@ -109,8 +109,9 @@
                             values</span>. This is where the order fits in.
                     </p>
                     <p>
-                        When trying to index a number greater than the amount in the array you get the result undefined.
-                        We know <span class="important">undefined</span> is javascripts way of saying it doesn't know.
+                        When trying to index a number greater than the amount of elements in the array you get the
+                        result undefined. We know <span class="important">undefined</span> is javascripts way of saying
+                        it doesn't know.
                     </p>
                     <p>
                         You can use the <span class="important">indices</span> to change the value stored
@@ -119,8 +120,8 @@
                         variable. However with arrays you can change the values using indices.
                     </p>
                     <p>
-                        <span class="highlight">quick note</span>, you can index a greater value than the amount of data
-                        objects inside an array and add a value to it. JavaScript will add that value to the end. As an
+                        <span class="highlight">quick note</span>, you can index a greater value than the amount of
+                        elements inside an array and add a value to it. JavaScript will add that value to the end. As an
                         example, if you index colors above, <span class="important">colors[10] = 'Purple';</span>. The
                         result will be <span class="important">['Red', 'Blue', 'Orange', <span class="highlight">empty x
                                 7</span>, 'Purple']</span>. Notice the 7 empty slots added to the array which are all
@@ -143,12 +144,29 @@
                         </ul>
                     </div>
                     <p>
-
+                        Coming to array methods, we saw how to create an array, change elements within an array using
+                        indecises, however there is an easier way to <span class="important">add or remove</span>
+                        something to the end or start of an array without guessing the index.
+                    </p>
+                    <p>
+                        To add something to the end, we use a method called <span class="important">.push('ARG')</span>,
+                        this adds a value automatically to the end of an
+                        array.
+                    </p>
+                    <p>
+                        To remove something from the end of an array, we use a method known as <span
+                            class="important">.pop()</span>, Pop by default will remove the last value in the array
+                        without using an <span class="important">ARG</span>.
                     </p>
 
                     <h3 id="su">Shift & Unshift</h3>
                     <p>
-
+                        Like the above methods this is used for the beginning of an array. To add something to the
+                        beginning of an array, we use <span class="important">.unshift('ARG')</span>.
+                    </p>
+                    <p>
+                        To remove an element from the front, we use a method known as <span
+                            class="important">.shift()</span>. Again, no <span class="important">ARGs</span> needed.
                     </p>
                 </article>
 
@@ -167,7 +185,14 @@
                         </ul>
                     </div>
                     <p>
-
+                        Looking at further methods for arrays, You can <span class="important">.concat(array#2)</span> 2
+                        arrays together. You can just like variables, do the <span class="important">
+                            .indexOf('element')</span>, this giving you back the index of a specified element.
+                    </p>
+                    <p>
+                        Another method can give a <span class="important">true or false</span> value, as <span
+                            class="important">.includes('element')</span>, or you can reverse an array with the method
+                        <span class="important">.reverse()</span>.
                     </p>
                 </article>
 
@@ -175,14 +200,31 @@
                     <h2 id="ss">Slice & Splice</h2>
                     <div class="example">
                         <ul>
-                            <li>arrayVar.<span class="important">slice(</span>indexStart, [indexEnd]<span
+                            <li>arrayVar<span class="important">.slice(</span>indexStart, [indexEnd]<span
                                     class="important">)</span>;</li>
-                            <li>arrayVar.<span class="important">splice(</span>indexStart, deleteCount, addItem<span
+                            <li>arrayVar<span class="important">.splice(</span>indexStart, deleteCount, addItem<span
                                     class="important">)</span>;</li>
+                            <li>arrayVar<span class="important">.sort()</span>;</li>
                         </ul>
                     </div>
                     <p>
-
+                        <span class="important">.slice()</span> & <span class="important">.splice()</span>. Slice is a
+                        way for you to get a portion of the array, you can provide a start index, but you <span
+                            class="important">do not have provide an end index</span>. firstly, if you don't provide an
+                        end index, <span class="important">it will give you everything from the starting index all the
+                            way to the end of the array</span>. You also provide the <span
+                            class="important">.slice(-3)</span> a negative value and it will give you in this case, the
+                        last 3 values of the array.
+                    </p>
+                    <p>
+                        <span class="important">.splice()</span> on the other hand is a way for you to add elements
+                        inbetween other elements inside an array.
+                    </p>
+                    <p>
+                        <span class="important">.sort()</span> sorts an array, though the array sort method is at this
+                        moment useless as the default way it sorts elements is by <span class="important">converting the
+                            elements to strings and then sorting it by its UTF-16 code unit values</span>. As a quick
+                        example <span class="important">[1, 30, 4, 21, 10000]</span>.
                     </p>
                 </article>
 
@@ -190,11 +232,32 @@
                     <h2 id="rtet">Reference Types & Equality Testing</h2>
                     <div class="example">
                         <ul>
-                            <li></li>
+                            <li>'hi' === 'hi' <span class="important">true</span></li>
+                            <li>
+                                ['hi', 'bye'] === ['hi', 'bye'] <span class="important">false</span>
+                                <ul>
+                                    <li>[1] === [1] <span class="important">false</span></li>
+                                    <li>[1] == [1] <span class="important">false</span></li>
+                                    <li>[] == [] <span class="important">false</span></li>
+                                </ul>
+                            </li>
+                            <li>
+                                const arrayOne = [1, 2, 3, 4];
+                                <ul>
+                                    <li>const arrayTwo = arrayOne;</li>
+                                    <li>arrayOne === arrayTwo <span class="important">true</span></li>
+                                </ul>
+                            </li>
                         </ul>
                     </div>
                     <p>
-
+                        Looking at the example above, 2 strings can in memory match each other, however when it comes to
+                        arrays, <span class="important">no 2 array is the same</span>.Even though the contents are the
+                        same, in the stored memory it is not.
+                    </p>
+                    <p>
+                        You can think of this like a reference to an array. You can test this by creating another
+                        variable with the first array variable inside and it will be the same, as shown above.
                     </p>
                 </article>
 
@@ -202,11 +265,21 @@
                     <h2 id="ac">Arrays + Const</h2>
                     <div class="example">
                         <ul>
-                            <li></li>
+                            <li>
+                                <span class="important">const<sup>?</sup></span> array = <span
+                                    class="important">[</span>1, 2, 3, 4<span class="important">]</span>
+                            </li>
                         </ul>
                     </div>
                     <p>
-
+                        when introducing <span class="highlight">let</span> & <span class="highlight">const</span>, it
+                        was mentioned that you cannot alter const variables. Yet with arrays we are altering the values.
+                        That is because as long as the <span class="important">reference remains the same</span>, you
+                        can change the contents.
+                    </p>
+                    <p>
+                        Another way to think of this is that, as long as you dont change the first layer of content
+                        within a const, it perfect, technically you can't even if you tried.
                     </p>
                 </article>
 
@@ -214,11 +287,21 @@
                     <h2 id="mda">Multi-Dimensional Arrays</h2>
                     <div class="example">
                         <ul>
-                            <li></li>
+                            <li>const gameBoard = [ <br>
+                                ['o', 'x', 'o'], <br>
+                                ['x', 'x', 'o'], <br>
+                                ['x', 'o', 'x'] <br>
+                                ]
+                            </li>
+                            <li>gameBaord[0] <span class="important">['o', 'x', 'o'], ['x', 'x', 'o'], ['x', 'o',
+                                    'x']</span></li>
+                            <li>gameBaord[0][1] <span class="important">['x', 'x', 'o']</span></li>
+                            <li>gameBaord[0][1][2] <span class="important">'o'</span></li>
                         </ul>
                     </div>
                     <p>
-
+                        Arrays <span class="important">can have nested arrays</span> within them. You can see from the
+                        above example that you can index them as well.
                     </p>
                 </article>
             </section>
