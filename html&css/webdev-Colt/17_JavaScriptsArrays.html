@@ -84,11 +84,47 @@
                     <h2 id="ara">Array Random Access</h2>
                     <div class="example">
                         <ul>
-                            <li></li>
+                            <li>
+                                const days = ['Monday', 'Tuesday', 'Wednesday'];
+                                <ul>
+                                    <li>days[0] <span class="important">Monday</span></li>
+                                    <li>days[0][0] <span class="important">M</span></li>
+                                    <li>days.length <span class="important">3</span></li>
+                                </ul>
+                            </li>
+                            <li>
+                                const colors = ['Rad', 'Blue', 'Orange'];
+                                <ul>
+                                    <li>colors[0] = 'Red'; <span class="important">['Red', 'Blue', 'Orange']</span></li>
+                                </ul>
+                            </li>
                         </ul>
                     </div>
                     <p>
-
+                        We know that arrays <span class="important">are indexed</span> just like <span
+                            class="highlight">strings</span>, however it does not return just a single letter but the
+                        whole value inside the array. We can further index or <span class="important">chain on</span>the
+                        array to get the result of a single character as seen above. <span class="important">string
+                            indices returns characters</span>, and <span class="important">array indices returns
+                            values</span>. This is where the order fits in.
+                    </p>
+                    <p>
+                        When trying to index a number greater than the amount in the array you get the result undefined.
+                        We know <span class="important">undefined</span> is javascripts way of saying it doesn't know.
+                    </p>
+                    <p>
+                        You can use the <span class="important">indices</span> to change the value stored
+                        inside an array. Its important to note, that you cannot do this with strings, string are <span
+                            class="important">not mutable</span>, even within a <span class="important">let</span>
+                        variable. However with arrays you can change the values using indices.
+                    </p>
+                    <p>
+                        <span class="highlight">quick note</span>, you can index a greater value than the amount of data
+                        objects inside an array and add a value to it. JavaScript will add that value to the end. As an
+                        example, if you index colors above, <span class="important">colors[10] = 'Purple';</span>. The
+                        result will be <span class="important">['Red', 'Blue', 'Orange', <span class="highlight">empty x
+                                7</span>, 'Purple']</span>. Notice the 7 empty slots added to the array which are all
+                        undefined when indexed.
                     </p>
                 </article>
 
