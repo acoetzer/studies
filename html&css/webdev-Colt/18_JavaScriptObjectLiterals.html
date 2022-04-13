@@ -50,64 +50,205 @@
                     <h2 id="iol">Introducing Object Literals</h2>
                     <div class="example">
                         <ul>
-                            <li></li>
+                            <li>
+                                Objects
+                                <ul>
+                                    <li>Object are <span class="important">collections</span> of <span
+                                            class="important">properties</span>.</li>
+                                    <li><span class="important">Properties</span> are a <span
+                                            class="important">key-value pair</span></li>
+                                    <li>Rather than accessing data using an index, we use <span class="important">custom
+                                            keys</span></li>
+                                </ul>
+                            </li>
+                            <li>
+                                A <span class="important">property</span> is a <span class="important">key</span>: <span
+                                    class="important">value</span> pair.
+                                <ul>
+                                    <li>age<sup><span class="important">key</span></sup>: 32<sup><span
+                                                class="important">value</span></sup>,</li>
+                                </ul>
+                            </li>
+                            <li>Not Ordered</li>
                         </ul>
                     </div>
                     <P>
-
+                        JavaScript Objects, <span class="important">Our second data structure</span>. An <span
+                            class="important">Object literal</span> is another way to store data using what is known as
+                        <span class="important">key: value</span> pairs. Object Literals are not ordered unlike Arrays
+                        and this is because you create properties which have a key and value assigned to it, inside the
+                        object.
                     </P>
+                    <p>
+                        Object literals cannot be indexed, anything inside <span class="important">[]</span> if not in a
+                        string, is considered a variable. The most important thing to remember is that <span
+                            class="important">properties are key: value pairs</span>.
+                    </p>
                 </article>
 
                 <article>
                     <h2 id="col">Creating Object Literals</h2>
                     <div class="example">
                         <ul>
-                            <li></li>
+                            <li>const person = <span class="important">{</span>firstName: 'Mick', lastName:
+                                'Jagger'<span class="important">}</span></li>
+                            <li>const person = <span class="important">{</span>
+                                <ul>
+                                    <li>firstName<span class="important">:</span> 'Mick',</li>
+                                    <li>lastName<span class="important">:</span> 'Jagger',</li>
+                                    <li>age<span class="important">:</span> 78,</li>
+                                    <li>nationality<span class="important">:</span> 'British',</li>
+                                    <li>birthYear<span class="important">:</span> '26 July 1943',</li>
+                                    <li>isAlive<span class="important">:</span> true</li>
+                                </ul>
+                                <span class="important">}</span>
+                            </li>
                         </ul>
                     </div>
                     <P>
-
+                        The way you create an <span class="important">Object Literal</span> is by using <span
+                            class="important">curly braces</span>, unlike Arrays where we used square brackets. Inside
+                        the curly braces, we add a <span class="important">key</span> as seen above followed by a <span
+                            class="important">: colon</span> and the <span class="important">value</span>.
                     </P>
+                    <p>
+                        When it comes to the value, it can be <span class="important">any data type</span>. You will
+                        notice there is no real order to the object literal example above.
+                    </p>
                 </article>
 
                 <article>
                     <h2 id="adooo">Accessing Data Out Of Objects</h2>
                     <div class="example">
                         <ul>
-                            <li></li>
+                            <li>
+                                const person = <span class="important">{</span>firstName: 'Mick', lastName:
+                                'Jagger'<span class="important">}</span>
+                                <ul>
+                                    <li>person{1} <span class="important">DO NOT DO THIS!</span></li>
+                                    <li>person[1] <span class="important">undefined, Can't Index! unless there is a key
+                                            of 1 then it will convert to the string</span></li>
+                                    <li>person[firstName] <span class="important">undefined, is a sking for a
+                                            variable.</span></li>
+                                    <li>person['firstName'] <span class="important">"Mick"</span></li>
+                                    <li>person['first' + 'Name'] <span class="important">"Mick", Concatenates
+                                            first.</span></li>
+                                    <li>person.firstName<span class="important">"Mick"</span></li>
+                                </ul>
+                            </li>
                         </ul>
                     </div>
                     <P>
-
+                        When it comes to accessing data within an Object Literal it is <span
+                            class="important">not</span>
+                        with with curly braces. The only time we use curly braces is when we declaring an Object
+                        Literal.
                     </P>
+                    <p>
+                        We use <span class="important">[square brckets]</span> just like arrays, however we <span
+                            class="important">do not use indices</span>. We either provide a string value like so <span
+                            class="important">person['firstName']</span> or a .property like so <span
+                            class="important">person.firstName</span>, which again keys are properties and properties
+                        are key: value pairs.
+                    </p>
+                    <p>
+                        Quick note to remember is that <span class="important">all keys are converted to strings</span>.
+                        Except for symbols.
+                    </p>
+                    <p>
+                        Inside the <span class="important">[]</span>, you can input a expression like so <span
+                            class="important">person['first' + 'Name']</span>, This will work, as the expression will
+                        run first, which is basically concatenating the 2 strings together to form the <span
+                            class="important">'firstName'</span> string.
+                    </p>
+                    <p>
+                        You can also input a a varaible like so <span class="important">person[firstName]</span>
+                        considering that variable is a string with a key identifier. Though, when it comes to number
+                        like so <span class="important">person[1999]</span>, this will be converted to a string first
+                        and then try to match it with the same string inside the object.
+                    </p>
                 </article>
 
                 <article>
                     <h2 id="mo">Modifying Objects</h2>
                     <div class="example">
                         <ul>
-                            <li></li>
+                            <li>person['firstName'] = Micky;</li>
+                            <li>person.firstName = Micky;</li>
                         </ul>
                     </div>
                     <P>
-
+                        Just like an Array, the inside of a object literal can be cahnged. However the container cannot.
+                        Changing data inside an object is self explanatory, you select the object and property and
+                        assign it a new value.
                     </P>
+                    <p>
+                        The same method we use for updating or changing values, can be use to <span
+                            class="important">create new values to be added to an object</span>.
+                    </p>
                 </article>
 
                 <article>
                     <h2 id="nao">Nesting Arrays & Objects</h2>
                     <div class="example">
-                        <ul>
-                            <li></li>
-                        </ul>
+                        <div>
+                            <ul>
+                                <li>const array = [
+                                    <ul>
+                                        <li>{ <br>
+                                            firstName: 'Joe', <br>
+                                            lastName: 'Bob', <br>
+                                            age: 45 <br>
+                                            },
+                                        </li>
+                                        <li>{ <br>
+                                            firstName: 'Mike', <br>
+                                            lastName: 'Alexander', <br>
+                                            age: 45 <br>
+                                            },
+                                        </li>
+                                        <li>{ <br>
+                                            firstName: 'Jimmy', <br>
+                                            lastName: 'Joe', <br>
+                                            age: 45 <br>
+                                            }
+                                        </li>
+                                    </ul>
+                                    ]
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <ul>
+                                <li>const object = {
+                                    <ul>
+                                        <li>firstName: 'Tic'</li>
+                                        <li>lastName: 'Tac'</li>
+                                        <li>favColor: ['Red', 'Blue', 'Green']</li>
+                                        <li>Languages: {Java: 0, Python: 90, CSS: 100}</li>
+                                    </ul>
+                                    }
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                     <P>
-
+                        Its a common pattern to have an Array with a bunch of objects, or inside an object we can store
+                        anything we want as the values. We can mix and match and from time to time it doesnt make sense
+                        to work with an array, or with an object.
                     </P>
+                    <p>
+                        When it comes to accessing data, one example is for example with the array, is like so <span
+                            class="important">array[1].firstName</span> which results in <span
+                            class="important">Mike</span>. Here we see that we indexed the array, but added on the
+                        property for that index value which was an object.
+                    </p>
                 </article>
             </section>
         </main>
 
+        <!-- <script src="link/to/source"></script> -->
     </body>
 
 </html>
