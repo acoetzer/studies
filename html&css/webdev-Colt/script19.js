@@ -74,3 +74,34 @@
 //     console.log(`${i + 1} ${colors[i]}`)
 // }
 
+// for (let i = 1; i <= 5; i++) {
+//     console.log(`The outter loop is :${i}`)
+// }
+
+// for (let i = 1; i <= 3; i++) {
+//     console.log(`The Outter loop is :${i}`)
+//     for (let j = 1; j <= 3; j += 1) {
+//         console.log(`    The Inner loop is : ${j}`)
+//     }
+// }
+
+// const people = ['Andre', 'Vanya', 'Dary'];
+
+// for (let i = 0; i < people.length; i++) {
+//     console.log(`At index ${i} is ${people[i]}`)
+// }
+// console.log(`There are ${people.length} persons here.`)
+
+// const people = [
+//     ['Andre', '32'],
+//     ['Vanya', '33'],
+//     ['Dary', '28']
+// ]
+
+// for (let i = 0; i < people.length; i++) {
+//     const row = people[i];
+//     console.log(`At index ${i}, we have:`)
+//     for (let j = 0; j < row.length; j++) {
+//         console.log(`${row}`)
+//     }
+// }
