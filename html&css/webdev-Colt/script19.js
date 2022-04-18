@@ -105,3 +105,10 @@
 //         console.log(`${row}`)
 //     }
 // }
+
+const places = [
+    ['Canada', 'Northern Americas'],
+    ['Bulgaria', 'Eastern Europe'],
+    ['Republic of South Africa', 'Southern Africa'],
+];
+
