@@ -106,9 +106,17 @@
 //     }
 // }
 
-const places = [
-    ['Canada', 'Northern Americas'],
-    ['Bulgaria', 'Eastern Europe'],
-    ['Republic of South Africa', 'Southern Africa'],
-];
+// const places = [
+//     ['Canada', 'Northern Americas'],
+//     ['Bulgaria', 'Eastern Europe'],
+//     ['Republic of South Africa', 'Southern Africa'],
+// ];
+
+// for (let i = 0; i < places.length; i++) {
+//     const row = places[i];
+//     console.log(`At indexOf ${i} is:`)
+//     for (let j = 0; j < row.length; j++) {
+//         console.log(`    ${row[j]}`)
+//     }
+// }
 
