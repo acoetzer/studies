@@ -119,3 +119,72 @@
 //         console.log(`    ${row[j]}`)
 //     }
 // }
+
+// for (let i = 0; i <= 10; i++) {
+//     if (i % 2 === 0) {
+//         console.log(`${i} is Even`)
+//     } else {
+//         console.log(`${i} is Odd`)
+//     }
+// }
+
+// for (let i = 0; i <= 3; i++) {
+//     console.log(`The outter loop of :${i}`);
+//     for (j = 1; j <= 2; j++) {
+//         console.log(`       The inner loop index is :${j}`)
+//     }
+// }
+
+// const people = [
+//     ['Andre', 'Vanya', 'Dary'],
+//     ['Mom', 'Dad'],
+//     ['Maureen', 'Mark', 'Alicia']
+// ];
+
+// for (let i = 0; i < people.length; i++) {
+//     // const row = people[i];
+//     console.log(i);
+//     for (let j = 0; j < people[i].length; j++ ) {
+//         // console.log(`   ${row[j]}`);
+//         console.log(`   ${j}`);
+//     }
+// }
+
+// let userInput = prompt('Say Something"')
+
+// while (true) {
+//     if (userInput.toLowerCase() === 'stop copying me') {
+//         break;
+//     } else {
+//         userInput = prompt(userInput);
+//     }
+// }
+// alert('Sure thing!')
+
+let choice = parseInt(prompt('Enter a maximun number for the game.'));
+while (!choice) {
+    choice = prompt('Enter a Number, not Text!');
+}
+const targetNum = Math.round(Math.random() * choice);
+
+let guess = parseInt(prompt('Enter your first guess?'));
+let attemps = 1;
+while (parseInt(guess) !== targetNum) {
+    if (guess === 'q') {
+        break;
+    } 
+    attemps++;
+    if (guess > targetNum) {
+        guess = prompt('Too high, guess again');
+    }   else {
+        guess = prompt('Too low, guess again');
+    }
+}
+if (guess === 'q') {
+    alert('Ok you quit');
+} else {
+    alert(`Congratulations`);
+    alert(`The hidden number was ${targetNum} of ${choice} and your guess was ${guess} on ${attemps} attemps `);
+} 
+
+

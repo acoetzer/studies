@@ -91,32 +91,96 @@
                             class="important">2 <sup>nd</sup></span> portion is the <span
                             class="important">condition</span>, which again is closed by a semi-colon and followed by
                         the <span class="important">3 <sup>rd</sup></span> portion <span
-                            class="important">incrementalExpression</span>.
+                            class="important">incrementalExpression</span>. Although the syntax says incremental
+                        expression, you can decrement or divide or multiply.
                     </p>
                     <p>
-
+                        The above example displays a for that will print the numbers from 0 to 10, and once it is equal
+                        to 10, it will stop.
                     </p>
 
                     <h3 id="mfle">More For Loops Examples</h3>
                     <div class="example">
                         <ul>
-                            <li></li>
+                            <li><span class="important">Even number</span></li>
+                            <li>
+                                for (let i = 0; i <= 20; i +=2) { <br>
+                                    console.log(i) <br>
+                                    }
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="example">
+                        <ul>
+                            <li><span class="important">Odd number</span></li>
+                            <li>
+                                for (let i = 1; i <= 20; i +=2) { <br>
+                                    console.log(i) <br>
+                                    }
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="example">
+                        <ul>
+                            <li><span class="important">Counting backwards or deducting</span></li>
+                            <li>
+                                for (let i = 100; i >= 0; i -= 10) { <br>
+                                console.log(i) <br>
+                                }
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="example">
+                        <ul>
+                            <li><span class="important">Multiplication</span></li>
+                            <li>
+                                for (let i = 1; i <= 1000; i *=10) { <br>
+                                    console.log(i) <br>
+                                    }
+                            </li>
                         </ul>
                     </div>
                     <p>
-
+                        In the above examples, we see a simple for loop where you can print either even or odd numbers
+                        simply by adding 2 in the incremental value, and manipulating i for the odd value. There are
+                        other for loops such as deducting a value and mulitplying. Its not strictly for addition,
+                        although thats most common.
                     </p>
+                    <p>
+                        We can write this together with the if statements inside a for loop as so:
+                    </p>
+
+                    <div class="example">
+                        <ul>
+                            <li><span class="important">Using if statements</span></li>
+                            <li>
+                                for (let i = 0; i <= 10; i++) { <br>
+                                    if (i % 2 === 0) { <br>
+                                    console.log(`${i} is Even`) <br>
+                                    } else { <br>
+                                    console.log(`${i} is Odd`) <br>
+                                    } <br>
+                                    }
+                            </li>
+                        </ul>
+                    </div>
                 </article>
 
                 <article>
                     <h2 id="tpoil">The Perils Of Infinite Loops</h2>
                     <div class="example">
                         <ul>
-                            <li></li>
+                            <li>
+                                for (let i = 20; i >= 0; i++) { <br>
+                                console.log(i); <br>
+                                }
+                            </li>
                         </ul>
                     </div>
                     <p>
-
+                        There are times when you encounter an infinite loop. Its a loop that does not stop. The above
+                        looks at how one could encounter something like an infinite loop. It's not the end of the world
+                        however it can cause your browser to lock up.
                     </p>
                 </article>
 
@@ -124,11 +188,44 @@
                     <h2 id="loa">Looping Over Arrays</h2>
                     <div class="example">
                         <ul>
-                            <li></li>
+                            <li><span class="important">Iterating over an array</span></li>
+                            <li>
+                                const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday',
+                                'Sunday']
+                            </li>
+                            <li>
+                                for (let i = 0; i < days.length; i++) { <br>
+                                    console.log(i, days[i]); <br>
+                                    }
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="example">
+                        <ul>
+                            <li><span class="important">Iterating over an array backwards</span></li>
+                            <li>
+                                const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday',
+                                'Sunday']
+                            </li>
+                            <li>
+                                for (let i = day.length - 1; i >= 0; i--) { <br>
+                                console.log(i, days[i]); <br>
+                                }
+                            </li>
                         </ul>
                     </div>
                     <p>
-
+                        Most often in JavaScript we loop over an array. Also known as <span class="impotant">Iterating
+                            over an array</span>. When iterating over an array, we usually don't know how many elements
+                        are within the array. So the way we get the value of items within the array is by using the
+                        <span class="important">length property</span>. We begin at <span class="important">0</span> as
+                        when indexing an array it starts at 0.
+                    </p>
+                    <p>
+                        Looking at the examples above we know that we can determine the length of an array using its
+                        property length and giving the index a value of 0. Though we can also go backwards in reverse,
+                        by giving the index value the array length <span class="important">minus 1</span>, <span
+                            class="highlight">as length counts from 1 and not 0</span>.
                     </p>
                 </article>
 
@@ -136,11 +233,67 @@
                     <h2 id="nl">Nested Loops</h2>
                     <div class="example">
                         <ul>
-                            <li></li>
+                            <li><span class="important">Basic nested for loop</span></li>
+                            <li>
+                                for (let i = 0; i <= 3; i++) { <br>
+                                    console.log(i); <br>
+                                    for (let j = 1; j <= 5; j++) { <br>
+                                        console.log(j) <br>
+                                        } <br>
+                                        }
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="example">
+                        <ul>
+                            <li><span class="important">Nested loop iteratting over a Nested array</span></li>
+                            <li>
+                                const people = [ <br>
+                                ['Vanya', 'Andre', 'Dary'], <br>
+                                ['Buddy', 'Diesel', 'Goofy'], <br>
+                                ['Mom', 'Dad'] <br>
+                                ]
+                            </li>
+                            <li>
+                                for (let i = 0; i < people.length; i++) { <br>
+                                    const row = people[i]; <br>
+                                    console.log(i); <br>
+                                    for (let j = 0; j < row.length; j++) { <br>
+                                        console.log(row[j]); <br>
+                                        } <br>
+                                        }
+                            </li>
                         </ul>
                     </div>
                     <p>
-
+                        The above is an example of a nested loop. The idea of a nested loop, is essentially a for loop
+                        inside a for loop, or a for loop inside a while loop. Though looking at the first example of a
+                        basic nested for loop. The idea is that with a <span class="important">single iteration</span>
+                        you have <span class="important">multiple inner iterations</span>. In this case The outer
+                        itaration will happen 3 times, while for every outer iteration, there will be 5 inner
+                        iterations.
+                    </p>
+                    <p>
+                        Another thing to note is, we use <span class="highlight">i</span> <span
+                            class="highlight">j</span> and <span class="highlight">k</span>, where <span
+                            class="highlight">i</span> stands for <span class="important">index</span>, though it can be
+                        anything you want it to be, for example <span class="important">inner, outter</span>. <span
+                            class="highlight">j</span> and <span class="highlight">k</span> are usually also used as its
+                        the next letter up from <span class="highlight">i</span>.
+                    </p>
+                    <p>
+                        We use nested loops, <span class="important">when wanted to iterate over nested objects, such as
+                            a nested array</span>. The second example, showcases how a <span class="important">nested
+                            for loop</span> is used to iterate over the <span class="important">nested array</span>. We
+                        first iterate over the first array using the <span class="highlight">i</span>, therefor <span
+                            class="highlight">i</span> captures the initial index of the array. We then save that to
+                        another variable inside the for loop known as row.
+                    </p>
+                    <p>
+                        We then iterate over row using the <span class="highlight">j</span> variable. Essentially row =
+                        people[i], we dont need to save it to a variable, as within the last for loop we can specify
+                        inner indices as so <span class="important">people[i][j]</span>. The process essentially repeats
+                        itself for the nested loop.
                     </p>
                 </article>
 
