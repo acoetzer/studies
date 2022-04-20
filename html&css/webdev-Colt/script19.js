@@ -163,7 +163,7 @@
 
 let choice = parseInt(prompt('Enter a maximun number for the game.'));
 while (!choice) {
-    choice = prompt('Enter a Number, not Text!');
+    choice = parseInt(prompt('Enter a Number, not Text!'));
 }
 const targetNum = Math.round(Math.random() * choice);
 
