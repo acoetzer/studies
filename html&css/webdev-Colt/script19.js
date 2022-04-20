@@ -169,7 +169,9 @@ const targetNum = Math.round(Math.random() * choice);
 
 let guess = parseInt(prompt('Enter your first guess?'));
 let attemps = 1;
+const history = [];
 while (parseInt(guess) !== targetNum) {
+    history.push(guess)
     if (guess === 'q') {
         break;
     } 
@@ -180,11 +182,11 @@ while (parseInt(guess) !== targetNum) {
         guess = prompt('Too low, guess again');
     }
 }
+
 if (guess === 'q') {
     alert('Ok you quit');
 } else {
     alert(`Congratulations`);
     alert(`The hidden number was ${targetNum} of ${choice} and your guess was ${guess} on ${attemps} attemps `);
-} 
-
-
+    alert(`Your guesses were ${history} and the final ${guess}`)
+}
