@@ -300,12 +300,64 @@
                 <article>
                     <h2 id="altwl">Another Loop: The While Loop</h2>
                     <div class="example">
-                        <ul>
-                            <li></li>
-                        </ul>
+                        <div>
+                            <ul>
+                                <li>
+                                    <span class="important">while</span> (<span class="important">condition</span>) {
+                                    <br>
+                                    <span class="highlight">console.log('something');</span> <br>
+                                    <span class="highlight">condition++;</span> <br>
+                                    }
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul>
+                                <li>const num = 1;</li>
+                                <li>
+                                    while (num <= 5) { <br>
+                                        console.log(num); <br>
+                                        num++;
+                                        }
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul>
+                                <li><span class="important">Same as</span></li>
+                                <li>
+                                    for (let i = 1; i <= 5; i++) { <br>
+                                        console.log(i); <br>
+                                        }
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                     <p>
-
+                        <span class="important">While loops</span> are much simpler than for loops, all you have is the
+                        while statement and any condition. So <span class="highlight"><span
+                                class="important">while</span> (true)</span> do something. This will repeat code until
+                        the loop either breaks or ends by evaluating to false.
+                    </p>
+                    <p>
+                        When to use a <span class="important">while loop</span> rather than a <span
+                            class="important">for loop</span>? That is when the outcome is truly variable. So as an
+                        example, if you playing a game of chess, it will switch between player 1 and player 2 until one
+                        of them wins. <span class="important">When is that?</span>, that could be in a few moves or it
+                        can take a long time. Thats when something is truly variable.
+                    </p>
+                    <p>
+                        Whereas a <span class="important">for loop</span> is when you <span
+                            class="important">know</span> how many iterations it will take. The while loop and for loop
+                        above are exactly the same, and although we dont use any of these loops like this, the for loop
+                        is more common for this as we know how many iterations it will take.
+                    </p>
+                    <p>
+                        An interesting thing to note about while loops, or any loops in general, <span
+                            class="important">placement</span> of things for example <span
+                            class="highlight">console.log()</span> and <span class="important">num++</span>. If for
+                        example console.log() is above num++, it will <span class="important">start printing from
+                            0</span> whereas if it was after, it will start print from 1.
                     </p>
                 </article>
 
@@ -313,35 +365,144 @@
                     <h2 id="tbk">The Break Keyword</h2>
                     <div class="example">
                         <ul>
-                            <li></li>
+                            <li>let userInput = prompt('Say something');</li>
+                            <li>
+                                while (true) { <br>
+                                if (userInput === 'stop') { <br>
+                                <span class="important">break;</span> <br>
+                                } else { <br>
+                                userInput = prompt(userInput); <br>
+                                } <br>
+                                }
+                            </li>
                         </ul>
                     </div>
                     <p>
-
+                        There are times when you will want to break out of a loop, and the keyword for breaking out of a
+                        loop is <span class="important">break;</span>. This just beraks out of a loop, as the example
+                        above if any condition is met, then it will break out of the loop. Otherwise it will just copy
+                        the users input and present it back to them.
                     </p>
                 </article>
 
                 <article>
                     <h2 id="tlfol">The Lovely For...Of Loop</h2>
                     <div class="example">
+                        <div>
+                            <ul>
+                                <li><span class="important">for ... of loop</span></li>
+                                <li>const classroom = ['Andre', 'Vanya', 'Dary', 'Colt', 'Keele'];</li>
+                                <li>
+                                    for (let students of classroom) { <br>
+                                    console.log(students); <br>
+                                    }
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul>
+                                <li><span class="important">for loop</span></li>
+                                <li>
+                                    for (let i = 0; i < classroom.length; i++) { <br>
+                                        console.log(classroom[i]) <br>
+                                        }
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="example">
+                        <div>
+                            <ul>
+                                <li><span class="important">nested for ... of loop</span></li>
+                                <li>
+                                    const classroom = [ <br>
+                                    ['Andre', 'Vanya', 'Dary'], <br>
+                                    ['Mom', 'Dad'], <br>
+                                    ['Buddy', 'Diesel', 'Goofy'] <br>
+                                    ]
+                                </li>
+                                <li>
+                                    for (let row of classroom) { <br>
+                                    for (let student of row) { <br>
+                                    console.log(student) <br>
+                                    }
+                                    }
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul>
+                                <li><span class="important">Nested for loop</span></li>
+                                <li>
+                                    for (let i = 0; i < classroom.length; i++) { <br>
+                                        const row = classroom[i]; <br>
+                                        console.log(i); <br>
+                                        for (let j = 0; j < row.length; j++) { <br>
+                                            console.log(` ${row[j]}`); <br>
+                                            } <br>
+                                            }
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="example">
                         <ul>
-                            <li></li>
+                            <li><span class="important">Iterate over Iterable things</span></li>
+                            <li>
+                                for (char of 'hahaha') { <br>
+                                console.log(char) <br>
+                                }
+                            </li>
                         </ul>
                     </div>
                     <p>
-
+                        The <span class="important">for... of</span>loop is a newer concept in JavaScript, and is not
+                        supported with certain browsers. The for of loop, is a nice and easy way to iterate over <span
+                            class="important">arrays</span> and or <span class="important">anything iterable</span>. You
+                        would think you can iterate over a <span class="highlight">object literal</span>, but that is
+                        not iterable with the for of loop.
+                    </p>
+                    <p>
+                        The syntax of a for of loop is, <span class="important">for (<span class="highlight">let</span>
+                            varaible <span class="highlight">of</span> iterable) {<span
+                                class="highlight">statement</span>}</span>. When should you use a for loop instead of a
+                        for of loop. That is when <span class="important">you need the index value of something</span>.
                     </p>
                 </article>
 
                 <article>
                     <h2 id="ioo">Iterating Over Objects</h2>
                     <div class="example">
-                        <ul>
-                            <li></li>
-                        </ul>
+                        <div>
+                            <ul>
+                                <li>
+                                    const classroom = { <br>
+                                    Andre: 'Present', <br>
+                                    Vanya: 'Absent', <br>
+                                    Dary: 'Sleeping', <br>
+                                    Buddy: 'Playing' <br>
+                                    }
+                                </li>
+                                <li>
+                                    for (let student in classroom) { <br>
+                                    console.log(`${student} is ${classroom[student]}`) <br>
+                                    }
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul>
+                                <li><span class="important">Object.key(object literal here)</span></li>
+                                <li><span class="important">Object.values(object literal here)</span></li>
+                                <li><span class="important">Object.entries(object literal here)</span></li>
+                            </ul>
+                        </div>
                     </div>
                     <p>
-
+                        We spoke of for of, where for of can iterate over iterables, however object literals are not
+                        iterable. Therefor we using the for in loop. This will iterate of the object literal and provide
+                        back the keys only. for in loops are not very common.
                     </p>
                 </article>
             </section>

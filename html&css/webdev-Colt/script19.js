@@ -161,32 +161,123 @@
 // }
 // alert('Sure thing!')
 
-let choice = parseInt(prompt('Enter a maximun number for the game.'));
-while (!choice) {
-    choice = parseInt(prompt('Enter a Number, not Text!'));
-}
-const targetNum = Math.round(Math.random() * choice);
+// let choice = parseInt(prompt('Enter a maximun number for the game.'));
+// while (!choice) {
+//     choice = parseInt(prompt('Enter a Number, not Text!'));
+// }
+// const targetNum = Math.round(Math.random() * choice);
 
-let guess = parseInt(prompt('Enter your first guess?'));
-let attemps = 1;
-const history = [];
-while (parseInt(guess) !== targetNum) {
-    history.push(guess)
-    if (guess === 'q') {
-        break;
-    } 
-    attemps++;
-    if (guess > targetNum) {
-        guess = prompt('Too high, guess again');
-    }   else {
-        guess = prompt('Too low, guess again');
-    }
-}
+// let guess = parseInt(prompt('Enter your first guess?'));
+// let attemps = 1;
+// const history = [];
+// while (parseInt(guess) !== targetNum) {
+//     history.push(guess)
+//     if (guess === 'q') {
+//         break;
+//     } 
+//     attemps++;
+//     if (guess > targetNum) {
+//         guess = prompt('Too high, guess again');
+//     }   else {
+//         guess = prompt('Too low, guess again');
+//     }
+// }
 
-if (guess === 'q') {
-    alert('Ok you quit');
-} else {
-    alert(`Congratulations`);
-    alert(`The hidden number was ${targetNum} of ${choice} and your guess was ${guess} on ${attemps} attemps `);
-    alert(`Your guesses were ${history} and the final ${guess}`)
-}
+// if (guess === 'q') {
+//     alert('Ok you quit');
+// } else {
+//     alert(`Congratulations`);
+//     alert(`The hidden number was ${targetNum} of ${choice} and your guess was ${guess} on ${attemps} attemps `);
+//     alert(`Your guesses were ${history} and the final ${guess}`)
+// }
+
+// const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]; //DON'T CHANGE THIS LINE PLEASE!
+
+// // WRITE YOUR LOOP BELOW THIS LINE:
+// for (num of numbers) {
+//     console.log(num * num)
+// }
+
+// let num = 1;
+
+// while (num <= 5) {
+//     console.log(num)
+//     num++;
+// }
+
+// for (let i = 1; i <= 5; i++) {
+//     console.log(i)
+// }
+
+// let userInput = prompt('Say something').toLowerCase();
+
+// while (true) {
+//     if (userInput === 'stop') {
+//         break;
+//     } else {
+//         userInput = prompt(userInput);
+//     }
+// }
+
+// const classroom = [
+//     ['Andre', 'Vanya', 'Dary'],
+//     ['Mom', 'Dad'],
+//     ['Buddy', 'Diesel', 'Goofy']
+// ]
+
+// for (let i = 0; i < classroom.length; i++) {
+//     const row = classroom[i];
+//     console.log(i);
+//     for (let j = 0; j < row.length; j++) {
+//         console.log(`   ${row[j]}`);
+//     }
+// }
+
+// let num = 0;
+
+// for (let row of classroom) {
+//     console.log(num)
+//     num++;
+//     for (let student of row) {
+//         console.log(`   ${student}`)
+//     }
+// }
+
+// for (let char of 'Vanya') {
+//     console.log(char)
+// }
+
+// const myname = 'Andre'
+// for (let i = 0; i < myname.length; i++) {
+//     console.log(myname[i])
+// }
+
+// let input = prompt('Enter a Name');
+
+// let userName = '';
+
+// // for (let i = 0; i < input.length; i++) {
+// //     if (i % 2 === 0) {
+// //         userName = userName + input[i].toUpperCase();
+// //     } else {
+// //         userName = userName + input[i].toLowerCase()
+// //     }
+// // }
+// alert(userName)
+
+// const classroom = ['Andre', 'Vanya', 'Dary', 'Colt', 'Keele'];
+
+// for (let i = 0; i < classroom.length; i++) {
+//     console.log(classroom[i])
+// }
+
+// const classroom = {
+//     Andre: 'Present',
+//     Vanya: 'Absent',
+//     Dary: 'Sleeping',
+//     Buddy: 'Playing'
+// }
+
+// for (let student in classroom) {
+//     console.log(`${student} is ${classroom[student]}`)
+// }
