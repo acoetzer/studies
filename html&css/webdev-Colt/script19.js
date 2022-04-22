@@ -132,6 +132,15 @@ for (i = 0; i <= userNum; i++) {
 }
 console.log('--- END ---');
 
+// FOR LOOP TO PRINT UPPER AND LOWER CASE LETTERS OF USERS NAME
+// *****************
+
+console.log(' ');
+console.log('--- For Loop to Print Upper and Lower Case of Users name ---');
+
+let userName =  prompt('Enter your name...');
+
+
 // BASIC WHILE LOOP
 // *****************
 
@@ -183,7 +192,7 @@ while (!userChoice) {
     userChoice = parseInt(prompt('Pick a Maximum number for a guessing game...'));
 }
 
-let randomNum = Math.round(Math.random() * userChoice);
+const randomNum = Math.round(Math.random() * userChoice);
 
 let userGuess = parseInt(prompt(`Take a guess between 0 and ${userChoice}`));
 while (!userGuess) {
