@@ -140,6 +140,17 @@ console.log('--- For Loop to Print Upper and Lower Case of Users name ---');
 
 let userName =  prompt('Enter your name...');
 
+const storedName = userName;
+
+for (let i = 0; i < storedName.length; i++) {
+    if (i % 2 === 0) {
+        console.log(storedName[i].toUpperCase())
+    } else {
+        console.log(storedName[i].toLowerCase())
+    }
+}
+console.log('--- END ---');
+
 
 // BASIC WHILE LOOP
 // *****************
@@ -219,4 +230,78 @@ console.log(`User Choice was: ${userChoice}`)
 console.log(`Random Number was: ${randomNum}`)
 console.log(`User Guess was: ${userGuess} on ${scoreKeeper} tries`)
 console.log(`User's Guess history is: ${tries}`)
+console.log('--- END ---');
+
+// WHILE LOOP GUESSING GAME PRACTICE
+// *****************
+
+console.log(' ');
+console.log('--- Guessing Game Practice ---');
+
+// let theUsersChoice = parseInt(prompt('Select a maximum Num for a guessing game'));
+// while (!theUsersChoice) {
+//     alert('PLEASE ENTER A DIGIT NOT TEXT FOR THE INITIAL VALUE!');
+//     theUsersChoice = parseInt(prompt('Select a maximum Num for a guessing game'));
+// }
+
+// const theRandomNum = Math.round(Math.random() * theUsersChoice);
+
+// let theUsersGuess = parseInt(prompt('Take a guess...'));
+// while (!theUsersGuess) {
+//     alert('FOR THE GUESS PLEASE ENTER A NUMBER AND NOT TEXT');
+//     theUsersGuess = parseInt(prompt('Take a guess...'));
+// }
+
+// const theHistory = [];
+// let attempts = 0;
+
+// while (theUsersGuess !== theRandomNum) {
+//     theHistory.push(theUsersGuess);
+//     attempts++;
+//     if (theUsersGuess > theRandomNum) {
+//         theUsersGuess = parseInt(prompt('Too High, Take a guess...'));
+//     } else {
+//         theUsersGuess = parseInt(prompt('Too Low, Take a guess...'));
+//     }
+// }
+
+// alert(`Weldone, you guessed correctly. Random Number was : ${theRandomNum}, Your Guess was : ${theUsersGuess}. It took you ${attempts} attempts and your guess history was: ${theHistory}`)
+console.log('--- END ---');
+
+// FOR ... OF LOOP PRACTICE
+// *****************
+
+console.log(' ');
+console.log('--- For ... Of Loops ---');
+
+let n = 0;
+
+for (let i of 'Andre') {
+    if (n % 2 === 0) {
+        console.log(i.toUpperCase())
+    } else {
+        console.log(i.toLowerCase())
+    }
+    n++ 
+}
+
+console.log('--- END ---');
+
+// FOR ... IN LOOP PRACTICE
+// *****************
+
+console.log(' ');
+console.log('--- For ... In Loops ---');
+
+const personObject = {
+    Name: 'Andre',
+    Surname: 'Coetzer',
+    Age: 32,
+    Sex: 'Male',
+}
+
+for (let data in personObject) {
+    console.log(data, personObject[data])
+}
+
 console.log('--- END ---');
