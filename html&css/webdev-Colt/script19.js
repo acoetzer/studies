@@ -309,44 +309,44 @@
 // FOR ... IN LOOP PRACTICE
 // *****************
 
-console.log(' ');
-console.log('--- ToDo List Program ---');
+// console.log(' ');
+// console.log('--- ToDo List Program ---');
 
-let userInput = prompt('What would you like to do? (new, list, delete or quit)').toLowerCase();
+// let userInput = prompt('What would you like to do? (new, list, delete or quit)').toLowerCase();
 
-const list = [];
+// const list = [];
 
-while (userInput !== 'quit' && userInput !== 'q') {
-    if (userInput === 'new') {
-        while (userInput !== 'q') {
-            userInput = prompt('Enter a New ToDo? (q to leave)');
-            list.push(userInput);
-            if (list.includes('q') === true) {
-                list.pop('q')
-            }
-            console.log(`"${userInput}" was added to the ToDo list.`);
-        }
-    } else if (userInput === 'list') {
-        console.log('***************')
-        for (let i = 0; i < list.length; i++) {
-            console.log(`${i + 1}. ${list[i]}`)
-        }
-        console.log('***************')
-    } else if (userInput === 'delete') {
-        console.log('***************')
-        for (let i = 0; i < list.length; i++) {
-            console.log(`${i + 1}. "${list[i]}"`)
-        }
-        console.log('***************')
-        userInput = parseInt(prompt('Which ToDo Would you like to delete?'));
-        while (!userInput) {
-            alert('PLEASE ENTER A DIGIT NOT A NUMBER!')
-            userInput = parseInt(prompt('Which ToDo Would you like to delete?'));
-        }
-        let deletion = list.splice(userInput - 1, 1);
-        console.log(`-- "${deletion}" was deleted from the list!`)
-    }
-    userInput = prompt('What would you like to do? (new, list, delete or quit)').toLowerCase();
-}
-console.log('You quit the program')
-console.log('--- END ---');
+// while (userInput !== 'quit' && userInput !== 'q') {
+//     if (userInput === 'new') {
+//         while (userInput !== 'q') {
+//             userInput = prompt('Enter a New ToDo? (q to leave)');
+//             list.push(userInput);
+//             if (list.includes('q') === true) {
+//                 list.pop('q')
+//             }
+//             console.log(`"${userInput}" was added to the ToDo list.`);
+//         }
+//     } else if (userInput === 'list') {
+//         console.log('***************')
+//         for (let i = 0; i < list.length; i++) {
+//             console.log(`${i + 1}. ${list[i]}`)
+//         }
+//         console.log('***************')
+//     } else if (userInput === 'delete') {
+//         console.log('***************')
+//         for (let i = 0; i < list.length; i++) {
+//             console.log(`${i + 1}. "${list[i]}"`)
+//         }
+//         console.log('***************')
+//         userInput = parseInt(prompt('Which ToDo Would you like to delete?'));
+//         while (!userInput) {
+//             alert('PLEASE ENTER A DIGIT NOT A NUMBER!')
+//             userInput = parseInt(prompt('Which ToDo Would you like to delete?'));
+//         }
+//         let deletion = list.splice(userInput - 1, 1);
+//         console.log(`-- "${deletion}" was deleted from the list!`)
+//     }
+//     userInput = prompt('What would you like to do? (new, list, delete or quit)').toLowerCase();
+// }
+// console.log('You quit the program')
+// console.log('--- END ---');
