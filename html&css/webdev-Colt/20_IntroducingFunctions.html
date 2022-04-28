@@ -48,23 +48,67 @@
                     <h2 id="itf">Intro to Functions</h2>
                     <div class="example">
                         <ul>
-                            <li></li>
+                            <li>
+                                let die1 = Math.round(Math.random() * 6) <br>
+                                let die2 = Math.round(Math.random() * 12) <br>
+                                let die3 = Math.round(Math.random() * 20) <br>
+                                let die4 = Math.round(Math.random() * 6)
+                            </li>
+                            <br>
+                            <li>
+                                let die1 = rollDice(6) <br>
+                                let die2 = rollDice(12) <br>
+                                let die3 = rollDice(20) <br>
+                                let die4 = rollDice(6)
+                            </li>
                         </ul>
                     </div>
                     <p>
-
+                        <span class="highlight">What is a function?</span>. A function is <span
+                            class="important">re-useable code which is wrapped up and given a name</span>. <span
+                            class="highlight">Not all functions have names</span> as we will see later on. The code only
+                        needs to be written <span class="important">once</span>.
                     </p>
-                </article>
 
-                <article>
-                    <h2 id="ovff">Our Very First Function</h2>
+                    <h3 id="ovff">Our Very First Function</h3>
                     <div class="example">
                         <ul>
-                            <li></li>
+                            <li>
+                                <span class="highlight">Defining a Function</span>
+                                <ul>
+                                    <li>
+                                        <span class="important">function funcName</span> <span
+                                            class="highlight">(parenthesis)</span> { <br>
+                                        <span class="important">return</span> <span class="highlight">your code
+                                            here;</span>
+                                        <br>
+                                        }
+                                    </li>
+                                </ul>
+                            </li>
+                            <br>
+                            <li>
+                                <span class="highlight">Running a Function</span>:
+                                <ul>
+                                    <li><span class="important">funcName();</span></li>
+                                </ul>
+                            </li>
                         </ul>
                     </div>
                     <p>
-
+                        The syntax for a function is shown above, both for defining and running. Its important note that
+                        when it comes to functions that there are 2 steps involved. <span
+                            class="highlight">First</span>, is <span class="important">defining the function</span> and
+                        <span class="highlight">Second</span>, is <span class="important">running</span> the function.
+                    </p>
+                    <p>
+                        Defining a function involved you telling JavaScript what is a function and providing the code it
+                        will run. While running the function only requires you to state the function name.
+                    </p>
+                    <p>
+                        Functions can also accept a type of input which affects the outcome or result of the code. This
+                        is seen later on, known as <span class="important">arguments</span> whereby you enter <span
+                            class="highlight">parameters</span> inside the parenthesis.
                     </p>
                 </article>
 
@@ -72,23 +116,48 @@
                     <h2 id="ai">Arguments Intro</h2>
                     <div class="example">
                         <ul>
-                            <li></li>
+                            <li>
+                                <span class="highlight">function funcName</span> (<span
+                                    class="important">firstName</span>) { <br>
+                                console.log(`Hi, ${<span class="important">firstName</span>}`) <br>
+                                }
+                            </li>
                         </ul>
                     </div>
                     <p>
-
+                        <span class="important">Arguments</span> is a fancy way of saying <span
+                            class="important">input</span> into a function. Seeing the example above, inside the
+                        parenthesis is where you define your <span class="highlight">variable name</span> or what we
+                        call <span class="important">parameter</span>.
                     </p>
-                </article>
+                    <p>
+                        Arguments is nothing new to us. We have used arguments before in <span
+                            class="highlight">methods</span> like <span class="important">.indexOf('h')</span> or <span
+                            class="important">arr.push('element')</span>.
+                    </p>
+                    <p>
+                        Methods and Functions are the <span class="important">same</span> thing.
+                    </p>
+                    <p>
+                        Something to note is, when a function is expecting a parameter and its blank, it will output the
+                        result as <span class="important">undefined</span>.
+                    </p>
 
-                <article>
-                    <h2 id="fwma">Functions With Multiple Arguments</h2>
+                    <h3 id="fwma">Functions With Multiple Arguments</h3>
                     <div class="example">
                         <ul>
-                            <li></li>
+                            <li>
+                                function multiply (firstName, lastName) { <br>
+                                console.log(`Hi, ${<span class="important">firstName</span>} ${<span
+                                    class="important">lastName[0]</span>}`).; <br>
+                                }
+                            </li>
                         </ul>
                     </div>
                     <p>
-
+                        You can define functions that accepts <span class="important">multiple aruguments</span>. You
+                        <span class="important">separate</span> them by a <span class="highlight">, comma</span>. Its
+                        also important to note that order does matter when it comes to multiple arguments.
                     </p>
                 </article>
 
@@ -96,18 +165,33 @@
                     <h2 id="trk">The Return Keyword</h2>
                     <div class="example">
                         <ul>
-                            <li></li>
+                            <li>
+                                function multiply (num1, num2) { <br>
+                                return num1 * num2; <br>
+                                }
+                            </li>
                         </ul>
                     </div>
                     <p>
-                        
+                        With the <span class="important">return</span> keyword, there are <span
+                            class="important">two</span> important things to remember.
+                    </p>
+                    <p>
+                        <span class="highlight">First</span>, is that return allows us to <span class="important">save
+                            the output</span> of the function to a variable. Up until now we have seen examples using
+                        <span class="highlight">console.log()</span>, but the example above allows us to <span
+                            class="important">capture</span> the result.
+                    </p>
+                    <p>
+                        <span class="highlight">Second</span>, is that when the code <span class="highlight">reaches the
+                            return keyword</span> it <span class="important">will stop the code from Running</span>.
                     </p>
                 </article>
             </section>
         </main>
 
         <script src="script20.js"></script>
-        
+
     </body>
 
 </html>
