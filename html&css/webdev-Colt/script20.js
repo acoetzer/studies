@@ -10,6 +10,10 @@ function isShortsWeather (temp) {
     }
 }
 
+function celsi (temp) {
+    return (temp - 32) * 5/9;
+}
+
 function lastElement (arr) {
     if (arr.length > 0) {
         return arr[arr.length - 1];
