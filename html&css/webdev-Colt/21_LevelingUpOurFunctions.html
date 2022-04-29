@@ -53,24 +53,168 @@
                 <article>
                     <h2 id="fs">Function Scope</h2>
                     <div class="example">
-                        <ul>
-                            <li></li>
-                        </ul>
+                        <div>
+                            <ul>
+                                <li>
+                                    <span class="important">Example 1</span>
+                                    <ul>
+                                        <li>
+                                            function collectEggs () { <br>
+                                            let totalEggs = 6; <br>
+                                            console.log(totalEggs); <br>
+                                            }
+                                        </li>
+                                    </ul>
+                                </li>
+                                <br>
+                                <li>
+                                    <span class="important">Example 2</span>
+                                    <ul>
+                                        <li>
+                                            let totalEggs = 0; <br>
+                                            <br>
+                                            function collectEggs () { <br>
+                                            let totalEggs = 6; <br>
+                                            console.log(totalEggs); <br>
+                                            } <br>
+                                            <br>
+                                            collectEggs(); <br>
+                                            console.log(totalEggs);
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <ul>
+                                <li>
+                                    <span class="important">Example 3</span>
+                                    <ul>
+                                        <li>
+                                            let bird = 'Duck' <br>
+                                            <br>
+                                            function birdWatch () { <br>
+                                            // let bird = 'Crow'; <br>
+                                            console.log(bird); <br>
+                                            } <br>
+                                            <br>
+                                            birdWatch();
+                                        </li>
+                                    </ul>
+                                </li>
+                                <br>
+                                <li>
+                                    <span class="important">Example 4</span>
+                                    <ul>
+                                        <li>
+                                            let totalEggs = 0; <br>
+                                            <br>
+                                            function collectEggs () { <br>
+                                            totalEggs = 6; <br>
+                                            } <br>
+                                            <br>
+                                            console.log(totalEggs); <br>
+                                            weather(); <br>
+                                            console.log(totalEggs);
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                     <p>
-
+                        Before talking about<span class="important">Function Scopes</span>, understanding that the
+                        word<span class="important">scope</span> refers to the <span class="highlight">location</span>
+                        or <span class="highlight">visibility</span> of a variable. In other words, it means where the
+                        variable is defined dictates where we have access to what variable.
+                    </p>
+                    <p>
+                        Variables that are defined <span class="important">inside a function</span> are <span
+                            class="important">scoped</span> to that function. In <span class="highlight">Example
+                            1</span>, You see a variable scoped inside a function. This means, you <span
+                            class="important">do not</span> have access to the variable outside the function. Unless its
+                        a global variable such as in <span class="highlight">Example 2</span>.
+                    </p>
+                    <p>
+                        When looking looking at <span class="highlight">Example 2</span>, we have the same as before
+                        just with a global <span class="important">totalEggs</span> variable defined. The outcome of
+                        this example would print out <span class="highlight">6 followed by 0</span>. This is because,
+                        even though the function was run first, the varaible scoped to that function had higher priority
+                        than the global variable.
+                    </p>
+                    <p>
+                        This however, would not be the case if there was no variable scoped within the function, as in
+                        <span class="highlight">Example 3</span>. This shows us that a function can call on its parent
+                        varaible, in this case the global variable.
+                    </p>
+                    <p>
+                        This also brings us to another point and that is that a function can update a <span
+                            class="important">Global</span> variable, as in <span class="highlight">Example 4</span>. In
+                        other words, although variables inside a function are scoped to that function, They can read and
+                        update variables from outside its <span class="highlight">bubble</span>.
                     </p>
                 </article>
 
                 <article>
                     <h2 id="bs">Block Scope</h2>
                     <div class="example">
-                        <ul>
-                            <li></li>
-                        </ul>
+                        <div>
+                            <ul>
+                                <li>
+                                    <span class="important">Example 1</span>
+                                    <ul>
+                                        <li>
+                                            let radius = 8; <br>
+                                            <br>
+                                            if (radius > 8) { <br>
+                                            let mathPi = 3.14; <br>
+                                            let color = red; <br>
+                                            } <br>
+                                            console.log(radius) <br>
+                                            console.log(mathPi) <br>
+                                            console.log(color) <br>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul>
+                                <li>
+                                    <span class="important">Example 2</span>
+                                    <ul>
+                                        <li>
+                                            let radius = 8; <br>
+                                            <br>
+                                            if (radius > 8) { <br>
+                                            let mathPi = 3.14; <br>
+                                            let color = red; <br>
+                                            console.log(mathPi) <br>
+                                            console.log(color) <br>
+                                            } <br>
+                                            console.log(radius) <br>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                     <p>
-
+                        <span class="important">Block Scopes</span> refer to variables placed inside a block of code,
+                        such as <span class="important">inside the curly braces</span> of a an <span
+                            class="highlight">if statement</span> (which is known as <span
+                            class="highlight">conditionals</span>), or a <span class="important">for loop</span>.
+                    </p>
+                    <p>
+                        Just like <span class="important">Function Scopes</span>, You cannot refer the varaibles inside
+                        a <span class="important">block scope</span> from the outside, you can vice versa. Though
+                        saying you cannot refer to or call a variable that is inside or scoped to a block of code, is
+                        kinda true depending on how you define your variable. Meaning if using <span
+                            class="highlight">var</span> to define your variable it will be possible to refer to or call
+                        a varaible inside a block scope. However, this is not the case for function scopes when using
+                        var. If using let or const, you will not be able to refer to or call a variable scoped inside a
+                        block of code.
                     </p>
                 </article>
 
@@ -78,11 +222,23 @@
                     <h2 id="ls">Lexical Scope</h2>
                     <div class="example">
                         <ul>
-                            <li></li>
+                            <li>
+                                function bankRobbery () { <br>
+                                const heroes = ['Spiderman', 'Batman', 'Superman', 'Daredevil', 'Dead Pool']; <br>
+                                function callForHelp () { <br>
+                                for (let i = 0; i < heroes.length; i++) { <br>
+                                    console.log(`Help Me ${heroes[i]}`) <br>
+                                    } <br>
+                                    } <br>
+                                    callForHelp(); <br>
+                                    }
+                            </li>
                         </ul>
                     </div>
                     <p>
-
+                        <span class="important">Lexical Scope</span>, refers to nested functions which have access to
+                        its parent function variables. However parent functions for not have access to the child or
+                        nested functions variable.
                     </p>
                 </article>
 
@@ -90,11 +246,21 @@
                     <h2 id="fe">Function Expressions</h2>
                     <div class="example">
                         <ul>
-                            <li></li>
+                            <li>
+                                const add = function (num1, num2) { <br>
+                                return num1 + num2; <br>
+                                }
+                            </li>
                         </ul>
                     </div>
                     <p>
-
+                        <span class="important">Function Expressions</span> show or demonstrate to us that functions are
+                        seen by JavaScript as <span class="highlight">values</span>. This meaning we can share them and
+                        pass them around.
+                    </p>
+                    <p>
+                        The example above is out first taste or example of that, we are storing a function inside a
+                        variable. Soon we will see we can pass functions as a argument to other functions.
                     </p>
                 </article>
 
