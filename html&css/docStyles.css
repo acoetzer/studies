@@ -64,10 +64,11 @@ header h1 {
 		background-position: 0%;
 	}
 }
-header nav {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+header h2 {
+	margin: 0;
+	font-size: 1.2em;
+	font-weight: 400;
+	text-transform: capitalize;
 }
 
 main {

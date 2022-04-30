@@ -15,6 +15,7 @@
     <body>
         <header>
             <h1>Leveling Up Our Functions</h1>
+            <h2>All Methods are Functions, but not all Functions are Methods</h2>
         </header>
 
         <main>
@@ -268,23 +269,90 @@
                     <h2 id="hof">Higher Order Functions</h2>
                     <div class="example">
                         <ul>
-                            <li></li>
+                            <li>
+                                function callTwice (func) { <br>
+                                func(); <br>
+                                func(); <br>
+                                }
+                            </li>
+                            <br>
+                            <li>
+                                function laugh () { <br>
+                                console.log('Hahaha'); <br>
+                                }
+                            </li>
+                            <br>
+                            <li>
+                                callTwice(laugh); <br>
+                                <span class="important">callTwice(laugh())</span><span class="highlight">is wrong, <br>
+                                    because we will end up executing the function first and then passing through the
+                                    value</span>
+                            </li>
                         </ul>
                     </div>
                     <p>
-
+                        <span class="highlight">Higher Order Functions</span> is a fancy way of saying <span
+                            class="important">Functions that work with Function</span>. It comes down to <span
+                            class="highlight">two</span> main concepts, <span class="important">Functions that accept
+                            other functions as arguments</span> & <span class="important">Functions that return other
+                            functions</span>.
                     </p>
-                </article>
+                    <p>
+                        We know that a function can be stored as a value, infact JavaScript sees functions as values.
+                        So, if a function can be store or passed around, it can be used as an argument to another
+                        function. Looking at the <span class="highlight">Example</span> above. We see a function named
+                        <span class="important">callTwice</span> that accepts <span class="highlight">one</span>
+                        argument, the parameter is named func.
+                    </p>
+                    <p>
+                        Imagine, <span class="highlight">func</span> is a variable, and whatever function get <span
+                            class="highlight">passed</span> to <span class="highlight">callTwice</span>, gets stored
+                        inside the <span class="important">func keyword</span>. Then inside the function we execute the
+                        variable as we already know that a function can be stored in a variable.
+                    </p>
+                    <p>
+                        When executing the <span class="highlight">callTwice</span> function, you only need to input the
+                        function name without the parenthesis. Otherwise this will execute the function first and then
+                        pass through the value, which will result in an error.
+                    </p>
 
-                <article>
-                    <h2 id="rf">Returning Functions</h2>
+                    <h3 id="rf">Returning Functions</h3>
                     <div class="example">
                         <ul>
-                            <li></li>
+                            <li>
+                                function makeRandomFunc () { <br>
+                                let randomNum = Math.round(Math.random() * 10); <br>
+                                if (randomNum > 5) { <br>
+                                return function () { <br>
+                                return 'This is a Happy Function'; <br>
+                                } <br>
+                                } else { <br>
+                                return function () { <br>
+                                return 'This is a Sad Function'; <br>
+                                } <br>
+                                } <br>
+                                }
+                            </li>
+                            <br>
+                            <li>
+                                function makeBetweenFunc (min, max) { <br>
+                                return function (num) { <br>
+                                return num >= min && num <= max; <br>
+                                    } <br>
+                                    }
+                            </li>
                         </ul>
                     </div>
                     <p>
-
+                        Again, <span class="important">Functions are just Values</span>. In the previous example of
+                        <span class="highlight">Higher Order Functions</span> we saw how we could pass a function as an
+                        argument. Here, the <span class="highlight">Second</span> concept of that is <span
+                            class="important">returning a function</span>. This is usually known as <span
+                            class="important">Factory Functions</span>.
+                    </p>
+                    <p>
+                        In th examples above, you can see how functions are returned. The second example is known as the
+                        <span class="highlight">Factory Function</span>.
                     </p>
                 </article>
 
@@ -292,11 +360,35 @@
                     <h2 id="dm">Defining Methods</h2>
                     <div class="example">
                         <ul>
-                            <li></li>
+                            <li>
+                                const cucumber = { <br>
+                                name: 'Cucumis sativus', <br>
+                                type: 'Creeping Vine', <br>
+                                says: 'Grow MEEEEE!', <br>
+                                length: 0, <br>
+                                grow() { <br>
+                                this.length += 10; <br>
+                                return `${this.name} has grown by 10cm.`; <br>
+                                } <br>
+                                }
+                            </li>
                         </ul>
                     </div>
                     <p>
-
+                        what is a <span class="highlight">Method</span>?. To answer that we need to understand that
+                        <span class="important">All Methods are functions but not functions are methods</span>. So a
+                        Method, is essentially <span class="important">a function that is given a property name inside
+                            an Object</span>.
+                    </p>
+                    <p>
+                        When you think about it, nearly everything in JavaScript is an object, including a string which
+                        is wrapped in an object. We can define our own methods by assigning a function to a property
+                        inside an object. As the example above.
+                    </p>
+                    <p>
+                        In the example above we see <span class="highlight">grow() {..}</span>, that is known as a
+                        shorthand to creating the function, as its so common to do so. The longer way of writing the
+                        same function would be like so. <span class="highlight">grow: function () {...}</span>.
                     </p>
                 </article>
 
@@ -304,11 +396,43 @@
                     <h2 id="tmkt">The Mysterious Keyword 'this'</h2>
                     <div class="example">
                         <ul>
-                            <li></li>
+                            <li>
+                                const cucumber = { <br>
+                                name: 'Cucumis sativus', <br>
+                                type: 'Creeping Vine', <br>
+                                says: 'Grow MEEEEE!', <br>
+                                length: 0, <br>
+                                grow() { <br>
+                                this.length += 10; <br>
+                                return `${this.name} has grown by 10cm.`; <br>
+                                } <br>
+                                }
+                            </li>
                         </ul>
                     </div>
                     <p>
+                        The keyword <span class="important">this</span> is used to access properties inside methods. An
+                        example would be this line from the above example <span class="highlight">return `this.name has
+                            grown by 10cm</span>. The <span class="important">this</span> keyword is referring to the
+                        property name found inside that particular method.
+                    </p>
+                    <p>
+                        There can be a time when a function is saved or captured to another variable, and the <span
+                            class="important">this</span> keyword will not work. It will go to the left of it, meaning
+                        it will find its closest parent, which will be <span class="important">window</span>.
+                    </p>
 
+                    <h3>window?</h3>
+                    <div class="example">
+                        <ul>
+                            <li>window.clear();</li>
+                            <li>window.alert();</li>
+                            <li>window.Math.pow();</li>
+                        </ul>
+                    </div>
+                    <p>
+                        <span class="important">window</span>, although we havent seen much of window here, window is
+                        like the html element, everything JavaScript related goes inside this window.
                     </p>
                 </article>
 
@@ -316,11 +440,24 @@
                     <h2 id="utc">Using Try/Catch</h2>
                     <div class="example">
                         <ul>
-                            <li></li>
+                            <li>
+                                try {
+                                // any code here that might fail
+                                } catch <span class="important">(e)</span> {
+                                // place a desired output here
+                                }
+                            </li>
                         </ul>
                     </div>
                     <p>
-
+                        <span class="important">try/catch</span> will become important later on, if you know that some
+                        piece of code might fail, code that uses the internet and you expect an error to arise when the
+                        user doesnt have internet. You can wrap that code in a <span class="important">try/catch</span>
+                        block while still allowing the code to execute without completely stopping everything.
+                    </p>
+                    <p>
+                        If the user requires internet you can catch the error and out something like "Need internet" or
+                        "you dont have connection".
                     </p>
                 </article>
             </section>
