@@ -125,7 +125,7 @@ const bunny1 = {
 // *****************
 
 console.log('myBunny.')
-console.log('name, breed, says(), health, searchForFood(), sleep')
+console.log('name, breed, says(), health, searchForFood(), sleep()')
 
 const myBunny = {
     name: 'Harry the Bunny',
