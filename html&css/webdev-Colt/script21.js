@@ -159,8 +159,8 @@ const myBunny = {
                     return `${this.name} is in the scopes of a hunter, the hunter hit and ${this.name} is dead. Start Over. ${this.name}'s health is now ${this.health}`
                 } 
             }
-            return `${this.name} is full, try to sleep to reset your game`
         }
+        return `${this.name} is full, try to sleep to reset your game`
     },
     sleep() {
         let sleepRandom = Math.round(Math.random() * 1);
