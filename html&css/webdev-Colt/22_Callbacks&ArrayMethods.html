@@ -23,9 +23,13 @@
                 <ul id="tocList">
                     <li><a href="#tfem">The forEach Method</a></li>
                     <li><a href="#tmm">The map Method</a></li>
-                    <li><a href="#itaf">Intro to Arrow Functions</a></li>
-                    <li><a href="#afir">Arrow Function Implicit Returns</a></li>
-                    <li><a href="#afw">Arrow Functions Wrapup</a></li>
+                    <li>
+                        <a href="#itaf">Intro to Arrow Functions</a>
+                        <ul>
+                            <li><a href="#afir">Arrow Function Implicit Returns</a></li>
+                            <li><a href="#afw">Arrow Functions Wrapup</a></li>
+                        </ul>
+                    </li>
                     <li><a href="#stasi">setTimeout and setInterval</a></li>
                     <li><a href="#tfm">The filter Method</a></li>
                     <li><a href="#sem">Some & Every Methods</a></li>
@@ -55,11 +59,34 @@
                     <h2 id="tfem">The forEach Method</h2>
                     <div class="example">
                         <ul>
-                            <li></li>
+                            <li>const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];</li>
+                            <br>
+                            <li>
+                                const evenOdd = <numbersspan class="important">.forEach(</numbersspan>num => { <br>
+                                if (num % 2 === 0) { <br>
+                                console.log(`${num} is Even`); <br>
+                                } else { <br>
+                                console.log(`${num} is Odd`) <br>
+                                } <br>
+                                }<span class="important">)</span>
+                            </li>
                         </ul>
                     </div>
                     <p>
-
+                        Starting with our first <span class="highlight">Array Callback Method</span>, the <span
+                            class="important">.forEach()</span> method. It calls the function once per element in the
+                        array, same as a for loop.
+                    </p>
+                    <p>
+                        The <span class="important">.forEach()</span> method was used in the past, but as of now, we use
+                        the <span class="important">for...of</span> loop to iterate over an array. However, this does
+                        show use an example of a <span class="highlight">Higher Order Function</span> accepting an
+                        function as an argument, which is known as a <span class="highlight">callback function</span>.
+                    </p>
+                    <p>
+                        A <span class="highlight">callback function</span> in JavaScript is when a function gets passed
+                        to a <span class="highlight">Higher Order Function</span> as an <span
+                            class="highlight">argument</span>.
                     </p>
                 </article>
 
@@ -67,59 +94,208 @@
                     <h2 id="tmm">The map Method</h2>
                     <div class="example">
                         <ul>
-                            <li></li>
+                            <li>
+                                const names = ['Andre Coetzer', 'Vanya Coetzer', 'Colt Steele', 'Jeanette Coetzer', 'Sam
+                                Fisher', 'Micheal Western']
+                            </li>
+                            <br>
+                            <li>
+                                const uppercase = names <span class="important">.map(</span>name => { <br>
+                                return name.toUpperCase() <br>
+                                } <span class="important">)</span>
+                            </li>
                         </ul>
                     </div>
                     <p>
-
+                        <span class="important">.map()</span> is another array callback method which is similair to the
+                        <span class="highlight">.forEach()</span> method, except <span class="important">it creates a
+                            new array</span> from the <span class="important">results of the return value</span> of the
+                        original array.
+                    </p>
+                    <p>
+                        In the example above, it will create a new array inside the uppercase varaible, that will old an
+                        altered version of the original array, while leaving the original array alone.
                     </p>
                 </article>
 
                 <article>
                     <h2 id="itaf">Intro to Arrow Functions</h2>
                     <div class="example">
-                        <ul>
-                            <li></li>
-                        </ul>
+                        <div>
+                            <ul>
+                                <li>Defining a Function</li>
+                                <br>
+                                <li>
+                                    function isEven (num) { <br>
+                                    return num % 2 === 0; <br>
+                                    }
+                                </li>
+                            </ul>
+
+                            <ul>
+                                <li>Defining a Function Expression</li>
+                                <br>
+                                <li>
+                                    const isEven = function (num) { <br>
+                                    return num % 2 === 0; <br>
+                                    }
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul>
+                                <li>
+                                    Arrow Function <br>
+                                    <span class="important">with</span> Parenthesis
+                                </li>
+                                <br>
+                                <li>
+                                    const isEven = (num) => { <br>
+                                    return num % 2 === 0 <br>
+                                    }
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    Arrow Function <br>
+                                    <span class="important">without</span> Parenthesis
+                                </li>
+                                <br>
+                                <li>
+                                    const isEven = num => { <br>
+                                    return num % 2 === 0; <br>
+                                    }
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                     <p>
-
+                        <span class="important">Arrow Functions</span> is a newer syntax for defining functions. Its
+                        more <span class="important">compact</span> than a regular function expression. It essentially
+                        allows us to write a function without having to write the <span class="highlight">keyword</span>
+                        function.
                     </p>
-                </article>
+                    <p>
+                        This is <span class="highlight">generally used when passing a function as a callback</span> to
+                        an array callback method.
+                    </p>
+                    <p>
+                        You <span class="important">can only use</span> arrow functions <span class="important">with
+                            function expressions</span>, though when defining a regular function, it will result in an
+                        error.
+                    </p>
+                    <p>
+                        When there <span class="important">is only one parameter</span> for a function, with arrow
+                        functions, you dont need to use the parenthesis unless its more than one.
+                    </p>
 
-                <article>
-                    <h2 id="afir">Arrow Function Implicit Returns</h2>
+                    <h3 id="afir">Arrow Function Implicit Returns</h3>
                     <div class="example">
                         <ul>
-                            <li></li>
+                            <li>
+                                Arrow Function, implicit return <br>
+                                <span class="important">With parenthesis</span> <br>
+                            </li>
+                            <li>
+                                cosnt isEven = num => ( <br>
+                                num % 2 === 0; <br>
+                                )
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                Arrow Function, implicit return <br>
+                                <span class="important">Without parenthesis</span> & <br>
+                                <span class="important">Single line</span>
+                            </li>
+                            <li>cosnt isEven = num => num % 2 === 0;</li>
                         </ul>
                     </div>
                     <p>
-
+                        When it comes to <span class="highlight">Implicit returns</span>, we can further shortern the
+                        syntax by removing the <span class="important">return keyword</span>. This is only works with a
+                        single statement. There are 2 ways you can use implicit return, dpending on how long the
+                        statement is.
                     </p>
-                </article>
+                    <p>
+                        If your statement is <span class="highlight">long</span>, then use the parenthesis, while if
+                        your statement is <span class="highlight">short</span>, then placing inline is also possible, as
+                        seen in the examples above.
+                    </p>
 
-                <article>
-                    <h2 id="afw">Arrow Functions Wrapup</h2>
+                    <h3 id="afw">Arrow Functions Wrapup</h3>
                     <div class="example">
                         <ul>
-                            <li></li>
+                            <li>Arrow Function inside an Array Callback Method</li>
+                            <li>
+                                const double = numbers.map(num => { <br>
+                                return num + num; <br>
+                                })
+                            </li>
+                            <br>
+                            <li>
+                                const double = numbers.map(num => num + num);
+                            </li>
                         </ul>
                     </div>
                     <p>
-
+                        Above, is just some examples, of how to use arrow functions in a array callback method.
                     </p>
+
                 </article>
 
                 <article>
                     <h2 id="stasi">setTimeout and setInterval</h2>
                     <div class="example">
                         <ul>
-                            <li></li>
+                            <li>
+                                setTimeout(<span class="important">func</span>, <span class="important">time</span>)
+                            </li>
+                            <br>
+                            <li>
+                                setTimeout(<span class="important">msg</span> => { <br>
+                                console.log('Hello') <br>
+                                }, <span class="important">4000</span>)
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="example">
+                        <ul>
+                            <li>
+                                setInterval(<span class="important">func</span>, <span class="important">time</span>)
+                            </li>
+                            <br>
+                            <li>
+                                const recurringMsg = setInterval(<span class="important">msg</span> => { <br>
+                                console.log(Math.round(Math.random) * 6); <br>
+                                }, <span class="important">2000</span>)
+                            </li>
+                            <br>
+                            <li>
+                                clearInterval(<span class="important">id</span> = <span
+                                    class="highlight">recurringMsg</span>)
+                            </li>
                         </ul>
                     </div>
                     <p>
-
+                        <span class="important">setTimeout</span> & <span
+                            class="important">setInterval/clearInterval()</span> are not <span class="highlight">Array
+                            Callback Methods</span>. They do however, <span class="important">require</span> callback
+                        functions.
+                    </p>
+                    <p>
+                        <span class="important">setTimeout</span> in general executes a function at the given time.
+                    </p>
+                    <p>
+                        <span class="important">setInterval</span> on the other hand executes a function every so many
+                        seconds or mins. Though with setInterval, its important to know how to stop the command from
+                        running and you would use <span class="important">clearInterval()</span> to stop the setInterval
+                        process.
+                    </p>
+                    <p>
+                        This brings us to, when creating a setInterval, its best to assign it to a variable, as this
+                        store that particular setIntervals <span class="highlight">id</span> and allows you to pass that
+                        into clearInterval.
                     </p>
                 </article>
 
@@ -127,23 +303,61 @@
                     <h2 id="tfm">The filter Method</h2>
                     <div class="example">
                         <ul>
-                            <li></li>
+                            <li>const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];</li>
+                            <li>
+                                const evens = numbers.filter(num => { <br>
+                                return num % 2 === 0; <br>
+                                })
+                            </li>
                         </ul>
                     </div>
                     <p>
-
+                        <span class="imprtant">.filter()</span> is almost like <span class="highligh">.map()</span>,
+                        where it returns a new array however it filters things out from the original array into the new,
+                        again without removing anything from the original.
                     </p>
+                    <p>
+                        <span class="important">.filter()</span> accepts a <span class="important">boolean expression or
+                            statement</span>
+                    </p>
+
+                    <h3 id="tfm">The filter Method with The Map Method</h3>
+                    <p>
+                        See the .js file for examples on this, but usually <span class="highlight">.map()</span> is used
+                        alonsige <span class="highlight">.filter()</span>.
+                    </p>
+
                 </article>
 
                 <article>
                     <h2 id="sem">Some & Every Methods</h2>
                     <div class="example">
                         <ul>
-                            <li></li>
+                            <li>
+                                const someAbove = numbers.some(num => { <br>
+                                return num > 5; <br>
+                                })
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                const everyEven = numbers.every(num => { <br>
+                                return num % 2 === 0; <br>
+                                })
+                            </li>
                         </ul>
                     </div>
                     <p>
-
+                        These are <span class="highlight">Array Callback Methods</span> that accept a <span
+                            class="important">boolean</span> functions.
+                    </p>
+                    <p>
+                        <span class="important">.some()</span> is used to see if one or more elements in an array
+                        evaluates to true, if so, then the statement returns true.
+                    </p>
+                    <p>
+                        <span class="important">.every()</span> needs all elements to evaluate to a true statement for
+                        it to return true.
                     </p>
                 </article>
 
@@ -151,23 +365,46 @@
                     <h2 id="tnrm">The Nortorious Reduce Method</h2>
                     <div class="example">
                         <ul>
-                            <li></li>
+                            <li>
+                                .reduce(<span class="important">(accumulator</span>, <span
+                                    class="important">currentValue)</span> )
+                            </li>
+                            <br>
+                            <li>
+                                const lowestNum = numbers.reduce((min, curr) => { <br>
+                                if (curr < min) { <br>
+                                    return curr; <br>
+                                    } <br>
+                                    return min; <br>
+                                    })
+                            </li>
                         </ul>
                     </div>
                     <p>
-
+                        When it comes to <span class="important">.reduce()</span>, the general idea is to boil something
+                        down to a <span class="important">single result</span> and it's <span class="highlight">up to
+                            us, how we get there</span>.
+                    </p>
+                    <p>
+                        <span class="important">.reduce()</span> accepts <span class="highlight">two</span> arguments,
+                        and although these are notthe official parameter names, the first parameter is the <span
+                            class="important">accumulator</span>, while the second is the <span
+                            class="important">currentValue</span>.
+                    </p>
+                    <p>
+                        The <span class="important">acc</span>is the reduced value, while <span
+                            class="important">curr</span> is the current value. So depending if you summing numbers
+                        together, <span class="important">acc</span> will start on the first num or element in the array
+                        while the <span class="important">curr</span> will start on the second num or element in the
+                        array.
                     </p>
                 </article>
 
                 <article>
                     <h2 id="aft">Arrow Functions & 'this'</h2>
-                    <div class="example">
-                        <ul>
-                            <li></li>
-                        </ul>
-                    </div>
                     <p>
-
+                        Without giving an example, all we need to know is that the <span class="important">this</span>
+                        keyword behaves differently when in a arrow function.
                     </p>
                 </article>
             </section>
