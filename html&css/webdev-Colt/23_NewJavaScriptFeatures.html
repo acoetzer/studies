@@ -53,11 +53,64 @@
                     <h2 id="defp">Default Params</h2>
                     <div class="example">
                         <ul>
-                            <li></li>
+                            <li>
+                                Old Way
+                                <ul>
+                                    <li>
+                                        function rollDie1 (numSides) { <br>
+                                        <span class="important">if (numSides === undefined) {</span> <br>
+                                        <span class="important">numSides = 6; </span> <br>
+                                        <span class="important">}</span> <br>
+                                        return Math.floor(Math.random() * numSides) + 1; <br>
+                                        }
+                                    </li>
+                                </ul>
+                            </li>
+                            <br>
+                            <li>
+                                New Way
+                                <ul>
+                                    <li>
+                                        function rollDie2 (numSides <span class="important">= 12</span>) { <br>
+                                        return Math.floor(Math.random() * numSides) + 1; <br>
+                                        }
+                                    </li>
+                                </ul>
+                            </li>
                         </ul>
                     </div>
                     <p>
-
+                        Often when a user enters a parameter, it could be optional. They can either use it and if they
+                        don't, sometimes we would like a default parameter to be set in place.
+                    </p>
+                    <p>
+                        The above examples, show the <span class="highlight">old method</span> and <span
+                            class="highlight">new Method</span> of providing <span class="important">default
+                            params</span>.
+                    </p>
+                    <p>
+                        Although, it's important to note, that order matters when it comes to setting up, default
+                        params. When a user inputs there name as an example, JavaScript wont know where to place that
+                        name and follows the order of the parameters.
+                    </p>
+                    <div class="example">
+                        <ul>
+                            <li>
+                                Order Matters!
+                                <ul>
+                                    <li>
+                                        function greet (user, greeting = 'Hiya') { <br>
+                                        return `${greeting}, ${user}` <br>
+                                        }
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <p>
+                        Above, is an example of a greeting that has a default value asigned to it. Though greeting is
+                        placed last as its optional and like we said javascript won't know the difference between a user
+                        name or greeting.
                     </p>
                 </article>
 
@@ -65,11 +118,42 @@
                     <h2 id="sifc">Spread in Function Calls</h2>
                     <div class="example">
                         <ul>
-                            <li></li>
+                            <li>
+                                console.log(`Spread in Math.max(<span class="important">...</span>nums1):
+                                ${Math.max(<span class="important">...</span>nums1)}`) = <span
+                                    class="important">10</span>
+                            </li>
+                            <li>
+                                console.log(`Spread in Math.min(<span class="important">...</span>nums1):
+                                ${Math.min(<span class="important">...</span>nums1)}`) = <span
+                                    class="important">1</span>
+                            </li>
+                            <li>
+                                console.log(<span class="important">...</span>nums1) = <span class="important">1, 2, 3,
+                                    4, 5, 6, 7, 8, 9, 10</span>
+                            </li>
+                            <li>
+                                console.log(<span class="important">...</span>'...Spread') = <span class="important">S p
+                                    r e a d</span>
+                            </li>
                         </ul>
                     </div>
                     <p>
-
+                        Spread allows an iterable to be expanded in places where zero or more <span
+                            class="important">arguments</span> <sup class="sup2">function calls </sup>, <span
+                            class="important">elements</span> <sup class="sup2">Array Literals</sup> or <span
+                            class="important">key-value pairs</span> <sup class="sup2">Object Literals</sup> are
+                        expected. The above are within what is known as <span class="important">function calls</span>.
+                    </p>
+                    <p>
+                        Essentially, <span class="important">Spread</span>, which by the way is respresented with <sup
+                            class="sup2">...</sup> three dots, takes something of an iterable whether it be
+                        inside a variable or an array/object, and sort of unpacks it from the array container, or object
+                        container.
+                    </p>
+                    <p>
+                        The above examples shows strings and arrays being spread inside a function call such as <span
+                            class="important">Math.min/max()</span>
                     </p>
                 </article>
 
@@ -77,11 +161,18 @@
                     <h2 id="swal">Spread with Array Literals</h2>
                     <div class="example">
                         <ul>
-                            <li></li>
+                            <li>
+                                const nums1Copy = [<span class="important">...</span>nums1, 'nums1Copy'];
+                            </li>
+                            <li>
+                                const combination = [<span class="important">...</span>nums1, <span
+                                    class="important">...</span>nums2, 'combination'];
+                            </li>
                         </ul>
                     </div>
                     <p>
-
+                        <span class="important">Spread</span> with arrays literals however, are used as a method to
+                        easily copy or dipulicate the array.
                     </p>
                 </article>
 
@@ -89,11 +180,19 @@
                     <h2 id="swo">Spread with Objects</h2>
                     <div class="example">
                         <ul>
-                            <li></li>
+                            <li>
+                                const groupOneCopy = {<span class="important">...</span>groupOne};
+                            </li>
+                            <li>
+                                const bothGroups = {<span class="important">...</span>groupOne, <span
+                                    class="important">...</span>groupTwo}
+                            </li>
                         </ul>
                     </div>
                     <p>
-
+                        <span class="important">Spread</span> with object literals, work the same way as with arrays.
+                        Except for one small difference and that is when object properties conflict. In this scenario
+                        the last object in the combination example above, would be the winner so to say.
                     </p>
                 </article>
 
@@ -101,11 +200,30 @@
                     <h2 id="rp">Rest Params</h2>
                     <div class="example">
                         <ul>
-                            <li></li>
+                            <li>
+                                function race (gold, silver, bronze, <span
+                                    class="important">...<sup>rest</sup></span>everyoneElse) { <br>
+                                console.log(`The Gold Medal goes to: ${gold}`) <br>
+                                console.log(`The Silver Medal goes to: ${silver}`) <br>
+                                console.log(`The Bronze Medal goes to: ${bronze}`) <br>
+                                console.log(`Thank you to everyone else for participating: ${everyoneElse}`) <br>
+                                } <br>
+                            </li>
+                            <br>
+                            <li>
+                                race(<span class="important">...<sup>Spread</sup></span>raceResults)
+                            </li>
                         </ul>
                     </div>
                     <p>
-
+                        With <span class="important">rest params</span>, even though also represented with <sup
+                            class="sup2">...</sup> three dots, <span class="highlight">is not</span> the same as <span
+                            class="important">spread</span>.
+                    </p>
+                    <p>
+                        <span class="important">rest params</span> however <span class="important">collect</span> the
+                        rest of the arguments into its own array. <span class="important">rest params</span> are for the
+                        arguments parameter within <span class="important">functions and not function calls</span>.
                     </p>
                 </article>
 
@@ -113,11 +231,20 @@
                     <h2 id="da">Destructing Arrays</h2>
                     <div class="example">
                         <ul>
-                            <li></li>
+                            <li>
+                                const <span class="important">[gold, silver, bronze, <span
+                                        class="important">...<sup>rest</sup></span>everyoneElse]</span> = raceResults;
+                            </li>
                         </ul>
                     </div>
                     <p>
-
+                        In short, <span class="important">Destructing Arrays</span> is a short and clean way of <span
+                            class="highlight">unpacking</span> arrays into varaibles. The most important thing to
+                        remember with <span class="important">destructing arrays</span>, is that order matters.
+                    </p>
+                    <p>
+                        As seen in the example above, you can also use <span class="highlight">rest params</span> with
+                        <span class="important">destructing arrays</span>.
                     </p>
                 </article>
 
@@ -125,11 +252,22 @@
                     <h2 id="do">Destructing Objects</h2>
                     <div class="example">
                         <ul>
-                            <li></li>
+                            <li>
+                                const <span class="important">{firstName, lastName<sup>:</sup> surname, born
+                                    <sup>:</sup>
+                                    birthYear, died = <sup>default param</sup> 'N/A'}</span> = user;
+                            </li>
                         </ul>
                     </div>
                     <p>
-
+                        Again, although the same as <span class="highlight">destructing arrays</span>, it differs in the
+                        fact that order <span class="important">doesn't matter</span>. In the above examples, we also
+                        see that we can change the variables name, when providing a colon, or we can use default params
+                        for properties that might not be there.
+                    </p>
+                    <p>
+                        If a property <span class="important">does exist</span> within the object, then <span
+                            class="important">it will not be overwritten</span>.
                     </p>
                 </article>
 
@@ -137,11 +275,45 @@
                     <h2 id="desp">Desctructing Params</h2>
                     <div class="example">
                         <ul>
-                            <li></li>
+                            <li>
+                                Way One
+                                <ul>
+                                    <li>
+                                        function fullNameOne (user) { <br>
+                                        return `${user.firstName} ${user.lastName}` <br>
+                                        }
+                                    </li>
+                                </ul>
+                            </li>
+                            <br>
+                            <li>
+                                Way Two
+                                <ul>
+                                    <li>
+                                        function fullNameTwo(user) { <br>
+                                        const {firstName, lastName: surname} = user; <br>
+                                        return `His first name was ${firstName} ${surname}` <br>
+                                        }
+                                    </li>
+                                </ul>
+                            </li>
+                            <br>
+                            <li>
+                                Way Three, <span class="important">actual Destructing Params</span>
+                                <ul>
+                                    <li>
+                                        function fullNameThree({firstName, lastName}) { <br>
+                                        return `${firstName} ${lastName}` <br>
+                                        }
+                                    </li>
+                                </ul>
+                            </li>
                         </ul>
                     </div>
                     <p>
-
+                        <span class="important">Destructing params</span> is when we are looking to extract certain info
+                        out of an array or object, right from the parameters of the function as seen on <span
+                            class="highlight">way three</span> by the use of curly braces.
                     </p>
                 </article>
             </section>
