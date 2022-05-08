@@ -8,7 +8,7 @@ body {
 
 header {
     margin: 0 auto;
-    height: calc(100vh);
+    height: calc(50vh);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -30,4 +30,12 @@ header h2 {
     color: royalblue;
     font-size: 1.2em;
     align-self: center;
+}
+
+main {
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
 }
