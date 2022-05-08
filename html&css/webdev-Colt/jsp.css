@@ -8,7 +8,7 @@ body {
 
 header {
     margin: 0 auto;
-    height: calc(50vh);
+    height: calc(100vh);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -38,4 +38,10 @@ main {
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
+}
+
+span {
+    font-size: 6em;
+    font-weight: 700;
+    letter-spacing: 0.5em;
 }
