@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,208 +11,453 @@
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="../docStyles.css">
     </head>
-<body>
-    <header>
-        <h1>Introducing The World Of DOM</h1>
-    </header>
 
-    <main>
-        <section id="toc">
-            <h2>Table of Contents</h2>
-            <ul id="tocList">
-                <li><a href="#itd">Introducing the DOM</a></li>
-                <li><a href="#tdo">The Document Object</a></li>
-                <li>
-                    <a href="#gebi">getElementById</a>
-                    <ul>
-                        <li><a href="#getbtncn">getElementsByTagName & className</a></li>
-                    </ul>
-                </li>
-                <li><a href="#qsqsa">querySelector & querySelectorAll</a></li>
-                <li><a href="#ihtcit">innerHTML, textContent & innerText</a></li>
-                <li><a href="#a">Attributes</a></li>
-                <li><a href="#cs">Changing Styles</a></li>
-                <li><a href="#cl">ClassList</a></li>
-                <li><a href="#tpcs">Traversing Parent/Child/Sibling</a></li>
-                <li><a href="#aac">Append & AppendChild</a></li>
-                <li><a href="#rcr">removeChild & remove</a></li>
-                <li><a href="#psd">Pokemon Sprites Demo</a></li>
-            </ul>
+    <body>
+        <header>
+            <h1>Introducing The World Of DOM</h1>
+        </header>
 
-            <section id="developer">
-                <h2>Developer</h2>
-                <div id="devInfo">
-                    <img src="../../src/html&css/me.jpg" alt="Developer I Am" id="personalImage">
-                    <ul>
-                        <li id="devName">Andre Coetzer</li>
-                        <li id="devTitle">Developer</li>
-                        <li id="devKnowledge">
-                            <span class="lang">html</span>
-                            <span class="lang">css</span>
-                            <span class="lang">js</span>
-                        </li>
-                    </ul>
-                </div>
+        <main>
+            <section id="toc">
+                <h2>Table of Contents</h2>
+                <ul id="tocList">
+                    <li><a href="#itd">Introducing the DOM</a></li>
+                    <li><a href="#tdo">The Document Object</a></li>
+                    <li>
+                        <a href="#gebi">getElementById</a>
+                        <ul>
+                            <li><a href="#getbtncn">getElementsByTagName & className</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#qsqsa">querySelector & querySelectorAll</a></li>
+                    <li><a href="#ihtcit">innerHTML, textContent & innerText</a></li>
+                    <li><a href="#a">Attributes</a></li>
+                    <li><a href="#cs">Changing Styles</a></li>
+                    <li><a href="#cl">ClassList</a></li>
+                    <li><a href="#tpcs">Traversing Parent/Child/Sibling</a></li>
+                    <li><a href="#aac">Append & AppendChild</a></li>
+                    <li><a href="#rcr">removeChild & remove</a></li>
+                    <li><a href="#psd">Pokemon Sprites Demo</a></li>
+                </ul>
+
+                <section id="developer">
+                    <h2>Developer</h2>
+                    <div id="devInfo">
+                        <img src="../../src/html&css/me.jpg" alt="Developer I Am" id="personalImage">
+                        <ul>
+                            <li id="devName">Andre Coetzer</li>
+                            <li id="devTitle">Developer</li>
+                            <li id="devKnowledge">
+                                <span class="lang">html</span>
+                                <span class="lang">css</span>
+                                <span class="lang">js</span>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
             </section>
-        </section>
 
-        <section id="notes">
-            <article>
-                <h2 id="itd">Introducing the DOM</h2>
-                <div class="example">
-                    <ul>
-                        <li></li>
-                    </ul>
-                </div>
-                <p>
+            <section id="notes">
+                <article>
+                    <h2>Important Properties & Methods</h2>
+                    <div class="example">
+                        <ul>
+                            <li>
+                                classList
+                                <ul>
+                                    <li><span class="important">add( )</span></li>
+                                    <li><span class="important">remove( )</span></li>
+                                    <li><span class="important">toggle( )</span></li>
+                                </ul>
+                            </li>
+                            <li>getAttribute( )</li>
+                            <li>setAttribute( )</li>
+                            <li>appendChild( )</li>
+                            <li>append( )</li>
+                            <li>prepend( )</li>
+                            <li>
+                                insertAdjacentElement()
+                                <ul>
+                                    <li><span class="important">beforebegin</span></li>
+                                    <li><span class="important">afterbegin</span></li>
+                                    <li><span class="important">beforeend</span></li>
+                                    <li><span class="important">afterend</span></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>removeChild( )</li>
+                            <li>remove( )</li>
+                            <li>createElement( )</li>
+                            <li>innerText</li>
+                            <li>textContent</li>
+                            <li>innerHTML</li>
+                            <li>value</li>
+                        </ul>
+                        <ul>
+                            <li>parentElement</li>
+                            <li>Children</li>
+                            <li>
+                                nextSibling
+                                <ul>
+                                    <li><span class="important">nextElementSibling</span></li>
+                                </ul>
+                            </li>
+                            <li>
+                                previousSibling
+                                <ul>
+                                    <li><span class="important">previousElementSibling</span></li>
+                                </ul>
+                            </li>
+                            <li>style</li>
+                        </ul>
+                    </div>
+                </article>
 
-                </p>
-            </article>
+                <article>
+                    <h2 id="itd">Introducing the DOM</h2>
+                    <div class="example">
+                        <ul>
+                            <li>
+                                DOM
+                                <ul>
+                                    <li><span class="important">Document Object Model</span></li>
+                                </ul>
+                            </li>
+                            <li>
+                                console.dir(document);
+                            </li>
+                        </ul>
+                    </div>
+                    <p>
+                        The <span class="important">Dom</span> stands for the <span class="important">Document Object
+                            model</span>. This is JavaScripts <span class="important">window</span> into the contents of
+                        a webpage. It's basically a bunch of <span class="highlight">Objects</span> you interact with
+                        via JavaScript.
+                    </p>
+                </article>
 
-            <article>
-                <h2 id="tdo">The Document Object</h2>
-                <div class="example">
-                    <ul>
-                        <li></li>
-                    </ul>
-                </div>
-                <p>
+                <article>
+                    <h2 id="tdo">The Document Object</h2>
+                    <div class="example">
+                        <ul>
+                            <li>Imagine an image here that has a data tree of objects in the form of html elements</li>
+                        </ul>
+                    </div>
+                    <p>
+                        The way the <span class="important">Document Object</span> works, is when our browser loads,
+                        part of that process is taking the html elements and style rules and <span
+                            class="highlight">converting</span> that to <span class="important">JavaScript
+                            Objects</span> which is found in the
+                        document object.
+                    </p>
+                    <p>
+                        Above we said to imagine a data tree where at the very top of this tree lies the <span
+                            class="important">document object</span> and next to it the <span class="highlight">HTML
+                            markup</span>. When writing the markup, we usually have a parent, child & sibling element
+                        such as an <span class="highlight">ul</span><span class="important"> ></span> <span
+                            class="highlight">li</span> inside it.
+                    </p>
+                    <p>
+                        Throughout the markup we have many of these things <span class="highlight">parent/child</span>
+                        structures. Well its the same from the <span class="important">document object</span>, it copies
+                        or replicates the exact same data structor.
+                    </p>
+                    <p>
+                        To view the objects, properties and methods inside the document object, you can display really
+                        any object the following way <span class="important">console.dir(document)</span>. This sort of
+                        proves to us that the document is actually an object that holds other objects that hold other
+                        objects which hold properties and methods. A vicious looking tree.
+                    </p>
+                    <P>
+                        The <span class="important">Document Object</span> is created automatically for us by our
+                        browsers when we load a new page and one thing to remember the DOM is <span
+                            class="important">based upon the contents of the page</span>.
+                    </P>
+                    <p>
+                        To end this portion, the <span class="important">document object</span> is our entry point to
+                        the world of <span class="highlight">DOM</span>. It contains a <span
+                            class="highlight">representation</span> of whats on the page, plus a ton of useful
+                        properties and methods.
+                    </p>
+                    <p>
+                        <span class="important">It's the root of the Tree</span>!
+                </article>
 
-                </p>
-            </article>
+                <article>
+                    <h2 id="getebi">getElementById</h2>
+                    <div class="example">
+                        <ul>
+                            <li>document<span class="important">.getElementById(<span
+                                        class="highlight">'id'</span>)</span></li>
+                        </ul>
+                    </div>
+                    <p>
+                        Welcome to the world of seclecting objects. <span class="important">.getElementById('id')</span>
+                        is one way for us to select objects in the <span class="important">Document Object</span>. We
+                        spoke how how the document object contains a bunch of other objects and properties or methods.
+                        This tree like <span class="highlight">Data Structure</span>.
+                    </p>
+                    <p>
+                        <span class="important">.getElementById</span> is a method that helps us select these objects by
+                        their <span class="highlight">id</span>. If we think of <span class="highlight">CSS</span> and
+                        its selecting methods, its very similar. This is just how we select things using JavaScript.
+                    </p>
+                    <p>
+                        Of course there are better ways to select objects inside of javascripr, for example <span
+                            class="highlight">querySelector</span>. However, it is important to note that before we can
+                        <span class="highlight">manipulate</span> anything inside of javascript we first need to be able
+                        to select it.
+                    </p>
+                    <p>
+                        The <span class="important">getElementById</span> requires you to input a string argument of the
+                        element id. You will notice most things will require a string value, when it comes to the DOM.
+                        If it cannot find the id, it will return a null value.
+                    </p>
+                    <p>
+                        When selecting, whether it be with <span class="important">ById</span> or <span
+                            class="important">ByClass</span> ... and so on. It will always return the Object, even
+                        though inside the console, it looks like html, you can verify it with <span
+                            class="important">console.dir()</span> command.
+                    </p>
 
-            <article>
-                <h2 id="getebi">getElementById</h2>
-                <div class="example">
-                    <ul>
-                        <li></li>
-                    </ul>
-                </div>
-                <p>
+                    <h3 id="getbtncn">getElementsByTagName & ClassName</h3>
+                    <div class="example">
+                        <ul>
+                            <li>document<span class="important">.getElement<sup>s</sup>ByTagName(<span
+                                        class="highlight">'tag'</span>)</span></li>
+                            <li>document<span class="important">.getElement<sup>s</sup>ByClassName(<span
+                                        class="highlight">'class'</span>)</span></li>
+                        </ul>
+                    </div>
+                    <p>
+                        The other two getElement <sup class="sup2">s</sup>... <span
+                            class="important">getElementsByTagName</span> & <span
+                            class="important">getElementsByClassName</span> are grouped together as they both deal more
+                        than one element. Hence the attempt to highlight the <span class="important">s</span> in the
+                        names.
+                    </p>
+                    <p>
+                        Apart from working relatively the same, the only difference is that it returns what is known as
+                        an <span class="important">HTMLCollection</span> which holds what looks like an array of
+                        objects, however you cannot use array methods on it. You can however iterate over it, as it has
+                        indices.
+                    </p>
+                    <p>
+                        Another distinction is that with getElementById, if something is not found, you have are return
+                        with a null value, whereas with selectors that return multiple objects in an array form, you are
+                        return with an empty array if it cannot find what you try to select.
+                    </p>
+                </article>
 
-                </p>
+                <article>
+                    <h2 id="qsqsa">querySelector & querySelectorAll</h2>
+                    <div class="example">
+                        <ul>
+                            <li><span class="important">querySelector(<span class="highlight">'Tag, #id,
+                                        .class'</span>)</span></li>
+                            <li><span class="important">querySelectorAll(<span class="highlight">'Tag, #id,
+                                        .class'</span>)</span></li>
+                        </ul>
+                    </div>
+                    <p>
+                        The <span class="important">querySelector</span> & <span
+                            class="important">querySelectorAll</span> are new ways in JavaScript to select objects, they
+                        exactly the same as how you would expect <span class="highlight">CSS</span> selectors would
+                        work. You can go as far as <span class="important">nth-of-type()</span> as well as <span
+                            class="important">a[type="text"]</span>.
+                    </p>
+                    <p>
+                        Apart from the HTMLCollection you get back when using the getElementsBy selectors, here you are
+                        returned with a NodeList which is also in the form of an array.
+                    </p>
+                </article>
 
-                <h3 id="getbtncn">getElementsByTagName & className</h3>
-                <div class="example">
-                    <ul>
-                        <li></li>
-                    </ul>
-                </div>
-                <p>
+                <article>
+                    <h2 id="ihtcit">innerHTML, textContent & innerText</h2>
+                    <div class="example">
+                        <ul>
+                            <li>.innerText = 'The inner text'</li>
+                            <li>.textContent</li>
+                            <li>
+                                .innerHTML = '&lt;b&gt; some text &lt;/b&gt;'
+                                <ul>
+                                    <li>.innerHTML += '&lt;b&gt; some text &lt;/b&gt;'</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <p>
+                        The above are all properties to Elements or Objects in JavaScript. They all have to do with the
+                        content inside of an element.
+                    </p>
+                    <p>
+                        <span class="important">innerText</span> provides back the text between the opening and closing
+                        tags og an HTML element, though compared to <span class="important">textContent</span> it is
+                        sensitive to what is showing. So you had to set <span class="highlight">display</span> to hidden
+                        or none, then it would not show that, where <span class="important">textContent</span> would.
+                    </p>
+                    <p>
+                        <span class="important">innerHTML</span> allows us to change HTML inside a given element or
+                        object. It will also display everything including the HTML markup.
+                    </p>
+                </article>
 
-                </p>
-            </article>
+                <article>
+                    <h2 id="a">Attributes</h2>
+                    <div class="example">
+                        <ul>
+                            <li>getAttribute('attribute here')</li>
+                            <li>setAttribute('attribute Name', 'Value')</li>
+                        </ul>
+                    </div>
+                    <p>
+                        These methods allow us to change or set an attribute of a element, and the other allows you to
+                        retrieve it.
+                    </p>
+                </article>
 
-            <article>
-                <h2 id="qsqsa">querySelector & querySelectorAll</h2>
-                <div class="example">
-                    <ul>
-                        <li></li>
-                    </ul>
-                </div>
-                <p>
+                <article>
+                    <h2 id="cs">Changing Styles</h2>
+                    <div class="example">
+                        <ul>
+                            <li>.style."Here is the same as CSS" Just all in camel case.</li>
+                            <li>
+                                Example between CSS and JavaScript
+                                <ul>
+                                    <li>CSS: font-family:;</li>
+                                    <li>JS: fontFamily = ''</li>
+                                </ul>
+                            </li>
+                            <li>h2.style.fontWeight = '700'</li>
+                        </ul>
+                    </div>
+                    <p>
+                        So, when changing an elements style through JavaScripts style property, it will list all CSS
+                        properties that can manipulated. The only difference is that, its camelCased. Also it kinda
+                        saves it as a inline style property which we know is not very good to do as that can slow down
+                        your site.
+                    </p>
+                    <p>
+                        What we will see later on is that it will be better for JavaScript to change the class of an
+                        element and to store the styles in a CSS file under a particular class, and then toggle the
+                        classes.
+                    </p>
 
-                </p>
-            </article>
+                    <h3 id="gcs">getComputerStyle</h3>
+                    <div class="example">
+                        <ul>
+                            <li>const h1 = document.querySelector('h1')</li>
+                            <li>window.getComputerStyle(h1)</li>
+                        </ul>
+                    </div>
+                    <p>
+                        If you wanted to see the font size of a particular element, you can run the command above.
+                    </p>
+                </article>
 
-            <article>
-                <h2 id="ihtcit">innerHTML, textContent & innerText</h2>
-                <div class="example">
-                    <ul>
-                        <li></li>
-                    </ul>
-                </div>
-                <p>
+                <article>
+                    <h2 id="cl">ClassList</h2>
+                    <div class="example">
+                        <ul>
+                            <li>
+                                .classList
+                                <ul>
+                                    <li>.classList.add('')</li>
+                                    <li>.classList.remove('')</li>
+                                    <li>.classList.toggle('')</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <p>
+                        Before we mentioned that its better to toggle a class on an object rather than to place an
+                        inline style. <span class="important">.classList</span> allows us to do just that. <span
+                            class="important">.classList</span> has a bunch of properties and methods for dealing with
+                        classes.
+                    </p>
+                    <p>
+                        <span class="important">.add('className')</span>, adds a class to an element.
+                    </p>
+                    <p>
+                        <span class="important">.remove('className')</span>, removes a class from an element
+                    </p>
+                    <p>
+                        <span class="important">.toggle('className')</span>, toggles a class on and off.
+                    </p>
+                </article>
 
-                </p>
-            </article>
+                <article>
+                    <h2 id="tpcs">Traversing Parent/Child/Sibling</h2>
+                    <div class="example">
+                        <ul>
+                            <li>.parentElement</li>
+                            <li>.children</li>
+                            <li>
+                                .nextSibling
+                                <ul>
+                                    <li>.nextElementSibling</li>
+                                </ul>
+                            </li>
+                            <li>
+                                .previousSibling
+                                <ul>
+                                    <li>.previousElementSibling</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <p>
+                        The properties above, traverses you across to different elements. <span
+                            class="important">.parentElement</span> selects the parent of the current element. While
+                        <span class="important">.children</span> show the current elements children elements.
+                    </p>
+                    <p>
+                        <span class="important">nextSibling</span> on the other hand returns an empty text <span
+                            class="highlight">node</span>, while <span class="important">nextElementSibling</span>
+                        provides you with the next sibling elementVice versa for 
+                    </p>
+                </article>
 
-            <article>
-                <h2 id="a">Attributes</h2>
-                <div class="example">
-                    <ul>
-                        <li></li>
-                    </ul>
-                </div>
-                <p>
+                <article>
+                    <h2 id="aac">Append & AppendChild</h2>
+                    <div class="example">
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <p>
 
-                </p>
-            </article>
+                    </p>
+                </article>
 
-            <article>
-                <h2 id="cs">Changing Styles</h2>
-                <div class="example">
-                    <ul>
-                        <li></li>
-                    </ul>
-                </div>
-                <p>
+                <article>
+                    <h2 id="rcr">removeChild & remove</h2>
+                    <div class="example">
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <p>
 
-                </p>
-            </article>
+                    </p>
+                </article>
 
-            <article>
-                <h2 id="cl">ClassList</h2>
-                <div class="example">
-                    <ul>
-                        <li></li>
-                    </ul>
-                </div>
-                <p>
+                <article>
+                    <h2 id="psd">Pokemon Sprites Demo</h2>
+                    <div class="example">
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <p>
 
-                </p>
-            </article>
+                    </p>
+                </article>
+            </section>
+        </main>
 
-            <article>
-                <h2 id="tpcs">Traversing Parent/Child/Sibling</h2>
-                <div class="example">
-                    <ul>
-                        <li></li>
-                    </ul>
-                </div>
-                <p>
+        <script src="script24.js"></script>
+    </body>
 
-                </p>
-            </article>
-
-            <article>
-                <h2 id="aac">Append & AppendChild</h2>
-                <div class="example">
-                    <ul>
-                        <li></li>
-                    </ul>
-                </div>
-                <p>
-
-                </p>
-            </article>
-
-            <article>
-                <h2 id="rcr">removeChild & remove</h2>
-                <div class="example">
-                    <ul>
-                        <li></li>
-                    </ul>
-                </div>
-                <p>
-
-                </p>
-            </article>
-
-            <article>
-                <h2 id="psd">Pokemon Sprites Demo</h2>
-                <div class="example">
-                    <ul>
-                        <li></li>
-                    </ul>
-                </div>
-                <p>
-
-                </p>
-            </article>
-        </section>
-    </main>
-    
-    <script src="script24.js"></script>
-</body>
 </html>
