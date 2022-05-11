@@ -315,6 +315,72 @@ sub {
 	border-radius: 0.3em;
 }
 
+/* JavaScript related stuff */
+/* PokeDex */
+.poke {
+	
+	display: flex;
+	padding: 2em;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+
+.pokeSpan {
+	position: relative;
+	margin: 0.5em auto;
+	border: 2px solid hsla(0, 100%, 100%, 0.8);
+	border-radius: 0.2em;
+	background-color: hsla(0, 100%, 100%, 0.5);
+	transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
+	box-shadow: 0 0.5em 0.5em -0.5em hsla(0, 0%, 0%, .5);
+}
+.pokeSpan:hover {
+	border-color: hsla(0, 50%, 50%, 1);
+	background-color: hsla(45, 90%, 70%, 0.7);
+	transform: translateY(-0.5em) rotateY(.5turn);
+}
+
+.pokeNum {
+	margin: 0 0 0 0.2em;
+	display: flex;
+	justify-content: flex-start;
+	color: hsla(0, 100%, 100%, 1);
+	font-weight: 700;
+	transition: justify-content 0.3s ease-in-out, transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+.pokeSpan:hover .pokeNum {
+	justify-content: flex-start;
+	transform: rotateY(0.5turn);
+	color: hsla(0, 50%, 50%, 1);
+}
+
+.pokeSpan img {
+	display: block;
+	transition: transform 0.3s ease-in-out;
+}
+.pokeSpan:hover img {
+	animation: pokeHover 1.5s linear infinite;
+	transform: scale(150%) rotateY(-0.5turn);
+}
+
+
+@keyframes pokeHover {
+	0% {
+		transform: translateY(0%) scale(150%) rotateY(-0.5turn);
+	}
+	50% {
+		transform: translateY(-10%) scale(150%) rotateY(-0.5turn);
+	}
+	100% {
+		transform: translateY(0%) scale(150%) rotateY(-0.5turn);
+	}
+}
+
+
+/* Responsive Stuff */
+
 @media (max-width: 1199.98px) {
 	header h1 {
 		font-size: 2em;

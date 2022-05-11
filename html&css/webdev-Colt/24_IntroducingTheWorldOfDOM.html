@@ -415,7 +415,9 @@
                     <p>
                         <span class="important">nextSibling</span> on the other hand returns an empty text <span
                             class="highlight">node</span>, while <span class="important">nextElementSibling</span>
-                        provides you with the next sibling elementVice versa for 
+                        provides you with the next sibling elementVice versa for <span
+                            class="important">previousSibling</span> and <span
+                            class="important">previousElementSibling</span>
                     </p>
                 </article>
 
@@ -423,35 +425,61 @@
                     <h2 id="aac">Append & AppendChild</h2>
                     <div class="example">
                         <ul>
-                            <li></li>
+                            <li>.createElement</li>
+                            <li>.appendChild()</li>
+                            <li>.append()</li>
+                            <li>.prepend()</li>
+                            <li>.insertAdjacentElement()</li>
                         </ul>
                     </div>
                     <p>
-
+                        There are ways to add elements to the page using JavaScript. Thought before we can add an
+                        element to the page, we first need to create it using <span
+                            class="important">createElement</span>, as an example <span class="important">const img =
+                            document.createElement('img')</span> will create an empty span object/Element.
                     </p>
-                </article>
+                    <p>
+                        Once we have created the element we can verify its an object with <span
+                            class="important">console.log(img)</span>.
+                    </p>
+                    <p>
+                        Now that we have this empty element, we can either add another element to it, considering we
+                        create it first, though in this case we created an empty img element. Now we can fill the img
+                        element source. <span class="important">img.src = 'https://somethingOfALinkHere.com'</span>
+                    </p>
+                    <p>
+                        Once we have we have created the element and added the content and have the element shich we
+                        want to append to selected, we can now append it to the page using either <span
+                            class="important">.append()</span>, <span class="important">.appendChild()</span>, <span
+                            class="important">.prepend()</span> or <span
+                            class="important">.insertAdjacentElement()</span>.
+                    </p>
 
-                <article>
-                    <h2 id="rcr">removeChild & remove</h2>
+                    <h3 id="rcr">removeChild & remove</h3>
                     <div class="example">
                         <ul>
-                            <li></li>
+                            <li>header.removeChild(h2)</li>
+                            <li>h2.remove()</li>
                         </ul>
                     </div>
                     <p>
-
+                        <span class="important">.removeChild()</span> removes a child element, Though you can remove the
+                        current element you have selected, as it was done in the past like this <span
+                            class="important">h2.parentElement.removeChild(h2)</span>.
+                    </p>
+                    <p>
+                        <span class="important">.remove()</span> remove the element directly, like so <span
+                            class="important">h2.remove()</span> there is no need to pass in anything as a parameter.
                     </p>
                 </article>
 
                 <article>
                     <h2 id="psd">Pokemon Sprites Demo</h2>
-                    <div class="example">
-                        <ul>
-                            <li></li>
-                        </ul>
+                    <div class="example poke">
+
                     </div>
                     <p>
-
+                        Up Above are image from a github, They are added in via javascript.
                     </p>
                 </article>
             </section>
