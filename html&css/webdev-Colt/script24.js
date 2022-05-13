@@ -15,6 +15,7 @@ for (let i = 1; i <= 151; i++) {
     exampleBoard.append(span)
 }
 
+
 // Rainbow h2's Demo
 // const rainbow = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
 // const colors = [...rainbow, ...rainbow, ...rainbow];
