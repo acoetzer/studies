@@ -668,7 +668,7 @@ console.log(h1.nextElementSibling.previousElementSibling)
 // Here we are traversing the DOM by using the following properties.
 
 const img =  document.createElement('img')
-img.src = 'https://images.unsplash.com/photo-1652491216339-cc924481a6b1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80';
+img.src = 'https://images.unsplash.com/photo-1652502060260-15b075518034?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80';
 img.classList.add('imageSize')
 // created an image element
 // added the image source
