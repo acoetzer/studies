@@ -452,15 +452,44 @@ function makeFunc (min, max) {
 
 function randomFunc () {
     const randomNum = Math.floor(Math.random() * 10) + 1;
-    
+
+    if (randomNum < 5) {
+        return function () {
+            console.log('This is a happy function')
+        }
+    } else {
+        return function () {
+            console.log('This is sad function')
+        }
+    }    
 }
+// Made a function that give a random function
+let surpriseFunc = randomFunc();
+console.log(surpriseFunc())
+
+
+
+
 
 // Defining Methods ----------------------------------------------------------------------------------------------------
     // -> The keyword 'this'
 console.log('')
 console.log('Defining Methods:')
 // ---------------------------------------------------------------------------------------------------------------------
-
+const myHair = {
+    color: 'Dark Brown',
+    length: 0,
+    grow() {
+        let randomNum = Math.floor(Math.random() * 10) + 1
+        this.length += randomNum
+        console.log(`Your hair grew by ${randomNum},\n Your Hair length is now ${this.length}cm long`);
+    },
+    cut() {
+        this.length = 0;
+        console.log(`Your hair was cut, it is now ${this.length}cm`);
+    }
+}
+// 
 
 
 
@@ -470,14 +499,13 @@ console.log('')
 console.log('try & catch:')
 // ---------------------------------------------------------------------------------------------------------------------
 
-
-
-
-
-// setTimeout, setInterval & clearInterval -----------------------------------------------------------------------------
-console.log('')
-console.log('setTimeout, setInterval & clearInterval:')
-// ---------------------------------------------------------------------------------------------------------------------
+try {
+    console.log(bluePill)
+} catch (e) {
+    console.log('bluePill is not a variable')
+}
+// Here we are providing a command that will result in an error only for practice sake,
+// and then rewording the error message.
 
 
 
@@ -487,7 +515,10 @@ console.log('setTimeout, setInterval & clearInterval:')
 console.log('')
 console.log('Default Params:')
 // ---------------------------------------------------------------------------------------------------------------------
-
+function rollDie (num = 6) {
+    return Math.floor(Math.random() * num) + 1;
+}
+// Made a rolling dice with a default parameter.
 
 
 
@@ -499,9 +530,23 @@ console.log('Default Params:')
 console.log('')
 console.log('Spread:')
 // ---------------------------------------------------------------------------------------------------------------------
+const spreadNumber = [1, 2, 3, 4, 5]
+const user = {
+    username: 'Jim',
+    password: 'This is a password',
+    email: 'JimmyJamMaBammy@GGmaail.com'
+}
 
+console.log(Math.min(...spreadNumber))
+console.log(Math.max(...spreadNumber))
+// Here we spread an array to function calls
 
+const spreadNumberCopy = [...spreadNumber, ...spreadNumber]
+console.log(spreadNumberCopy)
+// Here we are a copying an array using spread.
 
+const userCopy = {...user}
+// Same as here, we are copying an object.
 
 
 // Destructing ---------------------------------------------------------------------------------------------------------
@@ -511,3 +556,147 @@ console.log('Spread:')
 console.log('')
 console.log('Destructing:')
 // ---------------------------------------------------------------------------------------------------------------------
+const raceResults = ['Andre', 'Vanya', 'Colt', 'James', 'Willy', 'Si'];
+const userProfile = {
+    firstName: 'Billy',
+    lastName: 'Bob',
+    age: 32
+
+}
+
+const [first, second, third, ...everyoneElse] = raceResults;
+console.log(first, second, third, everyoneElse)
+// We are deconstructing an array, these variables correlate to the indice value, so order matters.
+// We also used rest params for the last varaible, as this places the rest of the elements in the array into that.
+
+const {firstName: fname, lastName: surname, born = 'Not Stated'} = userProfile;
+console.log(fname, surname, born)
+// Here we are deconstructing an object, at the same time we are renaming the variable and providing a default parameter.
+
+const userPick = (({firstName, age}) => {
+    console.log(firstName, age)
+})
+userPick(userProfile)
+// Here we are deconstructing directly into the function.
+
+
+
+
+
+// The World of DOM ----------------------------------------------------------------------------------------------------
+    // Slecting an Element
+        // -> getElementById('')
+        // -> getElementsByTagName('')
+        // -> getElementsByClassName('')
+        // -> querySelector('')
+        // -> querySelectorAll('')
+    //  innerText
+    //  textContext
+    //  innerHTML
+    //  Attributes
+        // -> getAttribute()
+        // -> setAttribute('Name', 'Value')
+    //  style
+    //  classList
+        // -> add()
+        // -> remove()
+        // -> toggle()
+    //  Parent, Child & Sibling
+        // -> parentElement
+        // -> children
+        // -> nextSibling
+            // -> nextElementSibling
+        // -> previousSibling
+            // -> previousElementSibling
+    // craeteElement
+    //  Appending
+        // -> appendChild()
+        // -> append()
+        // -> prepend()
+        // -> insertAdjacentElement()
+    //  Removing
+        // -> removeChild()
+        // -> remove()
+console.log('')
+console.log('The World of DOM:')
+// ---------------------------------------------------------------------------------------------------------------------
+const practiceList = document.getElementById('practiceList')
+const li = document.getElementsByTagName('li')
+const list = document.getElementsByClassName('list')
+const h1 = document.querySelector('h1')
+const header = document.querySelector('header')
+const h2 = document.querySelectorAll('h2')
+// Using all the JavaScript Selector, we have selected a few things.
+
+
+console.dir(practiceList)
+console.dir(li)
+console.dir(list)
+console.dir(h1)
+console.dir(h2)
+// Here we just checking if the object was an abject
+
+h1.innerText = 'I Changed This With JavaScript'
+console.log(h1.textContent)
+h1.innerHTML += '<i>:)</i>'
+// Here we are manipulating the inner context of an element.
+
+h1.setAttribute('title', 'This is an H1 Title set with JavaScript')
+console.log(h1.getAttribute('title'))
+// Here we set the attribute and retrieved the attribute
+
+// h1.style.color = 'coral'
+// setting the style of an object Element
+
+h1.classList.add('notRealClass')
+console.log(h1.classList)
+h1.classList.remove('notRealClass')
+console.log(h1.classList)
+h1.classList.toggle('toggleClass')
+// Here we adding removing and toggling classes for the h1 Object Element
+function headerToggle () {
+    h1.classList.toggle('toggleClass')
+}
+// Here we made a function that toggles a class for the h1
+
+console.log(h1.parentElement)
+console.log(header.children)
+console.log(h1.nextSibling)
+console.log(h1.nextElementSibling)
+console.log(h1.nextElementSibling.previousSibling)
+console.log(h1.nextElementSibling.previousElementSibling)
+// Here we are traversing the DOM by using the following properties.
+
+const img =  document.createElement('img')
+img.src = 'https://images.unsplash.com/photo-1652491216339-cc924481a6b1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80';
+img.classList.add('imageSize')
+// created an image element
+// added the image source
+// provide the image a class
+
+header.insertAdjacentElement('afterend', img)
+// Appended the img to the html page
+
+function remove () {
+    img.remove()
+}
+// Made a function to remove the img element.
+
+// setTimeout, setInterval & clearInterval -----------------------------------------------------------------------------
+console.log('')
+console.log('setTimeout, setInterval & clearInterval:')
+// ---------------------------------------------------------------------------------------------------------------------
+setTimeout (() => {
+    console.log('This message will appear after 2 seconds')
+}, 2000)
+// Made a message appear after 2 seconds.
+
+const intervalId = setInterval (() => {
+    console.log(Math.floor(Math.random() * 10) + 1);
+}, 2000)
+// Made a random number generate every 3 seconds
+
+setTimeout (() => {
+    clearInterval(intervalId);
+}, 5000)
+// Stopped setInterval with clearInterval at a specific time.

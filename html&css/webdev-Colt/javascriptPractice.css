@@ -4,6 +4,7 @@ html {
 
 body {
     margin: 0 auto;
+    background-color: hsla(0, 0%, 20%);
 }
 
 header {
@@ -19,15 +20,19 @@ header h1 {
     margin: 0;
     padding: 0;
     letter-spacing: 0.3em;
-    color: lightblue;
+    color: hsla(0, 0%, 70%);
     font-size: 3em;
+}
+.toggleClass {
+    color: coral;
+    text-decoration: underline;
 }
 
 header h2 {
     margin: 0;
     padding: 0;
     letter-spacing: 0.1em;
-    color: lightblue;
+    color: hsla(0, 0%, 70%);
     font-size: 1.2em;
     align-self: center;
 }
@@ -42,7 +47,7 @@ main {
 }
 
 main h2 {
-    color: lightblue;
+    color: hsla(0, 0%, 70%);
     margin: 0 auto 3em;
 }
 
@@ -57,15 +62,23 @@ span {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    border: 1px solid hsla(0, 0%, 0%, 1);
+    border: 1px solid hsla(0, 0%, 10%, 1);
     border-radius: 0.5em;
-    background-color: lightblue;
+    background-color: hsla(0, 0%, 70%);
+    color: hsla(0, 0%, 10%, 1);
 }
 #practiceList div {
     margin: 1em auto;
     padding: 1em;
     font-size: 1.2em;
     letter-spacing: 0.1em;
+}
+
+.imageSize {
+    margin: 0 auto;
+    width: 150px;
+    display: flex;
+    justify-content: center;
 }
 
 
