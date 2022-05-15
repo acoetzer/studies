@@ -347,40 +347,40 @@ for (let movie in forMovies) {
 }
 // 
 
-// let userInput = prompt('What is the new ToDo?\nType Help for options')
-// const list = [];
+let userInput = prompt('What is the new ToDo?\nType Help for options')
+const list = [];
 
-// while (userInput.toLowerCase() !== 'quit' && userInput.toLowerCase() !== 'q') {
-//     if (userInput.toLowerCase() === 'new'){
-//         while (userInput.toLowerCase() !== 'q') {
-//             userInput = prompt('What would you like to add?')
-//             list.push(userInput)
-//             if (list.includes('q')){
-//                 list.pop('q')
-//             } else {
-//                 console.log(`'${userInput}' was added to the todo list.`)
-//             }
-//         }
-//     } else if (userInput.toLowerCase() === 'list') {
-//         console.log('_-_-_-_-_-_-_-_-_-_-')
-//         for (let i = 0; i < list.length; i++) {
-//             console.log(`${i + 1}. ${list[i]}`)
-//         }
-//         console.log('_-_-_-_-_-_-_-_-_-_-')
-//     } else if (userInput.toLowerCase() === 'delete') {
-//         console.log('!------------------!')
-//         for (let i = 0; i < list.length; i++) {
-//             console.log(`${i + 1}. ${list[i]}`)
-//         }
-//         console.log('!------------------!')
-//         let deleteToDo = parseInt(prompt('Which line to delete?'))
-//         let removedItem = list.splice(deleteToDo - 1, 1)
-//         console.log(`${removedItem} was removed from the todo list`)
-//     } else if (userInput.toLowerCase() === 'help') {
-//         alert('New: to make a new ToDo\nList: to view your ToDo list\nDelete: to remove a ToDo')
-//     }
-//     userInput = prompt('What is the new ToDo?\nType Help for options')
-// }
+while (userInput.toLowerCase() !== 'quit' && userInput.toLowerCase() !== 'q') {
+    if (userInput.toLowerCase() === 'new'){
+        while (userInput.toLowerCase() !== 'q') {
+            userInput = prompt('What would you like to add?')
+            list.push(userInput)
+            if (list.includes('q')){
+                list.pop('q')
+            } else {
+                console.log(`'${userInput}' was added to the todo list.`)
+            }
+        }
+    } else if (userInput.toLowerCase() === 'list') {
+        console.log('_-_-_-_-_-_-_-_-_-_-')
+        for (let i = 0; i < list.length; i++) {
+            console.log(`${i + 1}. ${list[i]}`)
+        }
+        console.log('_-_-_-_-_-_-_-_-_-_-')
+    } else if (userInput.toLowerCase() === 'delete') {
+        console.log('!------------------!')
+        for (let i = 0; i < list.length; i++) {
+            console.log(`${i + 1}. ${list[i]}`)
+        }
+        console.log('!------------------!')
+        let deleteToDo = parseInt(prompt('Which line to delete?'))
+        let removedItem = list.splice(deleteToDo - 1, 1)
+        console.log(`${removedItem} was removed from the todo list`)
+    } else if (userInput.toLowerCase() === 'help') {
+        alert('New: to make a new ToDo\nList: to view your ToDo list\nDelete: to remove a ToDo')
+    }
+    userInput = prompt('What is the new ToDo?\nType Help for options')
+}
 
 let index = 0;
 while (index <= 5){
@@ -622,7 +622,7 @@ console.log('The World of DOM:')
 // ---------------------------------------------------------------------------------------------------------------------
 const practiceList = document.getElementById('practiceList')
 const li = document.getElementsByTagName('li')
-const list = document.getElementsByClassName('list')
+const lists = document.getElementsByClassName('lists')
 const h1 = document.querySelector('h1')
 const header = document.querySelector('header')
 const h2 = document.querySelectorAll('h2')
@@ -631,7 +631,7 @@ const h2 = document.querySelectorAll('h2')
 
 console.dir(practiceList)
 console.dir(li)
-console.dir(list)
+console.dir(lists)
 console.dir(h1)
 console.dir(h2)
 // Here we just checking if the object was an abject

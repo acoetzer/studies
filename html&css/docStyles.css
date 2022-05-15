@@ -365,6 +365,11 @@ sub {
 	transform: scale(150%) rotateY(-0.5turn);
 }
 
+/* End of PokeDex */
+
+
+/* End of JavaScript Related Stuff */
+
 
 @keyframes pokeHover {
 	0% {
