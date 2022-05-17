@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,194 +11,345 @@
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="../docStyles.css">
     </head>
-<body>
-    <header>
-        <h1>The Missing Piece: DOM Events</h1>
-    </header>
-    <main>
-        <section id="toc">
-            <h2>Table of Contents</h2>
-            <ul id="tocList">
-                <li><a href="#ite">Intro to Events</a></li>
-                <li><a href="#ie">Inline Events</a></li>
-                <li><a href="#op">Onclick Property</a></li>
-                <li><a href="#a">addEventListener</a></li>
-                <li><a href="#etkt">Events & The Keyword 'this'</a></li>
-                <li><a href="#keeo">Keyboard Events & Event Objects</a></li>
-                <li>
-                    <a href="#nvfep">New Version: Form Events & PreventDefault</a>
-                    <ul>
-                        <li><a href="#nvpwfep">New Version: Practice With Form Events & PreventDefault</a></li>
-                        <li><a href="#ofep">Original: Form Events & PreventDefault</a></li>
-                    </ul>
-                </li>
 
-                <li><a href="#ice">Input & Change Events</a></li>
-                <li><a href="#eb">Event Bubbling</a></li>
-                <li><a href="#ed">Event Delagation</a></li>
-            </ul>
+    <body>
+        <header>
+            <h1>The Missing Piece: DOM Events</h1>
+        </header>
+        <button>Click</button>
+        <main>
+            <section id="toc">
+                <h2>Table of Contents</h2>
+                <ul id="tocList">
+                    <li><a href="#ite">Intro to Events</a></li>
+                    <li>
+                        <a href="#ie">Inline Events</a>
+                        <ul>
+                            <li><a href="#wae">What Are Events</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#op">Onclick Property</a></li>
+                    <li><a href="#a">addEventListener</a></li>
+                    <li><a href="#etkt">Events & The Keyword 'this'</a></li>
+                    <li><a href="#keeo">Keyboard Events & Event Objects</a></li>
+                    <li>
+                        <a href="#nvfep">New Version: Form Events & PreventDefault</a>
+                        <ul>
+                            <li><a href="#nvpwfep">New Version: Practice With Form Events & PreventDefault</a></li>
+                            <li><a href="#ofep">Original: Form Events & PreventDefault</a></li>
+                        </ul>
+                    </li>
 
-            <section id="developer">
-                <h2>Developer</h2>
-                <div id="devInfo">
-                    <img src="../../src/html&css/me.jpg" alt="Developer I Am" id="personalImage">
-                    <ul>
-                        <li id="devName">Andre Coetzer</li>
-                        <li id="devTitle">Developer</li>
-                        <li id="devKnowledge">
-                            <span class="lang">html</span>
-                            <span class="lang">css</span>
-                            <span class="lang">js</span>
-                        </li>
-                    </ul>
-                </div>
+                    <li><a href="#ice">Input & Change Events</a></li>
+                    <li><a href="#eb">Event Bubbling</a></li>
+                    <li><a href="#ed">Event Delagation</a></li>
+                </ul>
+
+                <section id="developer">
+                    <h2>Developer</h2>
+                    <div id="devInfo">
+                        <img src="../../src/html&css/me.jpg" alt="Developer I Am" id="personalImage">
+                        <ul>
+                            <li id="devName">Andre Coetzer</li>
+                            <li id="devTitle">Developer</li>
+                            <li id="devKnowledge">
+                                <span class="lang">html</span>
+                                <span class="lang">css</span>
+                                <span class="lang">js</span>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
             </section>
-        </section>
 
-        <section id="notes">
-            <artical>
-                <h2 id="ite">Intro to Events</h2>
-                <div class="example">
-                    <ul>
-                        <li></li>
-                    </ul>
-                </div>
-                <p>
+            <section id="notes">
+                <artical>
+                    <h2 id="ite">Intro to Events</h2>
+                    <div class="example">
+                        <ul>
+                            <li>click</li>
+                            <li>double click</li>
+                            <li>drag</li>
+                            <li>hover</li>
+                            <li>scroll</li>
+                        </ul>
+                        <ul>
+                            <li>form submissions</li>
+                            <li>key presses</li>
+                            <li>focus/blur</li>
+                            <li>mouse wheel</li>
+                            <li>copying</li>
+                        </ul>
+                        <ul>
+                            <li>pushing</li>
+                            <li>audio start</li>
+                            <li>screen resize</li>
+                            <li>printing</li>
+                        </ul>
+                    </div>
+                </artical>
 
-                </p>
-            </artical>
+                <artical>
+                    <h2 id="ie">Inline Events</h2>
+                    <div class="example">
+                        <ul>
+                            <li>
+                                inline event
+                                <ul>
+                                    <li><span class="important">onclick</span>="alert('Clicked!'); alert('clicked!
+                                        Again')"</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <h3 id="wae">What Are Events?</h3>
+                    <p>
+                        Well simply put, events respond to user input or actions. Something like the <span
+                            class="important">click</span> of a mouse, a <span class="important">hover</span> or <span
+                            class="important">mouseenter</span>. Of course these are the names of the <span
+                            class="highlight">Event Listener</span> which will see shortly, but the properties such as
+                        <span class="important">onclick</span> can be viewed just by viewing the object. The way you
+                        view the object is with <span class="important">console.dir(object)</span>.
+                    </p>
+                    <p>
+                        There are 3 ways to create events. Starting with and should never really be used, is <span
+                            class="important">inline events</span> as seen above. It's realy the same principle as
+                        styles, never do it.
+                    </p>
+                </artical>
 
-            <artical>
-                <h2 id="ie">Inline Events</h2>
-                <div class="example">
-                    <ul>
-                        <li></li>
-                    </ul>
-                </div>
-                <p>
+                <artical>
+                    <h2 id="op">Onclick Propery</h2>
+                    <div class="example">
+                        <ul>
+                            <li>
+                                The Events Properties
+                                <ul>
+                                    <li>
+                                        button.onclick = function () { <br>
+                                        alert('You clicked me') <br>
+                                        }
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                const h1 = document.querySelector('h1') <br>
+                                <br>
+                                const hello = () => { <br>
+                                console.log('hello') <br>
+                                } <br>
+                                <br>
+                                h1.onclick = hello;
+                            </li>
+                        </ul>
+                    </div>
+                    <p>
+                        The second option and still not the best method is writing them in the JavaScript file, but
+                        working directly with with the properties.
+                    </p>
+                    <p>
+                        Ofcourse we need to select the elements first in JavaScript before applying the event. Again to
+                        view these properties, use <span class="important">console.dir(whatever specific element)</span>
+                        and when scrolling down you should see a bunch of <span class="important">on</span>properties.
+                    </p>
+                    <p>
+                        You can use multiple events on a single element, example would be button.onclick and
+                        button.onmouseenter, though you cannot write the same event for the same element down the line.
+                        Sometimes we will need to write separate events as the contents suit the situation better and
+                        using properties doesn't allow us to do this. Hence the next better way of handling events.
+                    </p>
+                    <p>
+                        Quick note you can write a function before hand and then execute it with the event. <span
+                            class="important">btn.onclick = func</span>
+                    </p>
+                </artical>
 
-                </p>
-            </artical>
+                <artical>
+                    <h2 id="a">addEventListener</h2>
+                    <div class="example">
+                        <ul>
+                            <li>
+                                The Evnt Listener
+                                <ul>
+                                    <li>
+                                        btn.addEventListener('<span class="important">event name</span>', func){ <br>
+                                        your code here <br>
+                                        }
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <p>
+                        Moving onto the best way and the third and final way, is the <span
+                            class="important">addEventListener</span>. This is the swiss army knife of adding events.
+                    </p>
+                    <p>
+                        We have seen actual properties, like <span class="important">onclick</span>..., though the best
+                        way is to write events with the event listener. The reason we would use something like this is
+                        sometimes we add more then one event on the same property or element.
+                    </p>
+                    <p>
+                        Though when using the properties, we are pretty much setting the value to that and if had to
+                        write another, we would be overwritting the first value. Almost like in CSS where specificity or
+                        order matters.
+                    </p>
+                    <p>
+                        The <span class="important">addEventListener</span> can accept a predefined function as well,
+                        and often we usually write functions where code in events are repeated, or getting too long.
+                    </p>
+                    <p>
+                        The most important is the event listener <span class="important">options</span>. A example of
+                        this would be,
+                        <span class="important">btn.addEventListener('<span class="important">eventName</span>, <span
+                                class="important">predefined Function</span>, <span class="important">{ once: true
+                                }</span>')</span>. The <span class="highlight">{ once: true }</span> is the options
+                        among many other options. However in this case, it allows for an event to run once, and then it
+                        removes that event.
+                    </p>
+                    <p>
+                        There is something known as removeEventListener, though for now we wont speak about it.
+                    </p>
+                </artical>
 
-            <artical>
-                <h2 id="op">Onclick Propery</h2>
-                <div class="example">
-                    <ul>
-                        <li></li>
-                    </ul>
-                </div>
-                <p>
+                <artical>
+                    <h2 id="etkt">Events & The Keyword 'this'</h2>
+                    <div class="example">
+                        <ul>
+                            <li>
+                                btn.addEventListener('click', function () { <br>
+                                <span class="important">this</span>.style.backgroundColor = 'red' <br>
+                                })
+                            </li>
+                        </ul>
+                    </div>
+                    <p>
+                        The keyword this inside an event handler, refers to that specific object. Another important note
+                        is that when using <span class="important">Arrow Functions</span>. The keyword this will <span
+                            class="important">not work</span>.
+                    </p>
+                </artical>
 
-                </p>
-            </artical>
+                <artical>
+                    <h2 id="keeo">Keyboard Events & Event Objects</h2>
+                    <div class="example">
+                        <ul>
+                            <li>
+                                Event Objects (<span class="important">(e/ evt/ event)</span>)
+                                <ul>
+                                    <li>
+                                        btn.addEventListener('click', function (<span
+                                            class="important">e/evt/event</span>)) { <br>
+                                        console.log(<span class="important">e/evt/event</span>) <br>
+                                        }
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                Keyboard Events (<span class="important">code</span>, <span
+                                    class="important">key</span>)
+                                <ul>
+                                    <li>
+                                        window.addEventListener('keydown', function (<span class="important">e</span>)) {
+                                        <br>
+                                        console.log(e.<span class="important">code</span>) <br>
+                                        console.log(e.<span class="important">key</span>) <br>
+                                        }
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <p>
+                        When we talk about <span class="important">Event Objects</span>, Its important to understand
+                        that JavaScript automatically creates this event object when using <span class="highlight">event
+                            handlers</span>. To capture the Object event, with in the function parameter we can input
+                        anything really, but most do <span class="important">e</span>,<span class="important">evt</span>
+                        or <span class="important">event</span> inside <span class="highlight">console.log(e)</span>.
+                    </p>
+                    <p>
+                        So inside the the object event, you will see a bunch of properties that relate to mouse clicks,
+                        or the location of where we click like clienty & clientx, the span.important{},  span.important{},  span.important{}, just to name a few that will end up
+                        using.
+                    </p>
+                </artical>
 
-            <artical>
-                <h2 id="a">addEventListener</h2>
-                <div class="example">
-                    <ul>
-                        <li></li>
-                    </ul>
-                </div>
-                <p>
+                <artical>
+                    <h2 id="nvfep">New Version: Form Events & PreventDefault</h2>
+                    <div class="example">
+                        <ul>
 
-                </p>
-            </artical>
+                        </ul>
+                    </div>
+                    <p>
 
-            <artical>
-                <h2 id="etkt">Events & The Keyword 'this'</h2>
-                <div class="example">
-                    <ul>
-                        <li></li>
-                    </ul>
-                </div>
-                <p>
+                    </p>
 
-                </p>
-            </artical>
+                    <h3 id="nvpwfep">New Version: Practice With Form Events & PreventDefault</h3>
+                    <div class="example">
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <p>
 
-            <artical>
-                <h2 id="keeo">Keyboard Events & Event Objects</h2>
-                <div class="example">
-                    <ul>
-                        <li></li>
-                    </ul>
-                </div>
-                <p>
+                    </p>
 
-                </p>
-            </artical>
+                    <h3 id="ofep">Original: Form Events & PreventDefault</h3>
+                    <div class="example">
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <p>
 
-            <artical>
-                <h2 id="nvfep">New Version: Form Events & PreventDefault</h2>
-                <div class="example">
-                    <ul>
-                        <li></li>
-                    </ul>
-                </div>
-                <p>
+                    </p>
+                </artical>
 
-                </p>
+                <artical>
+                    <h2 id="ice">Input & Change Events</h2>
+                    <div class="example">
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <p>
 
-                <h3 id="nvpwfep">New Version: Practice With Form Events & PreventDefault</h3>
-                <div class="example">
-                    <ul>
-                        <li></li>
-                    </ul>
-                </div>
-                <p>
+                    </p>
+                </artical>
 
-                </p>
+                <artical>
+                    <h2 id="eb">Event Bubbling</h2>
+                    <div class="example">
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <p>
 
-                <h3 id="ofep">Original: Form Events & PreventDefault</h3>
-                <div class="example">
-                    <ul>
-                        <li></li>
-                    </ul>
-                </div>
-                <p>
+                    </p>
+                </artical>
 
-                </p>
-            </artical>
+                <artical>
+                    <h2 id="ed">Event Delegation</h2>
+                    <div class="example">
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <p>
 
-            <artical>
-                <h2 id="ice">Input & Change Events</h2>
-                <div class="example">
-                    <ul>
-                        <li></li>
-                    </ul>
-                </div>
-                <p>
+                    </p>
+                </artical>
+            </section>
 
-                </p>
-            </artical>
+        </main>
 
-            <artical>
-                <h2 id="eb">Event Bubbling</h2>
-                <div class="example">
-                    <ul>
-                        <li></li>
-                    </ul>
-                </div>
-                <p>
+        <script src="script25.js"></script>
+    </body>
 
-                </p>
-            </artical>
-
-            <artical>
-                <h2 id="ed">Event Delegation</h2>
-                <div class="example">
-                    <ul>
-                        <li></li>
-                    </ul>
-                </div>
-                <p>
-
-                </p>
-            </artical>
-        </section>
-
-    </main>
-    
-    <script src="script25.js"></script>
-</body>
 </html>
