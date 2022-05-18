@@ -1,27 +1,77 @@
-const ul = document.querySelector('#todoList');
-const form = document.querySelector('#form')
+// Random Color Generator
+const colorBox = document.querySelectorAll('.colorBox')
+const colorText = document.querySelectorAll('.colorText')
+const gradient = document.querySelector('#gradient')
+const btn = document.querySelector('#colorBtn')
+const historyContainer = document.querySelector('#historyContainer')
+// Selecting the Element Objects
 
-function createEntry (username, comment) {
-    const newLi = document.createElement('li')
-    const bTag = document.createElement('b')
+function randomColor () {
+    const r = Math.floor(Math.random() * 255)
+    const g = Math.floor(Math.random() * 255)
+    const b = Math.floor(Math.random() * 255)
+    return `rgb(${r}, ${g}, ${b})`
+}
+// Making the random color function
 
-    bTag.append(username)
-    newLi.append(bTag)
-    newLi.append(`: ${comment}`)
-    ul.append(newLi)
+function delHistory () {
+    if (history.length > 30) {
+        history.shift()
+        history.shift()
+        history.shift()
+    }
+}
+// History function that limit the history array and removes anthing above 30.
 
+function createEntry (arr) {
+    const colorCodes = [...arr]
+
+    const colorBoxHistory = document.createElement('div')
+    colorBoxHistory.classList.add('colorBoxHistory')
+    colorBoxHistory.style.backgroundImage = `linear-gradient(90deg, ${colorCodes})`
+    
+    historyContainer.append(colorBoxHistory)
 }
 
-form.addEventListener('submit', function (e) {
-    e.preventDefault();
-    const uName = this.elements.username
-    const uComm = this.elements.comment
+let colorList = []
+const history = []
+// semi-global varaibles
 
-    createEntry(uName.value = 'defaultUser', uComm.value)
-    uName.value = ''
-    uComm.value = ''
+
+for (let i = 0; i < colorBox.length; i++) {
+    const color = randomColor();
+    const colorCodes = [...colorList]
+    colorList.push(color)
+    history.push(color)
+    delHistory()
+    
+    colorBox[i].style.backgroundColor = color
+    colorText[i].innerText = color
+    gradient.style.backgroundImage = `linear-gradient(90deg, ${colorCodes})`
+    btn.style.backgroundImage = `linear-gradient(90deg, ${colorCodes})`
+    btn.style.color = color
+}
+createEntry(colorList)
+// load in of the page, to generate random colors
+
+btn.addEventListener('click', function () {
+    colorList = []
+    for (let i = 0; i < colorBox.length; i++) {
+        const color = randomColor();
+        const colorCodes = [...colorList]
+        colorList.push(color)
+        history.push(color)
+        delHistory()
+        
+        colorBox[i].style.backgroundColor = color
+        colorText[i].innerText = color
+        gradient.style.backgroundImage = `linear-gradient(90deg, ${colorCodes})`
+        btn.style.backgroundImage = `linear-gradient(90deg, ${colorCodes})`
+        btn.style.color = color
+    }
+    createEntry(colorList)
 })
 
-ul.addEventListener('click', function (e) {
-    e.target.nodeName === 'LI' && e.target.remove()
+historyContainer.addEventListener('click', function (e) {
+    e.target.className === 'colorBoxHistory' && e.target.remove()
 })

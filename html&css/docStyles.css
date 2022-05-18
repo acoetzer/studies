@@ -378,69 +378,147 @@ sub {
 }
 
 /* End of PokeDex */
-/* Form Events */
+/* Random Color Generator */
 
-.formEvents {
+#colorGenerator {
 	margin: 0 auto;
-	padding: 2em 0;
-	border: 1px solid black;
+	border: 1px solid hsla(0, 0%, 0%, .5);
 	border-radius: 0.2em;
+	padding: 1em 1em;
 	display: flex;
-	flex-direction: column;
+	flex-flow: column wrap;
 	justify-content: center;
 	align-items: center;
 }
-form {
-	width: 90%;
+
+#topHeading {
+	font-size: 1.2em;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+}
+
+.container {
+	width: 100%;
+	height: 100%;
+	border: 1px solid hsla(0, 0%, 0%, .5);
+	border-radius: 0.2em;
+	display: flex;
+	flex-flow:row;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0 0.5em 0.2em -0.5em;
+}
+
+.colorBox {
+	width: 100%;
+	height: 150px;
+	border: 1px solid hsla(0, 0%, 0%, .5);
+	border-radius: 0.2em;
+	padding: 1em 1em;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: center;
+	transition: transform 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.colorBox:hover {
+	transform: translateY(-0.2em);
+	box-shadow: 0 0.5em 0.5em -0.5em;
+}
+.colorBox:nth-of-type(1),
+.colorBox:nth-of-type(3) {
+	margin: 0.5em 0.5em;
+}
+
+
+.colorText {
+	font-size: 1em;
+	transform: translateY(0.2em);
+	opacity: 0;
+	transition: transform 0.15s ease-in-out, opacity 0.15s ease-in-out;
+}
+.colorBox:hover .colorText {
+	transform: translateY(0);
+	opacity: 1;
+}
+
+#gradient {
+	margin: 0 auto;
+	width: 25%;
+	height: 1em;
+	border: 1px solid hsla(0, 0%, 0%, .5);
+	border-radius: 0.2em;
+	transition: width 0.25s ease-in-out, height 0.25s ease-in-out 0.3s;
+}
+#gradient:hover {
+	width: 80%;
+	height: 3em;
+}
+
+#btnContainer {
+	margin: 2em auto 2em;
+	padding: 0;
+	list-style-type: none;
+	transition: transform 0.15s ease-in-out;
+}
+#btnContainer:hover {
+	transform: translateY(-0.2em);
+}
+#btnContainer:active {
+	transform: translateY(0);
+}
+#colorBtn {
+	padding: 0.5em 1em;
+	border: 1px solid hsla(0, 0%, 0%, .5);
+	border-radius: 0.2em;
+	color: hsla(0, 0%, 0%, .5);
+	text-decoration: none;
+	transition: box-shadow 0.15s ease-in-out;
+}
+#btnContainer:hover #colorBtn {
+	color: hsla(0, 0%, 0%, 1);
+	box-shadow: 0 0.5em 0.5em -0.5em;
+}
+#btnContainer:active #colorBtn {
+	box-shadow: 0 0.5em 0.2em -0.5em;
+}
+
+#historyContainer {
+	width: 95%;
+	padding: 1em 1em;
+	border: 1px solid hsla(0, 0%, 0%, .5);
+	border-radius: 0.2em;
 	display: flex;
 	flex-flow: row wrap;
-
+	justify-content: center;
+	align-items: center;
 }
-.inputs {
-	flex: 1;
-	margin:  0.2em 0.1em;
-	padding: 0.5em 1em;
+
+#bottomHeading {
 	font-size: 1em;
-	background: none;
-	border: 1px solid black;
-	border-radius: 0.2em;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+}
+.colorBoxHistory {
 
-}
-#btnSubmit {
-	flex: 1 100%;
-	margin: 0 0.1em;
-	padding: 0.5em 1em;
-	width: 100%;
-}
-
-.formEvents ul {
-	margin: 0.2em auto;
-	width: 90%;
-	padding: 1em 0.5em;
+	margin: 0.2em 0.2em;
+	width: 50px;
+	height: 50px;
+	border: 1px solid hsla(0, 0%, 0%, .5);
 	border-radius: 0.2em;
-	list-style-type: none;
+	transition: transform 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
-.formEvents li {
-	margin: 0.2em;
-	padding: 0.5em 1em;
-	border-radius: 0.2em;
-	background-color: hsla(0, 0%, 0%, 0.2);
-	transition: transform 0.15s ease-in-out, background-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-}
-.formEvents li:hover {
+.colorBoxHistory:hover {
 	transform: translateY(-0.2em);
-	background-color: hsla(180, 50%, 50%, 0.5);
-	box-shadow: 0 0.5em 0.2em -0.5em;
+	box-shadow: 0 0.5em 0.5em -0.5em;
 }
-.formEvents li:active {
-	transform: translateY(-0.1em);
-	color: hsla(0, 50%, 50%, 1);
-	background-color: hsla(0, 50%, 50%, 0.5);
+.colorBoxHistory:active {
+	transform: translateY(0);
 	box-shadow: 0 0.5em 0.2em -0.5em;
 }
 
 
-/* End of Form Events */
+/* End of Random Color Generator */
 
 /* End of JavaScript Related Stuff */
 
