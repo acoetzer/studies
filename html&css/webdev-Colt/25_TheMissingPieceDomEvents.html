@@ -16,7 +16,6 @@
         <header>
             <h1>The Missing Piece: DOM Events</h1>
         </header>
-        <button>Click</button>
         <main>
             <section id="toc">
                 <h2>Table of Contents</h2>
@@ -254,7 +253,8 @@
                                     class="important">key</span>)
                                 <ul>
                                     <li>
-                                        window.addEventListener('keydown', function (<span class="important">e</span>)) {
+                                        window.addEventListener('keydown', function (<span class="important">e</span>))
+                                        {
                                         <br>
                                         console.log(e.<span class="important">code</span>) <br>
                                         console.log(e.<span class="important">key</span>) <br>
@@ -267,14 +267,40 @@
                     <p>
                         When we talk about <span class="important">Event Objects</span>, Its important to understand
                         that JavaScript automatically creates this event object when using <span class="highlight">event
-                            handlers</span>. To capture the Object event, with in the function parameter we can input
+                            handlers</span>. To capture the event object, with in the function parameter we can input
                         anything really, but most do <span class="important">e</span>,<span class="important">evt</span>
                         or <span class="important">event</span> inside <span class="highlight">console.log(e)</span>.
                     </p>
                     <p>
                         So inside the the object event, you will see a bunch of properties that relate to mouse clicks,
-                        or the location of where we click like clienty & clientx, the span.important{},  span.important{},  span.important{}, just to name a few that will end up
-                        using.
+                        or the location of where we click like <span class="important">clienty</span> & <span
+                            class="important">clientx</span>, the <span class="important">target</span>,
+                        <span class="important">key</span>, <span class="important">code</span>, just to name a few that
+                        we will end up using.
+                    </p>
+                    <p>
+                        Though in this instance, we are interested in the <span class="important">key</span> & <span
+                            class="important">code</span> properties as this relates to the <span
+                            class="important">Keyboard Events</span> object.
+                    </p>
+                    <p>
+                        <span class="important">code</span> corresponds toto the location of the physical key on the
+                        keyboard. Examples of that would be <span class="important">KeyA</span>, <span
+                            class="important">KeyW</span>, <span class="important">KeyD</span>, <span
+                            class="important">KeyS</span> & <span class="important">ArrowLeft</span>, <span
+                            class="important">ArrowUp</span>, <span class="important">ArrowRight</span> and <span
+                            class="important">ArrowDown</span>
+                    </p>
+                    <p>
+                        <span class="important">key</span> corresponds to the letter. An example of that would be <span
+                            class="important">a</span>, <span class="important">w</span>, <span
+                            class="important">d</span>, <span class="important">s</span>, <span
+                            class="important">Arrowleft</span>, <span class="important">ArrowUp</span>, <span
+                            class="important">ArrowRight</span> & <span class="important">ArrowDown</span>.
+                    </p>
+                    <p>
+                        The reason why code and key are important is that we can use the event object to restrict
+                        certain keys.
                     </p>
                 </artical>
 
@@ -282,31 +308,76 @@
                     <h2 id="nvfep">New Version: Form Events & PreventDefault</h2>
                     <div class="example">
                         <ul>
-
+                            <li>
+                                The Submit event
+                                <ul>
+                                    <li>
+                                        form.addEventListener('<span class="important">submit</span>', function (e) {
+                                        <br>
+                                        console.log(e) <br>
+                                        })
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                .preventDefault();
+                                <ul>
+                                    <li>
+                                        form.addEventListener('<span class="important">submit</span>', function (e) {
+                                        <br>
+                                        e.preventDefault(); <br>
+                                        })
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                form.addEventListener('<span class="important">submit</span>', function (e) {
+                                <br>
+                                e.preventDefault(); <br>
+                                const username = <span class="important">this.elements.username</span> <br>
+                                })
+                            </li>
                         </ul>
                     </div>
                     <p>
-
+                        When dealing with <span class="important">form events</span> such as <span
+                            class="important">submit</span>, sometimes if not most cases we want to stop the Default
+                        behavior of the form.
+                    </p>
+                    <p>
+                        When we create a form, we get this action attribute which is where the form will be sent to.
+                        However when this happens, it usually changes the page and we lose whatever information was on
+                        the page. To prevent this behavior we need to capture the event object and then run its method
+                        <span class="important">.preventDefault()</span>. This will stop the default behaviour of the
+                        form.
+                    </p>
+                    <p>
+                        This is important, as if we want a single page workflow like the example below, preventing the
+                        default behaviour is a must.
+                    </p>
+                    <p>
+                        Another important thing to know is that the form object element, <span
+                            class="important">console.dir(form)</span>, has a property called elements that house the
+                        <span class="highlight">name</span> of the elements inside it.
                     </p>
 
                     <h3 id="nvpwfep">New Version: Practice With Form Events & PreventDefault</h3>
-                    <div class="example">
-                        <ul>
-                            <li></li>
+                    <div class="formEvents">
+                        <ul id="todoList">
+
                         </ul>
+                        <form action="/nowhere" id="form">
+                            <input type="text" name="username" id="username" placeholder="Your name" class="inputs">
+                            <input type="text" name="comment" id="comment" placeholder="Your comment" class="inputs">
+                            <button id="btnSubmit">Sumbit</button>
+                        </form>
                     </div>
                     <p>
-
-                    </p>
-
-                    <h3 id="ofep">Original: Form Events & PreventDefault</h3>
-                    <div class="example">
-                        <ul>
-                            <li></li>
-                        </ul>
-                    </div>
-                    <p>
-
+                        Above is a working form event that appends information to a list.
                     </p>
                 </artical>
 
@@ -314,11 +385,42 @@
                     <h2 id="ice">Input & Change Events</h2>
                     <div class="example">
                         <ul>
-                            <li></li>
+                            <li>
+                                input event
+                                <ul>
+                                    <li>
+                                        input.addEventListener('<span class="important">input</span>', function (e) {
+                                        <br>
+                                        <br>
+                                        })
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                change event
+                                <ul>
+                                    <li>
+                                        input.addEventListener('<span class="important">change</span>', function (e) {
+                                        <br>
+                                        <br>
+                                        })
+                                    </li>
+                                </ul>
+                            </li>
                         </ul>
                     </div>
                     <p>
-
+                        The input and change events are basically events that dont wait for a submit action. They are or
+                        can be used to show live changes as input is given or blurred.
+                    </p>
+                    <p>
+                        <span class="important">input</span> shows changes based on every input.
+                    </p>
+                    <p>
+                        <span class="important">change</span> shows changes based on every blurred event, or basically
+                        when your mouse has clicked on something else.
                     </p>
                 </artical>
 
@@ -326,11 +428,22 @@
                     <h2 id="eb">Event Bubbling</h2>
                     <div class="example">
                         <ul>
-                            <li></li>
+                            <li>
+                                something.addEventListener('some event', function (e) { <br>
+                                e.<span class="important">stopPropagation()</span> <br>
+                                e.<span class="important">stopImmediatePropagation()</span> <br>
+                                })
+                            </li>
                         </ul>
                     </div>
                     <p>
-
+                        <span class="important">Event bubbling</span> is when you have multiple events within events.
+                        You can imagine bubbles floating to the surface. Well, when you have multiple events inside
+                        events, all events are triggered starting from the event being envoked.
+                    </p>
+                    <p>
+                        To stop this, you can once again capture the <span class="important">event object</span> and run
+                        its method called <span class="important">.stopPropagation()</span>.
                     </p>
                 </artical>
 
@@ -338,11 +451,23 @@
                     <h2 id="ed">Event Delegation</h2>
                     <div class="example">
                         <ul>
-                            <li></li>
+                            <li>
+                                Event Delegation
+                                <ul>
+                                    <li>
+                                        ul.addEventListener('click', function (e) { <br>
+                                        e.target.nodeName === 'LI' && e.target.remove() <br>
+                                        })
+                                    </li>
+                                </ul>
+                            </li>
                         </ul>
                     </div>
                     <p>
-
+                        <span class="important">Event Delegation</span> allows us to have a pattern to handle events
+                        efficiently. Instead of adding an event lsitener to each and every similair statement we can add
+                        an event listener to a parent element can call an event using the .target on a particular
+                        element.
                     </p>
                 </artical>
             </section>

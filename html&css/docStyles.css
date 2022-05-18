@@ -365,13 +365,6 @@ sub {
 	animation: pokeHover 1.5s linear infinite;
 	transform: scale(150%) rotateY(-0.5turn);
 }
-
-/* End of PokeDex */
-
-
-/* End of JavaScript Related Stuff */
-
-
 @keyframes pokeHover {
 	0% {
 		transform: translateY(0%) scale(150%) rotateY(-0.5turn);
@@ -383,6 +376,76 @@ sub {
 		transform: translateY(0%) scale(150%) rotateY(-0.5turn);
 	}
 }
+
+/* End of PokeDex */
+/* Form Events */
+
+.formEvents {
+	margin: 0 auto;
+	padding: 2em 0;
+	border: 1px solid black;
+	border-radius: 0.2em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+form {
+	width: 90%;
+	display: flex;
+	flex-flow: row wrap;
+
+}
+.inputs {
+	flex: 1;
+	margin:  0.2em 0.1em;
+	padding: 0.5em 1em;
+	font-size: 1em;
+	background: none;
+	border: 1px solid black;
+	border-radius: 0.2em;
+
+}
+#btnSubmit {
+	flex: 1 100%;
+	margin: 0 0.1em;
+	padding: 0.5em 1em;
+	width: 100%;
+}
+
+.formEvents ul {
+	margin: 0.2em auto;
+	width: 90%;
+	padding: 1em 0.5em;
+	border-radius: 0.2em;
+	list-style-type: none;
+}
+.formEvents li {
+	margin: 0.2em;
+	padding: 0.5em 1em;
+	border-radius: 0.2em;
+	background-color: hsla(0, 0%, 0%, 0.2);
+	transition: transform 0.15s ease-in-out, background-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.formEvents li:hover {
+	transform: translateY(-0.2em);
+	background-color: hsla(180, 50%, 50%, 0.5);
+	box-shadow: 0 0.5em 0.2em -0.5em;
+}
+.formEvents li:active {
+	transform: translateY(-0.1em);
+	color: hsla(0, 50%, 50%, 1);
+	background-color: hsla(0, 50%, 50%, 0.5);
+	box-shadow: 0 0.5em 0.2em -0.5em;
+}
+
+
+/* End of Form Events */
+
+/* End of JavaScript Related Stuff */
+
+
+
 
 
 /* Responsive Stuff */
