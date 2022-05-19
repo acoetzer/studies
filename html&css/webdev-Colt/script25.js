@@ -125,6 +125,27 @@ gContainer.addEventListener('click', function (e) {
 
 // TODO LIST
 
+const todoForm = document.querySelector('#todoForm');
+const todoContainer = document.querySelector('#todoContainer');
+
+function createToDo (input) {
+    const newLi = document.createElement('li')
+    newLi.append(input)
+
+    todoContainer.append(newLi)
+}
+
+todoForm.addEventListener('submit', function (e) {
+    e.preventDefault()
+    const todoInput = this.elements.todoInput
+
+    createToDo(todoInput.value)
+    todoInput.value = ''
+})
+
+todoContainer.addEventListener('click', function (e) {
+    e.target.nodeName === 'LI' && e.target.remove()
+})
 
 // END OF TODO LIST
 
