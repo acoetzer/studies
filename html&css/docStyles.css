@@ -517,8 +517,111 @@ sub {
 	box-shadow: 0 0.5em 0.2em -0.5em;
 }
 
-
 /* End of Random Color Generator */
+
+/* Grocery List */
+
+#gApp {
+	padding: 1em 1em;
+	border: 1px solid hsla(0, 0%, 0%, .5);
+	border-radius: 0.2em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+#gForm {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.gInputs {
+	margin: 0 0.2em;
+	padding: 0.2em;
+	font-size: 1.2em;
+	letter-spacing: 0.1em;
+}
+
+#gContainer {
+	margin-top: 0.5em;
+	width: 100%;
+	padding: 0 0.5em;
+
+	border-radius: 0.2em;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+#gContainer li {
+	margin: 0.2em auto;
+	padding: 0.2em 0.2em;
+	border: 1px solid hsla(0, 0%, 0%, .5);
+	border-width:0 0 1px 0;
+	list-style-type: none;
+	border-radius: 0.2em;
+	background-color: hsla(0, 0%, 0%, 0.1);
+	transition: tranform 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
+}
+
+#gQty {
+	text-align: center;
+	width: 5%;
+	padding: 1em 1em;
+	border: 1px solid hsla(0, 0%, 0%, .5);
+	border-radius: 0.2em;
+}
+#gList {
+	margin: 0 0.5em;
+	width: 90%;
+	padding: 1em 1em;
+	border: 1px solid hsla(0, 0%, 0%, .5);
+	border-radius: 0.2em;
+}
+
+#pContainer {
+	margin-top: 0.5em;
+	width: 100%;
+	padding: 0 0.5em;
+	height: 50px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+#pBox span {
+	padding: 0.2em 0.2em;
+	border: 1px solid blue;
+	border-radius: 0.2em;
+	display: flex;
+
+}
+
+/* End of Grocery List */
+
+/* Live InPut Text */
+
+#liveUpdateExample {
+	padding: 1em 1em;
+	border: 1px solid hsla(0, 0%, 0%, .5);
+	border-radius: 0.2em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+#liveText {
+	margin: 1em auto;
+	font-size: 5em;
+}
+#liveInput {
+	text-align: center;
+	padding: 0.5em 1em;
+	font-size: 2em;
+}
+
+/* End of Live InPut Text */
 
 /* End of JavaScript Related Stuff */
 

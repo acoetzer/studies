@@ -14,6 +14,7 @@ function randomColor () {
 }
 // Making the random color function
 
+/* 
 function delHistory () {
     if (history.length > 30) {
         history.shift()
@@ -21,6 +22,7 @@ function delHistory () {
         history.shift()
     }
 }
+*/
 // History function that limit the history array and removes anthing above 30.
 
 function createEntry (arr) {
@@ -33,7 +35,7 @@ function createEntry (arr) {
 // to create a color box entry for history
 
 let colorList = []
-const history = []
+// const history = []
 // semi-global varaibles
 
 
@@ -41,9 +43,10 @@ for (let i = 0; i < colorBox.length; i++) {
     const color = randomColor();
 
     colorList.push(color)
+    /*
     history.push(color)
     delHistory()
-    
+    */
     colorBox[i].style.backgroundColor = color
     colorText[i].innerText = color
     gradient.style.backgroundImage = `linear-gradient(90deg, ${colorList[0]}, ${colorList[1]}, ${colorList[2]})`
@@ -58,8 +61,10 @@ btn.addEventListener('click', function () {
     for (let i = 0; i < colorBox.length; i++) {
         const color = randomColor();
         colorList.push(color)
+        /*
         history.push(color)
         delHistory()
+        */
         
         colorBox[i].style.backgroundColor = color
         colorText[i].innerText = color
@@ -75,19 +80,67 @@ historyContainer.addEventListener('click', function (e) {
     e.target.className === 'colorBoxHistory' && e.target.remove()
 })
 // Event Delegation for removing color History boxes.
+
 // END OF RANDOM COLOR GENERATOR
+
+
+
+// GROCERY LIST
+const form = document.querySelector('#gForm')
+const gContainer = document.querySelector('#gApp')
+const gQty = document.querySelector('#gQty')
+const gList = document.querySelector('#gList')
+// 
+
+function createGList (qty, items) {
+    const newQty = document.createElement('li')
+    newQty.append(qty)
+    gQty.append(newQty)
+
+    const newItems = document.createElement('li')
+    newItems.append(items)
+    gList.append(newItems)
+}
+// 
+
+form.addEventListener('submit', function (e) {
+    e.preventDefault()
+    const qtyInput = this.elements.qty
+    const itemsInput = this.elements.items
+
+    createGList(qtyInput.value, itemsInput.value)
+    qtyInput.value = ''
+    itemsInput.value = ''
+})
+// 
+
+gContainer.addEventListener('click', function (e) {
+    e.target.nodeName === 'LI' && e.target.remove()
+})
+// 
+
+// END OF GROCERY LIST
+
+
 
 // TODO LIST
 
 
 // END OF TODO LIST
 
-// GROCERY LIST
 
-
-// END OF GROCERY LIST
 
 // LIVE UPDATE
+const liveText = document.querySelector('#liveText')
+const liveInput = document.querySelector('#liveInput')
 
+liveInput.addEventListener('input', function (e) {
+    if (!this.value) {
+        liveText.innerText = 'Live Update Text'
+    } else {
+        liveText.innerText = this.value
+    }
+
+})
 
 // END OF LIVE UPDATE

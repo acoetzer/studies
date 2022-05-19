@@ -405,8 +405,21 @@
 
                 <article>
                     <h3 id="gl">Grocery List</h3>
-                    <div class="groceryList">
+                    <div id="gApp">
+                        <div id="gContainer">
+                            <ul id="gQty">
 
+                            </ul>
+                            <ul id="gList">
+                            
+                            </ul>
+                        </div>
+
+                        <form action="/nowhere" id="gForm">
+                            <input type="number" name="qty" id="qty" placeholder="How Much?" class="gInputs">
+                            <input type="text" name="items" id="items" placeholder="Which Items?" class="gInputs">
+                            <button>Submit</button>
+                        </form>
                     </div>
                 </article>
 
@@ -462,8 +475,9 @@
 
                 <article>
                     <h3 id="lue">Live Update Example</h3>
-                    <div class="liveUpdateExample">
-
+                    <div id="liveUpdateExample">
+                        <span id="liveText">Live Update Text</span>
+                        <input type="text" name="liveInput" id="liveInput" placeholder="Enter Something Here">
                     </div>
                 </article>
 
