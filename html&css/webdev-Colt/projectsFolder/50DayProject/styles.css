@@ -1,0 +1,62 @@
+html {
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: hsla(0, 0%, 15%, 1);
+}
+
+.container {
+    padding: 0.5em 0;
+    border: 1px solid hsla(0, 0%, 10%, 1);
+    border-radius: 0.2em;
+    width: 60vw;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 0 1em 0.5em hsla(0, 0%, 0%, .2);
+}
+
+.panels {
+    position: relative;
+    margin: 0 0.5em;
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    flex: 0.5;
+    background: no-repeat center/cover;
+    border-radius: 0.2em;
+    color: hsla(0, 100%, 100%, 1);
+    cursor: pointer;
+    transition: flex 0.7s ease-in-out;
+    overflow: hidden;
+}
+.panels:hover::before{
+    
+    background-color: hsla(0, 0%, 20%, 1);
+}
+.panels.active {
+    flex: 5;
+}
+
+.panels h2 {
+    position: absolute;
+    bottom: 0;
+    left: 2%;
+    font-size: 1em;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out 0.3s;
+    z-index: 1;
+}
+.panels.active h2{
+    opacity: 1;
+}
