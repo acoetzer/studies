@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300;8..144,400;8..144,700&display=swap"
+            rel="stylesheet">
+        <title>Ping Pong Code Along</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>Ping Pong Code Along</h1>
+        </header>
+
+        <main>
+            <div id="container">
+                <div id="display">
+                    <div id="scoreCards">
+                        <div class="cards">
+                            <h2 id="playerOneScore" class="playerScores">0</h2>
+                            <span id="player1Name" class="playerNames">Player 1</span>
+                        </div>
+                        <div class="cards">
+                            <h2 id="playerTwoScore" class="playerScores">0</h2>
+                            <span id="player2Name" class="playerNames">Player 2</span>
+                        </div>
+                    </div>
+                    <div id="playerNames">
+
+
+                    </div>
+                    <h2 id="instructionHeading">- Press the buttons below to play -</h2>
+                </div>
+                <div class="buttons">
+                    <div class="gameButtons">
+                        <button id="player1Button">+1 Player One</button>
+                        <select name="" id="playTo">
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                        </select>
+                        <button id="player2Button">+1 Player Two</button>
+                    </div>
+                    <div class="resetButton">
+                        <button id="resetButton">Reset</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="app.js"></script>
+    </body>
+
+</html>
