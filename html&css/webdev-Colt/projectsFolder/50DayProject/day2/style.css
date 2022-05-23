@@ -1,0 +1,101 @@
+html {
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+:root {
+    --border-color:hsla(0, 0%, 0%, .2);
+    --border-radius: 0.2em;
+    --progressEmpty-color: hsla(0, 0%, 90%, 1);
+    --progressFill-color: hsla(270, 90%, 70%, 1);
+    --circleFill-color: hsla(0, 0%, 100%, 1);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#container {
+    text-align: center;
+    padding: 1rem;
+}
+
+#progressContainer::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 20%;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background-color: var(--progressEmpty-color);
+    z-index: -1;
+}
+
+#progressContainer {
+    position: relative;
+    margin-bottom: 1rem ;
+    width: 500px;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#progressBar {
+    position: absolute;
+    width: 0%;
+    height: 20%;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background-color: var(--progressFill-color);
+    transition: 0.3s ease-in-out;
+    z-index: -1;
+}
+
+.circle {
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    border: 4px solid var(--progressEmpty-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--progressEmpty-color);
+    background-color: var(--circleFill-color);
+    z-index: -1;
+}
+.circle.active {
+    border: 4px solid var(--progressFill-color);
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    border: 0;
+    border-radius: var(--border-radius);
+    background: none;
+    background-color: var(--progressFill-color);
+    font-family: inherit;
+    font-size: 1em;
+    color: var(--circleFill-color);
+    cursor: pointer;
+}
+.btn:active {
+    transform: scale(99%);
+    border: 0;
+}
+.btn:disabled {
+    cursor: not-allowed;
+    background-color: var(--progressEmpty-color);
+}
